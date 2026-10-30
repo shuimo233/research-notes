@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "title": "AngelBot minimal long-lived agent framework",
+  "observedAt": "2026-10-30",
+  "materialType": "engineering_research_notes",
+  "officialBenchmarkScore": false,
+  "project": "https://github.com/shuimo233/AngelBot",
+  "implementationSnapshot": {
+    "baseCommit": "390f1d4bdbab1379fa6886cdbca90842b0b5ecfa",
+    "hasUnmergedChanges": true,
+    "baseCommitReproducesAllResults": false,
+    "currentImplementationSha256": {
+      "src-tauri/src/agent/support/adaptive_constraints.rs": "8d731bb5b240f7169c861132cc8420f1cdbe6dccdfc2ce211d2b5ce5ec4eafae",
+      "src-tauri/src/commands/foreground_history/working_view.rs": "78d42e738a4fab61be0fcf2eae6d3f6f84debb4c89fa587dc498ab3d01dd3b7d",
+      "src-tauri/src/commands/foreground_context_assembler.rs": "e7eac88f789c9e987a242eeccae770e81a68beb78a5a5f8e4f9e6f01217b027c",
+      "src-tauri/src/commands/foreground_run_store.rs": "c8a19d09a12b6394d2a1b346b57b8001d01969074476bfd8688c1d2b4a2ee134"
+    },
+    "rawProviderFramesPublished": false,
+    "rawDatabasePublished": false,
+    "publicMaterials": "methods_and_reviewed_aggregates_only"
+  },
+  "productionConfiguration": {
+    "preferenceWindow": 12,
+    "maximumTaskSelectedPreferences": 2,
+    "returnedCandidateLimit": 50,
+    "scanIsBoundedByCandidateLimit": false,
+    "selection": "strongest_direct_match_and_newest_valid_source_in_matching_pool",
+    "replaceableSlots": "global_interaction_preferences_only",
+    "sourceValidation": "verbatim_existing_nonprovisional_user_message",
+    "semanticConflictResolverInHost": false,
+    "experimentalCompletedLookupDirectiveEnabled": false,
+    "newMemoryServiceRequired": false,
+    "extraModelCallForTaskSelection": false
+  },
+  "experiments": [
+    {
+      "id": "E1",
+      "protocol": "six_turn_main_continuity",
+      "baseline": {"completedTurns": 6, "turns": 6, "requests": 19, "inputTokens": 327099, "outputTokens": 1726},
+      "candidate": {"completedTurns": 6, "turns": 6, "requests": 17, "inputTokens": 192236, "outputTokens": 1843},
+      "limitations": ["Candidate resumed its own unchanged first four completed turns after a zero-call preparation failure; these turns were not borrowed from the baseline", "Restore semantics differ: completed working view is not native opaque-state restoration", "Observed difference is not a randomized or universally applicable saving rate", "Baseline exceeded the 240000 input-token resource target"]
+    },
+    {
+      "id": "E2",
+      "protocol": "v16_v17_counterfactual_profiles",
+      "baseline": {"strictSourceBoundSuccesses": 0, "cases": 8, "requests": 8, "inputTokens": 22788, "outputTokens": 275},
+      "firstCandidate": {"strictSourceBoundSuccesses": 6, "cases": 8},
+      "revisedCandidate": {"strictSourceBoundSuccesses": 8, "cases": 8, "requests": 15, "inputTokens": 46435, "outputTokens": 507},
+      "limitations": ["Revised candidate is a known-case regression, not an independent holdout", "Quality increase in this diagnostic came with greater measured input and request cost", "One baseline answer matched by chance without source support and was not counted as success"]
+    },
+    {
+      "id": "E3",
+      "protocol": "v18_view_budget",
+      "window12": {"strictSuccesses": 3, "cases": 4, "requests": 7, "inputTokens": 20444, "outputTokens": 248},
+      "window2": {"strictSuccesses": 3, "cases": 4, "requests": 9, "inputTokens": 23290, "outputTokens": 297},
+      "limitations": ["Small synthetic sample over two new topics", "Frozen answer aliases were not widened after observing outputs", "Does not support reducing the production window to two"]
+    },
+    {
+      "id": "E4",
+      "protocol": "v20_lookup_guards",
+      "plannedRows": 12,
+      "completedRows": 11,
+      "requests": 21,
+      "requestsWithUsage": 20,
+      "reportedInputTokens": 62157,
+      "reportedOutputTokens": 831,
+      "comparisonValid": false,
+      "usageIncomplete": true,
+      "fiveCompletePairs": {
+        "baseline": {"strictSuccesses": 5, "cases": 5, "requests": 10, "inputTokens": 31150, "outputTokens": 395},
+        "candidate": {"strictSuccesses": 5, "cases": 5, "requests": 8, "inputTokens": 24807, "outputTokens": 325}
+      },
+      "limitations": ["Baseline applied a future agreement one minute early", "Candidate counterpart failed during connection establishment", "Incomplete batch cannot establish a full-batch saving or accuracy rate", "Experimental instruction remains outside production"]
+    },
+    {
+      "id": "E5",
+      "protocol": "saved_preference_task_projection_v6",
+      "taskProjectionDelivered": true,
+      "targetHistoryMessages": 0,
+      "preferenceWindow": 12,
+      "omittedPreferences": 50,
+      "taskMatches": 1,
+      "requests": 1,
+      "requestsWithUsage": 0,
+      "businessCompleted": false,
+      "billedTokens": null,
+      "failureClass": "connection_establishment",
+      "limitations": ["Prepared context delivery is not task completion", "Missing usage is not zero cost", "An earlier available probe does not prove business availability"]
+    }
+  ],
+  "priorScaleObservation": {
+    "records": 10001,
+    "build": "debug",
+    "singleHostObservation": true,
+    "matchMilliseconds": 179,
+    "unmatchedMilliseconds": 154,
+    "releasePerformanceClaim": false,
+    "controlledBeforeAfterMeasurement": false
+  },
+  "directOnlyLookupRegression": {
+    "casesPassed": 2,
+    "newTestEntriesAdded": 0,
+    "records": 10001,
+    "build": "debug",
+    "matchMilliseconds": 173,
+    "unmatchedMilliseconds": 158,
+    "characterOnlyMilliseconds": 174,
+    "explicitPartialLookupPreserved": true,
+    "automaticPartialLookupEnabled": false,
+    "controlledBeforeAfterMeasurement": false,
+    "speedupOrQualityClaim": false
+  },
+  "unverified": ["Natural multi-day reliability", "Cross-model quality", "Future-effective-boundary correction", "Production Main live completion in E5", "Release performance upper bounds", "Independent recomputation from fully public raw materials"]
+}
