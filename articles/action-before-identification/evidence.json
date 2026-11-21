@@ -1,0 +1,282 @@
+{
+  "no_fallback": [
+    {
+      "L": 1,
+      "T": 1,
+      "f": 0
+    },
+    {
+      "L": 2,
+      "T": 3,
+      "f": 1
+    },
+    {
+      "L": 3,
+      "T": 5,
+      "f": 2
+    }
+  ],
+  "sharp": [
+    {
+      "L": 2,
+      "T": 2,
+      "d": 0,
+      "f": 0
+    },
+    {
+      "L": 3,
+      "T": 3,
+      "d": 0,
+      "f": 1
+    },
+    {
+      "L": 5,
+      "T": 5,
+      "d": 0,
+      "f": 2
+    },
+    {
+      "L": 2,
+      "T": 3,
+      "d": 1,
+      "f": 0
+    },
+    {
+      "L": 3,
+      "T": 4,
+      "d": 1,
+      "f": 1
+    },
+    {
+      "L": 5,
+      "T": 6,
+      "d": 1,
+      "f": 2
+    },
+    {
+      "L": 2,
+      "T": 4,
+      "d": 2,
+      "f": 0
+    },
+    {
+      "L": 3,
+      "T": 5,
+      "d": 2,
+      "f": 1
+    },
+    {
+      "L": 5,
+      "T": 7,
+      "d": 2,
+      "f": 2
+    }
+  ],
+  "small_tables": [
+    {
+      "cases": 326,
+      "excess_over_L": 0,
+      "f": 0
+    },
+    {
+      "cases": 52,
+      "excess_over_L": 1,
+      "f": 0
+    },
+    {
+      "cases": 326,
+      "excess_over_L": 0,
+      "f": 1
+    },
+    {
+      "cases": 52,
+      "excess_over_L": 1,
+      "f": 1
+    },
+    {
+      "cases": 326,
+      "excess_over_L": 0,
+      "f": 2
+    },
+    {
+      "cases": 52,
+      "excess_over_L": 1,
+      "f": 2
+    }
+  ],
+  "sqlite": [
+    {
+      "D": 1,
+      "L": 1,
+      "f": 0,
+      "identify_mode": 3,
+      "leaves_with_ambiguity": 4,
+      "safe_action": 2,
+      "verified_leaves_by_world": 5
+    },
+    {
+      "D": 1,
+      "L": 2,
+      "f": 1,
+      "identify_mode": 5,
+      "leaves_with_ambiguity": 11,
+      "safe_action": 3,
+      "verified_leaves_by_world": 12
+    },
+    {
+      "D": 1,
+      "L": 3,
+      "f": 2,
+      "identify_mode": 8,
+      "leaves_with_ambiguity": 17,
+      "safe_action": 4,
+      "verified_leaves_by_world": 18
+    }
+  ],
+  "sqlite_action_rows": {
+    "ABORT": {
+      "fill_tail": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "insert_all": null,
+      "restore_header": [
+        [
+          1,
+          "old"
+        ]
+      ]
+    },
+    "FAIL": {
+      "fill_tail": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "insert_all": null,
+      "restore_header": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ]
+      ]
+    },
+    "IGNORE": {
+      "fill_tail": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "insert_all": null,
+      "restore_header": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ]
+    },
+    "REPLACE": {
+      "fill_tail": [
+        [
+          1,
+          "new"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "insert_all": null,
+      "restore_header": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ]
+    },
+    "ROLLBACK": {
+      "fill_tail": [
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "insert_all": [
+        [
+          1,
+          "old"
+        ],
+        [
+          2,
+          "prefix"
+        ],
+        [
+          3,
+          "suffix"
+        ]
+      ],
+      "restore_header": [
+        [
+          1,
+          "old"
+        ]
+      ]
+    }
+  }
+}
