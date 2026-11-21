@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-21 | [当所有旧规则都被观测推翻，该复查哪一项？](articles/conflict-rechecks/README.md) | 错读与模型遗漏、两批复查的最优成本、SQLite 反例 |
 | 2026-10-30 | [让个人助手长期工作：AngelBot 的最小记忆与上下文框架](articles/long-lived-agent-framework/README.md) | 长期偏好、动态约束、工作视图、来源回查与 token 成本 |
 
 ## 阅读说明
