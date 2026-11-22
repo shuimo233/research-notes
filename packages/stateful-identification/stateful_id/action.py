@@ -193,6 +193,15 @@ class ActionPlanner:
         self.bits = {q: tuple(_bit(rule(q)) for rule in domain.rules.values()) for q in domain.probes}
 
     def _possible(self, group, counts, radii=None, evidence=None):
+        if radii is None:
+            radii = tuple(self.radii[i] for i in group)
+        length = sum(counts.values())
+        active = tuple(j for j, r in enumerate(radii) if r < length)
+        if not active:
+            return True, "vacuous"
+        if len(active) < len(group):
+            group = tuple(group[j] for j in active)
+            radii = tuple(radii[j] for j in active)
         columns = Counter()
         full = (1 << len(group)) - 1
         for q, n in counts.items():
@@ -201,9 +210,18 @@ class ActionPlanner:
                 c = min(c, full ^ c)  # Complementing all answers preserves joint feasibility.
                 if c:
                     columns[c] += n
-        if radii is None:
-            radii = tuple(self.radii[i] for i in group)
-        return _intersection(columns, radii, evidence)
+        local = [] if evidence is not None else None
+        possible, method = _intersection(columns, radii, local)
+        if not possible and evidence is not None:
+            if not local:
+                local = tuple(range(len(group)))
+                for j in local:
+                    keep = tuple(k for k in local if k != j)
+                    if keep and not self._possible(tuple(group[k] for k in keep), counts,
+                                                   tuple(radii[k] for k in keep))[0]:
+                        local = keep
+            evidence.extend(active[j] for j in local)
+        return possible, method
 
     def _record(self, group, counts):
         """Recover a common transcript in run-length counts, using joint feasibility."""
@@ -269,13 +287,7 @@ class ActionPlanner:
                 return Assessment(False, tuple(self.names[i] for i in group), tuple(sorted(methods)),
                                   counterexample_ones=record)
             if witnesses:
-                core = tuple(group[j] for j in evidence) if evidence else group
-                if not evidence:
-                    for i in group:
-                        smaller = tuple(j for j in core if j != i)
-                        if smaller and not self._possible(smaller, counts)[0]:
-                            core = smaller
-                separated.append(tuple(self.names[i] for i in core))
+                separated.append(tuple(self.names[group[j]] for j in evidence))
         return Assessment(True, (), tuple(sorted(methods)), tuple(separated))
 
     def plan(self, budget: Budget):

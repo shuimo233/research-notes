@@ -3,26 +3,36 @@
     {
       "core_size": 8,
       "counterexample_verified": true,
+      "cycle_core_size": 5,
+      "cycle_counterexample_verified": true,
       "repeats_each": 1
     },
     {
       "core_size": 8,
       "counterexample_verified": true,
+      "cycle_core_size": 5,
+      "cycle_counterexample_verified": true,
       "repeats_each": 3
     },
     {
       "core_size": 8,
       "counterexample_verified": true,
+      "cycle_core_size": 5,
+      "cycle_counterexample_verified": true,
       "repeats_each": 9
     },
     {
       "core_size": 8,
       "counterexample_verified": true,
+      "cycle_core_size": 5,
+      "cycle_counterexample_verified": true,
       "repeats_each": 27
     },
     {
       "core_size": 8,
       "counterexample_verified": true,
+      "cycle_core_size": 5,
+      "cycle_counterexample_verified": true,
       "repeats_each": 1000001
     }
   ],

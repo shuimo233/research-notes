@@ -19,27 +19,11 @@ exp = runpy.run_path(str(here / "check.py"))
 load_old = runpy.run_path(str(here / "benchmark.py"))["load_old"]
 
 
-def nonredundant(n):
-    # K3 and C5 are separate components of the crossing graph.
-    corners = [tuple(int(b) for b in format(i, "03b")) + (0,) * 5 for i in range(8)]
-    edges = [(0,) * 3 + tuple(int(j in (i, (i+1) % 5)) for j in range(5)) for i in range(5)]
-    radius = 3 * ((n+1)//2) - 1
-    rows, radii = corners + edges, [radius]*8 + [radius+2*n-1]*5
-    for i, j in combinations(range(len(rows)), 2):
-        distance = n * sum(x != y for x, y in zip(rows[i], rows[j]))
-        exp["check"](abs(radii[i]-radii[j]) < distance <= radii[i]+radii[j], (n,i,j))
-    # Increasing only the 111 corner's budget by one admits this complete record.
-    z = [n//2]*3 + [0]*5
-    distances = [sum(n-a if b else a for b,a in zip(row,z)) for row in rows]
-    exp["check"](all(d <= r + (i == 7) for i,(d,r) in enumerate(zip(distances,radii))), n)
-    return rows, radii
-
-
 def compare(family, n, baseline):
     if family == "shards44":
         rows, _, radii = exp["tight_instance"](n)
     else:
-        rows, radii = nonredundant(n)
+        rows, radii = exp["cycle_instance"](n)
     plan, probes = exp["planner"](rows, radii)
     schedule = dict.fromkeys(probes, n)
     size = len(probes)

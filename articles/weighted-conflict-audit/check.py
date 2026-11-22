@@ -43,6 +43,30 @@ def tight_instance(n):
     return rows, corners, [radius if i in corners else 8*n for i in range(len(rows))]
 
 
+def cycle_instance(n):
+    # K3 and C5 are separate components of the crossing graph.
+    corners = [tuple(int(b) for b in format(i, "03b")) + (0,) * 5 for i in range(8)]
+    edges = [(0,) * 3 + tuple(int(j in (i, (i+1) % 5)) for j in range(5)) for i in range(5)]
+    radius = 3 * ((n+1)//2) - 1
+    rows, radii = corners + edges, [radius]*8 + [radius+2*n-1]*5
+    for i, j in combinations(range(len(rows)), 2):
+        distance = n * sum(x != y for x, y in zip(rows[i], rows[j]))
+        check(abs(radii[i]-radii[j]) < distance <= radii[i]+radii[j], (n,i,j))
+    # Increasing only the 111 corner's budget by one admits this complete record.
+    z = [n//2]*3 + [0]*5
+    distances = [sum(n-a if b else a for b,a in zip(row,z)) for row in rows]
+    check(all(d <= r + (i == 7) for i,(d,r) in enumerate(zip(distances,radii))), n)
+    # The proof gives eight candidate records, one of which works for any four rows.
+    live_sets = []
+    for offset in product((0, 1), repeat=3):
+        record = [n//2+b for b in offset] + [0]*5
+        live_sets.append({i for i,row in enumerate(rows)
+                          if sum(n-z if b else z for b,z in zip(row,record)) <= radii[i]})
+    check(all(any(set(four) <= live for live in live_sets)
+              for four in combinations(range(len(rows)), 4)), n)
+    return rows, radii
+
+
 def compressed():
     results = []
     for n in (1, 3, 9, 27, 1_000_001):
@@ -51,7 +75,7 @@ def compressed():
         schedule = dict.fromkeys(qs, n)
         a = p.assess(schedule, witnesses=True)
         check(a.guaranteed and set(map(int,a.witnesses[0])) == set(corners), (n,a))
-        check(a.methods == ("halfball_tree",), a.methods)
+        check(a.methods == ("two_columns",), a.methods)
         radii[corners[0]] += 1
         p, _ = planner(rows, radii)
         b = p.assess(schedule, witnesses=True)
@@ -59,7 +83,23 @@ def compressed():
         check(not b.guaranteed and p.decide(schedule, ones).status == "ambiguous", n)
         for i,row in enumerate(rows):
             check(sum(n-ones[q] if y else ones[q] for q,y in zip(qs,row)) <= radii[i], (i,n))
-        results.append({"repeats_each": n, "core_size": len(a.witnesses[0]), "counterexample_verified": True})
+        cycle_rows, cycle_radii = cycle_instance(n)
+        cp, cq = planner(cycle_rows, cycle_radii)
+        cycle_schedule = dict.fromkeys(cq, n)
+        proven = cp.assess(cycle_schedule, witnesses=True)
+        check(proven.guaranteed and proven.methods == ("halfball_tree",), (n, proven))
+        if n == 1:
+            core = [int(i) for i in proven.witnesses[0]]
+            def overlaps(ids):
+                return any(all(sum(x != y for x,y in zip(bits,cycle_rows[i])) <= cycle_radii[i] for i in ids)
+                           for bits in product((0, 1),repeat=8))
+            check(not overlaps(core) and all(overlaps([i for i in core if i != j]) for j in core), core)
+        cycle_radii[7] += 1
+        cp, _ = planner(cycle_rows, cycle_radii)
+        example = cp.assess(cycle_schedule, witnesses=True)
+        check(cp.decide(cycle_schedule, dict(example.counterexample_ones)).status == "ambiguous", n)
+        results.append({"repeats_each": n, "core_size": len(a.witnesses[0]), "counterexample_verified": True,
+                        "cycle_core_size": len(proven.witnesses[0]), "cycle_counterexample_verified": True})
     return results
 
 

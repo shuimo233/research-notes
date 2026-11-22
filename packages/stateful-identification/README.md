@@ -41,4 +41,6 @@ assert example.status == "ambiguous"
 
 已有实验清单可以直接交给 `assess`。把大量重试写成 `{探针元组: 次数}` 即可。计划失败时 `obstruction` 给出仍可能共同解释一条记录、且没有共同动作的一组规则。保证成功时可选 `witnesses=True`，提取令各组不可能同时存活的包含极小证据。保证以实际机制在表中、错读受限、动作有效性经过验收为前提。精确搜索最短清单及枚举无共同动作的规则组均可能很贵，适用于有限规模；已知清单可跳过搜索直接核验。
 
+错配预算覆盖整份清单的规则在联合判定时可以忽略，返回实际记录时仍计入存活规则。两个完整示例及独立整数规划对照见本次研究。[0.3.0 的证明、实验和计时](../../articles/weighted-conflict-audit/README.md)
+
 原有的 `identify` 接口用于无错读的确定性规则辨识。可用 `stateful-identify demo sqlite --truth FAIL` 运行内置示例。[行动证书的推导与复现](../../articles/joint-action-certificates/README.md)

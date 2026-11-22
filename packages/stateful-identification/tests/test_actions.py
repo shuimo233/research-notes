@@ -70,7 +70,7 @@ class ActionTests(unittest.TestCase):
         budgets = {s: 3 * ((repeats + 1) // 2) - 1 if s in corners else 5 * repeats for s in rules}
         schedule = dict.fromkeys(qs, repeats)
         report = ActionPlanner(domain, allowed, budgets).assess(schedule, witnesses=True)
-        self.assertEqual(report.methods, ("halfball_tree",))
+        self.assertEqual(report.methods, ("two_columns",))
         self.assertEqual(set(report.witnesses[0]), set(corners))
         budgets[corners[0]] += 1
         relaxed = ActionPlanner(domain, allowed, budgets)
@@ -85,6 +85,19 @@ class ActionTests(unittest.TestCase):
         report = planner.assess(qs, witnesses=True)
         self.assertEqual(report.methods, ("count_search",))
         self.assertEqual(set(report.witnesses[0]), set(cube))
+
+    def test_pairwise_feasible_table_uses_joint_five_row_witness(self):
+        corners = [format(i, "03b") + "00000" for i in range(8)]
+        edge_rows = ["00011000", "00001100", "00000110", "00000011", "00010001"]
+        signatures = corners + edge_rows
+        qs = [(str(i),) for i in range(8)]
+        rules = {s: (lambda q, s=s: int(s[int(q[0])])) for s in signatures}
+        allowed = {s: set(signatures) - {s} for s in signatures}
+        radii = {s: 2 if s in corners else 3 for s in signatures}
+        planner = ActionPlanner(Domain("pairwise-overlap", rules, qs), allowed, radii)
+        result = planner.assess(qs, witnesses=True)
+        self.assertEqual(result.methods, ("halfball_tree",))
+        self.assertEqual(len(result.witnesses[0]), 5)
 
     def test_common_action_without_probing(self):
         actions = {n: {"available"} for n in self.domain.rules}
