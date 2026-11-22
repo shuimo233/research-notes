@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from itertools import combinations, combinations_with_replacement
 
 from .core import Budget, Domain, _trace, _units
+from ._layer import joint_witness, tree_layer
 
 
 def _bit(value):
@@ -100,7 +101,7 @@ def _two_colors(edges):
     return True
 
 
-def _intersection(columns, radii):
+def _intersection(columns, radii, evidence=None):
     """Can all these rules explain one transcript with these budgets?"""
     full = (1 << len(radii)) - 1
     edges = [(a, b) for a, b in combinations(columns, 2)
@@ -117,6 +118,12 @@ def _intersection(columns, radii):
                 if min(adjusted) >= 0 and all(d <= adjusted[i] + adjusted[j] for (i, j), d in pairs.items()):
                     return True, "two_trees"
             return False, "two_trees"
+        layer = tree_layer(edges)
+        if layer is not None:
+            core = joint_witness(columns, radii, layer, minimize=evidence is not None)
+            if core is not None and evidence is not None:
+                evidence.extend(core)
+            return core is None, "halfball_tree"
         # Exact fallback: condition on the count for a high-degree crossing column.
         degree = Counter(x for edge in edges for x in edge)
         col = max(degree, key=lambda c: (degree[c], -columns[c]))
@@ -146,6 +153,7 @@ class Assessment:
     obstruction: tuple[str, ...]
     methods: tuple[str, ...]
     witnesses: tuple[tuple[str, ...], ...] = ()
+    counterexample_ones: tuple | None = None
 
 
 @dataclass(frozen=True)
@@ -156,6 +164,13 @@ class ActionResult:
     spent: Budget
     observations: tuple
     error: str | None = None
+
+
+@dataclass(frozen=True)
+class ActionDecision:
+    status: str
+    action: str | None
+    candidates: tuple[str, ...]
 
 
 class ActionPlanner:
@@ -177,7 +192,7 @@ class ActionPlanner:
         self.groups = _blockers(self.allowed)
         self.bits = {q: tuple(_bit(rule(q)) for rule in domain.rules.values()) for q in domain.probes}
 
-    def _possible(self, group, counts):
+    def _possible(self, group, counts, radii=None, evidence=None):
         columns = Counter()
         full = (1 << len(group)) - 1
         for q, n in counts.items():
@@ -186,29 +201,80 @@ class ActionPlanner:
                 c = min(c, full ^ c)  # Complementing all answers preserves joint feasibility.
                 if c:
                     columns[c] += n
-        return _intersection(columns, tuple(self.radii[i] for i in group))
+        if radii is None:
+            radii = tuple(self.radii[i] for i in group)
+        return _intersection(columns, radii, evidence)
 
-    def assess(self, schedule, *, witnesses=False):
-        """Certify an iterable of traces or a compact mapping {trace: repeat_count}."""
+    def _record(self, group, counts):
+        """Recover a common transcript in run-length counts, using joint feasibility."""
+        remaining = dict(counts)
+        radii = tuple(self.radii[i] for i in group)
+        record = []
+        for q, n in counts.items():
+            bits = [self.bits[q][i] for i in group]
+            lo, hi = 0, n
+            while lo < hi:
+                mid = (lo + hi + 1) // 2
+                left = tuple(r - (1-b)*mid for r, b in zip(radii, bits))
+                remaining[q] = n - mid
+                if min(left) >= 0 and self._possible(group, remaining, left)[0]:
+                    lo = mid
+                else:
+                    hi = mid - 1
+            del remaining[q]
+            radii = tuple(r - (n-lo if b else lo) for r, b in zip(radii, bits))
+            record.append((q, lo))
+        return tuple(record)
+
+    def _counts(self, schedule):
         if isinstance(schedule, Mapping):
             counts = {_trace(q): _units(n) for q, n in schedule.items()}
         else:
             counts = Counter(_trace(q) for q in schedule)
         if any(q not in self.bits for q in counts):
             raise ValueError("schedule contains an undeclared probe")
+        return counts
+
+    def decide(self, schedule, ones: Mapping):
+        """Select a valid action for an existing report; one count per scheduled probe."""
+        counts = self._counts(schedule)
+        positive = {_trace(q): _units(n) for q, n in ones.items()}
+        if counts.keys() != positive.keys() or any(positive[q] > n for q, n in counts.items()):
+            raise ValueError("report needs one valid positive count for each scheduled probe")
+        live = [i for i, radius in enumerate(self.radii)
+                if sum(n - positive[q] if self.bits[q][i] else positive[q]
+                       for q, n in counts.items()) <= radius]
+        return self._decision(live)
+
+    def _decision(self, live):
+        names = tuple(self.names[i] for i in live)
+        if not names:
+            return ActionDecision("conflict", None, ())
+        shared = frozenset.intersection(*(self.allowed[i] for i in live))
+        if shared:
+            return ActionDecision("ready", min(shared), names)
+        return ActionDecision("ambiguous", None, names)
+
+    def assess(self, schedule, *, witnesses=False):
+        """Certify an iterable of traces or a compact mapping {trace: repeat_count}."""
+        counts = self._counts(schedule)
         methods = set()
         separated = []
         for group in self.groups:
-            possible, method = self._possible(group, counts)
+            evidence = [] if witnesses else None
+            possible, method = self._possible(group, counts, evidence=evidence)
             methods.add(method)
             if possible:
-                return Assessment(False, tuple(self.names[i] for i in group), tuple(sorted(methods)))
+                record = self._record(group, counts) if witnesses else None
+                return Assessment(False, tuple(self.names[i] for i in group), tuple(sorted(methods)),
+                                  counterexample_ones=record)
             if witnesses:
-                core = group
-                for i in group:
-                    smaller = tuple(j for j in core if j != i)
-                    if smaller and not self._possible(smaller, counts)[0]:
-                        core = smaller
+                core = tuple(group[j] for j in evidence) if evidence else group
+                if not evidence:
+                    for i in group:
+                        smaller = tuple(j for j in core if j != i)
+                        if smaller and not self._possible(smaller, counts)[0]:
+                            core = smaller
                 separated.append(tuple(self.names[i] for i in core))
         return Assessment(True, (), tuple(sorted(methods)), tuple(separated))
 
@@ -249,13 +315,10 @@ class ActionPlanner:
         history = []
         cost = 0
         for step in range(len(schedule) + 1):
-            names = tuple(self.names[i] for i in live)
+            decision = self._decision(live)
             spent = Budget(step, cost)
-            if not live:
-                return ActionResult("conflict", None, names, spent, tuple(history))
-            shared = frozenset.intersection(*(self.allowed[i] for i in live))
-            if shared:
-                return ActionResult("ready", min(shared), names, spent, tuple(history))
+            if decision.status != "ambiguous":
+                return ActionResult(decision.status, decision.action, decision.candidates, spent, tuple(history))
             if step == len(schedule):
                 raise AssertionError("certified schedule ended without a common action")
             q = schedule[step]
@@ -263,7 +326,7 @@ class ActionPlanner:
             try:
                 y = _bit(observe(q))
             except Exception as exc:
-                return ActionResult("error", None, names, Budget(step + 1, cost), tuple(history),
+                return ActionResult("error", None, decision.candidates, Budget(step + 1, cost), tuple(history),
                                     f"{q!r}: {type(exc).__name__}: {exc}")
             history.append((q, y))
             for i in tuple(live):

@@ -1,4 +1,4 @@
-# Stateful Identification 0.2.0
+# Stateful Identification 0.3.0
 
 有限、可重置系统的黑盒辨识与行动规划。需要 Python 3.10 或更高版本，运行时仅用标准库。在仓库根目录执行 `python -m pip install ./packages/stateful-identification` 安装。在本目录执行 `python -B -m unittest discover -s tests` 验证。
 
@@ -21,6 +21,21 @@ readings = iter([0, 1])
 result = planner.run(lambda q: next(readings), Budget(2, 2))
 assert (result.status, result.action) == ("ready", "10")
 ```
+
+### 0.3.0 的记录回放与反例
+
+`decide(schedule, ones)` 可直接读取已采集的探针计数。`ones` 必须给每种已安排探针提供 1 的次数，包括零。返回 `ready`、`ambiguous` 或 `conflict`，以及仍可解释实测记录的规则。它不会调用观测器。
+
+```python
+actual = planner.decide(schedule, {probes[0]: 0, probes[1]: 1})
+assert actual.action == "10"
+short = [probes[0]]
+failed = planner.assess(short, witnesses=True)
+example = planner.decide(short, dict(failed.counterexample_ones))
+assert example.status == "ambiguous"
+```
+
+固定清单无法保证行动时，`counterexample_ones` 是所返回冲突组可以共同解释的一份可达记录。当结构判据识别出互相兼容的一组列、且余下列没有三角交叉时，新版直接用行间距离给出联合判定。请求证据时，从两种奇偶各至多四条原始行开始删除冗余行。一般表仍采用精确后备求解。
 
 `errors` 接受一个非负整数或按规则名给出的剩余错读次数。每次复查均从同一初态开始，同一探针允许重复。`plan` 在声明的两个预算内先求最短固定清单，再优先选动作成本最低的同长清单。若预算内无法保证成功，返回 `None`；`run` 此时返回 `no_guaranteed_plan`，不调用观测器。凡已能保证选对动作时可以提前结束。调用方取得动作名后自行执行。辨识器的 `Domain.checks` 专用于模型验证，行动模式使用 `Domain.probes`。
 

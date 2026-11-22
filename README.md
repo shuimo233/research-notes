@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-22 | [一份行动计划需要几行证据？](articles/weighted-conflict-audit/README.md) | 八行紧界、压缩核验器 0.3.0 与 44 个 SQLite 分片写入实验 |
 | 2026-11-21 | [两两都可能，为什么已经能行动？](articles/joint-action-certificates/README.md) | 行动规划器 0.2.0、错读记录的联合核验和树积上的证据大小 |
 | 2026-11-21 | [修好数据库，需要先知道它为什么错了吗？](articles/action-before-identification/README.md) | 有界错读下的行动成本、公共回退条件与真实 SQL 修复 |
 | 2026-11-21 | [当所有旧规则都被观测推翻，该复查哪一项？](articles/conflict-rechecks/README.md) | 错读与模型遗漏、两批复查的最优成本、SQLite 反例 |

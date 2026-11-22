@@ -31,9 +31,60 @@ class ActionTests(unittest.TestCase):
         self.assertIn("00", result.candidates)
         self.assertEqual(result.spent, Budget(2, 2))
 
+    def test_positive_count_report_matches_observe(self):
+        result = self.planner.decide([self.x, self.y], {self.x: 0, self.y: 1})
+        self.assertEqual((result.status, result.action, result.candidates),
+                         ("ready", "10", ("00", "01", "11")))
+        strict = ActionPlanner(self.domain, self.actions)
+        conflict = strict.decide([self.x, self.x], {self.x: 1})
+        self.assertEqual((conflict.status, conflict.action, conflict.candidates), ("conflict", None, ()))
+        for invalid in ({}, {self.x: 2}, {self.x: -1}, {self.x: True}):
+            with self.assertRaises(ValueError):
+                self.planner.decide([self.x], invalid)
+
+    def test_actual_ambiguous_record_for_complementary_and_repeated_probes(self):
+        domain = Domain("complements", {"a": lambda q: int(q == self.x), "b": lambda q: int(q != self.x)},
+                        [self.x, self.y])
+        p = ActionPlanner(domain, {"a": ["a"], "b": ["b"]}, {"a": 3, "b": 1})
+        schedule = {self.x: 2, self.y: 2}
+        cert = p.assess(schedule, witnesses=True)
+        self.assertEqual(cert.obstruction, ("a", "b"))
+        decoded = p.decide(schedule, dict(cert.counterexample_ones))
+        self.assertEqual((decoded.status, decoded.candidates), ("ambiguous", cert.obstruction))
+        self.assertIsNone(p.assess(schedule).counterexample_ones)
+        self.assertEqual(p.assess([], witnesses=True).counterexample_ones, ())
+
     def test_invalid_reading_is_charged(self):
         result = self.planner.run(lambda q: 2, Budget(2, 2))
         self.assertEqual((result.status, result.action, result.spent), ("error", None, Budget(1, 1)))
+
+    def test_compressed_eight_row_boundary_and_four_way_crossing_fallback(self):
+        # A triangle and an independent edge require three vertices to cover the edges.
+        corners = [format(value, "03b") + "00" for value in range(8)]
+        signatures = corners + ["00001", "00010", "00011"]
+        repeats = 100_001
+        qs = [(str(i),) for i in range(5)]
+        rules = {s: (lambda q, s=s: int(s[int(q[0])])) for s in signatures}
+        allowed = {s: set(signatures) - {s} for s in signatures}
+        domain = Domain("weighted-cube", rules, qs)
+        budgets = {s: 3 * ((repeats + 1) // 2) - 1 if s in corners else 5 * repeats for s in rules}
+        schedule = dict.fromkeys(qs, repeats)
+        report = ActionPlanner(domain, allowed, budgets).assess(schedule, witnesses=True)
+        self.assertEqual(report.methods, ("halfball_tree",))
+        self.assertEqual(set(report.witnesses[0]), set(corners))
+        budgets[corners[0]] += 1
+        relaxed = ActionPlanner(domain, allowed, budgets)
+        example = relaxed.assess(schedule, witnesses=True).counterexample_ones
+        self.assertEqual(set(relaxed.decide(schedule, dict(example)).candidates), set(signatures))
+
+        qs = qs[:4]
+        cube = [format(value, "04b") for value in range(16)]
+        rules = {s: (lambda q, s=s: int(s[int(q[0])])) for s in cube}
+        domain = Domain("four-crossing-columns", rules, qs)
+        planner = ActionPlanner(domain, {s: set(cube) - {s} for s in cube}, errors=3)
+        report = planner.assess(qs, witnesses=True)
+        self.assertEqual(report.methods, ("count_search",))
+        self.assertEqual(set(report.witnesses[0]), set(cube))
 
     def test_common_action_without_probing(self):
         actions = {n: {"available"} for n in self.domain.rules}

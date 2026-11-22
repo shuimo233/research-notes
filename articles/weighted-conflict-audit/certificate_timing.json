@@ -1,0 +1,324 @@
+{
+  "python": "3.13.5",
+  "scipy": "1.16.3",
+  "results": [
+    {
+      "family": "shards44",
+      "repeats": 1,
+      "nonvacuous": 8,
+      "core_rows": {
+        "package": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "highs_delete": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "old_after_vacuous_filter": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ]
+      },
+      "ms": {
+        "package": [
+          2.8943,
+          1.966,
+          1.8204,
+          1.8844,
+          1.6858
+        ],
+        "highs_delete": [
+          11.4519,
+          8.8177,
+          10.402,
+          9.4894,
+          9.7228
+        ],
+        "old_after_vacuous_filter": [
+          0.6592,
+          0.9566,
+          0.6609,
+          0.5366,
+          0.5241
+        ]
+      },
+      "median_ms": {
+        "package": 1.8844,
+        "highs_delete": 9.7228,
+        "old_after_vacuous_filter": 0.6592
+      }
+    },
+    {
+      "family": "shards44",
+      "repeats": 9,
+      "nonvacuous": 8,
+      "core_rows": {
+        "package": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "highs_delete": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "old_after_vacuous_filter": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ]
+      },
+      "ms": {
+        "package": [
+          1.9397,
+          2.1522,
+          1.9959,
+          2.3834,
+          2.1921
+        ],
+        "highs_delete": [
+          9.6193,
+          10.1108,
+          10.7838,
+          11.6629,
+          13.6819
+        ],
+        "old_after_vacuous_filter": [
+          0.5812,
+          0.6644,
+          0.6623,
+          0.8562,
+          0.6744
+        ]
+      },
+      "median_ms": {
+        "package": 2.1522,
+        "highs_delete": 10.7838,
+        "old_after_vacuous_filter": 0.6644
+      }
+    },
+    {
+      "family": "shards44",
+      "repeats": 1000001,
+      "nonvacuous": 8,
+      "core_rows": {
+        "package": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "highs_delete": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ],
+        "old_after_vacuous_filter": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          24,
+          25
+        ]
+      },
+      "ms": {
+        "package": [
+          2.3063,
+          1.9671,
+          1.9186,
+          2.4412,
+          2.112
+        ],
+        "highs_delete": [
+          10.1954,
+          10.6214,
+          10.4897,
+          9.1709,
+          9.8253
+        ],
+        "old_after_vacuous_filter": [
+          0.9729,
+          0.6931,
+          0.5791,
+          0.5141,
+          0.601
+        ]
+      },
+      "median_ms": {
+        "package": 2.112,
+        "highs_delete": 10.1954,
+        "old_after_vacuous_filter": 0.601
+      }
+    },
+    {
+      "family": "cycles13",
+      "repeats": 1,
+      "nonvacuous": 13,
+      "core_rows": {
+        "package": [
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "highs_delete": [
+          3,
+          5,
+          6,
+          7,
+          12
+        ]
+      },
+      "ms": {
+        "package": [
+          0.2559,
+          0.2519,
+          0.2552,
+          0.3372,
+          0.3009
+        ],
+        "highs_delete": [
+          15.1231,
+          15.1582,
+          13.8623,
+          14.2163,
+          15.2755
+        ]
+      },
+      "median_ms": {
+        "package": 0.2559,
+        "highs_delete": 15.1231
+      }
+    },
+    {
+      "family": "cycles13",
+      "repeats": 9,
+      "nonvacuous": 13,
+      "core_rows": {
+        "package": [
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "highs_delete": [
+          3,
+          5,
+          6,
+          7,
+          12
+        ]
+      },
+      "ms": {
+        "package": [
+          0.2667,
+          0.266,
+          0.2111,
+          0.2497,
+          0.1983
+        ],
+        "highs_delete": [
+          13.7427,
+          14.8687,
+          14.9861,
+          14.7253,
+          15.8463
+        ]
+      },
+      "median_ms": {
+        "package": 0.2497,
+        "highs_delete": 14.8687
+      }
+    },
+    {
+      "family": "cycles13",
+      "repeats": 1000001,
+      "nonvacuous": 13,
+      "core_rows": {
+        "package": [
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "highs_delete": [
+          3,
+          5,
+          6,
+          7,
+          12
+        ]
+      },
+      "ms": {
+        "package": [
+          0.4007,
+          0.2886,
+          0.2319,
+          0.3011,
+          0.2388
+        ],
+        "highs_delete": [
+          14.0139,
+          13.3354,
+          15.3616,
+          14.8476,
+          13.6617
+        ]
+      },
+      "median_ms": {
+        "package": 0.2886,
+        "highs_delete": 14.0139
+      }
+    }
+  ]
+}

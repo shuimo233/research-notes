@@ -1,0 +1,329 @@
+{
+  "python": "3.13.5",
+  "scipy": "1.16.3",
+  "numpy": "2.2.6",
+  "platform": "Windows",
+  "machine": "AMD64",
+  "results": [
+    {
+      "repeats": 1,
+      "relaxed": false,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.8658,
+          2.2418,
+          2.4825,
+          1.7379,
+          1.7174,
+          2.1969,
+          2.0164
+        ],
+        "highs": [
+          1.8345,
+          1.5328,
+          1.768,
+          1.3786,
+          1.1731,
+          1.0777,
+          1.1529
+        ]
+      },
+      "median_ms": {
+        "package": 2.0164,
+        "highs": 1.3786
+      }
+    },
+    {
+      "repeats": 1,
+      "relaxed": true,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.7487,
+          1.8561,
+          2.3729,
+          1.9524,
+          1.8041,
+          2.1819,
+          1.7383
+        ],
+        "highs": [
+          1.0793,
+          0.9439,
+          1.0616,
+          0.8898,
+          0.9969,
+          0.9552,
+          0.9555
+        ]
+      },
+      "median_ms": {
+        "package": 1.8561,
+        "highs": 0.9555
+      }
+    },
+    {
+      "repeats": 3,
+      "relaxed": false,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.6543,
+          2.0219,
+          1.5556,
+          2.5236,
+          1.8681,
+          1.6731,
+          2.8276
+        ],
+        "highs": [
+          1.3008,
+          1.4103,
+          1.215,
+          1.1395,
+          1.3527,
+          1.1702,
+          1.1877
+        ]
+      },
+      "median_ms": {
+        "package": 1.8681,
+        "highs": 1.215
+      }
+    },
+    {
+      "repeats": 3,
+      "relaxed": true,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          2.0244,
+          2.3414,
+          2.1825,
+          1.7823,
+          1.8634,
+          1.9143,
+          2.4761
+        ],
+        "highs": [
+          1.333,
+          1.3555,
+          1.3056,
+          1.1894,
+          1.7088,
+          1.5561,
+          1.3938
+        ]
+      },
+      "median_ms": {
+        "package": 2.0244,
+        "highs": 1.3555
+      }
+    },
+    {
+      "repeats": 9,
+      "relaxed": false,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.9184,
+          1.7586,
+          1.731,
+          1.7099,
+          1.6846,
+          2.3447,
+          1.7152
+        ],
+        "highs": [
+          1.7586,
+          1.2626,
+          2.2226,
+          1.1822,
+          1.0339,
+          1.444,
+          1.1893
+        ]
+      },
+      "median_ms": {
+        "package": 1.731,
+        "highs": 1.2626
+      }
+    },
+    {
+      "repeats": 9,
+      "relaxed": true,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.7539,
+          2.0015,
+          2.1175,
+          1.9764,
+          1.9723,
+          2.3148,
+          2.8765
+        ],
+        "highs": [
+          1.1171,
+          1.008,
+          1.1614,
+          1.1063,
+          1.3538,
+          1.1963,
+          1.4905
+        ]
+      },
+      "median_ms": {
+        "package": 2.0015,
+        "highs": 1.1614
+      }
+    },
+    {
+      "repeats": 27,
+      "relaxed": false,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          2.0715,
+          1.6733,
+          1.643,
+          2.1254,
+          1.7303,
+          1.9521,
+          1.8575
+        ],
+        "highs": [
+          1.4352,
+          1.3055,
+          1.4576,
+          1.1714,
+          1.1252,
+          1.2296,
+          1.5409
+        ]
+      },
+      "median_ms": {
+        "package": 1.8575,
+        "highs": 1.3055
+      }
+    },
+    {
+      "repeats": 27,
+      "relaxed": true,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          1.662,
+          2.3293,
+          1.8751,
+          1.7958,
+          1.8578,
+          1.6086,
+          1.5648
+        ],
+        "highs": [
+          1.3693,
+          1.516,
+          1.7386,
+          1.5228,
+          1.8274,
+          1.0646,
+          1.059
+        ]
+      },
+      "median_ms": {
+        "package": 1.7958,
+        "highs": 1.516
+      }
+    },
+    {
+      "repeats": 1000001,
+      "relaxed": false,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          2.4406,
+          2.1475,
+          2.0127,
+          2.4967,
+          2.5304,
+          1.8581,
+          2.0795
+        ],
+        "highs": [
+          1.4881,
+          1.4876,
+          1.3842,
+          1.2365,
+          1.7935,
+          1.3487,
+          1.2826
+        ]
+      },
+      "median_ms": {
+        "package": 2.1475,
+        "highs": 1.3842
+      }
+    },
+    {
+      "repeats": 1000001,
+      "relaxed": true,
+      "outcomes": {
+        "package": "verified",
+        "highs": "verified"
+      },
+      "ms": {
+        "package": [
+          2.7407,
+          2.0616,
+          2.59,
+          2.3126,
+          2.0905,
+          2.3959,
+          2.0615
+        ],
+        "highs": [
+          1.4614,
+          1.1826,
+          1.2367,
+          1.0511,
+          1.6294,
+          1.1607,
+          1.2547
+        ]
+      },
+      "median_ms": {
+        "package": 2.3126,
+        "highs": 1.2367
+      }
+    }
+  ]
+}
