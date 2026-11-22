@@ -7,6 +7,7 @@ from itertools import combinations, combinations_with_replacement
 
 from .core import Budget, Domain, _trace, _units
 from ._layer import joint_witness, tree_layer
+from ._bounds import count_intervals, four_intervals, report_intervals, restrict_counts
 
 
 def _bit(value):
@@ -124,6 +125,19 @@ def _intersection(columns, radii, evidence=None):
             if core is not None and evidence is not None:
                 evidence.extend(core)
             return core is None, "halfball_tree"
+        intervals = count_intervals(columns, radii)
+        if intervals is None:
+            return False, "count_bounds"
+        if any(lo or hi < n for (lo, hi), n in zip(intervals, columns.values())):
+            remainder, budgets = restrict_counts(columns, radii, intervals)
+            return min(budgets) >= 0 and _intersection(remainder, budgets)[0], "count_bounds"
+        if max(columns.values()) > 1:
+            intervals = four_intervals(columns, radii)
+            if intervals is None:
+                return False, "four_row_bounds"
+            if any(lo or hi < n for (lo, hi), n in zip(intervals, columns.values())):
+                remainder, budgets = restrict_counts(columns, radii, intervals)
+                return min(budgets) >= 0 and _intersection(remainder, budgets)[0], "four_row_bounds"
         # Exact fallback: condition on the count for a high-degree crossing column.
         degree = Counter(x for edge in edges for x in edge)
         col = max(degree, key=lambda c: (degree[c], -columns[c]))
@@ -223,12 +237,22 @@ class ActionPlanner:
             evidence.extend(active[j] for j in local)
         return possible, method
 
-    def _record(self, group, counts):
+    def _record(self, group, counts, *, tighten=False):
         """Recover a common transcript in run-length counts, using joint feasibility."""
         remaining = dict(counts)
         radii = tuple(self.radii[i] for i in group)
+        fixed = {}
+        if tighten:
+            items = [(sum(self.bits[q][i] << k for k,i in enumerate(group)), n) for q,n in counts.items()]
+            intervals = report_intervals(items, radii)
+            if intervals is None:
+                raise AssertionError("a feasible group has inconsistent count bounds")
+            for (q,n),(lo,hi) in zip(counts.items(),intervals):
+                fixed[q] = lo
+                remaining[q] = hi-lo
+                radii = tuple(r - (n-hi if self.bits[q][i] else lo) for i,r in zip(group,radii))
         record = []
-        for q, n in counts.items():
+        for q, n in tuple(remaining.items()):
             bits = [self.bits[q][i] for i in group]
             lo, hi = 0, n
             while lo < hi:
@@ -241,7 +265,7 @@ class ActionPlanner:
                     hi = mid - 1
             del remaining[q]
             radii = tuple(r - (n-lo if b else lo) for r, b in zip(radii, bits))
-            record.append((q, lo))
+            record.append((q, fixed.get(q, 0) + lo))
         return tuple(record)
 
     def _counts(self, schedule):
@@ -283,19 +307,19 @@ class ActionPlanner:
             possible, method = self._possible(group, counts, evidence=evidence)
             methods.add(method)
             if possible:
-                record = self._record(group, counts) if witnesses else None
+                record = self._record(group, counts, tighten=method in ("count_bounds", "four_row_bounds")) if witnesses else None
                 return Assessment(False, tuple(self.names[i] for i in group), tuple(sorted(methods)),
                                   counterexample_ones=record)
             if witnesses:
                 separated.append(tuple(self.names[group[j]] for j in evidence))
         return Assessment(True, (), tuple(sorted(methods)), tuple(separated))
 
-    def audit(self, schedule):
+    def audit(self, schedule, *, count_hints=False, minimal=True):
         """Export a JSON-compatible problem and a claim for the standalone verifier."""
         from .audit import fingerprint
 
         counts = self._counts(schedule)
-        result = self.assess(counts, witnesses=True)
+        result = self.assess(counts, witnesses=minimal)
         problem = {
             "format": "stateful-id/audit-1",
             "domain": self.domain.id,
@@ -306,9 +330,21 @@ class ActionPlanner:
         }
         claim = {"problem_sha256": fingerprint(problem), "guaranteed": result.guaranteed}
         if result.guaranteed:
-            claim["cores"] = [list(core) for core in result.witnesses]
+            if minimal:
+                claim["cores"] = [list(core) for core in result.witnesses]
+            else:
+                claim["minimal"] = False
+                claim["cores"] = [[self.names[i] for i in group] for group in self.groups]
+            if count_hints:
+                from ._bounds import audit_row_sums
+                claim["row_sums"] = audit_row_sums(problem, claim["cores"], minimal)
         else:
-            ones = dict(result.counterexample_ones)
+            record = result.counterexample_ones
+            if record is None:
+                obstruction = set(result.obstruction)
+                group = tuple(i for i,s in enumerate(self.names) if s in obstruction)
+                record = self._record(group, counts, tighten=bool({"count_bounds","four_row_bounds"}.intersection(result.methods)))
+            ones = dict(record)
             claim["ones"] = [str(ones[q]) for q in counts]
         return problem, claim
 

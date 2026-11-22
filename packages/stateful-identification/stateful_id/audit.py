@@ -75,18 +75,38 @@ def _read_problem(problem):
     return counts, by_name
 
 
-def _overlap(rows, counts, charge):
+def _overlap(rows, counts, charge, hints=()):
     """Solve raw integer count inequalities without the planner's graph or intersection code."""
     if not rows:
         return True
     # A constant prediction can always be matched in full by a common transcript.
     used = [i for i,n in enumerate(counts) if n and any(r["bits"][i] != rows[0]["bits"][i] for r in rows)]
     upper = [counts[i] for i in used]
+    lower = [0]*len(upper)
     inequalities = {}
+    named = {}
     for row in rows:
         signs = tuple(1 - 2 * row["bits"][i] for i in used)
         rhs = row["errors"] - sum(counts[i] for i in used if row["bits"][i])
+        named[row["name"]] = (signs, rhs)
         inequalities[signs] = min(rhs, inequalities.get(signs, rhs))
+    # Recompute every suggested sum directly from the selected original rows.
+    for names in hints:
+        if not all(name in named for name in names):
+            continue
+        terms = [named[name] for name in names]
+        rhs = sum(value for _, value in terms)
+        support = [(j, sum(col)) for j,col in enumerate(zip(*(normal for normal,_ in terms))) if sum(col)]
+        if not support and rhs < 0:
+            return False
+        if len(support) == 1:
+            j, a = support[0]
+            if a > 0:
+                upper[j] = min(upper[j], rhs // a)
+            else:
+                lower[j] = max(lower[j], -((-rhs) // a))
+            if lower[j] > upper[j]:
+                return False
     # Half the sum of two sign rows has integral coefficients. Round its RHS down.
     # This shortcut is optional; wider cores still use exact box search.
     if len(inequalities) <= 16:
@@ -94,7 +114,7 @@ def _overlap(rows, counts, charge):
             normal = tuple((x+y)//2 for x,y in zip(a,c))
             rhs = (b+d)//2
             inequalities[normal] = min(rhs, inequalities.get(normal, rhs))
-    pending = [([0]*len(upper), upper)]
+    pending = [(lower, upper)]
     while pending:
         charge()
         lo, hi = pending.pop()
@@ -142,7 +162,7 @@ def _coverage(by_name, cores, charge):
             raise ValueError("cores leave incompatible actions uncovered")
 
 
-def verify(problem, claim, *, max_nodes=100_000):
+def verify(problem, claim, *, max_nodes=100_000, require_minimal=False):
     """Check a claim against an independently trusted problem. Return verified/rejected/inconclusive."""
     nodes = 0
 
@@ -157,10 +177,21 @@ def verify(problem, claim, *, max_nodes=100_000):
         counts, by_name = _read_problem(problem)
         _check(isinstance(claim, dict) and type(claim.get("guaranteed")) is bool, "invalid verdict")
         ok = claim["guaranteed"]
-        _keys(claim, ("problem_sha256", "guaranteed", "cores" if ok else "ones"))
+        minimal = claim.get("minimal", True)
+        fields = ["problem_sha256", "guaranteed", "cores" if ok else "ones"]
+        if ok and "minimal" in claim:
+            _check(type(minimal) is bool, "invalid minimality flag")
+            fields.append("minimal")
+        _check(not (ok and require_minimal and not minimal), "minimum verification scope requires deletion checks")
+        if ok and "row_sums" in claim:
+            fields.append("row_sums")
+        _keys(claim, fields)
         _check(claim["problem_sha256"] == fingerprint(problem), "claim refers to a different problem")
         if ok:
             _check(isinstance(claim["cores"], list), "invalid cores")
+            hints = claim.get("row_sums", [])
+            _check(isinstance(hints, list) and all(_strings(g) and 1 <= len(g) <= 4
+                   and set(g) <= by_name.keys() for g in hints), "invalid row sum")
             cores = set()
             for names in claim["cores"]:
                 _check(_strings(names) and names and len(set(names)) == len(names)
@@ -169,9 +200,10 @@ def verify(problem, claim, *, max_nodes=100_000):
                 if core in cores:
                     continue
                 rows = [by_name[name] for name in names]
-                _check(not _overlap(rows, counts, charge), "claimed core has a common record")
-                for j in range(len(rows)):
-                    _check(_overlap(rows[:j]+rows[j+1:], counts, charge), "claimed core contains a redundant row")
+                _check(not _overlap(rows, counts, charge, hints), "claimed core has a common record")
+                if minimal:
+                    for j in range(len(rows)):
+                        _check(_overlap(rows[:j]+rows[j+1:], counts, charge, hints), "claimed core contains a redundant row")
                 cores.add(core)
             _coverage(by_name, cores, charge)
         else:
@@ -185,7 +217,9 @@ def verify(problem, claim, *, max_nodes=100_000):
         return Verification("rejected", str(error), nodes)
     except _Limit:
         return Verification("inconclusive", "search node limit reached", nodes)
-    return Verification("verified", "guarantee and minimal cores checked" if ok else "ambiguous transcript checked", nodes)
+    if not ok:
+        return Verification("verified", "ambiguous transcript checked", nodes)
+    return Verification("verified", "guarantee and minimal cores checked" if minimal else "guarantee only checked", nodes)
 
 
 def _unique_object(pairs):
@@ -199,11 +233,12 @@ def main():
     parser.add_argument("problem", type=Path)
     parser.add_argument("claim", type=Path)
     parser.add_argument("--max-nodes", type=int, default=100_000)
+    parser.add_argument("--require-minimal", action="store_true", help="require deletion checks on guaranteed claims")
     args = parser.parse_args()
     try:
         problem, claim = [json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=_unique_object)
                           for path in (args.problem, args.claim)]
-        result = verify(problem, claim, max_nodes=args.max_nodes)
+        result = verify(problem, claim, max_nodes=args.max_nodes, require_minimal=args.require_minimal)
     except (OSError, ValueError, RecursionError) as error:
         result = Verification("rejected", str(error), 0)
     print(json.dumps(asdict(result), ensure_ascii=True))

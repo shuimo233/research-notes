@@ -1,4 +1,4 @@
-# Stateful Identification 0.4.0
+# Stateful Identification 0.5.0
 
 有限、可重置系统的黑盒辨识与行动规划。需要 Python 3.10 或更高版本，运行时仅用标准库。在仓库根目录执行 `python -m pip install ./packages/stateful-identification` 安装。在本目录执行 `python -B -m unittest discover -s tests` 验证。
 
@@ -21,6 +21,12 @@ readings = iter([0, 1])
 result = planner.run(lambda q: next(readings), Budget(2, 2))
 assert (result.status, result.action) == ("ready", "10")
 ```
+
+### 0.5.0 的计数范围与核验提示
+
+当三维类结构判据无法处理一组规则时，规划器会尝试用两条或四条原始行的线性和缩小各探针的正读数范围，再精确求解剩余问题。若已经有共同计数记录，只需在保留的区间内搜索即可还原到原清单。
+
+调用 `problem, claim = planner.audit(schedule, count_hints=True)` 会附上用于推导边界的原始行名。接收端按自己的业务表重算整数和；行被剔除时，相应提示随之失效。默认仍检查每份行证据删去任何一行后都可行。若业务只要求行动保证，可显式使用 `minimal=False` 避免逐行提取极小证据。检查器对该声明返回 `guarantee only checked`。接收方可用 `verify(problem, claim, require_minimal=True)` 或 CLI 的 `--require-minimal` 要求逐删核验。未启用两个新选项时继续导出旧格式。两种新字段需要 0.5.0 或更新的接收端。
 
 ### 0.4.0 的独立核验
 

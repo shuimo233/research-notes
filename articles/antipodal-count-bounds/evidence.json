@@ -1,0 +1,38 @@
+{
+  "large": [
+    {
+      "hints": 24,
+      "rows": 16,
+      "with_hints": "verified",
+      "with_nodes": 101,
+      "without_hints": "verified",
+      "without_nodes": 101
+    },
+    {
+      "hints": 48,
+      "rows": 32,
+      "with_hints": "verified",
+      "with_nodes": 632,
+      "without_hints": "inconclusive",
+      "without_nodes": 4000
+    }
+  ],
+  "small": {
+    "raw_count_vectors": 16543,
+    "tables_by_overlap": {
+      "False": 167,
+      "True": 44
+    }
+  },
+  "sqlite": {
+    "checked_count_reports": 596,
+    "commits_read_back": 596,
+    "lock_checks": 256,
+    "sizes": [
+      1,
+      2,
+      3,
+      1
+    ]
+  }
+}
