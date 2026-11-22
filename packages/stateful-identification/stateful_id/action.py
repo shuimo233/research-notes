@@ -290,6 +290,28 @@ class ActionPlanner:
                 separated.append(tuple(self.names[group[j]] for j in evidence))
         return Assessment(True, (), tuple(sorted(methods)), tuple(separated))
 
+    def audit(self, schedule):
+        """Export a JSON-compatible problem and a claim for the standalone verifier."""
+        from .audit import fingerprint
+
+        counts = self._counts(schedule)
+        result = self.assess(counts, witnesses=True)
+        problem = {
+            "format": "stateful-id/audit-1",
+            "domain": self.domain.id,
+            "probes": [{"trace": list(q), "count": str(n)} for q, n in counts.items()],
+            "rules": [{"name": name, "bits": [self.bits[q][i] for q in counts],
+                       "errors": str(self.radii[i]), "actions": sorted(self.allowed[i])}
+                      for i, name in enumerate(self.names)],
+        }
+        claim = {"problem_sha256": fingerprint(problem), "guaranteed": result.guaranteed}
+        if result.guaranteed:
+            claim["cores"] = [list(core) for core in result.witnesses]
+        else:
+            ones = dict(result.counterexample_ones)
+            claim["ones"] = [str(ones[q]) for q in counts]
+        return problem, claim
+
     def plan(self, budget: Budget):
         """Return a shortest feasible fixed schedule; break ties by declared cost."""
         if not self.groups:

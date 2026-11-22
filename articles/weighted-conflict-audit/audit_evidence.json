@@ -1,0 +1,82 @@
+{
+  "random": {
+    "ambiguous": 178,
+    "checked_core_collections": 1600,
+    "checked_transcripts": 4335,
+    "guarantees": 142
+  },
+  "reduction": [
+    {
+      "count_vectors": 256,
+      "feasible_subfamilies": 7695,
+      "minimal_core_sizes": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        8
+      ],
+      "repeats": 1,
+      "subfamilies": 8192
+    },
+    {
+      "count_vectors": 65536,
+      "feasible_subfamilies": 7695,
+      "minimal_core_sizes": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        8
+      ],
+      "repeats": 3,
+      "subfamilies": 8192
+    }
+  ],
+  "stress": [
+    {
+      "counterexample_verified": true,
+      "fixture": "cycle_instance",
+      "repeats": "1",
+      "verification_nodes": 20,
+      "verified_core_size": 5
+    },
+    {
+      "counterexample_verified": true,
+      "fixture": "tight_instance",
+      "repeats": "1",
+      "verification_nodes": 67,
+      "verified_core_size": 8
+    },
+    {
+      "counterexample_verified": true,
+      "fixture": "cycle_instance",
+      "repeats": "1000001",
+      "verification_nodes": 76,
+      "verified_core_size": 5
+    },
+    {
+      "counterexample_verified": true,
+      "fixture": "tight_instance",
+      "repeats": "1000001",
+      "verification_nodes": 67,
+      "verified_core_size": 8
+    },
+    {
+      "counterexample_verified": true,
+      "fixture": "cycle_instance",
+      "repeats": "1000000000000000001",
+      "verification_nodes": 196,
+      "verified_core_size": 5
+    },
+    {
+      "counterexample_verified": true,
+      "fixture": "tight_instance",
+      "repeats": "1000000000000000001",
+      "verification_nodes": 67,
+      "verified_core_size": 8
+    }
+  ]
+}

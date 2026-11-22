@@ -1,4 +1,4 @@
-# Stateful Identification 0.3.0
+# Stateful Identification 0.4.0
 
 有限、可重置系统的黑盒辨识与行动规划。需要 Python 3.10 或更高版本，运行时仅用标准库。在仓库根目录执行 `python -m pip install ./packages/stateful-identification` 安装。在本目录执行 `python -B -m unittest discover -s tests` 验证。
 
@@ -21,6 +21,25 @@ readings = iter([0, 1])
 result = planner.run(lambda q: next(readings), Budget(2, 2))
 assert (result.status, result.action) == ("ready", "10")
 ```
+
+### 0.4.0 的独立核验
+
+下面接着上面的副本示例，将可信问题表和待审查声明分别保存。接收方可以从自己的配置生成问题表，再把对方给出的声明拿来检查。若两份文件都由同一来源提供，核验结论只对文件所描述的模型成立。
+
+```python
+import json
+from pathlib import Path
+from stateful_id.audit import verify
+
+problem, claim = planner.audit(schedule)
+assert verify(problem, claim).status == "verified"
+for name, value in [("problem.json", problem), ("claim.json", claim)]:
+    Path(name).write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+```
+
+安装包后运行 `stateful-audit problem.json claim.json`。也可只把包内的 `stateful_id/audit.py` 复制到接收方，然后用 `python -I -S audit.py problem.json claim.json` 核验。退出码 0 表示证据有效，1 表示输入或声明被拒绝，2 表示搜索节点额度耗尽。用 `--max-nodes 500000` 可改默认额度 100,000。具体反例只需直接计算错配，无需搜索。通过核验的每份行证据都满足删去其中任何一行就有解，某些实例还可能有行数更少的其他证据。
+
+JSON 中 `probes` 的顺序同时定义了预测位与反例正读数的顺序。重复数、错读额度与反例计数使用无前导零的十进制字符串，零写成 `"0"`，使 JavaScript 中转也能保留超过安全整数范围的奇数。每条规则的 `bits` 仍用数值 0、1。`problem_sha256` 绑定问题表内容与顺序，供接收方和自己的可信问题表核对。
 
 ### 0.3.0 的记录回放与反例
 

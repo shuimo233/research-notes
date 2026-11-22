@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stateful-identification"
-version = "0.3.0"
+version = "0.4.0"
 description = "Budgeted black-box identification of deterministic stateful rules"
 requires-python = ">=3.10"
 readme = "README.md"
 
 [project.scripts]
 stateful-identify = "stateful_id.__main__:main"
+stateful-audit = "stateful_id.audit:main"
 
 [tool.setuptools.packages.find]
 include = ["stateful_id*"]
