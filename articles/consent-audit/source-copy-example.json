@@ -1,0 +1,10 @@
+{
+  "conditions": ["event"],
+  "sources": {"application":"A", "export":"A", "gateway":"B", "authorization":"C"},
+  "fault_budget": 1,
+  "history": [{"source":"application", "condition":"event", "bit":0}],
+  "menu": [
+    {"name":"reread", "source":"export", "condition":"event", "cost":1},
+    {"name":"check", "source":"authorization", "condition":"event", "cost":3}
+  ]
+}

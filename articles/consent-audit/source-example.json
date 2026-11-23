@@ -1,0 +1,16 @@
+{
+  "conditions": ["low", "high"],
+  "sources": {"application": "A", "export": "A", "gateway": "B", "authorization": "C"},
+  "fault_budget": 1,
+  "history": [
+    {"source": "application", "condition": "low", "bit": 1},
+    {"source": "application", "condition": "high", "bit": 1},
+    {"source": "gateway", "condition": "low", "bit": 0},
+    {"source": "gateway", "condition": "high", "bit": 0}
+  ],
+  "menu": [
+    {"name": "reread", "source": "export", "condition": "low", "cost": 1},
+    {"name": "verify-low", "source": "authorization", "condition": "low", "cost": 3},
+    {"name": "verify-high", "source": "authorization", "condition": "high", "cost": 7}
+  ]
+}
