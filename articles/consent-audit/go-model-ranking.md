@@ -2,6 +2,8 @@
 
 在 GoEmotions 的 5,427 条测试评论中，有 468 条在两种有依据的标签定义之间发生变化。我们冻结了同一个 RoBERTa 分类器的全精度和 INT8 公开部署，在两套参考上使用完全相同的预测。两者的分数都下降了，**INT8 在两套参考上都领先；即便允许逐条选择如何归类，INT8 的 micro-F1 仍领先 0.2710 至 0.4502 个百分点。** 这两个界都能由实际评论 ID 的一个子集达到。[冻结前公开的比较规则](https://github.com/shuimo233/research-notes/blob/4bf3061c46fa17663ff696e132e3fee61d124ef7/articles/consent-audit/go-model-protocol.md) · [精确分数与见证 ID](go-model-results.json)
 
+随后改变部署做了对照。在相同的 28 个官方细类上，逐条推理时全精度的 macro-F1 略高；相邻八条一起推理时，INT8 反超。七个粗类的排名在两种部署中都稳定。文章末尾给出这次实测翻转涉及的逐条变化以及复核方法。[部署复核结果](go-layout-results.json)
+
 ## 两种参考如何改变分数
 
 第一种参考按原发布细标签归入上位类别。第二种先在每位标注者的打分单内部归类，再逐类要求至少两个人支持。两人可以各自用了不同的细标签。先前的逐人对账表明，同一批测试 ID 由此多出 486 个“评论—类别”正例，原有的 5,894 个都被保留。54,263 份官方训练、开发和测试细标签也都能从原始打分逐项复原。[数据审计与第三方发布文件](goemotions.md) · [GoEmotions 原研究](https://aclanthology.org/2020.acl-main.372/)
@@ -70,3 +72,35 @@ python -I -S -B go_model_score.py recomputed.tsv
 ```
 
 本轮通过 Hugging Face 镜像下载锁定提交的模型文件，权重按发布的 SHA-256 校验，词表和配置按 Git blob 校验。可向下载器传 `--host https://hf-mirror.com` 使用相同取得路径。已知标签差额后公开了模型对照方案，然后才运行推理和计分。作者此前在原测试集报告过模型表现；本实验没有重新训练模型，也没有新的评审员参加。[冻结方案](go-model-protocol.md) · [可校验的下载器](go_model_fetch.py)
+
+## 补充实测：同一权重换成八条一批，哪些结论还能重用？
+
+主结果发布后，我们核对了模型卡使用的 28 个细类。单例全精度 macro-F1 为 0.449909，三位小数与发布者报告的 0.450 一致；单例 INT8 为 0.448501，发布者报告的是 0.447。因而不能把逐条决策当作权重文件自身的唯一结果。我们另行公开复核约定后才运行第二种部署。它按官方测试集的原有顺序将相邻八条一起送入模型，每批右补齐到最长一条，最后一批保留实际条数。权重、CPU、软件版本、阈值和原始 5,427 条文本均与前面相同。[补充实验的事前约定](https://github.com/shuimo233/research-notes/blob/14285d9bec0349b9fe8b8af954b3ba4aa83fb0a5/articles/consent-audit/go-layout-protocol.md) · [模型卡和补齐示例](https://huggingface.co/SamLowe/roberta-base-go_emotions-onnx)
+
+| 推理和评分条件 | 全精度 | INT8 | 得分较高者 |
+| --- | ---: | ---: | --- |
+| 单例，原发布 28 细类 macro-F1 | 0.449909 | 0.448501 | 全精度 |
+| 八条一批，同一 28 细类 macro-F1 | 0.449909 | 0.452153 | INT8 |
+| 单例，原发布细类映射后的 7 粗类 micro-F1 | 0.664822 | 0.668565 | INT8 |
+| 八条一批，同一 7 粗类 micro-F1 | 0.664822 | 0.670402 | INT8 |
+| 单例，先在每人内部归类后的 7 粗类 micro-F1 | 0.652868 | 0.656321 | INT8 |
+| 八条一批，同一逐人归类的 7 粗类 micro-F1 | 0.652868 | 0.659345 | INT8 |
+
+前两行是一次真实的排序翻转：评测细标签、指标和阈值均未更改。全精度模型在两种部署下对全部评论给出相同的二值细类集合；INT8 有 **465 条评论**的细类集合改变，映到粗类后仍有 **417 条**的集合不同。细类 macro-F1 先为每类计算 F1，再对 28 类等权平均；粗类 micro-F1 则跨七类汇总计数，两种指标内各自都进行了同口径比较。本次同时改变组批与补齐，基于运行记录可以归因到这套部署变更。批内其他文本、补齐位置和具体数值算子各自贡献多少，尚未从这个比较中识别。ONNX Runtime 的文档说明动态量化会在运行时计算激活的量化参数，这只提供了一个可进一步检验的机制。[部署差异文件](go-layout-changes.tsv) · [全表计分与运行结果](go-layout-results.json) · [ONNX Runtime 量化说明](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)
+
+在八条一批的预测上再次允许 468 条评论各自选用一种完整参考，INT8 的粗类 micro-F1 仍比全精度高 **0.484464 至 0.728533 个百分点**。看到这一结果后，又补问了一个要求两种部署对同一评论使用同一份参考的问题：单看 INT8，八条一批比逐条推理究竟多得几分？让两个布局共享每条评论的选择并重新求界，实际可达到的改善为 **0.084635 至 0.411037 个百分点**。该比较是事后分析；两端的 ID 清单可回放。这个有限测试集上的改善并不估计新数据上的优势。[两组精确界与见证](go-layout-results.json) · [独立枚举核验](go_layout_check.py)
+
+要把这项结论用于部署，至少要固定预测文件对应的推理设置、指标以及参考标签含义。仅知道 checkpoint 名称，无法决定本例中 28 细类 macro-F1 的赢家。仅问“468 条评论有多种解释”，也无法推断 7 粗类排名会翻转。上述表格给了两种问题各自可查的答案。
+
+### 复核八条一批的结果
+
+已有研究直接改变过推理批大小、硬件和数值精度，并观察了模型输出及评测分数的变化。补充查新使用了 `SamLowe GoEmotions quantized batch size predictions macro F1` 和 `batch inference evaluation ranking reproducibility` 等组合。我们采用这一已有的控制变量思路；本实验仅报告上述固定多标签测试批次的逐条变化、各指标的赢家和可达分差。[NeurIPS 2025 的推理可复现性实验](https://papers.nips.cc/paper_files/paper/2025/file/f80094a824ba5912d4a2de169c404a40-Paper-Conference.pdf)
+
+若前文的 `go-data` 已备好，从已发布的单例预测和变动行即可重建整张八条组批预测表、计算两种布局的得分并验证见证。变化文件按 ID 存储，将其中指定的预测列替换到原记录即可，两个参考列始终取自原表。独立程序另从原测试 TSV 逐标签计算 macro-F1，再用“按同大小组枚举个数”的方法核验两组精确界。其他平台上的输出可以使用同一套审计程序重新比较。[按布局核对的工具](go_layout.py) · [八条组批的运行配置](go-layout-run.json)
+
+```sh
+python -I -S -B go_layout.py audit go-model-batch.tsv go-layout-changes.tsv go-data --restore eight-restored.tsv
+python -I -S -B go_layout_check.py go-model-batch.tsv go-layout-changes.tsv go-data go-layout-results.json
+```
+
+从模型重算时，在前文两条推理命令末尾各加 `--batch-size 8`，输出路径改为 `fp32-eight.json` 与 `int8-eight.json`。使用相同的 `paired-test.jsonl` 运行 `go_model_pack.py`，再执行 `go_layout.py diff go-model-batch.tsv eight.tsv changes.tsv`，便能直接核对全部变化行。作者模型卡已给出按批次补齐的用法，动态量化也有成熟研究。这里新测得的是这两份固定权重、两种运行方式和实际发布标签组成的具体排名翻转，以及不同参考定义下能核验的数值范围。

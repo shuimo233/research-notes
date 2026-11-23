@@ -23,6 +23,7 @@
         "CPUExecutionProvider"
       ],
       "threads": 4,
+      "batch_size": 1,
       "truncated": 1,
       "exact_zero_logits": 0,
       "labels": [
@@ -69,6 +70,7 @@
         "CPUExecutionProvider"
       ],
       "threads": 4,
+      "batch_size": 1,
       "truncated": 1,
       "exact_zero_logits": 0,
       "labels": [
