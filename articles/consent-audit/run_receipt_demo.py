@@ -14,6 +14,7 @@ import sklearn
 from learned_demo import fit_models
 from source_demo import capture
 from run_receipt import RunReceipt, ceil_log2
+from receipt_design import design
 
 
 def pack(path, values, width):
@@ -64,6 +65,7 @@ def run():
     plain = RunReceipt(n)
     bins = [(i,min(i+1,n)) for i in range(1,n+1,2)]
     native = RunReceipt(n, bins)
+    one_bit = RunReceipt(n, design(n,1)["intervals"])
     _, _, models = fit_models()
     names = ("app","gateway","authorizer")
     totals = Counter(row_vote_ties=0, row_vote_wrong=0)
@@ -72,6 +74,7 @@ def run():
     with TemporaryDirectory() as temp:
         folder = Path(temp)
         staged, legacy, supplements, cut_ids, plain_tags, native_answers = [], [], [], [], [], []
+        one_bit_fields, one_bit_tags = [], []
         for k, (a,b) in enumerate(selected):
             path = folder/str(k)
             path.mkdir()
@@ -88,6 +91,12 @@ def run():
             assert observed == reg["existing"]
             native_observed = sum(int(not rows[lo-1].samefile(rows[hi])) << j for j,(lo,hi) in enumerate(bins))
             assert native_observed == native.issue(*cuts)["existing"]
+            measured = sum(int(not rows[lo-1].samefile(rows[hi])) << j
+                           for j,(lo,hi) in enumerate(one_bit.intervals))
+            plan = one_bit.issue(*cuts)
+            assert measured == plan["existing"]
+            one_bit_fields.append(measured)
+            one_bit_tags.append(plan["tag"])
             staged.append((roots, rows, path))
             legacy.append(observed)
             supplements.append(reg["tag"])
@@ -100,6 +109,8 @@ def run():
         complete, nfull = pack(folder/"layout.bin", cut_ids, ceil_log2(len(layouts)))
         stand, nstand = pack(folder/"standalone.bin", plain_tags, plain.bits)
         pair_checks, npairs = pack(folder/"all-checks.bin", native_answers, len(bins))
+        planned_checks, nplanned = pack(folder/"designed-checks.bin", one_bit_fields, len(one_bit.intervals))
+        planned_tag, nonebit = pack(folder/"one-bit.bin", one_bit_tags, one_bit.bits)
         for k,(roots,rows,path) in enumerate(staged):
             events = {key:[] for key in names}
             for key, model in models.items():
@@ -127,6 +138,7 @@ def run():
                 shared.setdefault(fingerprint, example)
                 assert plain.decide({"existing":0, "tag":stand[k]}, word) == ground
                 assert native.decide({"existing":pair_checks[k], "tag":0}, word) == ground
+                assert one_bit.decide({"existing":planned_checks[k], "tag":planned_tag[k]}, word) == ground
                 full_vote = int(word[0] + word[a] + word[b] >= 2)
                 assert full_vote == ground
                 assert online.decide(word, rows) == ground
@@ -143,7 +155,8 @@ def run():
                 "layouts":len(selected), "candidate_cuts":n, "archived_rows_per_event":n+1, **totals,
                 "correct_offline":totals["events"], "same_archive_opposite_truth":collision,
                 "packed_bytes":{"existing":nold, "supplement":ntags, "complete_layout":nfull,
-                                "standalone":nstand, "native_only":npairs}}
+                                "standalone":nstand, "native_only":npairs,
+                                "one_bit_plan_checks":nplanned, "one_bit_plan_tags":nonebit}}
 
 
 if __name__ == "__main__":

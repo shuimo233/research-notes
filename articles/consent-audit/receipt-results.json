@@ -45,6 +45,8 @@
     "supplement": 8,
     "complete_layout": 36,
     "standalone": 12,
-    "native_only": 64
+    "native_only": 64,
+    "one_bit_plan_checks": 24,
+    "one_bit_plan_tags": 4
   }
 }
