@@ -1,0 +1,15 @@
+{
+  "subsets": {
+    "nmonli_test": {
+      "verified_float32": 1800,
+      "pairs": 100,
+      "distinct_rows": 200
+    },
+    "pmonli": {
+      "verified_float32": 13248,
+      "pairs": 736,
+      "distinct_rows": 1472
+    }
+  },
+  "accounting_fixture_cases": 50
+}
