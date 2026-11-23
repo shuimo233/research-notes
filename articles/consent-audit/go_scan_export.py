@@ -14,7 +14,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from go_model_fetch import FILES, verify
 
 
-def export(original, output, digest=FILES["onnx/model_quantized.onnx"]):
+def export(original, output, digest=FILES["onnx/model_quantized.onnx"], min_width=0, pad_token=0):
+    if type(min_width) is not int or min_width < 0 or type(pad_token) is not int or pad_token < 0:
+        raise ValueError("expected a nonnegative integer width and padding token")
     verify(original, digest)
     if output.exists():
         raise FileExistsError(output)
@@ -37,6 +39,9 @@ def export(original, output, digest=FILES["onnx/model_quantized.onnx"]):
     names.update(init.name for init in graph.initializer)
     reserved = {"point_ids", "point_mask", "point_logits", "row_ids", "row_mask", "point_end",
                 "point_zero", "row_result", "trim_ids", "trim_mask"}
+    if min_width:
+        reserved.update(("target_floor", "token_pad", "under_floor", "point_width", "extra_width",
+                         "right_pads", "padded_ids", "padded_mask"))
     if names & reserved or len(graph.sparse_initializer) or any(
             attr.type in (onnx.AttributeProto.GRAPH, onnx.AttributeProto.GRAPHS)
             for node in graph.node for attr in node.attribute):
@@ -53,15 +58,28 @@ def export(original, output, digest=FILES["onnx/model_quantized.onnx"]):
         return h.make_node(op, [src], [dst], axes=[0], **attrs)
 
     prep = [axis0("ReduceSum", "row_mask", "point_end", keepdims=1)]
+    constants = [h.make_tensor("point_zero", T.INT64, [1], [0])]
+    if min_width:
+        constants.extend((h.make_tensor("target_floor", T.INT64, [1], [min_width]),
+                          h.make_tensor("token_pad", T.INT64, [], [pad_token])))
+        prep.extend((h.make_node("Less", ["point_end", "target_floor"], ["under_floor"]),
+                     h.make_node("Where", ["under_floor", "target_floor", "point_end"], ["point_width"]),
+                     h.make_node("Sub", ["point_width", "point_end"], ["extra_width"]),
+                     h.make_node("Concat", ["point_zero", "extra_width"], ["right_pads"], axis=0)))
     for row, cropped, dst in (("row_ids", "trim_ids", "point_ids"), ("row_mask", "trim_mask", "point_mask")):
         prep.append(h.make_node("Slice", [row, "point_zero", "point_end"], [cropped]))
+        if min_width:
+            padded = "padded_ids" if row == "row_ids" else "padded_mask"
+            args = [cropped, "right_pads"] + (["token_pad"] if row == "row_ids" else [])
+            prep.append(h.make_node("Pad", args, [padded], mode="constant"))
+            cropped = padded
         prep.append(axis0("Unsqueeze", cropped, dst))
     strip = axis0("Squeeze", "point_logits", "row_result")
     info = h.make_tensor_value_info
     body = h.make_graph([*prep, *graph.node, strip], "single_unpadded_example",
                         [info("row_ids", T.INT64, ["width"]), info("row_mask", T.INT64, ["width"])],
                         [info("row_result", T.FLOAT, [labels])],
-                        [*graph.initializer, h.make_tensor("point_zero", T.INT64, [1], [0])])
+                        [*graph.initializer, *constants])
     scan = h.make_node("Scan", ["input_ids", "attention_mask"], ["logits"], body=body, num_scan_inputs=2)
     outer = h.make_graph([scan], "independent_examples",
                          [info("input_ids", T.INT64, ["batch", "width"]),
@@ -80,5 +98,7 @@ if __name__ == "__main__":
     p.add_argument("original", type=Path)
     p.add_argument("output", type=Path)
     p.add_argument("--sha256", default=FILES["onnx/model_quantized.onnx"], help="expected source SHA-256")
+    p.add_argument("--min-width", type=int, default=0, help="pad each cropped row to at least this width")
+    p.add_argument("--pad-token", type=int, default=0, help="right-padding token ID for the optional width floor")
     a = p.parse_args()
-    print(export(a.original, a.output, a.sha256))
+    print(export(a.original, a.output, a.sha256, a.min_width, a.pad_token))

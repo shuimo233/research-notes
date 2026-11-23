@@ -1,0 +1,13 @@
+{
+  "matched_source_rows": {
+    "train": 2490,
+    "dev": 277
+  },
+  "verified_float32": {
+    "new": 32814,
+    "dev": 4986
+  },
+  "toy_pool_cases": 17,
+  "verified_absolute_risk_minima": 512,
+  "nonzero_pad_opset_fixtures": 4
+}

@@ -37,3 +37,15 @@ ONNX 的 DynamicQuantizeLinear 以一个输入张量为单位产生**标量**尺
 ## 检索范围
 
 检索覆盖 ONNX 算子规范、微软 ONNX Runtime 文档与原问题记录、SamLowe 模型发布页、arXiv、PMLR 论文和 Thinking Machines 原实验。关键词包括 `same text different prediction serving context fixed shape peer composition quantization`、`ONNX Runtime BERT quantize_dynamic same sentence different padding and position IDs`、`batch-invariant classifier dynamic quantization per-tensor per-token scale`、`SamLowe roberta-base-go_emotions-onnx batch padding replicated sample`、`GoEmotions singleton repeated versus mixed batch quantized classifier threshold`。对匹配原文另查 GoEmotions、重复样本、量化尺度与应用的数据集；未索引的复现实验、未公开的评测与软件实现可能存在。原始节点计数来自本地锁定文件，仅限该导出版本。
+
+## 参考宽度：RTE 八条组批
+
+本节核查 2026 年 11 月 23 日登记的 RTE 对照。对截断后的句对实际长度 $\ell$，把独立单例右补至 $\max(\ell,h)$，其中 $h$ 只取决于另一批校准题的长度。这在长度不超过 $h$ 的区域相当于一个固定宽度的桶，超过 $h$ 后仍按本题长度运行。协议另设最短单例及向上补齐至 32 的整数倍作对照。所问的是这些确定排程能否保留原文件顺序下连续八条成批时的判决，并维持对参考答案的正确数。[事前约定与判定标准](rte-width-protocol.md)
+
+按形状分桶和预先确定代表性运行尺寸已有工程先例。AWS Neuron 提供按数据形状分布选择桶、对分词后的文本补到可容纳它的最小桶再推理的完整示例。Torch-TensorRT 明确建议将其重点优化的形状设为生产中经常出现的尺寸。Hugging Face 提供按批最长、指定上限和向上补到指定倍数等接口。Kasa 等还实测过保留真实 token 位置的宽度分桶，并分别测量固定形状替换同伴、允许随机同伴带来不同宽度时的输出。由此，固定宽度、依据使用分布选尺寸、通过分桶处理稳定性，以及比较不同宽度下的实际判决都有现成依据。AWS 与 TensorRT 所讨论的尺寸选择着眼于运行成本和性能，没有给本协议的“拟合自然批判决”目标作保证。[AWS Neuron 的 NLP 分桶示例](https://awsdocs-neuron.readthedocs-hosted.com/en/v2.26.0/general/appnotes/torch-neuron/bucketing-app-note.html) · [Torch-TensorRT 的形状选择](https://docs.pytorch.org/TensorRT/user_guide/performance_tuning.html) · [Hugging Face 补齐文档](https://huggingface.co/docs/transformers/v4.28.1/en/pad_truncation) · [Kasa 等，实验设定及附录 B](https://arxiv.org/html/2610.09111v1)
+
+宽度公式本身是有限总体顺序统计量与绝对损失下中位数规则的直接应用。令 $N\ge7$ 为校准题数，$F(a)$ 为长度不超过 $a$ 的题数，$M$ 为均匀无放回抽七题的最大长度。总共有 $\binom{N}{7}$ 种同伴集，其中恰有 $\binom{F(a)}{7}$ 种满足 $M\le a$，不足七题时分子取零。取使 $2\binom{F(a)}{7}\ge\binom{N}{7}$ 的最小校准长度作为 $h$，长度相同的题仍按各自的题目计数。对任何固定目标长度 $\ell$，随机批宽 $W=\max(\ell,M)$ 在 $a<\ell$ 处的分布函数为零，在 $a\ge\ell$ 处与 $M$ 相同，故其较小中位数恰为 $\max(\ell,h)$。它最小化给定 $\ell$ 和校准抽样法时的期望绝对宽差；若有多个最优宽度，以上规则给出确定的一个。O’Neill 给出一般无放回顺序统计量的分布，Gneiting 给出绝对误差下任一中位数最优的决策论结论。[O’Neill，有限总体顺序统计量](https://arxiv.org/abs/2207.00270) · [Gneiting，式 2 附近及表 5](https://arxiv.org/pdf/0912.0902)
+
+这一最优性并不直接覆盖实际连续八条、尾批、端到端的二元判决或有标签正确率。一个严格沿用七同伴抽样的小例就可区分两个损失。十五道校准题中有十三道长 32，一道长 64，一道长 96。无放回抽七题，对长度不超过 32 的目标，批宽为 32、64、96 的概率依次是 $4/15,4/15,7/15$。若模型在三个宽度依次给出“否、是、否”，宽度中位数 64 对应“是”，自然随机组批却有 $11/15$ 输出“否”。这是只让宽度影响判决的构造。真实动态量化还可能受到同批内容影响。协议另度量真实宽差、与普通批的逐题分歧及参考答案正确数，才能得知这一经验选择的效用。校准、评估分开且不读取评估标签选 $h$，其作用是限定检验条件。校准池的均匀抽样与部署队列中的内容关联仍是两种不同的分布。[协议中的主比较与尾批处理](rte-width-protocol.md) · [文本分类器的宽度及组员实测](https://arxiv.org/html/2610.09111v1)
+
+本次另用 “minimum/reference padding length median of batch maxima”、“RTE entailment dynamic quantization reference-width inference”、“representative bucket distribution variable-length BERT inference”、“order statistics sampling without replacement” 及 “median point forecast absolute error” 查原文。已核实既有分桶和数学原理；检索中未定位到在冻结 RTE INT8 句对分类器上，先从独立长度池计算这个无放回七同伴参考宽度，再逐题与连续八条普通组批同时比较判决与答案正确率的原文。可单独报告的增量是这一已定义的、只用长度的规则在锁定部署上的配对实测，包含可能的退化。
