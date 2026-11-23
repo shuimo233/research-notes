@@ -1,0 +1,188 @@
+[
+  {
+    "by_system": {
+      "Human-A.0": {
+        "across_families_only": 1,
+        "any_major": 22,
+        "same_family": 21,
+        "same_family_only": 1,
+        "same_leaf": 20,
+        "segments": 1418
+      },
+      "Human-B.0": {
+        "across_families_only": 3,
+        "any_major": 11,
+        "same_family": 8,
+        "same_family_only": 2,
+        "same_leaf": 6,
+        "segments": 1418
+      },
+      "Human-P.0": {
+        "across_families_only": 20,
+        "any_major": 62,
+        "same_family": 42,
+        "same_family_only": 7,
+        "same_leaf": 35,
+        "segments": 1418
+      },
+      "Huoshan_Translate.832": {
+        "across_families_only": 30,
+        "any_major": 190,
+        "same_family": 160,
+        "same_family_only": 5,
+        "same_leaf": 155,
+        "segments": 1418
+      },
+      "OPPO.1535": {
+        "across_families_only": 25,
+        "any_major": 165,
+        "same_family": 140,
+        "same_family_only": 4,
+        "same_leaf": 136,
+        "segments": 1418
+      },
+      "Online-A.1574": {
+        "across_families_only": 22,
+        "any_major": 258,
+        "same_family": 236,
+        "same_family_only": 12,
+        "same_leaf": 224,
+        "segments": 1418
+      },
+      "Online-B.1590": {
+        "across_families_only": 21,
+        "any_major": 210,
+        "same_family": 189,
+        "same_family_only": 9,
+        "same_leaf": 180,
+        "segments": 1418
+      },
+      "Tencent_Translation.1520": {
+        "across_families_only": 21,
+        "any_major": 171,
+        "same_family": 150,
+        "same_family_only": 4,
+        "same_leaf": 146,
+        "segments": 1418
+      },
+      "Tohoku-AIP-NTT.890": {
+        "across_families_only": 23,
+        "any_major": 139,
+        "same_family": 116,
+        "same_family_only": 1,
+        "same_leaf": 115,
+        "segments": 1418
+      },
+      "eTranslation.737": {
+        "across_families_only": 21,
+        "any_major": 192,
+        "same_family": 171,
+        "same_family_only": 3,
+        "same_leaf": 168,
+        "segments": 1418
+      }
+    },
+    "direction": "ende",
+    "total": {
+      "across_families_only": 187,
+      "any_major": 1420,
+      "same_family": 1233,
+      "same_family_only": 48,
+      "same_leaf": 1185,
+      "segments": 14180
+    }
+  },
+  {
+    "by_system": {
+      "DeepMind.381": {
+        "across_families_only": 91,
+        "any_major": 999,
+        "same_family": 908,
+        "same_family_only": 29,
+        "same_leaf": 879,
+        "segments": 2000
+      },
+      "DiDi_NLP.401": {
+        "across_families_only": 105,
+        "any_major": 1018,
+        "same_family": 913,
+        "same_family_only": 43,
+        "same_leaf": 870,
+        "segments": 2000
+      },
+      "Human-A.0": {
+        "across_families_only": 94,
+        "any_major": 616,
+        "same_family": 522,
+        "same_family_only": 83,
+        "same_leaf": 439,
+        "segments": 2000
+      },
+      "Human-B.0": {
+        "across_families_only": 85,
+        "any_major": 633,
+        "same_family": 548,
+        "same_family_only": 92,
+        "same_leaf": 456,
+        "segments": 2000
+      },
+      "Huoshan_Translate.919": {
+        "across_families_only": 90,
+        "any_major": 951,
+        "same_family": 861,
+        "same_family_only": 29,
+        "same_leaf": 832,
+        "segments": 2000
+      },
+      "OPPO.1422": {
+        "across_families_only": 89,
+        "any_major": 989,
+        "same_family": 900,
+        "same_family_only": 42,
+        "same_leaf": 858,
+        "segments": 2000
+      },
+      "Online-B.1605": {
+        "across_families_only": 101,
+        "any_major": 1091,
+        "same_family": 990,
+        "same_family_only": 37,
+        "same_leaf": 953,
+        "segments": 2000
+      },
+      "THUNLP.1498": {
+        "across_families_only": 87,
+        "any_major": 993,
+        "same_family": 906,
+        "same_family_only": 40,
+        "same_leaf": 866,
+        "segments": 2000
+      },
+      "Tencent_Translation.1249": {
+        "across_families_only": 88,
+        "any_major": 961,
+        "same_family": 873,
+        "same_family_only": 43,
+        "same_leaf": 830,
+        "segments": 2000
+      },
+      "WeChat_AI.1525": {
+        "across_families_only": 91,
+        "any_major": 951,
+        "same_family": 860,
+        "same_family_only": 39,
+        "same_leaf": 821,
+        "segments": 2000
+      }
+    },
+    "direction": "zhen",
+    "total": {
+      "across_families_only": 921,
+      "any_major": 9202,
+      "same_family": 8281,
+      "same_family_only": 477,
+      "same_leaf": 7804,
+      "segments": 20000
+    }
+  }
+]

@@ -4,6 +4,10 @@
 
 **最接近的直接先例是 Stanford AIMS 的 WMT MQM 数据转换。** 它已经在本研究使用的两份 2020 数据及另外六份 2021–2022 数据上，按译文和评审分组，生成“此评审是否标过这个类别与严重度”的 18 个二值指标。其代码明确对每位评审内部重复的该类记录去重。因此逐人构造二值指标这一工作已有人完成。此次未查到作者在去掉评审对应关系后计算三人多数的锐界，也未查到该数据上为任意类别并集编码最少补充信息的同一研究。[AIMS 的数据说明及覆盖表](https://github.com/aims-foundations/measurement-db/blob/7e223f127c76f7f049955730c3493345e330827d/benchmarks/wmt_mqm/metadata.yaml) · [2026-10-01 的转换代码，第 62–76 行](https://github.com/aims-foundations/measurement-db/blob/7e223f127c76f7f049955730c3493345e330827d/benchmarks/wmt_mqm/build.py#L62-L76)
 
+## 哲学上的直接先例
+
+看完中英主结果后，补查了 `judgment aggregation disjunctive agenda premise conclusion` 及其与 `WMT MQM majority error categories` 的组合。List 在《The Discursive Dilemma and Public Reason》中直接给出了析取例子，多人可以因各自不同的理由支持同一结论，以至于逐项理由均得不到多数。“先在每人之内合并理由再投票可以改变结果”已有明确先例，本研究沿用它作为可执行对照。在本次检索范围内，尚未找到针对这两个 WMT 文件报告同一组逐层频数、自然碰撞及条件编码费用的一手发表物。归档方法是否依赖特定限制，仍需对照每项字段合同。[List 原文](https://eprints.lse.ac.uk/5829/2/The_discursive_dilemma_and_public_reason_%28LSERO%29_.pdf) · [List 和 Pettit 对判断聚合的早期形式化](https://ppettit.scholar.princeton.edu/sites/g/files/toruqf7426/files/documents/Aggregating_EconomicsandPhilosophy_2002.pdf)
+
 ## 哪些是原始协议
 
 | 核对项 | 一手证据与本次采用口径 |
