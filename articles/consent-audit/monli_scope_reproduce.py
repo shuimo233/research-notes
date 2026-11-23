@@ -17,6 +17,8 @@ from monli_scope_baselines import WORDNET_BLOB, compare
 from monli_scope_check import audit
 from monli_scope_run import infer
 from monli_scope_score import assess
+from monli_withdrawal import WithdrawalAudit, inputs as withdrawal_inputs, report as withdrawal_report
+from monli_withdrawal_check import check as check_withdrawals
 from rte_context_fetch import FILES, MODEL, REV
 
 
@@ -52,10 +54,16 @@ def run(data, model, output, wordnet, host):
     example = output / "monli-package-23.json"
     example.write_bytes(json.dumps(results[example.name]).encode())
     results["monli-package-replay.json"] = replay(data, model, ledger, frontier, example)
+    positive, queries = withdrawal_inputs(pos, ledger)
+    results["monli-package-29.json"] = WithdrawalAudit(positive, queries).pack(None)
+    results["monli-withdrawal-results.json"] = withdrawal_report(pos, ledger)
+    results["monli-withdrawal-checks.json"] = check_withdrawals(pos, ledger)
     match = {}
     for name, obj in results.items():
         (output / name).write_bytes((json.dumps(obj, indent=2) + "\n").encode())
-        match[name] = obj == json.loads((root / name).read_bytes())
+        match[name] = json.loads((output / name).read_bytes()) == json.loads(
+            (root / name).read_bytes()
+        )
     for path in (ledger, frontier):
         match[path.name] = path.read_bytes().replace(b"\r\n", b"\n") == (
             root / path.name

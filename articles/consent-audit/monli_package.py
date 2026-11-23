@@ -43,9 +43,7 @@ def load_package(obj):
             raise ValueError("invalid edge record")
         seen.add(line)
         adj = graph.edges.setdefault(a, {})
-        if b in adj:
-            raise ValueError("duplicate edge")
-        adj[b] = line
+        adj[b] = min(adj.get(b, line), line)
     return graph
 
 

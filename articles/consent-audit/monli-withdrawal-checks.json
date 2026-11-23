@@ -1,0 +1,41 @@
+{
+  "positive_rows": 738,
+  "single_withdrawals_checked_per_package": 738,
+  "double_withdrawals_checked_per_package": 271953,
+  "packages": {
+    "answers": {
+      "0": {
+        "selected_rows": 23,
+        "mismatching_single_withdrawals": 6,
+        "mismatching_double_withdrawals": 4401
+      },
+      "1": {
+        "selected_rows": 29,
+        "mismatching_single_withdrawals": 0,
+        "mismatching_double_withdrawals": 0
+      },
+      "2": {
+        "selected_rows": 29,
+        "mismatching_single_withdrawals": 0,
+        "mismatching_double_withdrawals": 0
+      }
+    },
+    "coverage": {
+      "0": {
+        "selected_rows": 192,
+        "mismatching_single_withdrawals": 24,
+        "mismatching_double_withdrawals": 17389
+      },
+      "1": {
+        "selected_rows": 216,
+        "mismatching_single_withdrawals": 0,
+        "mismatching_double_withdrawals": 1
+      },
+      "2": {
+        "selected_rows": 217,
+        "mismatching_single_withdrawals": 0,
+        "mismatching_double_withdrawals": 0
+      }
+    }
+  }
+}

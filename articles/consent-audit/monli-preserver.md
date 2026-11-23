@@ -28,6 +28,21 @@
 
 最小性只针对编译时给定的题单、冻结回退和允许选择的原始证据边。如果只用 496 对编译，15 条就能保留这一组，但用这份小包回答另 100 对时，有 12 道与完整服务不同。反过来只用 100 对编译，8 条能保留这一组，到另外 496 对上有 16 道改变。因此这个包适合固定题库的可重复发布和预算核算。换题单、换回退模型或增加新的证据关系，需要重新验证。
 
+## 原始证据被撤回以后，23 条还够吗？
+
+不总够。第 62 行和第 290 行是两条支持同一词项关系“granny → woman”的肯定题。23 条包只选了第 62 行。撤回这一行后，完整服务还能引用第 290 行；小包却要调用模型，并在上游否定题第 696 行给出相反判断。实际重放中，23 条包调用模型两次并选了正向，补齐支持的 29 条包直接引用第 290 行并选了反向。继续同时撤回第 290 行，完整版和 29 条包才会一起失去这条证据。[第 62 行](https://github.com/atticusg/MoNLI/blob/5bf388ad669a28500c1d46dba3b7d665d62b0536/pmonli.jsonl#L62) · [第 290 行](https://github.com/atticusg/MoNLI/blob/5bf388ad669a28500c1d46dba3b7d665d62b0536/pmonli.jsonl#L290) · [可直接载入的 29 行包](monli-package-29.json)
+
+下表按**原始行数**计费。比较的是同一批原始行从小包和完整服务都撤回后，两者是否仍然一致。完整服务本身允许随证据变化而改判。
+
+| 必须与撤回后的完整服务一致的事项 | 无撤回 | 任意撤回 1 行 | 任意撤回 2 行 | 任意行集合撤回 |
+|---|---:|---:|---:|---:|
+| 596 题的全部最终方向 | 23 | 29 | 29 | **29** |
+| 每道题是否还能由证据回答，以及回答方向 | 192 | 216 | 217 | **217** |
+
+这道题有精确解。每个必须保留的词项关系在当前图上只有一条词汇路径，但路径上的一条边可能由多条原始行分别支持。如果一条必需边有 $s$ 个支持行，要承受至多 $r$ 行撤回，保留 $\min(s,r+1)$ 个支持就够了。少留一个时，可以撤回该包中支持这条边的所有行，同时在完整服务里留下一行；这个构造给出匹配的下界。各行仅支持一条边，先合并共用边再求和。判断合同所需的 23 条边中，17 条各有一个支持，6 条各有两个，因此任意撤回下恰需 $17+6\times2=29$ 行。这里比较的是指定公开记录的删除；不同题出自同一语料，行数不代表有多少独立的可信组织。[数学先例及证明条件](monli-preserver-prior.md) · [两种合同的最小反例](monli-withdrawal-results.json)
+
+我们把 738 个有作用的肯定来源逐个撤回，也核对了所有 **271,953** 种两行组合，未用到的中立行撤回不改变图。23 条包有 6 种单行撤回会使至少一道题与完整服务不同；29 条包的单行与双行差异数均为零。216 条覆盖包在全部双行组合中只失败一次，恰是同时撤回第 22 行和 259 行，第 588 行还在支撑完整服务。任意数量撤回的结论来自逐边支持集合的证明。验证器另用上游词项注释构图，核对了下界、有限枚举和实际反例。[撤回核验结果](monli-withdrawal-checks.json) · [核验器](monli_withdrawal_check.py)
+
 ### 直接运行
 
 第一条命令在本目录仅用 Python 3.13 标准库即可验证哈密瓜与水果的例子，返回 `forward`、正极性来源行 890 和 887、以及零次模型调用。模型参数在需要回退的题上应指向相应的 MNLI 缓存，并安装下一条命令所列运行依赖。第二条命令从固定模型和数据复算整个研究；`fresh-replay` 使用新目录名。可用 `--wordnet-zip` 指向已有的 NLTK WordNet 3.0 ZIP，其 Git 内容摘要须为 `3c68cd207844f071a5206f7fbed23e5c607ec02f`。[可单独调用的接口](monli_package.py) · [复现入口](monli_scope_reproduce.py)
@@ -36,4 +51,5 @@
 python -I -B monli_package.py predict monli-package-23.json rte-data "The person did not like fruit." "The person did not like cantaloupes."
 uv run --no-project --python 3.13 --with numpy==2.3.3 --with tokenizers==0.22.1 --with onnxruntime==1.23.2 --with onnx==1.19.1 --with duckdb==1.4.3 --with scipy==1.16.3 --with nltk==3.9.2 -- python -I -B monli_scope_reproduce.py monli-data rte-data fresh-replay
 python -I -B monli_package.py build monli-data/pmonli.jsonl monli-preserver-frontier.tsv 64 evidence-64.json
+python -I -B monli_withdrawal.py withdraw monli-package-29.json after-withdrawal.json 62
 ```
