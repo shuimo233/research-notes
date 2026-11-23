@@ -1,0 +1,2 @@
+{"id":"x","released":["A"],"alternative":["A","B","C"],"prediction_a":["B"],"prediction_b":["C"]}
+{"id":"y","released":["A"],"alternative":["A"],"prediction_a":["A"],"prediction_b":["A","B"]}

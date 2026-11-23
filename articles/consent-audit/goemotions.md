@@ -37,6 +37,8 @@ GoEmotions 的测试集中有 5,427 条评论。按作者公开的映射，把�
 
 ## 哪些已有先例，哪些是本次产物
 
+逐标注者合并也有直接先例。SHALA-LLM 附录 B.3 已经将每位 GoEmotions 标注者的细标签映射为 Ekman 类，再跨人汇总成软分布，按多数类做分层抽样。本次原测试集上的硬两票、逐条差异及文件对账是更窄的结果。[SHALA-LLM 附录 B.3](https://arxiv.org/html/2606.05376v1#A2.SS3)
+
 - Demszky 等发布了原始逐人打分、两票过滤、多层情绪分类的模型实验与粗类转换脚本。本研究直接采用作者的两票门槛和分类表。CARE 研究也已使用基于 GoEmotions 的粗粒度映射。[原研究](https://aclanthology.org/2020.acl-main.372/) · [CARE 原文](https://aclanthology.org/2022.conll-1.5/)
 - Öhman、Koufakou 和 Diegoli 于 2026 年 11 月公布了对这批逐人数据的研究，考察标注者选择标签的宽窄、类别边界以及不确定响应。逐人保留分歧这一研究方向已有直接先例。第三方也已有粗类数据集，本次逐条比对使用其中一个固定文件。[逐人分歧研究及方法](https://arxiv.org/html/2611.01539v1) · [已发布粗标签的说明](https://huggingface.co/datasets/SkyWater21/en_go_emotions/blame/main/README.md)
 - 本次形成的是一个可执行的版本审计，内容包括原始细标签全数复原、两种聚合次序逐条对账、对未入选条目的筛选效应计数，以及可供现有评测系统接入的双列导出。查新在本次检索范围内未找到提前报告相同 468 条测试差异和 486 个标签差异的原文。全球优先权及其他版本上的数量均待额外证据。[计算前公开的研究口径](https://github.com/shuimo233/research-notes/blob/af5feeaf5e74b76ad4d7b0e3c3db1f754b7135d9/articles/consent-audit/goemotions-protocol.md)
