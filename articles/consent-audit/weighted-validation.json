@@ -1,0 +1,58 @@
+{
+  "seed": 929503,
+  "price_history_grid": 216,
+  "random_cases": 150,
+  "targeted_oracle_cases": 9,
+  "first_move_costs": {
+    "low-a": 15,
+    "low-b": 17,
+    "mid-a": 14,
+    "mid-b": 23,
+    "high-a": 19,
+    "high-b": 20
+  },
+  "swapped_repeat_price_first_move_costs": {
+    "low-a": 13,
+    "low-b": 23,
+    "mid-a": 15,
+    "mid-b": 16,
+    "high-a": 18,
+    "high-b": 19
+  },
+  "oracle": {
+    "decision_tree_states": 672079,
+    "menu_insufficient": 43,
+    "safe_baseline_refuted": 48,
+    "safe_through_bound": 2,
+    "strict_savings": 159,
+    "unresolved": 282
+  },
+  "gap_examples": [
+    {
+      "coordinates": 2,
+      "extra_price": 10,
+      "fixed": 24,
+      "adaptive": 14
+    },
+    {
+      "coordinates": 3,
+      "extra_price": 100,
+      "fixed": 306,
+      "adaptive": 106
+    },
+    {
+      "coordinates": 20,
+      "extra_price": 100,
+      "fixed": 2040,
+      "adaptive": 140
+    },
+    {
+      "coordinates": 20,
+      "extra_price": 1000000,
+      "fixed": 20000040,
+      "adaptive": 1000040
+    }
+  ],
+  "large_capacity_check": 10000000000000000,
+  "large_domain_check": 10000000000000000
+}

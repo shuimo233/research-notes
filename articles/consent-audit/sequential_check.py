@@ -19,7 +19,7 @@ def honest(mask, row):
     return {2 * ((mask >> (price - 1)) & 1) for price in range(row["low"], row["high"] + 1)}
 
 
-def oracle(problem, implementation, totals):
+def oracle(problem, implementation, totals, *, weighted=False):
     masks = range(1 << problem["max_offer"])
     f = problem["errors"]
     history = problem["history"]
@@ -49,7 +49,7 @@ def oracle(problem, implementation, totals):
     def best(budgets, stock):
         if budgets[0] < 0 or max(budgets[1:]) < 0:
             return 0
-        depths = [1 + max(best(*child) for child in branches(budgets, stock, j))
+        depths = [items[j]["cost"] + max(best(*child) for child in branches(budgets, stock, j))
                   for j, cap in enumerate(stock) if cap]
         return min(depths, default=inf)
 
@@ -63,14 +63,20 @@ def oracle(problem, implementation, totals):
     else:
         expected = "unresolved"
     assert implementation["status"] == expected, (problem, depth, implementation)
+    root_costs = {}
     if expected == "unresolved":
         choice = next(i for i, item in enumerate(items) if item["name"] == implementation["next_probe"]["name"])
-        first_depth = 1 + max(best(*child) for child in branches(residual, capacities, choice))
-        assert implementation["worst_case_probes"] == depth == first_depth, (problem, depth, first_depth)
-        if implementation["fixed_batch_probes"] > depth:
+        first_depth = items[choice]["cost"] + max(best(*child) for child in branches(residual, capacities, choice))
+        units = "cost" if weighted else "probes"
+        assert implementation["worst_case_" + units] == depth == first_depth, (problem, depth, first_depth)
+        if implementation["fixed_batch_" + units] > depth:
             totals["strict_savings"] += 1
+        if weighted:
+            root_costs = {item["name"]: item["cost"] + max(best(*child) for child in branches(residual, capacities, j))
+                          for j,item in enumerate(items) if capacities[j]}
     totals["decision_tree_states"] += best.cache_info().currsize
     totals[expected] += 1
+    return root_costs
 
 
 def offer(low, high, capacity):

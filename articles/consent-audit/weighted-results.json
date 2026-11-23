@@ -1,0 +1,95 @@
+{
+  "sqlite": "3.49.1",
+  "sklearn": "1.8.0",
+  "payoffs": [
+    1,
+    4,
+    8
+  ],
+  "runs": {
+    "tree_clean": {
+      "historical_requests": [
+        false,
+        false,
+        false
+      ],
+      "flipped_file": null,
+      "decision": "safe_through_bound",
+      "fixed_batch_bytes": 1856,
+      "worst_case_bytes": 896,
+      "actual_bytes": 512,
+      "trace": [
+        {
+          "file": "mid-a",
+          "payoff": 4,
+          "bytes_read": 128,
+          "actual_bits": "00",
+          "observed_bits": "00"
+        },
+        {
+          "file": "high-a",
+          "payoff": 8,
+          "bytes_read": 320,
+          "actual_bits": "00",
+          "observed_bits": "00"
+        },
+        {
+          "file": "low-a",
+          "payoff": 1,
+          "bytes_read": 64,
+          "actual_bits": "00",
+          "observed_bits": "00"
+        }
+      ]
+    },
+    "tree_one_log_flip": {
+      "historical_requests": [
+        false,
+        false,
+        false
+      ],
+      "flipped_file": "mid-a",
+      "decision": "safe_through_bound",
+      "fixed_batch_bytes": 1856,
+      "worst_case_bytes": 896,
+      "actual_bytes": 896,
+      "trace": [
+        {
+          "file": "mid-a",
+          "payoff": 4,
+          "bytes_read": 128,
+          "actual_bits": "00",
+          "observed_bits": "10"
+        },
+        {
+          "file": "mid-b",
+          "payoff": 4,
+          "bytes_read": 768,
+          "actual_bits": "00",
+          "observed_bits": "00"
+        }
+      ]
+    },
+    "logistic_clean": {
+      "historical_requests": [
+        false,
+        false,
+        true
+      ],
+      "flipped_file": null,
+      "decision": "safe_baseline_refuted",
+      "fixed_batch_bytes": 704,
+      "worst_case_bytes": 704,
+      "actual_bytes": 320,
+      "trace": [
+        {
+          "file": "high-a",
+          "payoff": 8,
+          "bytes_read": 320,
+          "actual_bits": "10",
+          "observed_bits": "10"
+        }
+      ]
+    }
+  }
+}
