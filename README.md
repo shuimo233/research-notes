@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [推理器什么时候可以少问一个词义？](articles/consent-audit/semcor-clarification.md) | 用真实同句词义标注核验提前停止，比较六种询问顺序并公开失败的主要假设 |
 | 2026-11-23 | [一条理由撤回后，推理器还会给出同一个判断吗？](articles/consent-audit/wordnet-conflict.md) | 普查 WordNet 双向证据，对照 596 道冻结题，公开最少来源边与可撤回的推理服务 |
 | 2026-11-23 | [保留 596 个推理判断，哪些来源必须随服务一起发布？](articles/consent-audit/monli-preserver.md) | 验证最少 23 条来源边可保留判决，保留全部证据覆盖则需 192 条，并实测模型调用成本 |
 | 2026-11-23 | [推理器判断否定句时，查到的证据究竟能帮多少？](articles/consent-audit/monli-scope.md) | 对照肯定改写、简单反转、带出处的路径与 WordNet，区分模型和外部知识带来的收益 |

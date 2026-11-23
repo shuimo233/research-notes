@@ -86,6 +86,15 @@ class NounPaths:
                 directed.update((w, v) for p in self.ancestors(s) for v in owners.get(p, ()) if w != v)
         return sorted((a, b) for a, b in directed if a < b and (b, a) in directed), len(directed)
 
+    def relation(self, left, right):
+        if left == right:
+            return "same"
+        if right in self.ancestors(left):
+            return "left_narrower"
+        if left in self.ancestors(right):
+            return "right_narrower"
+        return "neither"
+
     def paths(self, a, b):
         ends = self.senses(b)
 

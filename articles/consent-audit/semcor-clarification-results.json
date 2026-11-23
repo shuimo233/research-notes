@@ -1,0 +1,60 @@
+{
+  "documents_scanned": 352,
+  "sentences_scanned": 37176,
+  "eligible_occurrences": 254,
+  "eligible_word_pairs": 63,
+  "eligible_documents": 101,
+  "eligible_sentences": 160,
+  "total_reveals": {
+    "table": 350,
+    "left": 364,
+    "right": 458,
+    "fewer": 472,
+    "more": 347,
+    "both": 506,
+    "coin": 411
+  },
+  "mean_reveals_equal_word_pairs": {
+    "table": "171877/120582",
+    "left": "60695/40194",
+    "right": "275/168",
+    "fewer": "319/189",
+    "more": "688465/482328",
+    "both": "125/63",
+    "coin": "505955/321552"
+  },
+  "occurrences_where_first_side_matters": 160,
+  "relations": {
+    "left_narrower": {
+      "items": 27,
+      "table_reveals": 52,
+      "both_reveals": 52,
+      "table_saves_reveals": 0
+    },
+    "neither": {
+      "items": 209,
+      "table_reveals": 262,
+      "both_reveals": 418,
+      "table_saves_reveals": 156
+    },
+    "right_narrower": {
+      "items": 17,
+      "table_reveals": 34,
+      "both_reveals": 34,
+      "table_saves_reveals": 0
+    },
+    "same": {
+      "items": 1,
+      "table_reveals": 2,
+      "both_reveals": 2,
+      "table_saves_reveals": 0
+    }
+  },
+  "asked_paths": {
+    "L": 122,
+    "LR": 49,
+    "R": 36,
+    "RL": 47
+  },
+  "strict_gain_over_best_fixed_control": false
+}

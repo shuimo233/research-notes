@@ -1,0 +1,18 @@
+{
+  "independently_enumerated_occurrences": 254,
+  "documents": 352,
+  "independently_checked_policy_replays": 1270,
+  "remaining_sense_cells_replayed_at_stopping": 766,
+  "cooccurring_word_pairs": 63,
+  "posthoc_two_ambiguous_word_inventory": {
+    "pairs": 204,
+    "one_sense_certificates_by_relation": {
+      "neither": 2144,
+      "right_narrower": 7
+    },
+    "pairs_with_each_certifiable_relation": {
+      "neither": 203,
+      "right_narrower": 7
+    }
+  }
+}
