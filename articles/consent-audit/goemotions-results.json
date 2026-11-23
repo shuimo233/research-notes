@@ -1,0 +1,188 @@
+{
+  "diagnostics": {
+    "clear_with_zero_labels": 0,
+    "conflict_ids": 0,
+    "duplicate_rows": 0,
+    "raw_ids": 58011,
+    "raw_rows": 211225,
+    "repeated_or_overlapping_split_ids": 0,
+    "split_ids_absent_from_raw": 0,
+    "unclear_rows": 3411,
+    "unclear_with_labels": 0
+  },
+  "first_three_person_test_example": [
+    {
+      "anonymous_three_ballots": [
+        [
+          "anger",
+          "disappointment",
+          "disgust",
+          "fear",
+          "sadness"
+        ],
+        [
+          "disappointment"
+        ],
+        [
+          "disapproval"
+        ]
+      ],
+      "id": "eczt8co",
+      "published_ekman": [
+        "sadness"
+      ],
+      "published_fine": [
+        "disappointment"
+      ],
+      "two_reporters_ekman": [
+        "anger",
+        "sadness"
+      ]
+    }
+  ],
+  "subsets": {
+    "dev": {
+      "eligible": 5426,
+      "fine_equal_release": 5426,
+      "matched_release_added": {
+        "anger": 97,
+        "fear": 6,
+        "joy": 187,
+        "sadness": 70,
+        "surprise": 97
+      },
+      "matched_release_removed": {},
+      "order_added": {
+        "anger": 97,
+        "fear": 6,
+        "joy": 187,
+        "sadness": 70,
+        "surprise": 97
+      },
+      "order_changed": 444,
+      "raw_fine_empty_coarse_present": 0,
+      "raw_vote_count_histogram": {
+        "2": 54,
+        "3": 3700,
+        "4": 128,
+        "5": 1544
+      },
+      "release_added": {
+        "anger": 97,
+        "fear": 6,
+        "joy": 187,
+        "sadness": 70,
+        "surprise": 97
+      },
+      "release_changed": 444,
+      "release_changed_among_fine_matches": 444,
+      "release_removed": {},
+      "split_rows": 5426
+    },
+    "test": {
+      "eligible": 5427,
+      "fine_equal_release": 5427,
+      "matched_release_added": {
+        "anger": 113,
+        "fear": 5,
+        "joy": 196,
+        "sadness": 59,
+        "surprise": 113
+      },
+      "matched_release_removed": {},
+      "order_added": {
+        "anger": 113,
+        "fear": 5,
+        "joy": 196,
+        "sadness": 59,
+        "surprise": 113
+      },
+      "order_changed": 468,
+      "raw_fine_empty_coarse_present": 0,
+      "raw_vote_count_histogram": {
+        "2": 52,
+        "3": 3680,
+        "4": 149,
+        "5": 1546
+      },
+      "release_added": {
+        "anger": 113,
+        "fear": 5,
+        "joy": 196,
+        "sadness": 59,
+        "surprise": 113
+      },
+      "release_changed": 468,
+      "release_changed_among_fine_matches": 468,
+      "release_removed": {},
+      "split_rows": 5427
+    },
+    "train": {
+      "eligible": 43410,
+      "fine_equal_release": 43410,
+      "matched_release_added": {
+        "anger": 806,
+        "fear": 35,
+        "joy": 1598,
+        "sadness": 503,
+        "surprise": 639
+      },
+      "matched_release_removed": {},
+      "order_added": {
+        "anger": 806,
+        "fear": 35,
+        "joy": 1598,
+        "sadness": 503,
+        "surprise": 639
+      },
+      "order_changed": 3483,
+      "raw_fine_empty_coarse_present": 0,
+      "raw_vote_count_histogram": {
+        "2": 452,
+        "3": 29555,
+        "4": 1082,
+        "5": 12321
+      },
+      "release_added": {
+        "anger": 806,
+        "fear": 35,
+        "joy": 1598,
+        "sadness": 503,
+        "surprise": 639
+      },
+      "release_changed": 3483,
+      "release_changed_among_fine_matches": 3483,
+      "release_removed": {},
+      "split_rows": 43410
+    },
+    "unreleased": {
+      "eligible": 3748,
+      "fine_equal_release": 0,
+      "matched_release_added": {},
+      "matched_release_removed": {},
+      "order_added": {
+        "anger": 773,
+        "fear": 33,
+        "joy": 1574,
+        "sadness": 451,
+        "surprise": 526
+      },
+      "order_changed": 2822,
+      "raw_fine_empty_coarse_present": 2822,
+      "raw_vote_count_histogram": {
+        "1": 70,
+        "2": 34,
+        "3": 400,
+        "4": 745,
+        "5": 2499
+      },
+      "release_added": {},
+      "release_changed": 0,
+      "release_changed_among_fine_matches": 0,
+      "release_removed": {},
+      "split_rows": 0
+    }
+  },
+  "threshold": 2,
+  "upstream": "7951440944924ac61b6e2f9a2a3c715834005c40"
+}
