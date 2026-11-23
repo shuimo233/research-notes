@@ -1,0 +1,177 @@
+{
+  "go": {
+    "coarse_micro": {
+      "mixed": {
+        "f1_people": "7264/11017",
+        "f1_released": "7060/10531",
+        "predicted": 4637,
+        "true_positive_people": 3632,
+        "true_positive_released": 3530
+      },
+      "padded": {
+        "f1_people": "7252/11035",
+        "f1_released": "7046/10549",
+        "predicted": 4655,
+        "true_positive_people": 3626,
+        "true_positive_released": 3523
+      },
+      "repeat": {
+        "f1_people": "7252/11035",
+        "f1_released": "7046/10549",
+        "predicted": 4655,
+        "true_positive_people": 3626,
+        "true_positive_released": 3523
+      },
+      "scan-original": {
+        "f1_people": "7232/11019",
+        "f1_released": "7042/10533",
+        "predicted": 4639,
+        "true_positive_people": 3616,
+        "true_positive_released": 3521
+      },
+      "scan-shuffled": {
+        "f1_people": "7232/11019",
+        "f1_released": "7042/10533",
+        "predicted": 4639,
+        "true_positive_people": 3616,
+        "true_positive_released": 3521
+      },
+      "single": {
+        "f1_people": "7232/11019",
+        "f1_released": "7042/10533",
+        "predicted": 4639,
+        "true_positive_people": 3616,
+        "true_positive_released": 3521
+      }
+    },
+    "counts": {
+      "coarse": {
+        "adjacent_item_change_patterns": {
+          "000": 4891,
+          "001": 270,
+          "100": 134,
+          "101": 132
+        },
+        "changed_items": {
+          "P_to_R": 0,
+          "R_to_M": 402,
+          "S_to_M": 417,
+          "S_to_P": 266,
+          "any_intermediate": 536,
+          "changed_then_restored": 119,
+          "scan_original": 0,
+          "scan_shuffled": 0
+        },
+        "per_label_four_state_paths": {
+          "0000": 33056,
+          "0001": 148,
+          "0110": 75,
+          "0111": 71,
+          "1000": 78,
+          "1001": 52,
+          "1110": 143,
+          "1111": 4366
+        }
+      },
+      "fine": {
+        "adjacent_item_change_patterns": {
+          "000": 4820,
+          "001": 293,
+          "100": 149,
+          "101": 165
+        },
+        "changed_items": {
+          "P_to_R": 0,
+          "R_to_M": 458,
+          "S_to_M": 465,
+          "S_to_P": 314,
+          "any_intermediate": 607,
+          "changed_then_restored": 142,
+          "scan_original": 0,
+          "scan_shuffled": 0
+        },
+        "per_label_four_state_paths": {
+          "0000": 146815,
+          "0001": 168,
+          "0110": 91,
+          "0111": 83,
+          "1000": 89,
+          "1001": 69,
+          "1110": 155,
+          "1111": 4486
+        }
+      },
+      "top1": {
+        "adjacent_item_change_patterns": {
+          "000": 5045,
+          "001": 184,
+          "100": 96,
+          "101": 102
+        },
+        "changed_items": {
+          "P_to_R": 0,
+          "R_to_M": 286,
+          "S_to_M": 287,
+          "S_to_P": 198,
+          "any_intermediate": 382,
+          "changed_then_restored": 95,
+          "scan_original": 0,
+          "scan_shuffled": 0
+        },
+        "per_label_four_state_paths": {}
+      }
+    },
+    "items": 5427
+  },
+  "rte": {
+    "items": 277,
+    "labels_per_item": 3,
+    "outcomes": {
+      "mixed": {
+        "binary_changes": 9,
+        "binary_correct": 203,
+        "first_binary_change": {
+          "condition": "E",
+          "id": "66",
+          "reference": "entailment",
+          "single": "N"
+        },
+        "gained_correct": 9,
+        "lost_correct": 0,
+        "rows_with_unequal_float32": 277,
+        "three_class_changes": 13,
+        "unequal_float32": 831
+      },
+      "reordered": {
+        "binary_changes": 0,
+        "binary_correct": 194,
+        "first_binary_change": null,
+        "gained_correct": 0,
+        "lost_correct": 0,
+        "rows_with_unequal_float32": 0,
+        "three_class_changes": 0,
+        "unequal_float32": 0
+      },
+      "scan": {
+        "binary_changes": 0,
+        "binary_correct": 194,
+        "first_binary_change": null,
+        "gained_correct": 0,
+        "lost_correct": 0,
+        "rows_with_unequal_float32": 0,
+        "three_class_changes": 0,
+        "unequal_float32": 0
+      },
+      "single": {
+        "binary_changes": 0,
+        "binary_correct": 194,
+        "first_binary_change": null,
+        "gained_correct": 0,
+        "lost_correct": 0,
+        "rows_with_unequal_float32": 0,
+        "three_class_changes": 0,
+        "unequal_float32": 0
+      }
+    }
+  }
+}

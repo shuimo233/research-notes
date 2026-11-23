@@ -24,22 +24,24 @@ def verify(path, expected):
         raise ValueError(f"file digest mismatch for {path.name}")
 
 
-def fetch(folder, name, host):
-    target = folder / name
+def fetch_verified(target, url, digest):
     if target.exists():
-        verify(target, FILES[name])
+        verify(target, digest)
         return
     target.parent.mkdir(parents=True, exist_ok=True)
     with NamedTemporaryFile(dir=target.parent, delete=False) as stream:
         tmp = Path(stream.name)
     try:
-        url = f"{host.rstrip('/')}/{MODEL}/resolve/{REV}/{name}"
         subprocess.run(["curl", "-fsSL", "--retry", "2", "--connect-timeout", "12",
                         "--max-time", "600", "-o", str(tmp), url], check=True)
-        verify(tmp, FILES[name])
+        verify(tmp, digest)
         tmp.replace(target)
     finally:
         tmp.unlink(missing_ok=True)
+
+
+def fetch(folder, name, host):
+    fetch_verified(folder / name, f"{host.rstrip('/')}/{MODEL}/resolve/{REV}/{name}", FILES[name])
 
 
 if __name__ == "__main__":

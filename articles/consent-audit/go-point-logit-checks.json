@@ -1,0 +1,69 @@
+{
+  "samples": 5427,
+  "classes": 28,
+  "logits_per_run": 151956,
+  "runs": {
+    "single": {
+      "sorted_logits_float32le_sha256": "3adc8c4d13c08472700e8ec4964feb0b0f72d41953588efdd313d95a30a286df",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    },
+    "padded": {
+      "sorted_logits_float32le_sha256": "1cbd922bf9ace9a77da40f3675f0534d3402c5312e49bff94d831b8f1173c8c2",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    },
+    "repeat": {
+      "sorted_logits_float32le_sha256": "1cbd922bf9ace9a77da40f3675f0534d3402c5312e49bff94d831b8f1173c8c2",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    },
+    "mixed": {
+      "sorted_logits_float32le_sha256": "48f900ca3db3c351a3113b32bdf9b9121558228bbec5599d126b70e5e3510109",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    },
+    "scan-original": {
+      "sorted_logits_float32le_sha256": "3adc8c4d13c08472700e8ec4964feb0b0f72d41953588efdd313d95a30a286df",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    },
+    "scan-shuffled": {
+      "sorted_logits_float32le_sha256": "3adc8c4d13c08472700e8ec4964feb0b0f72d41953588efdd313d95a30a286df",
+      "clone_row_decision_disagreements": 0,
+      "max_abs_disagreement_between_clones": 0.0
+    }
+  },
+  "raw_comparisons": {
+    "single_to_padded": {
+      "unequal_floats": 131656,
+      "affected_rows": 4702,
+      "max_abs_delta": 2.7010183334350586
+    },
+    "padded_to_repeat": {
+      "unequal_floats": 0,
+      "affected_rows": 0,
+      "max_abs_delta": 0.0
+    },
+    "repeat_to_mixed": {
+      "unequal_floats": 151956,
+      "affected_rows": 5427,
+      "max_abs_delta": 2.205012321472168
+    },
+    "single_to_mixed": {
+      "unequal_floats": 151955,
+      "affected_rows": 5427,
+      "max_abs_delta": 2.5789849758148193
+    },
+    "single_to_scan-original": {
+      "unequal_floats": 0,
+      "affected_rows": 0,
+      "max_abs_delta": 0.0
+    },
+    "single_to_scan-shuffled": {
+      "unequal_floats": 0,
+      "affected_rows": 0,
+      "max_abs_delta": 0.0
+    }
+  }
+}

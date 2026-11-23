@@ -75,6 +75,8 @@ python -I -S -B go_model_score.py recomputed.tsv
 
 ## 补充实测：同一权重换成八条一批，哪些结论还能重用？
 
+后续研究已把这套部署变更拆成三个对照，核对了普通组批前后的单项变化，并在另一种自然语言蕴含模型上检验逐题推理。相关查新找到 Kasa 等对文本分类器做过直接的同形状同伴替换研究。[四组控制与蕴含任务复核](pointwise.md) · [直接先例](https://arxiv.org/abs/2610.09111)
+
 主结果发布后，我们核对了模型卡使用的 28 个细类。单例全精度 macro-F1 为 0.449909，三位小数与发布者报告的 0.450 一致；单例 INT8 为 0.448501，发布者报告的是 0.447。因而不能把逐条决策当作权重文件自身的唯一结果。我们另行公开复核约定后才运行第二种部署。它按官方测试集的原有顺序将相邻八条一起送入模型，每批右补齐到最长一条，最后一批保留实际条数。权重、CPU、软件版本、阈值和原始 5,427 条文本均与前面相同。[补充实验的事前约定](https://github.com/shuimo233/research-notes/blob/14285d9bec0349b9fe8b8af954b3ba4aa83fb0a5/articles/consent-audit/go-layout-protocol.md) · [模型卡和补齐示例](https://huggingface.co/SamLowe/roberta-base-go_emotions-onnx)
 
 | 推理和评分条件 | 全精度 | INT8 | 得分较高者 |
