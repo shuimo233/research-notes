@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-23 | [零次未经同意的写入，能说明代理尊重同意吗？](articles/consent-audit/README.md) | 同意原则的行为审计、单点例外配额与两个学习器的实测 |
 | 2026-11-22 | [32 个故障原因，怎样让接收方查得动一份保证？](articles/antipodal-count-bounds/README.md) | 四行边界编译、无法降至三维的证据及独立验收 |
 | 2026-11-22 | [五行能证明什么？一次独立核验与更正](articles/weighted-conflict-audit/audit.md) | 2008 年先例、13 行实例的三维归约与 0.4.0 独立核验器 |
 | 2026-11-22 | [一份行动计划需要几行证据？](articles/weighted-conflict-audit/README.md) | 八行紧界、压缩核验器 0.3.0 与 44 个 SQLite 分片写入实验 |
