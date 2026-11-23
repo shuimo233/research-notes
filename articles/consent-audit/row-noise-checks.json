@@ -1,0 +1,24 @@
+{
+  "seed": 28317,
+  "registries": 421,
+  "panel_distances": 28546,
+  "optimal": 103,
+  "impossible": 318,
+  "equal_under_full_layout": 362,
+  "decoded_statuses": {
+    "outside_erasure_budget": 360,
+    "ambiguous": 1517,
+    "all_zero": 144,
+    "some_request": 120,
+    "inconsistent": 536
+  },
+  "targeted_error_plus_erasure_decodes": 10472,
+  "missing_adjacent_layout": {
+    "receipt_full_distance": 1,
+    "known_full_distance": 3,
+    "zero_error_prices": [
+      5,
+      4
+    ]
+  }
+}
