@@ -1,0 +1,70 @@
+{
+  "nmonli_train": {
+    "controls": {
+      "direct_then_signed": {
+        "correct": 476,
+        "evidence_pairs": 193,
+        "evidence_correct": 193
+      },
+      "direct_then_blind": {
+        "correct": 479,
+        "evidence_pairs": 193,
+        "evidence_correct": 193
+      },
+      "graph_then_blind": {
+        "correct": 481,
+        "evidence_pairs": 201,
+        "evidence_correct": 201
+      },
+      "wordnet_then_signed": {
+        "correct": 494,
+        "evidence_pairs": 479,
+        "evidence_correct": 479
+      },
+      "wordnet_then_blind": {
+        "correct": 495,
+        "evidence_pairs": 479,
+        "evidence_correct": 479
+      }
+    },
+    "wordnet_lookup": {
+      "both": 0,
+      "neither": 17,
+      "unique": 479
+    }
+  },
+  "nmonli_test": {
+    "controls": {
+      "direct_then_signed": {
+        "correct": 97,
+        "evidence_pairs": 63,
+        "evidence_correct": 63
+      },
+      "direct_then_blind": {
+        "correct": 98,
+        "evidence_pairs": 63,
+        "evidence_correct": 63
+      },
+      "graph_then_blind": {
+        "correct": 98,
+        "evidence_pairs": 63,
+        "evidence_correct": 63
+      },
+      "wordnet_then_signed": {
+        "correct": 100,
+        "evidence_pairs": 98,
+        "evidence_correct": 98
+      },
+      "wordnet_then_blind": {
+        "correct": 100,
+        "evidence_pairs": 98,
+        "evidence_correct": 98
+      }
+    },
+    "wordnet_lookup": {
+      "both": 2,
+      "neither": 0,
+      "unique": 98
+    }
+  }
+}

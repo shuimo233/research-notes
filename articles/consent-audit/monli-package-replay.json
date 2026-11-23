@@ -1,0 +1,38 @@
+{
+  "deployed_packages": {
+    "23": {
+      "same_directions": 596,
+      "correct": 574,
+      "grounded": 39,
+      "measured_model_calls": 1114
+    },
+    "64": {
+      "same_directions": 596,
+      "correct": 574,
+      "grounded": 126,
+      "measured_model_calls": 940
+    },
+    "192": {
+      "same_directions": 596,
+      "correct": 574,
+      "grounded": 264,
+      "measured_model_calls": 664
+    }
+  },
+  "cross_cohort": {
+    "nmonli_train": {
+      "compiled_pairs": 496,
+      "selected": 15,
+      "other_cohort_pairs": 100,
+      "different_from_full_on_other_cohort": 12,
+      "grounded_on_other_cohort": 0
+    },
+    "nmonli_test": {
+      "compiled_pairs": 100,
+      "selected": 8,
+      "other_cohort_pairs": 496,
+      "different_from_full_on_other_cohort": 16,
+      "grounded_on_other_cohort": 0
+    }
+  }
+}

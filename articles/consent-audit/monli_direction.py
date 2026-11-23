@@ -48,8 +48,8 @@ def dataset(folder, split):
     return distinct
 
 
-def fetch_data(folder):
-    for split, digest in SOURCES.items():
+def fetch_data(folder, sources=SOURCES):
+    for split, digest in sources.items():
         name = split + ".jsonl"
         url = f"https://raw.githubusercontent.com/atticusg/MoNLI/{REV}/{name}"
         try:

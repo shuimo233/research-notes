@@ -1,0 +1,225 @@
+{
+  "subsets": {
+    "nmonli_train": {
+      "pairs": 496,
+      "methods": {
+        "original": {
+          "correct": 29,
+          "abstain": 0
+        },
+        "invert_original": {
+          "correct": 467,
+          "abstain": 0
+        },
+        "affirmative": {
+          "correct": 35,
+          "abstain": 0
+        },
+        "invert_affirmative": {
+          "correct": 461,
+          "abstain": 0
+        },
+        "evidence_first": {
+          "correct": 477,
+          "abstain": 0
+        }
+      },
+      "by_path_length": {
+        "0": {
+          "pairs": 295,
+          "methods": {
+            "original": {
+              "correct": 15,
+              "abstain": 0
+            },
+            "invert_original": {
+              "correct": 280,
+              "abstain": 0
+            },
+            "affirmative": {
+              "correct": 19,
+              "abstain": 0
+            },
+            "invert_affirmative": {
+              "correct": 276,
+              "abstain": 0
+            },
+            "evidence_first": {
+              "correct": 276,
+              "abstain": 0
+            }
+          }
+        },
+        "1": {
+          "pairs": 193,
+          "methods": {
+            "original": {
+              "correct": 12,
+              "abstain": 0
+            },
+            "invert_original": {
+              "correct": 181,
+              "abstain": 0
+            },
+            "affirmative": {
+              "correct": 15,
+              "abstain": 0
+            },
+            "invert_affirmative": {
+              "correct": 178,
+              "abstain": 0
+            },
+            "evidence_first": {
+              "correct": 193,
+              "abstain": 0
+            }
+          }
+        },
+        "2": {
+          "pairs": 8,
+          "methods": {
+            "original": {
+              "correct": 2,
+              "abstain": 0
+            },
+            "invert_original": {
+              "correct": 6,
+              "abstain": 0
+            },
+            "affirmative": {
+              "correct": 1,
+              "abstain": 0
+            },
+            "invert_affirmative": {
+              "correct": 7,
+              "abstain": 0
+            },
+            "evidence_first": {
+              "correct": 8,
+              "abstain": 0
+            }
+          }
+        }
+      },
+      "registered_D_beats_A_and_B": false,
+      "registered_E_beats_A_B_D": true,
+      "signed_vs_direct": {
+        "gained": 447,
+        "lost": 15,
+        "net": 432
+      },
+      "signed_vs_blind_inversion": {
+        "gained": 14,
+        "lost": 20,
+        "net": -6
+      },
+      "evidence_vs_signed": {
+        "gained": 16,
+        "lost": 0,
+        "net": 16
+      },
+      "pairs_where_evidence_changes_fallback": 16,
+      "counterfactual_forward_calls_avoided": 402
+    },
+    "nmonli_test": {
+      "pairs": 100,
+      "methods": {
+        "original": {
+          "correct": 9,
+          "abstain": 0
+        },
+        "invert_original": {
+          "correct": 91,
+          "abstain": 0
+        },
+        "affirmative": {
+          "correct": 15,
+          "abstain": 0
+        },
+        "invert_affirmative": {
+          "correct": 85,
+          "abstain": 0
+        },
+        "evidence_first": {
+          "correct": 97,
+          "abstain": 0
+        }
+      },
+      "by_path_length": {
+        "0": {
+          "pairs": 37,
+          "methods": {
+            "original": {
+              "correct": 2,
+              "abstain": 0
+            },
+            "invert_original": {
+              "correct": 35,
+              "abstain": 0
+            },
+            "affirmative": {
+              "correct": 3,
+              "abstain": 0
+            },
+            "invert_affirmative": {
+              "correct": 34,
+              "abstain": 0
+            },
+            "evidence_first": {
+              "correct": 34,
+              "abstain": 0
+            }
+          }
+        },
+        "1": {
+          "pairs": 63,
+          "methods": {
+            "original": {
+              "correct": 7,
+              "abstain": 0
+            },
+            "invert_original": {
+              "correct": 56,
+              "abstain": 0
+            },
+            "affirmative": {
+              "correct": 12,
+              "abstain": 0
+            },
+            "invert_affirmative": {
+              "correct": 51,
+              "abstain": 0
+            },
+            "evidence_first": {
+              "correct": 63,
+              "abstain": 0
+            }
+          }
+        }
+      },
+      "registered_D_beats_A_and_B": false,
+      "registered_E_beats_A_B_D": true,
+      "signed_vs_direct": {
+        "gained": 82,
+        "lost": 6,
+        "net": 76
+      },
+      "signed_vs_blind_inversion": {
+        "gained": 3,
+        "lost": 9,
+        "net": -6
+      },
+      "evidence_vs_signed": {
+        "gained": 12,
+        "lost": 0,
+        "net": 12
+      },
+      "pairs_where_evidence_changes_fallback": 12,
+      "counterfactual_forward_calls_avoided": 126
+    }
+  },
+  "cross_split": {
+    "identical_raw_pairs": 0,
+    "shared_unordered_lexical_pairs": 0
+  }
+}

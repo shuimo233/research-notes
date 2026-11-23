@@ -1,0 +1,8 @@
+{
+  "optimal_budgets": 170,
+  "infeasible_budget_checked": 22,
+  "individual_answers_replayed": 101320,
+  "source_edges": 687,
+  "alternative_path_fixtures": 4,
+  "milp_zero_gap": true
+}
