@@ -1,0 +1,45 @@
+{
+  "exhaustive": [
+    {
+      "cap": 2,
+      "relaxed": false,
+      "ordinary_types": 3,
+      "three_ballot_tables": 286,
+      "margins": 264,
+      "reference_query_answers": 4576,
+      "largest_function_set": 3
+    },
+    {
+      "cap": 3,
+      "relaxed": false,
+      "ordinary_types": 3,
+      "three_ballot_tables": 1771,
+      "margins": 1106,
+      "reference_query_answers": 28336,
+      "largest_function_set": 3
+    },
+    {
+      "cap": 2,
+      "relaxed": false,
+      "ordinary_types": 4,
+      "three_ballot_tables": 816,
+      "margins": 671,
+      "reference_query_answers": 26112,
+      "largest_function_set": 6
+    },
+    {
+      "cap": null,
+      "relaxed": true,
+      "ordinary_types": 2,
+      "three_ballot_tables": 1910,
+      "margins": 655,
+      "reference_query_answers": 15280,
+      "largest_function_set": 5
+    }
+  ],
+  "example_ranks": [
+    0,
+    1
+  ],
+  "example_states": 6
+}
