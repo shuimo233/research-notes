@@ -1,0 +1,40 @@
+{
+  "seed": 110237,
+  "random_cases": 340,
+  "targeted_cases": 9,
+  "history_grid": 16,
+  "mixed_price_grid": 81,
+  "mixed": {
+    "minimax": 8,
+    "receipt_first": 9,
+    "reports_only": 12,
+    "after_b": [
+      "receipt",
+      "a"
+    ]
+  },
+  "local_ternary_truth_table": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "large_witness_size": 256,
+  "oracle": {
+    "all_zero": 22,
+    "full_words": 4792,
+    "inconsistent": 100,
+    "ordered_layout_pairs": 1548,
+    "resolvable": 99,
+    "some_request": 50,
+    "unidentifiable": 175
+  },
+  "two_by_two_reduction_controls": {
+    "unidentifiable": 110,
+    "resolvable": 34
+  }
+}

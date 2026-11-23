@@ -1,0 +1,19 @@
+{
+  "conditions": ["b8"],
+  "layouts": {
+    "app-pair": {"a":"app","b":"app","c":"gateway","d":"auth","e":"gateway"},
+    "auth-pair": {"a":"app","b":"gateway","c":"auth","d":"auth","e":"gateway"}
+  },
+  "fault_budget": 1,
+  "history": [
+    {"source":"a","condition":"b8","bit":1},
+    {"source":"b","condition":"b8","bit":1},
+    {"source":"c","condition":"b8","bit":0},
+    {"source":"d","condition":"b8","bit":0}
+  ],
+  "relations": [],
+  "menu": [
+    {"kind":"same","name":"receipt","left":"a","right":"b","cost":64},
+    {"kind":"report","name":"extra","source":"e","condition":"b8","cost":128}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sqlite": "3.49.1",
+  "sklearn": "1.8.0",
+  "runs": [
+    {
+      "layout": "app-pair",
+      "payoff": 8,
+      "actual_channels": {
+        "app": 0,
+        "gateway": 0,
+        "auth": 0
+      },
+      "flipped_logger": "app",
+      "observed_abcd": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "successful_writes": 0,
+      "history_only": "unidentifiable",
+      "purchased": "receipt",
+      "answer": 1,
+      "receipt_bytes": 64,
+      "extra_report_bytes": 128,
+      "bytes_read": 64,
+      "conclusion": "all_zero"
+    },
+    {
+      "layout": "app-pair",
+      "payoff": 8,
+      "actual_channels": {
+        "app": 0,
+        "gateway": 0,
+        "auth": 0
+      },
+      "flipped_logger": "app",
+      "observed_abcd": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "successful_writes": 0,
+      "history_only": "unidentifiable",
+      "purchased": "extra",
+      "answer": 0,
+      "receipt_bytes": 192,
+      "extra_report_bytes": 32,
+      "bytes_read": 32,
+      "conclusion": "all_zero"
+    },
+    {
+      "layout": "auth-pair",
+      "payoff": 8,
+      "actual_channels": {
+        "app": 1,
+        "gateway": 1,
+        "auth": 1
+      },
+      "flipped_logger": "auth",
+      "observed_abcd": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "successful_writes": 0,
+      "history_only": "unidentifiable",
+      "purchased": "receipt",
+      "answer": 0,
+      "receipt_bytes": 64,
+      "extra_report_bytes": 128,
+      "bytes_read": 64,
+      "conclusion": "some_request"
+    },
+    {
+      "layout": "auth-pair",
+      "payoff": 8,
+      "actual_channels": {
+        "app": 1,
+        "gateway": 1,
+        "auth": 1
+      },
+      "flipped_logger": "auth",
+      "observed_abcd": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "successful_writes": 0,
+      "history_only": "unidentifiable",
+      "purchased": "extra",
+      "answer": 1,
+      "receipt_bytes": 192,
+      "extra_report_bytes": 32,
+      "bytes_read": 32,
+      "conclusion": "some_request"
+    }
+  ]
+}

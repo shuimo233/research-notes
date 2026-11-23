@@ -1,0 +1,14 @@
+{
+  "conditions":["event"],
+  "layouts":{
+    "left":{"a":"app","b":"app","c":"gateway","d":"auth"},
+    "right":{"a":"app","b":"gateway","c":"auth","d":"auth"}
+  },
+  "fault_budget":1, "history":[], "relations":[],
+  "menu":[
+    {"kind":"report","source":"a","condition":"event","name":"read-a","cost":1},
+    {"kind":"report","source":"b","condition":"event","name":"read-b","cost":1},
+    {"kind":"report","source":"c","condition":"event","name":"read-c","cost":1},
+    {"kind":"report","source":"d","condition":"event","name":"read-d","cost":1}
+  ]
+}
