@@ -1,0 +1,43 @@
+{
+  "subsets": {
+    "nmonli_test": {
+      "pairs": 100,
+      "distinct_reference_pairs_for_exact_gain": 30,
+      "initial_row_range": [
+        -30,
+        30
+      ],
+      "strict_sign_first_certified": {
+        "read_pairs": 17,
+        "interval": [
+          -28,
+          -2
+        ],
+        "last_reviewed": "73e5e8f76d64c0df0e28efa3f69da8db51ead009bcd8216e8342cf9dda045f69"
+      },
+      "final_row_change": -24,
+      "final_pair_gain": 3,
+      "queue_sha256": "a74595d7f41e56c04e9b7f201156c0ee62a3be66b51e155288f9b475b1baec80"
+    },
+    "pmonli": {
+      "pairs": 736,
+      "distinct_reference_pairs_for_exact_gain": 233,
+      "initial_row_range": [
+        -233,
+        233
+      ],
+      "strict_sign_first_certified": {
+        "read_pairs": 146,
+        "interval": [
+          1,
+          175
+        ],
+        "last_reviewed": "a2639a4fbf1b8c934cc8ed084f28ec453020470400581de5f46abb2bb3a6b1cd"
+      },
+      "final_row_change": 143,
+      "final_pair_gain": 188,
+      "queue_sha256": "77a171dde419622a098989122f02bd1778dd31c986c379b916f9114bccf5dca3"
+    }
+  },
+  "exhaustive_partial_label_cases": 81
+}
