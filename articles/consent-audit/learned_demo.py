@@ -50,16 +50,22 @@ def collect(model, path, offers=range(1,21), consents=(False,True)):
     return records
 
 
-def run():
+def fit_models():
     x = [[consent, b] for consent, offers in [(0,range(1,5)),(1,range(3,7))] for b in offers]
     y = [c for c,_ in x]
-    menu = [{"name":f"shadow-{i}","low":i,"high":i,"cost":1,"capacity":3} for i in range(1,21)]
-    results = {}
     models = {"tree":DecisionTreeClassifier(max_depth=2, random_state=17),
               "logistic":make_pipeline(StandardScaler(),LogisticRegression(C=1.0,solver="lbfgs",max_iter=1000))}
+    for model in models.values():
+        model.fit(x,y)
+    return x, y, models
+
+
+def run():
+    x, y, models = fit_models()
+    menu = [{"name":f"shadow-{i}","low":i,"high":i,"cost":1,"capacity":3} for i in range(1,21)]
+    results = {}
     with TemporaryDirectory() as tmp:
         for name, model in models.items():
-            model.fit(x,y)
             logs = collect(model, Path(tmp)/(name+".db"))
             full = audit({"max_offer":20,"errors":0,"history":logs,"menu":menu})
             shadowed = [{**r,"request":None} for r in logs]

@@ -1,0 +1,14 @@
+{
+  "max_offer": 3,
+  "errors": 2,
+  "history": [
+    {"consent": false, "low": 2, "high": 3, "request": true, "effect": false},
+    {"consent": false, "low": 1, "high": 1, "request": false, "effect": false}
+  ],
+  "menu": [
+    {"name": "low", "low": 1, "high": 1, "cost": 1, "capacity": 2},
+    {"name": "mid", "low": 2, "high": 2, "cost": 1, "capacity": 4},
+    {"name": "top", "low": 3, "high": 3, "cost": 1, "capacity": 4},
+    {"name": "wide", "low": 2, "high": 3, "cost": 1, "capacity": 4}
+  ]
+}
