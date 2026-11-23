@@ -1,0 +1,60 @@
+{
+  "pysat": "1.9.dev24",
+  "seed": 57709,
+  "oracle_scenarios": 291,
+  "oracle": {
+    "premise_vs_feasible_panel": 2842,
+    "verified_weighted_maxsat": 35,
+    "optimal": 136,
+    "verified_single_rule_arithmetic": 101,
+    "unidentifiable": 87,
+    "inconsistent": 42,
+    "some_request": 21,
+    "all_zero": 5
+  },
+  "reprice_cases": 16,
+  "directional_pair_panel_checks": 788,
+  "matching_pair_panel_checks": 676,
+  "majority_controls": [
+    {
+      "roots": 6,
+      "f": 1,
+      "minimum_cost": 3,
+      "one_hit_rows": 15,
+      "cardinality_rows": 1
+    },
+    {
+      "roots": 8,
+      "f": 2,
+      "minimum_cost": 5,
+      "one_hit_rows": 70,
+      "cardinality_rows": 1
+    },
+    {
+      "roots": 10,
+      "f": 2,
+      "minimum_cost": 5,
+      "one_hit_rows": 210,
+      "cardinality_rows": 1
+    }
+  ],
+  "four_alias_layout_price_grid": {
+    "fewer": 108
+  },
+  "repriced_fixture": {
+    "initial": [
+      "receipt"
+    ],
+    "initial_cost": 64,
+    "after": [
+      "extra"
+    ],
+    "after_cost": 32,
+    "new_rows": 0
+  },
+  "mixed_fixed": 12,
+  "mixed_panel": [
+    "a",
+    "d"
+  ]
+}
