@@ -1,0 +1,88 @@
+{
+  "ranked_words": 2000,
+  "ranked_words_sha256": "726b01c62e172f099d1933100b9c4100970132597d647b24401fcd8f95f5f9d9",
+  "unordered_candidates": 1999000,
+  "strict_directed_relations": 34831,
+  "reciprocal_pairs": 208,
+  "registered": {
+    "policies": 416,
+    "separate_proof_union_edge_occurrences": 2846,
+    "exact_edge_occurrences": 2844,
+    "policies_saving_edges": 2,
+    "proposal_only_wrong": 414,
+    "proposal_only_wrong_on_full": 414,
+    "policies_with_bidirectional_pivot": 0,
+    "minimum_deletions_histogram": {
+      "1": 353,
+      "2": 45,
+      "3": 10,
+      "4": 5,
+      "6": 1,
+      "unreachable": 2
+    }
+  },
+  "primary_unique_proof_edges": 756,
+  "primary_unique_decision_edges": 755,
+  "context_unique_proof_edges": 891,
+  "context_unique_decision_edges": 79,
+  "real_queries": {
+    "nmonli_train": {
+      "items": 496,
+      "both": 0,
+      "neither": 17,
+      "correct": 494,
+      "policies_saving_edges": 446,
+      "separate_proof_union_edge_occurrences": 1715,
+      "exact_edge_occurrences": 71
+    },
+    "nmonli_test": {
+      "items": 100,
+      "both": 2,
+      "neither": 0,
+      "correct": 100,
+      "policies_saving_edges": 83,
+      "separate_proof_union_edge_occurrences": 224,
+      "exact_edge_occurrences": 37
+    }
+  },
+  "real_bilateral_cases": [
+    {
+      "words": [
+        "ball",
+        "baseball"
+      ],
+      "edges": [
+        "00474568>00471613",
+        "02799071>02778669"
+      ],
+      "ab": [
+        "0x1"
+      ],
+      "ba": [
+        "0x2"
+      ],
+      "depart_ab": {
+        "rising": {
+          "0": "0x0"
+        },
+        "falling": {
+          "1": "0x1"
+        },
+        "needed": "0x3",
+        "minimum_delete": "0x2",
+        "proposal_only_mismatch": "0x3"
+      },
+      "depart_ba": {
+        "rising": {
+          "1": "0x0"
+        },
+        "falling": {
+          "0": "0x2"
+        },
+        "needed": "0x3",
+        "minimum_delete": "0x1",
+        "proposal_only_mismatch": "0x3"
+      }
+    }
+  ]
+}

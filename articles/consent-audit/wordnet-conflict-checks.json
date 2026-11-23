@@ -1,0 +1,12 @@
+{
+  "independently_enumerated_word_pairs": 1999000,
+  "both_directions": 208,
+  "bdd_policy_edge_checks": 6318,
+  "directional_witness_worlds_replayed": 4569,
+  "bdd_nearest_withdrawals_checked": 2010,
+  "context_distinct_word_pairs": 499,
+  "runtime_original_or_single_withdrawal_checks": 47680,
+  "unrestricted_package_equivalences": 596,
+  "real_model_contexts": 596,
+  "exhaustive_small_path_family_pairs": 28224
+}
