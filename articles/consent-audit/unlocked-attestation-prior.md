@@ -4,6 +4,7 @@
 
 ## 已知的几何与保密机制
 
+- Benedikt、Bourhis、Jachiet 与 Tsamoura 已在数据库视图设计里同时要求支持一个效用查询，并阻止从发布视图确定受保密事实。其定义用不可区分的数据库实例和查询决定性描述这两项要求。这里采用的是同一类发布目标，具体的效用命题是原读数是否达到最少，保密对象是整数差约束中的原始坐标。[效用与非披露并存的视图设计](https://doi.org/10.1145/3488370)
 - 数据库统计披露研究早已分别定义能否推断某个精确值、能否将其限于过窄区间。表格隐藏研究也用图上的回路保护敏感单元格。因此，保护每项可能值区间和用图检查推断披露都有直接先例。判定本次证明包蕴含什么，并不覆盖外部观察者可能掌握的附加资料，若发布与拒绝的策略本身可被观察，还可能有额外信息。[区间披露保护](https://pubsonline.informs.org/doi/10.1287/ijoc.10.3.309) · [表格单元的精确披露控制](https://www.sciencedirect.com/science/article/abs/pii/S0305054804000863) · [发布与拒绝策略的信息泄露](https://theory.stanford.edu/~nmishra/Papers/denialsLeakInformation.pdf)
 - 差约束闭包给出每对坐标的最紧上下界。刚性类收缩、图势的可行移动、按约束排除反例的最小溯因已有研究。以下候选贡献聚焦于按阈值压缩字典、证明公开选读费最少，以及避免新增精确推断这三者同时成立时可验证的结论。[Miné 的闭包与投影定理](https://arxiv.org/pdf/cs/0703073) · [Knauer，第 1.4 节](https://pageperso.lis-lab.fr/~kolja.knauer/knauer_kolja.pdf) · [隐式击中集溯因](https://arxiv.org/pdf/1604.08229)
 
