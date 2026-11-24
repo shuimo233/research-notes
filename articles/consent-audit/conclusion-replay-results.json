@@ -1,0 +1,97 @@
+{
+  "distinct_region_dates": 725,
+  "by_source": {
+    "total": {
+      "reports": 1450,
+      "labels": 14500,
+      "all": 7250,
+      "cold": 6703,
+      "local": 6166,
+      "fixed": 6084,
+      "probe": 6006,
+      "oracle": 5058,
+      "probe_worst_bound": 6027,
+      "probe_strict_bound": 54,
+      "fixed_zero": 37
+    },
+    "8": {
+      "reports": 725,
+      "labels": 7250,
+      "all": 3625,
+      "cold": 3302,
+      "local": 2983,
+      "fixed": 2923,
+      "probe": 2908,
+      "oracle": 2460,
+      "probe_worst_bound": 2912,
+      "probe_strict_bound": 11,
+      "fixed_zero": 22
+    },
+    "california/8": {
+      "reports": 364,
+      "labels": 3640,
+      "all": 1820,
+      "cold": 1538,
+      "local": 1322,
+      "fixed": 1294,
+      "probe": 1285,
+      "oracle": 1112,
+      "probe_worst_bound": 1288,
+      "probe_strict_bound": 6,
+      "fixed_zero": 22
+    },
+    "12": {
+      "reports": 725,
+      "labels": 7250,
+      "all": 3625,
+      "cold": 3401,
+      "local": 3183,
+      "fixed": 3161,
+      "probe": 3098,
+      "oracle": 2598,
+      "probe_worst_bound": 3115,
+      "probe_strict_bound": 43,
+      "fixed_zero": 15
+    },
+    "california/12": {
+      "reports": 364,
+      "labels": 3640,
+      "all": 1820,
+      "cold": 1632,
+      "local": 1449,
+      "fixed": 1433,
+      "probe": 1400,
+      "oracle": 1136,
+      "probe_worst_bound": 1408,
+      "probe_strict_bound": 23,
+      "fixed_zero": 15
+    },
+    "new_york/8": {
+      "reports": 361,
+      "labels": 3610,
+      "all": 1805,
+      "cold": 1764,
+      "local": 1661,
+      "fixed": 1629,
+      "probe": 1623,
+      "oracle": 1348,
+      "probe_worst_bound": 1624,
+      "probe_strict_bound": 5,
+      "fixed_zero": 0
+    },
+    "new_york/12": {
+      "reports": 361,
+      "labels": 3610,
+      "all": 1805,
+      "cold": 1769,
+      "local": 1734,
+      "fixed": 1728,
+      "probe": 1698,
+      "oracle": 1462,
+      "probe_worst_bound": 1707,
+      "probe_strict_bound": 20,
+      "fixed_zero": 0
+    }
+  },
+  "gate": false
+}
