@@ -1,0 +1,47 @@
+[
+  {
+    "repo": "microsoft/TypeScript",
+    "sha": "0b0aeb31e416c280bcbef7d7734aa21e7d999cdd",
+    "cutoff": "2026-10-29T23:25:28Z"
+  },
+  {
+    "repo": "npm/cli",
+    "sha": "158315cd9d83768f2c7bd2e68281cc7dca2d7352",
+    "cutoff": "2026-10-28T00:46:25Z"
+  },
+  {
+    "repo": "nodejs/undici",
+    "sha": "1a81548abf576c1932b3a6f35a1ea38486ffa069",
+    "cutoff": "2026-10-26T23:09:16Z"
+  },
+  {
+    "repo": "HabitRPG/habitica",
+    "sha": "12091ca02990533fdf38c2f0947397f0b4e39d59",
+    "cutoff": "2026-10-26T14:15:19Z"
+  },
+  {
+    "repo": "node-red/node-red",
+    "sha": "1fd1f8e5b640f195098848c78bc5fe3c6af9285e",
+    "cutoff": "2026-10-21T09:57:06Z"
+  },
+  {
+    "repo": "acornjs/acorn",
+    "sha": "f180fd7f1e92ea35c064132366de07eedd761e31",
+    "cutoff": "2026-09-16T11:14:51Z"
+  },
+  {
+    "repo": "tj/commander.js",
+    "sha": "2b51b9a9413692c9cf27452a2f2d1783037d7808",
+    "cutoff": "2026-10-05T03:18:29Z"
+  },
+  {
+    "repo": "koajs/koa",
+    "sha": "4a191b1fb7bc999ebbe4bc822e4f315bb752006e",
+    "cutoff": "2026-08-23T21:43:12Z"
+  },
+  {
+    "repo": "markedjs/marked",
+    "sha": "5beecae42b0beb07eaccc3a732560f56867a8301",
+    "cutoff": "2026-10-26T14:54:00Z"
+  }
+]
