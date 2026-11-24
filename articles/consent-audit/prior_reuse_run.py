@@ -88,6 +88,14 @@ def coarse_bound(p, weights):
     return 2 * sum(p.cost) * (1 - prod(1 - t for t in discrete_tvs))
 
 
+def word_prior_pair(graph, task):
+    weights = [sense_marginals(graph, task, add) for add in (1, 2)]
+    return [
+        RelationInquiry(w, sorted(task["edges"]), graph.relation, w, task["words"])
+        for w in weights
+    ], weights
+
+
 def score(k, p, q, truth, weights):
     loss, gain = transfer_bound(p.plan, q.plan)
     bound = loss + gain
@@ -143,16 +151,7 @@ def run(snapshot, wordnet, semcor, out):
         if exact is None:
             counts["excluded_no_exact_root"] += 1
             continue
-        opts = []
-        weights = []
-        for add in (1, 2):
-            w = sense_marginals(graph, task, add)
-            opts.append(
-                RelationInquiry(
-                    w, sorted(task["edges"]), graph.relation, w, task["words"]
-                )
-            )
-            weights.append(w)
+        opts, weights = word_prior_pair(graph, task)
         if any(n != 1 for n in opts[0].plan.counts):
             counts["excluded_coalesced"] += 1
             continue

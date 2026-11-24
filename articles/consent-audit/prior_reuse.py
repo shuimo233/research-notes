@@ -81,8 +81,7 @@ def transport(old, new, cost):
     return value
 
 
-def transfer_bound(old, new):
-    """Return cost-decrease and cost-increase allowances from old to new."""
+def common_structure(old, new):
     if (old.names, old.neighbors, old.counts, old.cost) != (
         new.names,
         new.neighbors,
@@ -95,26 +94,47 @@ def transfer_bound(old, new):
     for a, b in zip(old.groups, new.groups, strict=True):
         if {m for m, _ in a} != {m for m, _ in b}:
             raise ValueError("trigger supports must match")
+
+
+def _transport_bounds(old, new, live):
+    active = {old.names[i]: 1 for i in bits(live)}
     edges = [
-        (u, old.names[j])
-        for i, u in enumerate(old.names)
-        for j in bits(old.neighbors[i])
+        (old.names[i], old.names[j])
+        for i in bits(live)
+        for j in bits(old.neighbors[i] & live)
         if i < j
     ]
-    partition = scopes(dict.fromkeys(old.names, 1), edges)
+    partition = scopes(active, edges)
     distance = Q(0)
     drift = Q(0)
-    for i, u in enumerate(old.names):
+    for u in active:
+        i = old.indices[u]
         for scope in partition[u]:
             local = sum(1 << old.indices[v] for v in scope)
             a = dict(old.projections(i, local))
             b = dict(new.projections(i, local))
             distance += transport(a, b, old.cost)
         drift += sum(
-            old.cost[j] * (new.rates[i][j] - p) for j, p in old.rates[i].items()
+            old.cost[j] * (new.rates[i][j] - p)
+            for j, p in old.rates[i].items()
+            if live >> j & 1
         )
     assert distance >= abs(drift)
     return (distance - drift) / 2, (distance + drift) / 2
+
+
+def transfer_bound(old, new):
+    """Return cost-decrease and cost-increase allowances from old to new."""
+    common_structure(old, new)
+    return _transport_bounds(old, new, (1 << len(old.names)) - 1)
+
+
+def mandatory_first_regret_bound(old, new):
+    """Ignore initial compulsory reads when bounding the loss of an optimal old policy."""
+    common_structure(old, new)
+    live = (1 << len(old.names)) - 1
+    compulsory = old.obligations(old.counts, 0)
+    return sum(_transport_bounds(old, new, live & ~compulsory))
 
 
 if __name__ == "__main__":
@@ -129,6 +149,9 @@ if __name__ == "__main__":
             dict(
                 optimal_budget_change=[str(-low), str(high)],
                 reused_policy_regret_at_most=str(low + high),
+                regret_after_removing_mandatory_reads=str(
+                    mandatory_first_regret_bound(p, q)
+                ),
             ),
             indent=2,
         )
