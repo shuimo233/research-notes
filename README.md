@@ -8,6 +8,8 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [各项最坏成本能否同时发生？](articles/consent-audit/fair-union.md) | 公平二元来源下的二触发线性判定、全正三触发困难性与精确半项缺口 |
+| 2026-11-24 | [一句里先问哪些词，能证明选对了吗？](articles/consent-audit/coupling-witness.md) | 对 99 句的全部 244 个极小覆盖作稳健预算核对，比较见证、合并及无环判据 |
 | 2026-11-24 | [只知道每个词的义项频率，能把整句的询问预算算准吗？](articles/consent-audit/cover-dependence.md) | 为 99 个真实句子构造精确相关性预算，给出可线性计算与 NP-hard 的结构边界 |
 | 2026-11-24 | [同一个词义只问一次，一句话能少问多少？](articles/consent-audit/shared-sense.md) | 对照逐题缓存、整句询问顺序与最短证书，在两套语料中逐句核验 |
 | 2026-11-24 | [确认“这是一种什么”有时也能少问一次](articles/consent-audit/wsd-clarification.md) | 五套外部语料中核对四种问法，公布未达门槛的复验、四个正例和逐项证书 |

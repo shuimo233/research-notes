@@ -1,0 +1,6 @@
+{
+  "sentence_instances": 99,
+  "all_minimal_plans": 244,
+  "exact_lp_certificates": 488,
+  "independently_enumerated_clock_orientations": 2880
+}

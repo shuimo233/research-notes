@@ -1,0 +1,132 @@
+{
+  "wsd": {
+    "sentences": 60,
+    "fixed": {
+      "plans": 60,
+      "forest": 50,
+      "posthoc_coalesced_exact": 59,
+      "posthoc_coalesced_or_clock_upper": 60,
+      "upper_status": {
+        "witness": 59,
+        "unsat_in_clock_family": 1
+      },
+      "lower_status": {
+        "witness": 57,
+        "unsat_in_clock_family": 3
+      },
+      "upper_added_to_forest": 9,
+      "both_added_to_forest": 8,
+      "upper_genuinely_loose": 0,
+      "lower_genuinely_loose": 1
+    },
+    "all_plans": {
+      "plans": 166,
+      "forest": 144,
+      "posthoc_coalesced_exact": 158,
+      "posthoc_coalesced_or_clock_upper": 160,
+      "upper_status": {
+        "witness": 141,
+        "unsat_in_clock_family": 19,
+        "wide": 6
+      },
+      "lower_status": {
+        "witness": 160,
+        "unsat_in_clock_family": 6
+      },
+      "upper_added_to_forest": 13,
+      "both_added_to_forest": 11,
+      "upper_genuinely_loose": 0,
+      "lower_genuinely_loose": 2
+    },
+    "choice": {
+      "original": {
+        "sum_worst_expectation": "19322603/145860",
+        "actual_reveals": 162,
+        "attains_optimum": 50
+      },
+      "independent": {
+        "sum_worst_expectation": "1566161/12155",
+        "actual_reveals": 160,
+        "attains_optimum": 60
+      },
+      "local_upper": {
+        "sum_worst_expectation": "1566161/12155",
+        "actual_reveals": 160,
+        "attains_optimum": 60
+      },
+      "maximum": {
+        "sum_worst_expectation": "1566161/12155",
+        "actual_reveals": 160,
+        "attains_optimum": 60
+      }
+    },
+    "optimality_certified_independence_only": 59,
+    "optimality_certified_clock": 60,
+    "optimality_certified_forest": 60,
+    "optimality_certified_forest_or_clock": 60
+  },
+  "semcor": {
+    "sentences": 39,
+    "fixed": {
+      "plans": 39,
+      "forest": 34,
+      "posthoc_coalesced_exact": 39,
+      "posthoc_coalesced_or_clock_upper": 39,
+      "upper_status": {
+        "witness": 38,
+        "unsat_in_clock_family": 1
+      },
+      "lower_status": {
+        "witness": 39
+      },
+      "upper_added_to_forest": 4,
+      "both_added_to_forest": 4,
+      "upper_genuinely_loose": 0,
+      "lower_genuinely_loose": 0
+    },
+    "all_plans": {
+      "plans": 78,
+      "forest": 67,
+      "posthoc_coalesced_exact": 78,
+      "posthoc_coalesced_or_clock_upper": 78,
+      "upper_status": {
+        "witness": 62,
+        "wide": 14,
+        "unsat_in_clock_family": 2
+      },
+      "lower_status": {
+        "witness": 78
+      },
+      "upper_added_to_forest": 6,
+      "both_added_to_forest": 6,
+      "upper_genuinely_loose": 0,
+      "lower_genuinely_loose": 0
+    },
+    "choice": {
+      "original": {
+        "sum_worst_expectation": "1351703/16380",
+        "actual_reveals": 86,
+        "attains_optimum": 37
+      },
+      "independent": {
+        "sum_worst_expectation": "268375/3276",
+        "actual_reveals": 85,
+        "attains_optimum": 39
+      },
+      "local_upper": {
+        "sum_worst_expectation": "268375/3276",
+        "actual_reveals": 86,
+        "attains_optimum": 39
+      },
+      "maximum": {
+        "sum_worst_expectation": "268375/3276",
+        "actual_reveals": 86,
+        "attains_optimum": 39
+      }
+    },
+    "optimality_certified_independence_only": 38,
+    "optimality_certified_clock": 39,
+    "optimality_certified_forest": 39,
+    "optimality_certified_forest_or_clock": 39
+  }
+}
