@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pair_budget_run import cases, select
 from pair_budget import PairBudget
+from frontier_theory_check import plan_for, raw_optimum
 
 
 def evaluate(curve, t):
@@ -87,7 +88,31 @@ def literal_envelope(family):
     return curve
 
 
+def ordered_triangle():
+    domains = [(0, 2, Q(7, 2), 5, 7), (1, 4), (3, 6)]
+    tables = {
+        (i, j): [[a < b for b in domains[j]] for a in domains[i]]
+        for i, j in combinations(range(3), 2)
+    }
+    p = Q(1, 400)
+    values = []
+    rates = []
+    for q in (Q(1, 100), Q(49, 100)):
+        weights = [
+            [q / 2, Q(1, 2) - q, q, Q(1, 2) - q, q / 2],
+            [1 - p, p],
+            [p, 1 - p],
+        ]
+        assert all(v > 0 for law in weights for v in law)
+        plan = plan_for(weights, tables, [1] * 3)
+        values.append(raw_optimum(weights, tables, [1] * 3))
+        rates.append(plan.rates)
+        assert values[-1] == plan.root_value() == 2 + p + (1 - p) * q
+    return rates[0] == rates[1], values[1] - values[0]
+
+
 def check(wordnet, semcor, results):
+    assert ordered_triangle() == (True, Q(1197, 2500))
     fixture = Path(__file__).with_name("pair-budget-interior-example.json")
     family = PairBudget(**json.loads(fixture.read_bytes()))
     curve = literal_envelope(family)
@@ -123,6 +148,7 @@ def check(wordnet, semcor, results):
         report["piecewise_intervals"] += len(curve) > 2
         report["interior_maxima"] += high > max(curve[0][1], curve[-1][1])
     assert not by_task
+    report["ordered_triangle_gap"] = str(Q(1197, 2500))
     return report
 
 
