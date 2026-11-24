@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [差分档案里的公开证据能跨领域复用吗？](articles/consent-audit/transit-optimality.md) | 复验 500 个 BART 换乘窗口，定位 34 个信息缺口，确定多界反例组的复杂度 |
 | 2026-11-24 | [只凭公开读数，能证明披露已经是最少吗？](articles/consent-audit/public-optimality.md) | 只用公开输入证明 429 项证书最优，并定位 1 项真实回放的信息缺口 |
 | 2026-11-24 | [如何只披露足以复核新版报告的时间戳？](articles/consent-audit/slack-certificate.md) | 构造精确反例集合，独立证实 430 份 CI 报告的最少披露 |
 | 2026-11-24 | [只留旧报告时，哪些读数必须重查？](articles/consent-audit/conclusion-replay.md) | 用整数差分约束直接确定最小固定读取集合，在 1,450 份温差报告上检验 |

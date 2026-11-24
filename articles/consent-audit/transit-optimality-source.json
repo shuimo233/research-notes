@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "838bae35002f76c217aa7350ff65e137b5d89c312c28c0a1c43ec32ab1ed6170",
+  "fixture_sha256": "cd15bb19bf6c199d685cd248089482b83dcc480fd4b534e810fcfa7fc3ef8975",
+  "url": "https://www.bart.gov/dev/schedules/google_transit.zip",
+  "metadata": {
+    "feed_publisher_name": "Bay Area Rapid Transit",
+    "feed_publisher_url": "http://www.bart.gov",
+    "feed_lang": "en",
+    "feed_start_date": "20260112",
+    "feed_end_date": "20260830",
+    "feed_version": "72"
+  },
+  "service_dates": [
+    "2026-08-19",
+    "2026-08-22",
+    "2026-08-23"
+  ],
+  "windows": 7844,
+  "duplicates": 1570,
+  "insufficient_relations": 2332,
+  "eligible": 3942,
+  "selected": 500
+}
