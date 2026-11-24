@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [审阅者也能看到拒绝，发布规则还能保证什么？](articles/consent-audit/denial-odds.md) | 在最低成功率合同下精确优化赔率，24 项严格优于任意恒定成功率 |
 | 2026-11-24 | [一条证词已经为真，抽中它还能改变多少赔率？](articles/consent-audit/selection-odds.md) | 精确校准发布概率，在 25 份 BART 目录逐项核验最优性 |
 | 2026-11-24 | [证词的内容安全，选择证词的规则也安全吗？](articles/consent-audit/selection-protection.md) | 审计实际选择的推断，构造公开可核验的确定性与随机发布规则 |
 | 2026-11-24 | [只用一份假想时间表，证明没有新确定任何线性统计量](articles/consent-audit/lag-protection.md) | 以公开的有理表验证全体时差保护，复算 35 项最少披露任务 |

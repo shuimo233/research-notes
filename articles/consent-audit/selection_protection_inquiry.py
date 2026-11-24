@@ -34,7 +34,7 @@ def checked(entry):
     return authority, labels
 
 
-def once(record, entry, authority, comparisons, method, destination, weights=None):
+def record_indices(record, authority, comparisons):
     if (
         len(record) != authority.n
         or any(type(x) is not int for x in record)
@@ -42,7 +42,30 @@ def once(record, entry, authority, comparisons, method, destination, weights=Non
         or any(record[v] - record[u] > c for u, v, c in authority.original)
     ):
         raise ValueError("record is inconsistent with the public archive")
-    ids = true_indices(record, comparisons)
+    return true_indices(record, comparisons)
+
+
+def cache_once(destination, build):
+    if not destination.exists():
+        public = build()
+        f = NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=destination.parent, delete=False
+        )
+        path = Path(f.name)
+        try:
+            with f:
+                f.write(json.dumps(public, indent=2) + "\n")
+            try:
+                os.link(path, destination)
+            except FileExistsError:
+                pass
+        finally:
+            path.unlink()
+    return json.loads(destination.read_bytes())
+
+
+def once(record, entry, authority, comparisons, method, destination, weights=None):
+    ids = record_indices(record, authority, comparisons)
     if not ids:
         raise ValueError("the catalogue has no compatible release")
     scope = entry
@@ -57,7 +80,8 @@ def once(record, entry, authority, comparisons, method, destination, weights=Non
     context = sha256(
         json.dumps(scope, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
-    if not destination.exists():
+
+    def build():
         if method == "random":
             label = choice(ids)
         elif method == "weighted":
@@ -70,23 +94,11 @@ def once(record, entry, authority, comparisons, method, destination, weights=Non
             label = next(i for i in entry["priority"]["order"] if i in ids)
         else:
             label = selected_by_bases(record, comparisons, entry["basis_plan"]["bases"])
-        public = dict(
+        return dict(
             catalogue=context, method=method, label=label, **entry["entries"][label]
         )
-        with NamedTemporaryFile(
-            mode="w", encoding="utf-8", dir=destination.parent, delete=False
-        ) as f:
-            path = Path(f.name)
-            f.write(json.dumps(public, indent=2) + "\n")
-            f.flush()
-        try:
-            try:
-                os.link(path, destination)
-            except FileExistsError:
-                pass
-        finally:
-            path.unlink()
-    prior = json.loads(destination.read_bytes())
+
+    prior = cache_once(destination, build)
     selected = prior["label"]
     if (
         prior["catalogue"] != context

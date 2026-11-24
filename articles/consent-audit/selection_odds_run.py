@@ -27,13 +27,13 @@ def rational(value):
     return Fraction(float(value)).limit_denominator(10**8)
 
 
-def solve(n, masks):
+def solve(n, masks, floor=None):
     from scipy import __version__
     from scipy.optimize import linprog
 
     if __version__ != "1.16.3":
         raise RuntimeError("this replay pins scipy 1.16.3")
-    floor = Fraction(1, 2 * n)
+    floor = Fraction(1, 2 * n) if floor is None else floor
     minimal, maximal = antichains(masks)
     rows, rhs = [], []
     for sign, wanted in ((-1, minimal), (1, maximal)):
