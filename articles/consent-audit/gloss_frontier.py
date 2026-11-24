@@ -32,14 +32,9 @@ def single_words(node):
             yield from single_words(child)
 
 
-def run(wordnet, semcor, glosses, out):
+def semcor_counts(wordnet, semcor, senses):
     verify(wordnet, "3c68cd207844f071a5206f7fbed23e5c607ec02f")
     verify(semcor, "19cdf8d8b1377016e9a0c3ec2a3147df1a778727")
-    with glosses.open("rb") as stream:
-        if hashlib.file_digest(stream, "sha256").hexdigest() != GLOSS_SHA:
-            raise ValueError("wrong Gloss Corpus release")
-    graph = NounPaths(wordnet)
-    senses = lru_cache(None)(graph.senses)
     with ZipFile(wordnet) as z:
         index = {
             k: int(x)
@@ -62,6 +57,16 @@ def run(wordnet, semcor, glosses, out):
                             if key in index and index[key] in senses(lemma):
                                 training[lemma][index[key]] += 1
                         node.clear()
+    return index, training
+
+
+def run(wordnet, semcor, glosses, out):
+    with glosses.open("rb") as stream:
+        if hashlib.file_digest(stream, "sha256").hexdigest() != GLOSS_SHA:
+            raise ValueError("wrong Gloss Corpus release")
+    graph = NounPaths(wordnet)
+    senses = lru_cache(None)(graph.senses)
+    index, training = semcor_counts(wordnet, semcor, senses)
 
     @lru_cache(100000)
     def needed(a, b):
