@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [气温档案回放中，精确规划的读数节省很小](articles/consent-audit/station-query.md) | 在 5,055 项 NOAA 跨站温差任务上验证块分解，保留未达效用门槛的结果 |
 | 2026-11-24 | [少记一对追问的联合概率，最优预算能错多少？](articles/consent-audit/pair-budget.md) | 证明单位费用下的极小极大预算误差，并在 501 项词义关系任务上独立复算保证区间 |
 | 2026-11-24 | [每次询问都算一次时，双连通块仍是最细的通用分组](articles/consent-audit/unit-block-proof.md) | 同一张图、相同的单位费用与均匀义项，局部统计相同的两个预算仍可相差 0.47 次以上 |
 | 2026-11-24 | [用另一套人工词义标注复验：整句规划还能少问吗？](articles/consent-audit/gloss-frontier.md) | 在 Princeton WordNet Gloss Corpus 全量定义中复验预先登记的询问收益及块内统计 |

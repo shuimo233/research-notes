@@ -87,11 +87,19 @@ class RelationInquiry:
             {t: len(members[t]) for t in self.names}, choices, typed_edges
         )
 
-    def execute(self, ask, mode="optimal", limit=None):
+    def execute(self, ask, mode="optimal", limit=None, *, planner=None):
         """ask(position_id) returns only that position's categorical value."""
+        if planner is None:
+            planner = self.plan
+        elif (planner.names, planner.counts, planner.neighbors) != (
+            self.plan.names,
+            self.plan.counts,
+            self.plan.neighbors,
+        ):
+            raise ValueError("policy planner must use the same relation graph")
         known = {}
         trace = []
-        counts = list(self.plan.counts)
+        counts = list(planner.counts)
         forced = 0
         fallback = 0
 
@@ -107,7 +115,7 @@ class RelationInquiry:
             forced |= self.masks[u][x]
 
         if mode == "fixed":
-            initial, _ = self.plan.fixed_cover()
+            initial, _ = planner.fixed_cover()
             for i in initial:
                 while counts[i]:
                     request(i)
@@ -116,7 +124,7 @@ class RelationInquiry:
                     request(i)
         else:
             while True:
-                i, used = self.plan.action(tuple(counts), forced, mode, limit)
+                i, used = planner.action(tuple(counts), forced, mode, limit)
                 if i is None:
                     break
                 fallback += int(used)

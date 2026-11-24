@@ -1,0 +1,209 @@
+{
+  "by_region": {
+    "california": {
+      "all": 12590,
+      "oracle": 8739,
+      "fixed": 8822,
+      "greedy": 8834,
+      "edge": 8827,
+      "full": 8827,
+      "block": 8827,
+      "tasks": 2518
+    },
+    "total": {
+      "all": 25275,
+      "oracle": 19778,
+      "fixed": 19881,
+      "greedy": 19888,
+      "edge": 19878,
+      "full": 19878,
+      "block": 19878,
+      "tasks": 5055
+    },
+    "new_york": {
+      "all": 12685,
+      "oracle": 11039,
+      "fixed": 11059,
+      "greedy": 11054,
+      "edge": 11051,
+      "full": 11051,
+      "block": 11051,
+      "tasks": 2537
+    }
+  },
+  "by_year": {
+    "california": {
+      "2018": {
+        "all": 1690,
+        "oracle": 1190,
+        "fixed": 1203,
+        "greedy": 1207,
+        "edge": 1207,
+        "full": 1207,
+        "block": 1207,
+        "tasks": 338
+      },
+      "2019": {
+        "all": 1810,
+        "oracle": 1377,
+        "fixed": 1385,
+        "greedy": 1387,
+        "edge": 1386,
+        "full": 1386,
+        "block": 1386,
+        "tasks": 362
+      },
+      "2020": {
+        "all": 1810,
+        "oracle": 1285,
+        "fixed": 1301,
+        "greedy": 1302,
+        "edge": 1301,
+        "full": 1301,
+        "block": 1301,
+        "tasks": 362
+      },
+      "2021": {
+        "all": 1820,
+        "oracle": 1235,
+        "fixed": 1241,
+        "greedy": 1243,
+        "edge": 1241,
+        "full": 1241,
+        "block": 1241,
+        "tasks": 364
+      },
+      "2022": {
+        "all": 1805,
+        "oracle": 1189,
+        "fixed": 1202,
+        "greedy": 1203,
+        "edge": 1201,
+        "full": 1201,
+        "block": 1201,
+        "tasks": 361
+      },
+      "2023": {
+        "all": 1825,
+        "oracle": 1305,
+        "fixed": 1313,
+        "greedy": 1312,
+        "edge": 1312,
+        "full": 1312,
+        "block": 1312,
+        "tasks": 365
+      },
+      "2024": {
+        "all": 1830,
+        "oracle": 1158,
+        "fixed": 1177,
+        "greedy": 1180,
+        "edge": 1179,
+        "full": 1179,
+        "block": 1179,
+        "tasks": 366
+      }
+    },
+    "new_york": {
+      "2018": {
+        "all": 1815,
+        "oracle": 1605,
+        "fixed": 1608,
+        "greedy": 1607,
+        "edge": 1607,
+        "full": 1607,
+        "block": 1607,
+        "tasks": 363
+      },
+      "2019": {
+        "all": 1825,
+        "oracle": 1610,
+        "fixed": 1612,
+        "greedy": 1612,
+        "edge": 1612,
+        "full": 1612,
+        "block": 1612,
+        "tasks": 365
+      },
+      "2020": {
+        "all": 1830,
+        "oracle": 1639,
+        "fixed": 1644,
+        "greedy": 1642,
+        "edge": 1640,
+        "full": 1640,
+        "block": 1640,
+        "tasks": 366
+      },
+      "2021": {
+        "all": 1815,
+        "oracle": 1555,
+        "fixed": 1556,
+        "greedy": 1557,
+        "edge": 1556,
+        "full": 1556,
+        "block": 1556,
+        "tasks": 363
+      },
+      "2022": {
+        "all": 1765,
+        "oracle": 1517,
+        "fixed": 1519,
+        "greedy": 1517,
+        "edge": 1518,
+        "full": 1518,
+        "block": 1518,
+        "tasks": 353
+      },
+      "2023": {
+        "all": 1815,
+        "oracle": 1529,
+        "fixed": 1533,
+        "greedy": 1532,
+        "edge": 1531,
+        "full": 1531,
+        "block": 1531,
+        "tasks": 363
+      },
+      "2024": {
+        "all": 1820,
+        "oracle": 1584,
+        "fixed": 1587,
+        "greedy": 1587,
+        "edge": 1587,
+        "full": 1587,
+        "block": 1587,
+        "tasks": 364
+      }
+    }
+  },
+  "excluded_incomplete": {
+    "new_york": 20,
+    "california": 39
+  },
+  "different_planning_keys": 3870,
+  "keys_edge_strict_expected_loss": 3,
+  "keys_altering_cross_block_coupling": 493,
+  "actual_edges_checked": 151650,
+  "forecast_budgets": {
+    "expected": 19771.65919,
+    "edge_forecast": 19774.165492,
+    "edge_cost_under_fitted_model": 19771.672137
+  },
+  "month_bootstrap_query_saving": {
+    "fixed": [
+      -7,
+      14
+    ],
+    "greedy": [
+      3,
+      18
+    ],
+    "edge": [
+      0,
+      0
+    ]
+  },
+  "main_gate": false,
+  "mechanism_gate": true
+}
