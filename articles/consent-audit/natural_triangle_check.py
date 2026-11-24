@@ -18,6 +18,58 @@ sys.path.insert(0, str(ROOT))
 from go_model_fetch import verify
 
 
+def certify(names, t, groups):
+    assert t["sources"] == list(names) and t["covers"] == 3
+    value = Q(t["value"])
+    law = {tuple(w): Q(m) for w, m in t["adverse"]}
+    worlds = list(product(*(range(len(g)) for g in groups)))
+    assert (
+        t["world_count"] == len(worlds)
+        and law.keys() <= set(worlds)
+        and min(law.values()) > 0
+        and sum(law.values()) == 1
+    )
+    for i, g in enumerate(groups):
+        for j, (_, p) in enumerate(g):
+            assert sum(m for w, m in law.items() if w[i] == j) == p
+    forced = {w: set().union(*(g[j][0] for j, g in zip(w, groups))) for w in worlds}
+    assert (
+        min(2 + sum(m for w, m in law.items() if u in forced[w]) for u in names)
+        == value
+    )
+    mix = {tuple(c): Q(m) for c, m in t["mixture"]}
+    assert (
+        all(
+            len(c) == 2 and len(set(c)) == 2 and set(c) <= set(names) and m > 0
+            for c, m in mix.items()
+        )
+        and sum(mix.values()) == 1
+    )
+    prices = list(map(Q, t["prices"]))
+    base = prices.pop(0)
+    parts = []
+    for g in groups:
+        parts.append(prices[: len(g) - 1] + [Q(0)])
+        del prices[: len(g) - 1]
+    assert (
+        not prices
+        and base
+        + sum(y * p for ys, g in zip(parts, groups) for y, (_, p) in zip(ys, g))
+        == value
+    )
+    for w, f in forced.items():
+        assert base + sum(y[j] for y, j in zip(parts, w)) >= sum(
+            m * len(set(c) | f) for c, m in mix.items()
+        )
+    pure = {
+        u: 2 + min(1, sum(p for g in groups for f, p in g if u in f)) for u in names
+    }
+    chosen = min(names, key=lambda u: (pure[u], u))
+    assert t["pure_omit"] == chosen and pure[chosen] == Q(t["pure"])
+    if pure[chosen] == value:
+        assert mix == {tuple(u for u in names if u != chosen): 1}
+
+
 def check(wordnet, semcor, wsd, folder):
     if not __debug__:
         raise RuntimeError("enable assertions")
@@ -197,71 +249,6 @@ def check(wordnet, semcor, wsd, folder):
                 return groups, forces
 
             certified = set()
-
-            def certify(names, t, groups):
-                assert t["sources"] == list(names) and t["covers"] == 3
-                value = Q(t["value"])
-                law = {tuple(w): Q(m) for w, m in t["adverse"]}
-                worlds = list(product(*(range(len(g)) for g in groups)))
-                assert (
-                    t["world_count"] == len(worlds)
-                    and law.keys() <= set(worlds)
-                    and min(law.values()) > 0
-                    and sum(law.values()) == 1
-                )
-                for i, g in enumerate(groups):
-                    for j, (_, p) in enumerate(g):
-                        assert sum(m for w, m in law.items() if w[i] == j) == p
-                forced = {
-                    w: set().union(*(g[j][0] for j, g in zip(w, groups)))
-                    for w in worlds
-                }
-                assert (
-                    min(
-                        2 + sum(m for w, m in law.items() if u in forced[w])
-                        for u in names
-                    )
-                    == value
-                )
-                mix = {tuple(c): Q(m) for c, m in t["mixture"]}
-                assert (
-                    all(
-                        len(c) == 2
-                        and len(set(c)) == 2
-                        and set(c) <= set(names)
-                        and m > 0
-                        for c, m in mix.items()
-                    )
-                    and sum(mix.values()) == 1
-                )
-                prices = list(map(Q, t["prices"]))
-                base = prices.pop(0)
-                parts = []
-                for g in groups:
-                    parts.append(prices[: len(g) - 1] + [Q(0)])
-                    del prices[: len(g) - 1]
-                assert (
-                    not prices
-                    and base
-                    + sum(
-                        y * p
-                        for ys, g in zip(parts, groups)
-                        for y, (_, p) in zip(ys, g)
-                    )
-                    == value
-                )
-                for w, f in forced.items():
-                    assert base + sum(y[j] for y, j in zip(parts, w)) >= sum(
-                        m * len(set(c) | f) for c, m in mix.items()
-                    )
-                pure = {
-                    u: 2 + min(1, sum(p for g in groups for f, p in g if u in f))
-                    for u in names
-                }
-                chosen = min(names, key=lambda u: (pure[u], u))
-                assert t["pure_omit"] == chosen and pure[chosen] == Q(t["pure"])
-                if pure[chosen] == value:
-                    assert mix == {tuple(u for u in names if u != chosen): 1}
 
             answers = {}
             for l in (wsd / "ALL.gold.key.txt").read_text(encoding="utf8").splitlines():

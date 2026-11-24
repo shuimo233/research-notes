@@ -12,6 +12,32 @@ from certified_cover_plan import minimal_covers
 from coupling_clock import canonical
 
 
+def recover_joint(support, equations):
+    """Solve the LP vertex on its positive support by exact elimination."""
+    pivots = {}
+    for row, target in equations:
+        values = [Q(row[j]) for j in support] + [target]
+        for j in sorted(pivots):
+            if values[j]:
+                factor = values[j]
+                values = [x - factor * y for x, y in zip(values, pivots[j])]
+        pivot = next((j for j, x in enumerate(values[:-1]) if x), None)
+        if pivot is None:
+            if values[-1]:
+                raise ArithmeticError("inconsistent candidate vertex constraints")
+            continue
+        values = [x / values[pivot] for x in values]
+        for j, previous in list(pivots.items()):
+            if previous[pivot]:
+                pivots[j] = [x - previous[pivot] * y for x, y in zip(previous, values)]
+        pivots[pivot] = values
+        if len(pivots) == len(support):
+            return {
+                world: pivots[j][-1] for j, world in enumerate(support) if pivots[j][-1]
+            }
+    raise ArithmeticError("could not isolate a rational vertex on this support")
+
+
 def solve(groups, preferred=None):
     from scipy.optimize import linprog
     import numpy as np
@@ -57,7 +83,20 @@ def solve(groups, preferred=None):
     mass = {j: rational(x) for j, x in enumerate(lp.x[:-1]) if x > 0}
     mixed = {i: rational(-v) for i, v in enumerate(lp.ineqlin.marginals) if v < 0}
     prices = [rational(-v) for v in lp.eqlin.marginals]
-    value = rational(lp.x[-1])
+    # Dual prices depend on the integer game matrix. Marginals can introduce large
+    # denominators into the value and into the adversary's masses.
+    value = sum(b * price for b, price in zip(rhs, prices))
+    if any(
+        sum(row[j] * p for j, p in mass.items()) != b for row, b in zip(eq, rhs)
+    ) or any(sum(row[j] * p for j, p in mass.items()) < value for row in costs):
+        tight = sorted(
+            (abs(slack), i)
+            for i, slack in enumerate(lp.ineqlin.residual)
+            if abs(slack) < 1e-7
+        )
+        mass = recover_joint(
+            sorted(mass), [*zip(eq, rhs), *((costs[i], value) for _, i in tight)]
+        )
     if preferred is not None:
         i = covers.index(tuple(sorted(preferred)))
         single = linprog(
