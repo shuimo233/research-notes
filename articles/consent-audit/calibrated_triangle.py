@@ -58,12 +58,17 @@ class TriangleInquiry:
         self.omit = min(self.names, key=lambda u: (risk[u], u))
         self.worst_cost = risk[self.omit]
 
-    def execute(self, ask, omit=None):
-        """ask(batch) sees only requested IDs and returns offsets. An optional omit replays an alternative cover."""
+    def execute(self, ask, omit=None, *, known=None):
+        """Ask for missing senses only. known maps this task's lemmas to previously revealed offsets."""
         omit = self.omit if omit is None else omit
         if omit not in self.names:
             raise ValueError("invalid deferred word")
-        observed = {}
+        observed = dict(known) if known is not None else {}
+        if any(
+            u not in self.service.domains or x not in self.service.domains[u]
+            for u, x in observed.items()
+        ):
+            raise ValueError("invalid known sense")
         batches = []
 
         def reveal(batch):
@@ -75,7 +80,14 @@ class TriangleInquiry:
             batches.append(list(batch))
             observed.update(response)
 
-        reveal([u for u in self.names if u != omit])
+        pending_vertices = {u for e in self.service.pending(observed) for u in e}
+        first = [
+            u
+            for u in self.names
+            if u != omit and u in pending_vertices and u not in observed
+        ]
+        if first:
+            reveal(first)
         if self.service.pending(observed):
             reveal([omit])
         return {

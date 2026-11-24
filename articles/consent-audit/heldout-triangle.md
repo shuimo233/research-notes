@@ -20,17 +20,25 @@
 
 旧 SemCor 句中的 276 组由均匀固定方案的 733 次降至文档外频率固定方案的 697 次，抽签在金标上仍为 697。五套 WSD 的旧句只有 12 个合格三元组，各种提前停止策略均为 28 次。WSD 新句中没有满足三边条件的项目。新句结果的外部复验仍需其他含足够同句名词标注的语料。[合格任务的逐句清单](natural-triangle-cases.jsonl)
 
+## 同一个位置只问一次以后
+
+上述 120 次差额按三元组独立结算。为检查重复计费的影响，我们在看过该结果后追加逐句缓存回放。每句开始时缓存为空，回答过的位置可供该句所有后续词组使用。即使是同一个词条，在句中的不同位置也分别消歧。先按三个位置编号组成的有序三元组正向处理，再以完全相反的顺序重放。在当前任务里，先用已有答案检查每张表，只向仍有歧义的表询问首批缺少的词义，最后按需补问延后的词。[缓存回放程序](cached_triangle.py)
+
+在 449 个 SemCor 新句中，将参与比较的每个位置都问一次需要 1,854 次。使用同一缓存和正向顺序时，均匀固定方案用了 **1,571 次**，文档外频率的固定方案用了 **1,520 次**，少 51 次，降幅 3.25%。其中 63 句少问、374 句持平、12 句多问。反向顺序分别是 1,571 和 1,522，少 49 次。独立边际模型分别用 1,520 和 1,523 次。五套 WSD 仅先前的 8 句合格，正向为 21 对 22 次，反向均为 21 次。该扩展没有搜索全句最优调度，也没有在人类标注界面测量时间；对两种遍历顺序的全部 8,682 次处理已按词典关系表重新穷举，核对最终取到的位置和全部关系。[逐句缓存位置](cached-triangle-ledger.jsonl) · [缓存汇总](cached-triangle-results.json) · [独立核验](cached_triangle_check.py)
+
 ## 框架怎样决定可以停问
 
 以 angel、being、person 为例。把该文档完全移出频率估计后，固定策略先问 angel 与 being。若读到的意思分别是“天使”和“存在这一状态”，则根据指定版本词典的关系表，无论 person 取哪个候选，三项判断都已确定，可以在两问后给出全部答案。另一些回答会让某张关系表留有多个结果，工具才会补问 person。这里使用的四类关系是 WordNet 的同一义项或严格上下位路径，“neither”只描述该词典表。这个例子的稳健预算为 $463/187$ 次，表示给定训练边际、允许任意相关方式时的最坏平均。[可直接运行的示例计数](calibrated-triangle-example.json)
 
-工具接收 WordNet 3.0 和三个词条各义项的历史计数。每个词元的真实语境应由调用方提供给回答者。它输出首批词和预算；交互模式展示候选释义并求出三对关系。也可从应用中调用 `TriangleInquiry.execute(ask)`，把询问批次交给自己的标注界面。标准库即可运行固定策略；复现混合最优需要 SciPy，独立核验使用 NLTK。[可执行工具](calibrated_triangle.py) · [WordNet 数据](https://github.com/nltk/nltk_data/blob/gh-pages/packages/corpora/wordnet.zip)
+工具接收 WordNet 3.0 和三个词条各义项的历史计数。每个词元的真实语境应由调用方提供给回答者。它输出首批词和预算；交互模式展示候选释义并求出三对关系。也可从应用中调用 `TriangleInquiry.execute(ask)`，把询问批次交给自己的标注界面。若已有同一位置的回答，用 `execute(ask, known=已知义项)` 传入当前三个词条对应的词义偏移量，调用方按句子和位置保存缓存。标准库即可运行固定策略；复现混合最优需要 SciPy，独立核验使用 NLTK。[可执行工具](calibrated_triangle.py) · [WordNet 数据](https://github.com/nltk/nltk_data/blob/gh-pages/packages/corpora/wordnet.zip)
 
 ```sh
 python calibrated_triangle.py wordnet.zip calibrated-triangle-example.json
 python calibrated_triangle.py wordnet.zip calibrated-triangle-example.json --ask
 python heldout_triangle.py wordnet.zip semcor.zip rebuilt
 python heldout_triangle_check.py wordnet.zip semcor.zip rebuilt
+python cached_triangle.py wordnet.zip rebuilt-cache
+python cached_triangle_check.py wordnet.zip rebuilt-cache
 ```
 
 独立实现逐文件重新映射 SemCor 的词义键，从每个候选义项的训练文档清单直接排除当前文档，复核 696 个文档与词组组合的全部计数和有理数最优性证书。把应用入口在所有 1,447 个位置任务的三个合法首批各跑一次，得到 4,341 次完整交互，每次返回的三项关系都和金标义项对应的词典答案一致。本轮遇到较大概率分母，通用求解器增加了从线性规划选中的约束重建精确有理数解的步骤；候选结果须通过全部边际和逐世界不等式才能交付。[独立核验器](heldout_triangle_check.py) · [通用求解器](mixed_sense_game.py)
