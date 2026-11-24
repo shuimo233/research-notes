@@ -57,16 +57,20 @@ def synthetic():
     return out
 
 
-def pairs(snapshot, wordnet, semcor):
-    for key, p, q, truth, _ in temperatures(snapshot):
-        yield key, p, q, truth
+def pair_data(snapshot, wordnet, semcor):
+    yield from temperatures(snapshot)
     for key, exact, graph, task in word_tasks(wordnet, semcor):
         if exact is None:
             continue
-        (p, q), _ = word_prior_pair(graph, task)
+        (p, q), weights = word_prior_pair(graph, task)
         if any(n != 1 for n in p.plan.counts):
             continue
-        yield key, p, q, task["truth"]
+        yield key, p, q, task["truth"], weights
+
+
+def pairs(snapshot, wordnet, semcor):
+    for key, p, q, truth, _ in pair_data(snapshot, wordnet, semcor):
+        yield key, p, q, truth
 
 
 def evaluate(snapshot, wordnet, semcor):

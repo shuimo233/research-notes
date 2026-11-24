@@ -14,12 +14,22 @@ from frontier_plan import bits
 class MixturePlan:
     """An exact planner using forced-read obligations and a finite predictive belief."""
 
-    def __init__(self, service, weights, conditional, costs=None, disabled=()):
+    def __init__(
+        self,
+        service,
+        weights,
+        conditional,
+        costs=None,
+        disabled=(),
+        *,
+        observe_values=True,
+    ):
         self.service = service
         self.names = service.plan.names
         self.index = service.plan.indices
         if any(n != 1 for n in service.plan.counts):
             raise ValueError("use a separate type for each location")
+        self.locations = tuple(group[0] for group in service.members)
         self.neighbors = tuple(service.plan.neighbors)
         self.certain = tuple(service.plan.certain)
         self.cost = tuple(Q(1 if costs is None else costs[v]) for v in self.names)
@@ -32,7 +42,7 @@ class MixturePlan:
             or sum(self.weights) != 1
         ):
             raise ValueError("mixture weights must be positive and sum to 1")
-        self.domain = [tuple(service.masks[v]) for v in self.names]
+        self.domain = [tuple(service.masks[v]) for v in self.locations]
         if set(conditional) != set(self.names):
             raise ValueError("conditional laws must match locations")
         self.likelihood = []
@@ -48,14 +58,23 @@ class MixturePlan:
                 raise ValueError("conditional rows must be positive and sum to 1")
             self.rows.append(rows)
             by_value = dict(zip(xs, zip(*rows)))
-            self.likelihood.append(by_value)
             groups = {}
+            tags = {}
             for x, law in by_value.items():
-                tag = service.masks[v][x], tuple(p / law[0] for p in law)
+                tag = (
+                    service.masks[self.locations[i]][x],
+                    tuple(p / law[0] for p in law) if observe_values else (),
+                )
+                tags[x] = tag
                 if tag not in groups:
                     groups[tag] = [Q(0)] * n
                 for j, p in enumerate(law):
                     groups[tag][j] += p
+            self.likelihood.append(
+                by_value
+                if observe_values
+                else {x: tuple(groups[tag]) for x, tag in tags.items()}
+            )
             self.compact.append(
                 tuple((mask, tuple(law)) for (mask, _), law in groups.items())
             )
@@ -167,7 +186,7 @@ class MixturePlan:
             )
             if i is None:
                 break
-            v = self.names[i]
+            v = self.locations[i]
             x = ask(v)
             if x not in self.likelihood[i]:
                 raise ValueError("reading outside the legal interval")
@@ -193,6 +212,27 @@ class MixturePlan:
                 p * evaluate(*state)
                 for state, p in self.transitions(i, live, forced, belief)
             )
+
+        value = evaluate(*self.initial())
+        evaluate.cache_clear()
+        return value
+
+    def cost_in_mode(self, mode):
+        """Evaluate the nominal posterior policy while inputs actually follow one mode."""
+
+        @lru_cache(None)
+        def evaluate(live, forced, belief):
+            _, i = self.optimum(live, forced, belief)
+            if i is None:
+                return Q(0)
+            rest = live ^ (1 << i)
+            total = self.cost[i]
+            for mask, likelihood in self.compact[i]:
+                _, posterior = self._update(rest, belief, likelihood)
+                total += likelihood[mode] * evaluate(
+                    rest, (forced | mask) & rest, posterior
+                )
+            return total
 
         value = evaluate(*self.initial())
         evaluate.cache_clear()
