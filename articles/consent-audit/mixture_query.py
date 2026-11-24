@@ -38,10 +38,10 @@ class MixturePlan:
         self.weights = tuple(map(Q, weights))
         if (
             not self.weights
-            or any(w <= 0 for w in self.weights)
+            or any(w < 0 for w in self.weights)
             or sum(self.weights) != 1
         ):
-            raise ValueError("mixture weights must be positive and sum to 1")
+            raise ValueError("mixture weights must be nonnegative and sum to 1")
         self.domain = [tuple(service.masks[v]) for v in self.locations]
         if set(conditional) != set(self.names):
             raise ValueError("conditional laws must match locations")
@@ -167,11 +167,15 @@ class MixturePlan:
             for i in actions
         )
 
-    def initial(self):
-        return self.start, 0, self._canonical(self.start, self.weights)
+    def initial(self, forced=0):
+        return (
+            self.start,
+            forced & self.start,
+            self._canonical(self.start, self.weights),
+        )
 
-    def execute(self, ask, product=None):
-        live, forced, belief = self.initial()
+    def execute(self, ask, product=None, *, initial_forced=0):
+        live, forced, belief = self.initial(initial_forced)
         known = {}
         if product is not None and self.start != (1 << len(self.names)) - 1:
             raise ValueError("product policy expects all locations enabled")
@@ -217,7 +221,7 @@ class MixturePlan:
         evaluate.cache_clear()
         return value
 
-    def cost_in_mode(self, mode):
+    def cost_in_mode(self, mode, forced=0):
         """Evaluate the nominal posterior policy while inputs actually follow one mode."""
 
         @lru_cache(None)
@@ -234,7 +238,7 @@ class MixturePlan:
                 )
             return total
 
-        value = evaluate(*self.initial())
+        value = evaluate(*self.initial(forced))
         evaluate.cache_clear()
         return value
 

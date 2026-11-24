@@ -44,7 +44,7 @@ def with_rates(p, data, method):
     )
 
 
-def actual_cost(model, truth):
+def actual_cost(model, truth, forced=0):
     @lru_cache(None)
     def evaluate(counts, forced):
         i, _ = model.action(counts, forced)
@@ -56,7 +56,7 @@ def actual_cost(model, truth):
             p * evaluate(nxt, (forced | mask) & live) for mask, p in truth.groups[i]
         )
 
-    value = evaluate(truth.counts, 0)
+    value = evaluate(truth.counts, forced)
     evaluate.cache_clear()
     return value
 

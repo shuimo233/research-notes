@@ -18,7 +18,7 @@ from shared_sense import SharedInquiry
 class RelationInquiry:
     """types optionally describes identical nonadjacent occurrences. Without it every occurrence is its own type."""
 
-    def __init__(self, domains, edges, relation, marginals, types=None):
+    def __init__(self, domains, edges, relation, marginals, types=None, *, costs=None):
         self.service = SharedInquiry(domains, edges, relation)
         if self.service.free:
             raise ValueError(
@@ -84,10 +84,12 @@ class RelationInquiry:
             for t, row in groups.items()
         }
         self.plan = FrontierPlan(
-            {t: len(members[t]) for t in self.names}, choices, typed_edges
+            {t: len(members[t]) for t in self.names}, choices, typed_edges, costs
         )
 
-    def execute(self, ask, mode="optimal", limit=None, *, planner=None):
+    def execute(
+        self, ask, mode="optimal", limit=None, *, planner=None, initial_forced=0
+    ):
         """ask(position_id) returns only that position's categorical value."""
         if planner is None:
             planner = self.plan
@@ -100,7 +102,7 @@ class RelationInquiry:
         known = {}
         trace = []
         counts = list(planner.counts)
-        forced = 0
+        forced = initial_forced
         fallback = 0
 
         def request(i):
@@ -115,6 +117,10 @@ class RelationInquiry:
             forced |= self.masks[u][x]
 
         if mode == "fixed":
+            if initial_forced:
+                raise ValueError(
+                    "a fixed-cover policy does not accept external read obligations"
+                )
             initial, _ = planner.fixed_cover()
             for i in initial:
                 while counts[i]:
