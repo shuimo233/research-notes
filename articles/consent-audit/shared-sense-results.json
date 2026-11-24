@@ -1,0 +1,78 @@
+{
+  "wsd": {
+    "all": {
+      "sentences": 187,
+      "relations": 324,
+      "distinct_positions_summed": 505,
+      "uncached": 444,
+      "totals": {
+        "forward_table": 353,
+        "forward_more": 352,
+        "reverse_table": 349,
+        "reverse_more": 352,
+        "greedy": 343,
+        "cover": 350
+      },
+      "offline_minimum": 306,
+      "cover_exact_sentences": 145,
+      "maximum_cover_ratio": "2",
+      "cover_beats_best_serial_total": false
+    },
+    "shared": {
+      "sentences": 60,
+      "relations": 192,
+      "distinct_positions_summed": 241,
+      "uncached": 259,
+      "totals": {
+        "forward_table": 168,
+        "forward_more": 165,
+        "reverse_table": 164,
+        "reverse_more": 165,
+        "greedy": 159,
+        "cover": 162
+      },
+      "offline_minimum": 149,
+      "cover_exact_sentences": 48,
+      "maximum_cover_ratio": "5/3",
+      "cover_beats_best_serial_total": true
+    }
+  },
+  "semcor": {
+    "all": {
+      "sentences": 158,
+      "relations": 252,
+      "distinct_positions_summed": 391,
+      "uncached": 348,
+      "totals": {
+        "forward_table": 261,
+        "forward_more": 259,
+        "reverse_table": 260,
+        "reverse_more": 258,
+        "greedy": 260,
+        "cover": 281
+      },
+      "offline_minimum": 244,
+      "cover_exact_sentences": 121,
+      "maximum_cover_ratio": "2",
+      "cover_beats_best_serial_total": false
+    },
+    "shared": {
+      "sentences": 39,
+      "relations": 132,
+      "distinct_positions_summed": 151,
+      "uncached": 173,
+      "totals": {
+        "forward_table": 86,
+        "forward_more": 85,
+        "reverse_table": 85,
+        "reverse_more": 84,
+        "greedy": 85,
+        "cover": 86
+      },
+      "offline_minimum": 81,
+      "cover_exact_sentences": 34,
+      "maximum_cover_ratio": "3/2",
+      "cover_beats_best_serial_total": false
+    }
+  }
+}
