@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [每次询问都算一次时，双连通块仍是最细的通用分组](articles/consent-audit/unit-block-proof.md) | 同一张图、相同的单位费用与均匀义项，局部统计相同的两个预算仍可相差 0.47 次以上 |
 | 2026-11-24 | [用另一套人工词义标注复验：整句规划还能少问吗？](articles/consent-audit/gloss-frontier.md) | 在 Princeton WordNet Gloss Corpus 全量定义中复验预先登记的询问收益及块内统计 |
 | 2026-11-24 | [为了决定下一问，哪些概率必须一起保存？](articles/consent-audit/frontier.md) | 证明整句自适应查询的最细安全分组，在 449 个标注句上通过事前效用比较 |
 | 2026-11-24 | [把要问的词排好顺序，真实标注上能少问多少？](articles/consent-audit/heldout-triangle.md) | 用文档外词义频数使固定方案少问 120 次，量化额外抽签的收益并发布可交互工具 |

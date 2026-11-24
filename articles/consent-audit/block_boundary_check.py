@@ -32,11 +32,16 @@ def lift(weights, tables):
     # All comparisons are directed from the lower copy of one state to the upper copy of another.
     # Global transitivity is automatic because no strict chain has two steps.
     lifted = [[p / 2 for p in row for _ in (0, 1)] for row in weights]
-    comparisons = {
-        e: [
+    comparisons = {}
+    for e, grid in tables.items():
+        left = [len(set(row)) > 1 for row in grid]
+        right = [len(set(col)) > 1 for col in zip(*grid)]
+        if not any(left) or not any(right):
+            raise ValueError("each relation must depend on both endpoints")
+        comparisons[e] = [
             [
                 0
-                if i % 2 == j % 2 or not grid[i // 2][j // 2]
+                if i % 2 == j % 2 or not (left[i // 2] and right[j // 2])
                 else 1
                 if i % 2 == 0
                 else 2
@@ -44,8 +49,6 @@ def lift(weights, tables):
             ]
             for i in range(2 * len(grid))
         ]
-        for e, grid in tables.items()
-    }
     return lifted, comparisons
 
 
