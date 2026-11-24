@@ -30,11 +30,14 @@
 
 事后筛查在 662 项上得到零区间宽度，在 722 项上保证额外费用至多 0.01 次，在所有 725 项上保证至多 0.05 次。使用零容差实际执行，662 项完全没有产生后验规划状态，其余项复算了精确预算。在两个目标边的子任务中，所有输入都可用上述界排除 0.1 成本辅助读数作为第一问。独立程序从原始十个站点文件重提数据并按温差极值核验 4,350 条查询路径，也对 80 个合成关系图作独立的完整历史精确求解。[筛查与回退核验](mixture_station_bounds.py) · [原始数据摘录清单](station-tmax-2025-sources.json)
 
+对 677 种不同输入另做了本机 CPU 对照。两种策略均使用相同建模和强制查询终止公式。按直接求解、筛查、筛查、直接求解的顺序运行。后验缓存状态由 287,655 个降到 79,627 个，少约 72%。两次直接求解用了 9.406 和 9.219 秒，筛查加回退用了 4.625 和 4.484 秒，最优预算逐项一致。662 项得到证书的任务中，有 173 项真正存在未覆盖的待定关系，原求解器需要展开策略分支。其余 489 项也可用强制覆盖公式快速终止。计时包含构造每项输入模型，范围是单机离线规划。
+
 ~~~sh
 python -I -B mixture_inquiry.py mixture-query-example.json --ask
 python -I -B mixture_station_run.py station-tmax-through-2025.csv.gz reproduced
 python -I -B mixture_query_check.py station-tmax-through-2025.csv.gz station-tmax-2025-sources.json reproduced
 python -I -B mixture_station_bounds.py station-tmax-through-2025.csv.gz reproduced/mixture-station-ledger.jsonl.gz
+python -I -B mixture_station_bounds.py station-tmax-through-2025.csv.gz reproduced/mixture-station-ledger.jsonl.gz --benchmark
 ~~~
 
 JSON 示例中，辅助查询的费用为 0.1。规划器首问辅助位置，精确最优预算为 $239/200$。选择候选 0、0 后，可证明 AND 为假，只查辅助和左端。[可交互示例](mixture-query-example.json) · [2025 数据快照](station-tmax-through-2025.csv.gz) · [NOAA GHCN-Daily](https://doi.org/10.7289/V5D21VHZ)
