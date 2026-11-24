@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [怎样验证披露最少，同时保留原先未知的时刻？](articles/consent-audit/unlocked-attestation.md) | 候选压缩与存在性困难，独立核验 35 项档案的保护条件 |
 | 2026-11-24 | [用一条时间差证词，补足公开最优性证明](articles/consent-audit/attested-optimality.md) | 核验 35 个信息缺口，并证明两项与三项原读数之间的补证边界 |
 | 2026-11-24 | [差分档案里的公开证据能跨领域复用吗？](articles/consent-audit/transit-optimality.md) | 复验 500 个 BART 换乘窗口，定位 34 个信息缺口，确定多界反例组的复杂度 |
 | 2026-11-24 | [只凭公开读数，能证明披露已经是最少吗？](articles/consent-audit/public-optimality.md) | 只用公开输入证明 429 项证书最优，并定位 1 项真实回放的信息缺口 |
