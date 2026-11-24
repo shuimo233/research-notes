@@ -61,6 +61,49 @@ def actual_cost(model, truth):
     return value
 
 
+def compare_profiles(graph, service, task, optimal, exact):
+    p = service.plan
+    data = marginal_profiles(p)
+    answer = {"exact": str(exact), "gold": len(optimal)}
+    for mode in ("block", "independent", "nested"):
+        model = compile_blocks(**data) if mode == "block" else with_rates(p, data, mode)
+        if mode == "block":
+            answer["types_with_split_scopes"] = sum(
+                len(v) > 1 for v in data["profiles"].values()
+            )
+            answer["types_with_changed_cross_block_law"] = sum(
+                dict(a) != dict(b) for a, b in zip(p.groups, model.groups)
+            )
+        forecast = model.root_value()
+        cost = actual_cost(model, p)
+        assert cost >= exact
+        remaining = list(p.counts)
+        forced = 0
+        known = {}
+        while True:
+            i, _ = model.action(tuple(remaining), forced)
+            if i is None:
+                break
+            u = service.members[i][p.counts[i] - remaining[i]]
+            x = task["truth"][u]
+            known[u] = x
+            forced |= service.masks[u][x]
+            remaining[i] -= 1
+        assert all(
+            service.service.answer(e, known)
+            == graph.relation(*(task["truth"][u] for u in e))
+            for e in task["edges"]
+        )
+        if mode == "block":
+            assert forecast == cost == exact and set(known) == set(optimal)
+        answer[mode] = {
+            "forecast": str(forecast),
+            "actual_expected": str(cost),
+            "queries": len(known),
+        }
+    return answer
+
+
 def run(wordnet, folder, output):
     verify(wordnet, "3c68cd207844f071a5206f7fbed23e5c607ec02f")
     graph = NounPaths(wordnet)
@@ -73,54 +116,14 @@ def run(wordnet, folder, output):
             continue
         task = tasks[key]
         service = compile_task(graph, task)
-        p = service.plan
-        exact = Q(r["expected_optimal"])
-        data = marginal_profiles(p)
         answer = {
             "source": key[0],
             "group": key[1],
             "sentence": key[2],
-            "exact": str(exact),
-            "gold": len(r["optimal"]),
+            **compare_profiles(
+                graph, service, task, r["optimal"], Q(r["expected_optimal"])
+            ),
         }
-        for mode in ("block", "independent", "nested"):
-            model = (
-                compile_blocks(**data) if mode == "block" else with_rates(p, data, mode)
-            )
-            if mode == "block":
-                answer["types_with_split_scopes"] = sum(
-                    len(v) > 1 for v in data["profiles"].values()
-                )
-                answer["types_with_changed_cross_block_law"] = sum(
-                    dict(a) != dict(b) for a, b in zip(p.groups, model.groups)
-                )
-            forecast = model.root_value()
-            cost = actual_cost(model, p)
-            assert cost >= exact
-            remaining = list(p.counts)
-            forced = 0
-            known = {}
-            while True:
-                i, _ = model.action(tuple(remaining), forced)
-                if i is None:
-                    break
-                u = service.members[i][p.counts[i] - remaining[i]]
-                x = task["truth"][u]
-                known[u] = x
-                forced |= service.masks[u][x]
-                remaining[i] -= 1
-            assert all(
-                service.service.answer(e, known)
-                == graph.relation(*(task["truth"][u] for u in e))
-                for e in task["edges"]
-            )
-            if mode == "block":
-                assert forecast == cost == exact and set(known) == set(r["optimal"])
-            answer[mode] = {
-                "forecast": str(forecast),
-                "actual_expected": str(cost),
-                "queries": len(known),
-            }
         rows.append(answer)
     result = {}
     for src in ("semcor", "wsd"):
