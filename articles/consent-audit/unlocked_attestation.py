@@ -68,6 +68,11 @@ class AnchorPath:
     def conflict(self, chosen):
         return self._path(visible(chosen) & self.tight_mask)
 
+    @staticmethod
+    def witness(before, after):
+        assert not new_exact(before, after)
+        return dict(worlds=extremal_tables(after))
+
     @lru_cache(maxsize=8192)
     def _path(self, selected):
         if not selected:
@@ -151,12 +156,20 @@ def signed_minimum(count, needed, blocked, limit=100_000, graph=None):
     return (tuple(sites(best)) if best is not None else None), nodes
 
 
-def solve(oracle, actual, grid, preserve_strict=True, rounds=500, limit=100_000):
+def solve(
+    oracle,
+    actual,
+    grid,
+    preserve_strict=True,
+    rounds=500,
+    limit=100_000,
+    graph_type=AnchorPath,
+):
     facts = menu(oracle.start, actual, grid, preserve_strict)
     infeasible = oracle.find(facts, limit)
     if infeasible is not None:
         return dict(status="dictionary_impossible", counterexample=infeasible)
-    graph = AnchorPath(oracle.start, actual, facts)
+    graph = graph_type(oracle.start, actual, facts)
     positives, negatives = set(), set()
     smaller = []
     explored = 0
@@ -194,8 +207,10 @@ def solve(oracle, actual, grid, preserve_strict=True, rounds=500, limit=100_000)
                     [*picked[:i], *picked[i + 1 :]], picked[i], grid
                 )
         after = impose(oracle.start, picked)
-        assert not new_exact(oracle.start, after)
         return dict(
-            status="proved", attested=picked, worlds=extremal_tables(after), **info
+            status="proved",
+            attested=picked,
+            **graph.witness(oracle.start, after),
+            **info,
         )
     raise Exhausted("signed cover counterexample limit exceeded")
