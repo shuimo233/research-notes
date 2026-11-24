@@ -1,0 +1,17 @@
+{
+  "catalogues": 25,
+  "labels": 134,
+  "checked_cells": 1979,
+  "feasible_nonempty_patterns": 626,
+  "max_patterns": 94,
+  "active_extremal_rows": 108,
+  "dual_rows": 87,
+  "strictly_improved": 17,
+  "neutral_uniform": 1,
+  "neutral_optimum": 1,
+  "worst_uniform": "10",
+  "worst_optimum": "6",
+  "mean_uniform": "118/25",
+  "mean_optimum": "8509/2925",
+  "gate": true
+}

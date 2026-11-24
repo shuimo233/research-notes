@@ -34,7 +34,7 @@ def checked(entry):
     return authority, labels
 
 
-def once(record, entry, authority, comparisons, method, destination):
+def once(record, entry, authority, comparisons, method, destination, weights=None):
     if (
         len(record) != authority.n
         or any(type(x) is not int for x in record)
@@ -45,12 +45,25 @@ def once(record, entry, authority, comparisons, method, destination):
     ids = true_indices(record, comparisons)
     if not ids:
         raise ValueError("the catalogue has no compatible release")
+    scope = entry
+    if method == "weighted":
+        if (
+            weights is None
+            or len(weights) != len(comparisons)
+            or any(w <= 0 for w in weights)
+        ):
+            raise ValueError("weighted release needs positive weights for every label")
+        scope = dict(catalogue=entry, weights=list(map(str, weights)))
     context = sha256(
-        json.dumps(entry, sort_keys=True, separators=(",", ":")).encode()
+        json.dumps(scope, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
     if not destination.exists():
         if method == "random":
             label = choice(ids)
+        elif method == "weighted":
+            from selection_odds import choose_weighted
+
+            label = choose_weighted(ids, weights)
         elif method == "priority":
             if entry["priority"]["status"] != "proved":
                 raise ValueError("this catalogue has no verified priority order")
@@ -89,7 +102,7 @@ def once(record, entry, authority, comparisons, method, destination):
         )
     ):
         raise ValueError("cached release does not match this request")
-    if method != "random":
+    if method not in ("random", "weighted"):
         expected = (
             next(i for i in entry["priority"]["order"] if i in ids)
             if method == "priority"
