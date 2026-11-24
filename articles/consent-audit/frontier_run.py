@@ -43,17 +43,24 @@ def inputs():
     return sentences
 
 
-def compile_task(graph, task):
-    domains = {u: graph.senses(w) for u, w in task["words"].items()}
+def sense_marginals(graph, task, smoothing=1):
     weights = {}
     for u, w in task["words"].items():
         counts = task["counts"][w]
         weights[u] = {
-            x: Q(1 + counts[str(x)], len(counts) + sum(counts.values()))
-            for x in domains[u]
+            x: Q(
+                smoothing + counts[str(x)],
+                smoothing * len(counts) + sum(counts.values()),
+            )
+            for x in graph.senses(w)
         }
+    return weights
+
+
+def compile_task(graph, task):
+    weights = sense_marginals(graph, task)
     return RelationInquiry(
-        domains, sorted(task["edges"]), graph.relation, weights, task["words"]
+        weights, sorted(task["edges"]), graph.relation, weights, task["words"]
     )
 
 

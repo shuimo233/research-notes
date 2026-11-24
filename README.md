@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [更新询问先验后，旧策略的损失最多是多少？](articles/consent-audit/prior-reuse.md) | 用分块运输认证策略复用，在 1,244 项实测任务中通过事前效用和核验条件 |
 | 2026-11-24 | [读数相关时，先证明复杂规划值不值得算](articles/consent-audit/mixture-query.md) | 2025 年 NOAA 留出复验和相关输入规划器，在 662 项任务上用证书直接跳过后验搜索 |
 | 2026-11-24 | [等宽测量区间何时只需保存逐边概率？](articles/consent-audit/end-cut-budget.md) | 给出离散温差三分类的精确边界，从逐边统计重建 5,055 项 NOAA 查询路径 |
 | 2026-11-24 | [气温档案回放中，精确规划的读数节省很小](articles/consent-audit/station-query.md) | 在 5,055 项 NOAA 跨站温差任务上验证块分解，保留未达效用门槛的结果 |

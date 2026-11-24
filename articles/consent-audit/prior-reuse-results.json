@@ -1,0 +1,58 @@
+{
+  "semcor": {
+    "excluded_coalesced": 162,
+    "excluded_no_exact_root": 1,
+    "scored": 292,
+    "reused": 72,
+    "tv_reused": 0,
+    "strict_loss_reusing_all": 11,
+    "strict_loss_in_certified_cases": 1,
+    "zero_transport_bound": 0,
+    "tighter_than_joint_tv": 292,
+    "old_reads": 795,
+    "new_reads": 795,
+    "dispatch_reads": 795,
+    "certified_expected_extra": 0.00772011
+  },
+  "princeton": {
+    "excluded_coalesced": 18,
+    "scored": 227,
+    "reused": 27,
+    "tv_reused": 2,
+    "strict_loss_reusing_all": 5,
+    "strict_loss_in_certified_cases": 0,
+    "zero_transport_bound": 3,
+    "tighter_than_joint_tv": 225,
+    "old_reads": 637,
+    "new_reads": 637,
+    "dispatch_reads": 637,
+    "certified_expected_extra": 0.0
+  },
+  "temperature": {
+    "scored": 725,
+    "reused": 296,
+    "tv_reused": 0,
+    "strict_loss_reusing_all": 9,
+    "strict_loss_in_certified_cases": 2,
+    "zero_transport_bound": 99,
+    "tighter_than_joint_tv": 725,
+    "old_reads": 2851,
+    "new_reads": 2852,
+    "dispatch_reads": 2852,
+    "certified_expected_extra": 0.00053865
+  },
+  "total": {
+    "scored": 1244,
+    "reused": 395,
+    "tv_reused": 2,
+    "strict_loss_reusing_all": 25,
+    "strict_loss_in_certified_cases": 3,
+    "zero_transport_bound": 102,
+    "tighter_than_joint_tv": 1242,
+    "old_reads": 4283,
+    "new_reads": 4284,
+    "dispatch_reads": 4284,
+    "certified_expected_extra": 0.00825876
+  },
+  "gate": true
+}

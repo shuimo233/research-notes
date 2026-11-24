@@ -1,0 +1,38 @@
+{
+  "multiplicities": {
+    "left": 1,
+    "right": 1
+  },
+  "edges": [
+    [
+      "left",
+      "right"
+    ]
+  ],
+  "choices": {
+    "left": [
+      [
+        [],
+        "1/5"
+      ],
+      [
+        [
+          "right"
+        ],
+        "4/5"
+      ]
+    ],
+    "right": [
+      [
+        [],
+        "1/2"
+      ],
+      [
+        [
+          "left"
+        ],
+        "1/2"
+      ]
+    ]
+  }
+}
