@@ -45,3 +45,5 @@ python -I -B end_cut_check.py station-tmax.csv.gz station-query-ledger.jsonl.gz
 [编译器](end_cut_query.py) · [四点输入](end-cut-example.json) · [独立穷举与档案核验](end_cut_check.py)
 
 已有随机排序研究按区间端点将数值归组，以同组的强制追问集合求精确策略。共同分位数重建嵌套事件也有成熟数学先例。本次的候选贡献是针对固定三分类温差合同的宽度充要条件，以及同一宽度下可识别和不可识别的两套构造。所核文献尚未找到这条相同的边界。[Chaplick 等的区间排序](https://arxiv.org/abs/2010.03517) · [共同分位数构造](https://jandhaene.org/wp-content/uploads/2025/10/2002-kaas-dhaene-vyncke-goovaerts-denuit.pdf)
+
+另核对两类使用数值容差的原始研究。Ajtai 等把容差之内的比较结果视作可出错的二值回答，优化排序或选择时的比较次数。ICALP 2025 的随机区间工作按费用揭示精确数值，输出近似最小值所需的证书。本文的精确标签包含容差内一类，须对每一条指定关系给出证书。这些接近的模型区分了工具输出的合同和待求的预算。[Ajtai 等的容差比较](https://arxiv.org/abs/1501.02911) · [随机区间的近似最小值](https://doi.org/10.4230/LIPIcs.ICALP.2025.8)
