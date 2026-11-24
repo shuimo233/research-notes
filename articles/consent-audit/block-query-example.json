@@ -1,0 +1,12 @@
+{
+  "multiplicities": {"center": 1, "left": 1, "right": 1},
+  "edges": [["left", "center"], ["center", "right"]],
+  "profiles": {
+    "center": [
+      {"scope": ["left"], "outcomes": [[[], "1/10"], [["left"], "9/10"]]},
+      {"scope": ["right"], "outcomes": [[[], "1/10"], [["right"], "9/10"]]}
+    ],
+    "left": [{"scope": ["center"], "outcomes": [[[], "1/2"], [["center"], "1/2"]]}],
+    "right": [{"scope": ["center"], "outcomes": [[[], "1/2"], [["center"], "1/2"]]}]
+  }
+}
