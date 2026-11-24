@@ -1,0 +1,66 @@
+{
+  "semcor": {
+    "new": {
+      "all_sentences": 37137,
+      "eligible_noun_positions": 70308,
+      "distinct_lemma_position_triples": 346293,
+      "sentences_with_triangle": 449,
+      "triangles": 1159,
+      "different_word_triples": 590,
+      "strict_triangles": 3,
+      "strict_sentences": 2,
+      "strict_word_triples": 2,
+      "pure_worst": "33776053127/12252240",
+      "mixed_worst": "33774011087/12252240",
+      "gold_pure": 2919,
+      "gold_mixed": "8756/3"
+    },
+    "previous": {
+      "all_sentences": 39,
+      "eligible_noun_positions": 379,
+      "distinct_lemma_position_triples": 18305,
+      "sentences_with_triangle": 6,
+      "triangles": 276,
+      "different_word_triples": 48,
+      "strict_triangles": 0,
+      "strict_sentences": 0,
+      "strict_word_triples": 0,
+      "pure_worst": "2642522/4095",
+      "mixed_worst": "2642522/4095",
+      "gold_pure": 733,
+      "gold_mixed": "733"
+    }
+  },
+  "wsd": {
+    "new": {
+      "all_sentences": 1113,
+      "eligible_noun_positions": 2861,
+      "distinct_lemma_position_triples": 6583,
+      "sentences_with_triangle": 0,
+      "triangles": 0,
+      "different_word_triples": 0,
+      "strict_triangles": 0,
+      "strict_sentences": 0,
+      "strict_word_triples": 0,
+      "pure_worst": "0",
+      "mixed_worst": "0",
+      "gold_pure": 0,
+      "gold_mixed": "0"
+    },
+    "previous": {
+      "all_sentences": 60,
+      "eligible_noun_positions": 450,
+      "distinct_lemma_position_triples": 4564,
+      "sentences_with_triangle": 8,
+      "triangles": 12,
+      "different_word_triples": 10,
+      "strict_triangles": 0,
+      "strict_sentences": 0,
+      "strict_word_triples": 0,
+      "pure_worst": "23161/840",
+      "mixed_worst": "23161/840",
+      "gold_pure": 28,
+      "gold_mixed": "28"
+    }
+  }
+}
