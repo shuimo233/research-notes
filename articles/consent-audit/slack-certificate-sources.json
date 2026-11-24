@@ -1,0 +1,1049 @@
+{
+  "records": 430,
+  "fixture_sha256": "10b5dd808750063d3adcd271a1a50f588ad48559df2768ad26f647240a83e190",
+  "sources": [
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T23:10:06Z",
+      "head_sha": "298157fff9664fc2fcb6dcd497d18505e807c4cf",
+      "id": 45081754141,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45081754141/attempts/1/jobs?per_page=100",
+      "jobs": 48,
+      "raw_sha256": "db6bad8d5fec8cacad1aea75c95444375f6f0b0da2b315594f73a3e4d891da8e",
+      "retained": 8,
+      "status": {
+        "in_window": 37,
+        "fewer_than_five_steps": 11
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T23:10:06Z",
+      "head_sha": "298157fff9664fc2fcb6dcd497d18505e807c4cf",
+      "id": 45081753797,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45081753797/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "05c5e8c7bdd1b3d255bf988794f42468e1c45d82b943895806544d4df501d6f3",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T23:10:06Z",
+      "head_sha": "298157fff9664fc2fcb6dcd497d18505e807c4cf",
+      "id": 45081753788,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45081753788/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "b63c1ed248e2d18f9ef2b78e9cdece690cbdba212e26d49efff500cd3052ace5",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T22:57:14Z",
+      "head_sha": "acf15a39e2aa7b97ff7feda4fe94275447fa68ed",
+      "id": 45080543080,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45080543080/attempts/1/jobs?per_page=100",
+      "jobs": 48,
+      "raw_sha256": "6d1b95cd11b8b567fb00df3c3a7434e5cf20f6b3b6c007421023a5876fde74f9",
+      "retained": 8,
+      "status": {
+        "in_window": 37,
+        "fewer_than_five_steps": 11
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T22:57:13Z",
+      "head_sha": "acf15a39e2aa7b97ff7feda4fe94275447fa68ed",
+      "id": 45080542615,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45080542615/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "24a131f7f05c175ed4d694b9672392218fb23e57d530fa763636630d36d37494",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T22:57:13Z",
+      "head_sha": "acf15a39e2aa7b97ff7feda4fe94275447fa68ed",
+      "id": 45080542740,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45080542740/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "8728a7fe321c23d8ff66857ef6699721cc5eeb3131fc5400bbf7c32fd05d3dc5",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T22:17:22Z",
+      "head_sha": "99692a76d8e4264ec1b28143e316a1e27ae80f55",
+      "id": 45076870735,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45076870735/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "195574f8248906d04f5c9aa5762b3a7a3eebbf0d50ed409f798075ead78ecfeb",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T22:17:22Z",
+      "head_sha": "99692a76d8e4264ec1b28143e316a1e27ae80f55",
+      "id": 45076871024,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45076871024/attempts/1/jobs?per_page=100",
+      "jobs": 48,
+      "raw_sha256": "10e65785ce563a4528921957c309ff17b1452fe5d1f29452e6acfca11bac8d52",
+      "retained": 8,
+      "status": {
+        "in_window": 37,
+        "fewer_than_five_steps": 11
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T19:18:00Z",
+      "head_sha": "c3e6ea8fa4fda83323cc7f097cca621f53b40569",
+      "id": 45059955143,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45059955143/attempts/1/jobs?per_page=100",
+      "jobs": 4,
+      "raw_sha256": "b475450838b1a58741339aa6e1103d6c100bde8fcfa962b36bf746230e234345",
+      "retained": 4,
+      "status": {
+        "in_window": 4
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T19:12:51Z",
+      "head_sha": "a9d59ba391c63a3e1efb3b483a48f245c3dd01bf",
+      "id": 45059473157,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45059473157/attempts/1/jobs?per_page=100",
+      "jobs": 3,
+      "raw_sha256": "1917c51fee972c89b518f123bbeeabdf24c582e370fdfaef431a92193c8de8c3",
+      "retained": 3,
+      "status": {
+        "in_window": 3
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T19:04:57Z",
+      "head_sha": "d38bb9228ade2f899bc9888a4d0f9a6240762321",
+      "id": 45058690984,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45058690984/attempts/1/jobs?per_page=100",
+      "jobs": 6,
+      "raw_sha256": "09765544362ba9b0efbd5f167cd3c003ec87f59f7fac3935792a428e91beb1c0",
+      "retained": 6,
+      "status": {
+        "in_window": 6
+      }
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "created_at": "2026-11-22T18:55:16Z",
+      "head_sha": "83fb4c4f8405d8e60a7cbdc71c206851d5d157c5",
+      "id": 45057776416,
+      "run_attempt": 1,
+      "endpoint": "repos/astral-sh/ruff/actions/runs/45057776416/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "bbab38c40e5976a3646dd510f7c4a6e91dbb6eaadb5ed258b53fda487719ad40",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-22T10:03:48Z",
+      "head_sha": "6da48193e8cc2ddc34158d33885f5278fd452f8d",
+      "id": 45010562352,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/45010562352/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "67e8353edc817f240a449e0374a65aeecdf1e201acfbc2d9f1146642cb982e68",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-22T08:04:39Z",
+      "head_sha": "718929265449ca33040264152ba5e7022e766a52",
+      "id": 45001104775,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/45001104775/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "51a45ed329f3512c90e625079ad1783237945bfcb10157340bed2b17e5578900",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-21T11:29:12Z",
+      "head_sha": "3c7d1a215b21c42f5a81b96abd6d3fb8767c36d7",
+      "id": 44899320365,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44899320365/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "db3ff5a4a854d262046a8def10fc0c0b066d87687f9800fc15f65d95107f363a",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:23:37Z",
+      "head_sha": "9efd0121a4396da80c20d7c3b7844825966612f6",
+      "id": 44479254711,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44479254711/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "16f0bb9fda3c5387fc75c2c85264b56e3f24c74b8d60f77685398a6ee7427cec",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:23:07Z",
+      "head_sha": "ad958066c17c62e7df9be82c73aab8a26fcd7a71",
+      "id": 44479187911,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44479187911/attempts/1/jobs?per_page=100",
+      "jobs": 3,
+      "raw_sha256": "5351def496ef318e8a64ad9256403745d46d4772510bb73b6f102f80a3b47428",
+      "retained": 0,
+      "status": {
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:21:34Z",
+      "head_sha": "2c69f05ca0e4df3516a843c81002a506757f803d",
+      "id": 44478989421,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44478989421/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "a29b4b6339b9b738e8d9b28ed4dc74e7a16df685e0ee097fd8a20f853ce289cc",
+      "retained": 8,
+      "status": {
+        "in_window": 25,
+        "fewer_than_five_steps": 7
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:20:52Z",
+      "head_sha": "0ac456ab46cdfff1a5fd791b540cdc0361c6bbad",
+      "id": 44478902483,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44478902483/attempts/1/jobs?per_page=100",
+      "jobs": 3,
+      "raw_sha256": "dafa0f336cc8b8b6856b7bf8a36413f8894522e853b55331d49684cc1faa6fe7",
+      "retained": 1,
+      "status": {
+        "in_window": 1,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:19:45Z",
+      "head_sha": "e550ae40b082af782082b904d2ca5a40f64c5abe",
+      "id": 44478752534,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44478752534/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "47d32f4baf6dc60de715dfd300b16927d212ab20c0a12fd2676d7fdbe550c4e7",
+      "retained": 8,
+      "status": {
+        "in_window": 21,
+        "fewer_than_five_steps": 11
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-19T07:07:26Z",
+      "head_sha": "9255aa01e48f47be636987293471a5b102d78c26",
+      "id": 44477186064,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44477186064/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "57da5a96386a150d6eb270008bb2f34a49ed87816dd4c261a44200e585de10b0",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-18T17:14:30Z",
+      "head_sha": "6665a79fb9a6553ce4e1be5574c21a9e3b769eec",
+      "id": 44356430471,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44356430471/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "de4592ef1ac141be707b77ee43021a53688837c5ca152432e10a17276455737f",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-17T02:57:07Z",
+      "head_sha": "36eed6b7b0eb59760fc4b33e90bdaac5057388f0",
+      "id": 44006667926,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/44006667926/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "c7bff3c3a98640eda3c7e333502fa9d13170eac13c665f8318ff32a754ab1767",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "created_at": "2026-11-15T14:37:46Z",
+      "head_sha": "953362ae9a9a249e0d6e695a20fb996172105fc6",
+      "id": 43725394874,
+      "run_attempt": 1,
+      "endpoint": "repos/pytest-dev/pytest/actions/runs/43725394874/attempts/1/jobs?per_page=100",
+      "jobs": 32,
+      "raw_sha256": "1335ca6971379bc26e09b83f7ca94ce63746a524bbb781efee95acbf16f6589e",
+      "retained": 8,
+      "status": {
+        "in_window": 31,
+        "fewer_than_five_steps": 1
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:51:14Z",
+      "head_sha": "e8bc97b55d1ba76b2593608919e4300e525310fd",
+      "id": 45080013349,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45080013349/attempts/1/jobs?per_page=100",
+      "jobs": 9,
+      "raw_sha256": "1a23ff039708300db4eb1d04e1b7e17bc0e7266b1030dc6e7d2f86193efb6320",
+      "retained": 8,
+      "status": {
+        "in_window": 9
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:51:14Z",
+      "head_sha": "e8bc97b55d1ba76b2593608919e4300e525310fd",
+      "id": 45080013374,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45080013374/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "d5810d6052f5952887e354d9e393e3466ea6d773fe1562f0e5d7ecb2c16707ea",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:51:14Z",
+      "head_sha": "e8bc97b55d1ba76b2593608919e4300e525310fd",
+      "id": 45080014225,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45080014225/attempts/1/jobs?per_page=100",
+      "jobs": 43,
+      "raw_sha256": "c23c92dfe0ead033f5ed167693f71b2cfe7dc441e0a3c1c21d3575ade21cdf51",
+      "retained": 8,
+      "status": {
+        "in_window": 40,
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:20:56Z",
+      "head_sha": "9de76f2337effb4e9304284136505b85e0bd51e6",
+      "id": 45077212044,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45077212044/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "3e70c76ad53fd318a9c3a3bb0fd98c6b9f85a64fc27d5a4a86990d5d23cbe4f6",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:20:56Z",
+      "head_sha": "9de76f2337effb4e9304284136505b85e0bd51e6",
+      "id": 45077213000,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45077213000/attempts/1/jobs?per_page=100",
+      "jobs": 43,
+      "raw_sha256": "6c92308d61ea0a614ce45142345f4ee45ab277855d7dcab2fd3dd8338df5d4bd",
+      "retained": 8,
+      "status": {
+        "in_window": 40,
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:20:55Z",
+      "head_sha": "9de76f2337effb4e9304284136505b85e0bd51e6",
+      "id": 45077211901,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45077211901/attempts/1/jobs?per_page=100",
+      "jobs": 9,
+      "raw_sha256": "ba4e06a7051ce149acdeec7dc23acd84c34f80dcad16f9f55ec65f6b124c5cd8",
+      "retained": 8,
+      "status": {
+        "in_window": 9
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:20:18Z",
+      "head_sha": "e9ec59fbf82ec00db05f1ca805c930e73082f5f7",
+      "id": 45077151739,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45077151739/attempts/1/jobs?per_page=100",
+      "jobs": 42,
+      "raw_sha256": "37b5c0357ce2459519205068d8f9fa97f33356a83a38101a2905e6ae83a324f2",
+      "retained": 8,
+      "status": {
+        "in_window": 39,
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:20:17Z",
+      "head_sha": "e9ec59fbf82ec00db05f1ca805c930e73082f5f7",
+      "id": 45077150608,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45077150608/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "e970ec2d0d16d79204f0ea707daf3677de8be3ab9fd9eab9288f0e1ecd7391cd",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:17:21Z",
+      "head_sha": "d18a488ac9fac6486c85c7336a027566f23b00f4",
+      "id": 45076869476,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45076869476/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "640acaef81bf8b73691324cadc8f69df25c56463fd8b2f6867584b79a536b120",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:17:21Z",
+      "head_sha": "d18a488ac9fac6486c85c7336a027566f23b00f4",
+      "id": 45076869942,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45076869942/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "962bcceffaaa82e7ac99dd1724f9c3703e367c47f3bed1b52f7ee5b7f2cac1fa",
+      "retained": 8,
+      "status": {
+        "in_window": 35,
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:12:55Z",
+      "head_sha": "b2c1367229173fdd3e52c786ace947dccc9b38f2",
+      "id": 45076448213,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45076448213/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "0792d932663d8586ed504f7ee19003dc961bbffbf3f7aa3d157a66b660d6bf1b",
+      "retained": 8,
+      "status": {
+        "in_window": 35,
+        "fewer_than_five_steps": 3
+      }
+    },
+    {
+      "repo": "python/cpython",
+      "created_at": "2026-11-22T22:12:55Z",
+      "head_sha": "b2c1367229173fdd3e52c786ace947dccc9b38f2",
+      "id": 45076447652,
+      "run_attempt": 1,
+      "endpoint": "repos/python/cpython/actions/runs/45076447652/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "4e963bd11770cae2daded3fd6bb7674dde8a42db26380ab468d91e5c499aa54f",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T16:50:55Z",
+      "head_sha": "1c1d87714d1813aa88fd95d70bf1c01ef178d3d6",
+      "id": 45046100413,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45046100413/attempts/1/jobs?per_page=100",
+      "jobs": 6,
+      "raw_sha256": "a0bee44447ee1f7e500316356028907d5f43a1bd3574a84a20eb17c56b7f4374",
+      "retained": 6,
+      "status": {
+        "in_window": 6
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T16:50:55Z",
+      "head_sha": "1c1d87714d1813aa88fd95d70bf1c01ef178d3d6",
+      "id": 45046100432,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45046100432/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "2e5594d491c919c37aafe47887d0e7afcbf452189f3756dcb970511757916a6b",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T16:50:55Z",
+      "head_sha": "1c1d87714d1813aa88fd95d70bf1c01ef178d3d6",
+      "id": 45046100555,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45046100555/attempts/1/jobs?per_page=100",
+      "jobs": 20,
+      "raw_sha256": "31aa442132c61ff1319bc8819df2206180559ab33b4cdbb7e5b4e48df5c98e89",
+      "retained": 8,
+      "status": {
+        "in_window": 18,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T11:20:45Z",
+      "head_sha": "789001cdb570ae6fef93bcd18e3d65d13fc5ace6",
+      "id": 45016855103,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45016855103/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "fe85c8618061fb43f9ac93d29b6c8d2057819b2e2cde120393c56b4d75aa2af6",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T11:20:45Z",
+      "head_sha": "789001cdb570ae6fef93bcd18e3d65d13fc5ace6",
+      "id": 45016855052,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45016855052/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "96b3dbf7532d6e4acdec2b573ec323ebab5a2457e866a7d02ad0d80964de13f2",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T11:20:45Z",
+      "head_sha": "789001cdb570ae6fef93bcd18e3d65d13fc5ace6",
+      "id": 45016855085,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45016855085/attempts/1/jobs?per_page=100",
+      "jobs": 6,
+      "raw_sha256": "8737b44cb2f031206e61db6597e16b2db7834e42b2ea7bc5234e77c821d3d8a8",
+      "retained": 6,
+      "status": {
+        "in_window": 6
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-22T11:20:45Z",
+      "head_sha": "789001cdb570ae6fef93bcd18e3d65d13fc5ace6",
+      "id": 45016855135,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/45016855135/attempts/1/jobs?per_page=100",
+      "jobs": 29,
+      "raw_sha256": "da5703ace1a90f468481f3d675e51f5dae8946dae9b793c2a42d81f78b5dab04",
+      "retained": 8,
+      "status": {
+        "in_window": 11,
+        "truncated": 16,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-21T07:27:55Z",
+      "head_sha": "5d7f657451f7b813d33513b4a1c46f923db63113",
+      "id": 44880368252,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/44880368252/attempts/1/jobs?per_page=100",
+      "jobs": 29,
+      "raw_sha256": "6c33185a2193e6134d3a4109070fc10fef3253545bc052185762a4398f628aa0",
+      "retained": 8,
+      "status": {
+        "in_window": 11,
+        "truncated": 16,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-21T07:27:54Z",
+      "head_sha": "5d7f657451f7b813d33513b4a1c46f923db63113",
+      "id": 44880368116,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/44880368116/attempts/1/jobs?per_page=100",
+      "jobs": 6,
+      "raw_sha256": "b6cb15ecb716b1f5334e4bc5b3b3731f253c44a81eaea43f8ddafaa0a403166e",
+      "retained": 6,
+      "status": {
+        "in_window": 6
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-21T07:27:54Z",
+      "head_sha": "5d7f657451f7b813d33513b4a1c46f923db63113",
+      "id": 44880368077,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/44880368077/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "df30d368663a2b0386d5965a75a42cc45bc436fe6bc2710131af37230aaff711",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-21T07:27:54Z",
+      "head_sha": "5d7f657451f7b813d33513b4a1c46f923db63113",
+      "id": 44880368109,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/44880368109/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "d0b7027f4cbfb04383d391f14e019b4fbf09d6398a2d35fd79f014d9f273cc59",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "nodejs/undici",
+      "created_at": "2026-11-21T07:21:28Z",
+      "head_sha": "81cc69e632a65fc08a6743f54591678f2e741965",
+      "id": 44879870606,
+      "run_attempt": 1,
+      "endpoint": "repos/nodejs/undici/actions/runs/44879870606/attempts/1/jobs?per_page=100",
+      "jobs": 1,
+      "raw_sha256": "86cbde203ccc40b63e0316056529822a00602522e5ea91d3735605cbc2aeee5b",
+      "retained": 1,
+      "status": {
+        "in_window": 1
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T23:04:09Z",
+      "head_sha": "4a51093f78bfbef86d89275f4916fd6b6039fe9e",
+      "id": 45081181907,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45081181907/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "43cf6a373ff31319bce46697f04a12e5134af8761ac6f2f9bcea44742717747d",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T22:55:06Z",
+      "head_sha": "669cb4c755db20b26c3af3d923c042ae224c7496",
+      "id": 45080355946,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45080355946/attempts/1/jobs?per_page=100",
+      "jobs": 18,
+      "raw_sha256": "04d08ac08ac64e19a08b09a63449864610e8279e595e2eedf35be073e5d85fc9",
+      "retained": 8,
+      "status": {
+        "in_window": 18
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T22:51:46Z",
+      "head_sha": "669cb4c755db20b26c3af3d923c042ae224c7496",
+      "id": 45080060005,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45080060005/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "70367eb2c337e28bb0805e711a03df2d15228bc052baac10546fff585c3f3ad5",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T18:39:20Z",
+      "head_sha": "b674410666d5aa3fd66c9d4683791ae811fe4fae",
+      "id": 45056314360,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45056314360/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "5b7ec81a187e53bef767626d389b75988833acedd5a7f2bed154dcf30e289c03",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T17:14:17Z",
+      "head_sha": "0856f3971e9f0bd987282dfec64494e9e03e860d",
+      "id": 45048298796,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45048298796/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "c2626f79b7f867580a580d03c019db98125a69c14f4f17ab4aaf1e681db853ff",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T17:08:24Z",
+      "head_sha": "9c49a258944543082630246983b373525bb9f851",
+      "id": 45047739505,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45047739505/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "078f170522e98b4593edd3e7cb1495e3dfd74a8eb7a6e42acbd3eee8aa86a74b",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T14:53:29Z",
+      "head_sha": "574b20493bcf6f20c1aea43d4b3b9952fc3ee17f",
+      "id": 45035263807,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45035263807/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "9ecfdc6939032b50ca840d450b8a7090277e1f972bff7cff170fd907423948b6",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T14:09:38Z",
+      "head_sha": "8493ee39ef5de51e8ecaddd1c1f26532b25111c4",
+      "id": 45031285009,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/45031285009/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "651d6fff22d74a568d4a920709b952a8706cba25c1355b26f2ad7c94731d73a7",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T03:31:48Z",
+      "head_sha": "d095d52d8850cf0ee2afd5ad8fcf23c0e139518c",
+      "id": 44981053219,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/44981053219/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "d9df03cdefb8e61171739f4d814e748fe665dbdac96fe747a2db2a4a938f5d33",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T03:28:38Z",
+      "head_sha": "6664fc5ac4b604b34b2617e82184e4a9a1cf0267",
+      "id": 44980808229,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/44980808229/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "f4b69fa9d8af49a9889917287940dcbbfd76d036aee4311e535eb77719d81849",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T03:19:24Z",
+      "head_sha": "f831189dc54701fe93dd8764de2c28723e744293",
+      "id": 44980091178,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/44980091178/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "25edeb84693883da1553eb4d730cfa0ff934bb16af7c7facb8ec19e276ede350",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "created_at": "2026-11-22T02:10:55Z",
+      "head_sha": "5302ffaeb2d8b582603f5c88bf352d4c631cf684",
+      "id": 44974865747,
+      "run_attempt": 1,
+      "endpoint": "repos/BurntSushi/ripgrep/actions/runs/44974865747/attempts/1/jobs?per_page=100",
+      "jobs": 23,
+      "raw_sha256": "dc0ca975562015c7c4279aa5748d6a6b33a99ba11def8a87b447cede06b539a0",
+      "retained": 8,
+      "status": {
+        "in_window": 23
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-07T12:16:08Z",
+      "head_sha": "4b71f36fb4dfbc87ce65ac4710eeccf81d379f55",
+      "id": 42371717157,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/42371717157/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "1fc8ee855a0026e418ac86f812fdbad3efdaded07d9af3912afed19aec8d1257",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-03T18:23:27Z",
+      "head_sha": "a4a111d0642fc9a46e0e4bddbe929ac731c734e6",
+      "id": 41693345617,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41693345617/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "a40abe6f5e31cf73900119a9252f934593aa14090221887be3d075572c743b15",
+      "retained": 8,
+      "status": {
+        "fewer_than_five_steps": 2,
+        "in_window": 36
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-03T16:31:48Z",
+      "head_sha": "a3b1f887f339d8564b0d4b97543c4c3417004299",
+      "id": 41675126554,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41675126554/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "0aa25eb67123bb2a98310c11e192685a8fecf888bf8debdd7f1b901a0cf2e20d",
+      "retained": 8,
+      "status": {
+        "fewer_than_five_steps": 2,
+        "in_window": 36
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T20:11:20Z",
+      "head_sha": "191854fba83d1c69534f974564af85632372d995",
+      "id": 41516899100,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41516899100/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "a408585ac80e4452c6bcf2b4f1779d6dc0b6d49d8aae7802ee5f7d3ff2f663a1",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T20:11:20Z",
+      "head_sha": "191854fba83d1c69534f974564af85632372d995",
+      "id": 41516899237,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41516899237/attempts/1/jobs?per_page=100",
+      "jobs": 2,
+      "raw_sha256": "0990d836dc426a0ad6cf4120d85285a183e1d7ffda9451c1c2baa57c9887f491",
+      "retained": 2,
+      "status": {
+        "in_window": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T20:08:30Z",
+      "head_sha": "42f71db0668896db06742a89f975c7d5f3132677",
+      "id": 41516454671,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41516454671/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "b1b73b7278f317f9cbff821cb9c2b395b040e8ad9a093b4139f7bbddf0c210a0",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T17:47:04Z",
+      "head_sha": "d1a81c827fd3d947321b0ba54f477b5e271fd252",
+      "id": 41494397587,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41494397587/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "50cb86ef8a114bacc871a9cd7ef2e6f43d1ff41918f3fb04252c678e18f10414",
+      "retained": 8,
+      "status": {
+        "fewer_than_five_steps": 2,
+        "in_window": 36
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T16:53:16Z",
+      "head_sha": "942a415df16936fd006d11444e2a28f6ff302b7b",
+      "id": 41485827355,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41485827355/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "ed8bde1efd7b9722b4473123cac3a2b93194f6829042b5c9fddfdfd7689fa50c",
+      "retained": 8,
+      "status": {
+        "fewer_than_five_steps": 2,
+        "in_window": 36
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T16:52:25Z",
+      "head_sha": "f424f1aa04f13174382b0f9ae326cefbc58ca294",
+      "id": 41485693342,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41485693342/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "4b2834bd2b0aa5bf19b2d67a8e81aaf985da8f10281503975fc50e9cf6fe61e3",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T16:45:57Z",
+      "head_sha": "8e3414c2255324ad806fe83931009ea1b8dc4db9",
+      "id": 41484660731,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41484660731/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "02129828355ed05a5a8ab8b7e922b0039863bdb09ee6bf3cacfbb8c2ab5d8f5c",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T16:21:18Z",
+      "head_sha": "bde926f7c46bf9946f05775c320b9843c855c26b",
+      "id": 41480617174,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41480617174/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "9a4d58ee25974230c6f77320cf9e7f2746f1937c1586ef1835e44235c6e5d209",
+      "retained": 8,
+      "status": {
+        "in_window": 36,
+        "fewer_than_five_steps": 2
+      }
+    },
+    {
+      "repo": "pypa/pip",
+      "created_at": "2026-11-02T16:15:28Z",
+      "head_sha": "4e9af9e485d927afa0ef657ffb1cecead51aa77b",
+      "id": 41479684482,
+      "run_attempt": 1,
+      "endpoint": "repos/pypa/pip/actions/runs/41479684482/attempts/1/jobs?per_page=100",
+      "jobs": 38,
+      "raw_sha256": "23499ac9f29f952d2608e3317b810d6544b4e82bb353412b5d3a7d02b97ec254",
+      "retained": 8,
+      "status": {
+        "fewer_than_five_steps": 2,
+        "in_window": 36
+      }
+    }
+  ]
+}

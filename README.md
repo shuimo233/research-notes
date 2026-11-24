@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [如何只披露足以复核新版报告的时间戳？](articles/consent-audit/slack-certificate.md) | 构造精确反例集合，独立证实 430 份 CI 报告的最少披露 |
 | 2026-11-24 | [只留旧报告时，哪些读数必须重查？](articles/consent-audit/conclusion-replay.md) | 用整数差分约束直接确定最小固定读取集合，在 1,450 份温差报告上检验 |
 | 2026-11-24 | [已知候选版本，能给出完整的 npm 声明范围审计吗？](articles/consent-audit/npm-query.md) | 九份历史锁文件的版本合并、按需读取、可核验结果与事前判据 |
 | 2026-11-24 | [独立更新的模块，可以分别做最坏损失规划吗？](articles/consent-audit/factored-robust.md) | 已知必问前缀后的精确分解、全局核验与共享未知前缀的反例 |
