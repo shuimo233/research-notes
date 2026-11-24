@@ -155,7 +155,7 @@ class FrontierPlan:
             return None
         return self.optimum(self.counts, 0)[0]
 
-    def fixed_cover(self):
+    def fixed_cover(self, forced=0):
         """Maximum-weight independent set of omitted types, using the common product law."""
         m = self.counts
         weights = [
@@ -177,7 +177,7 @@ class FrontierPlan:
                 key=lambda v: (-v[0], -v[1], v[2]),
             )
 
-        saving, _, omitted = best((1 << len(m)) - 1)
+        saving, _, omitted = best(((1 << len(m)) - 1) & ~forced)
         return tuple(i for i in range(len(m)) if i not in omitted), sum(
             n * c for n, c in zip(m, self.cost)
         ) - saving

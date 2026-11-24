@@ -117,11 +117,7 @@ class RelationInquiry:
             forced |= self.masks[u][x]
 
         if mode == "fixed":
-            if initial_forced:
-                raise ValueError(
-                    "a fixed-cover policy does not accept external read obligations"
-                )
-            initial, _ = planner.fixed_cover()
+            initial, _ = planner.fixed_cover(initial_forced)
             for i in initial:
                 while counts[i]:
                     request(i)
