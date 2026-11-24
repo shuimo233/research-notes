@@ -33,6 +33,8 @@
 
 独立程序重算了原始 GTFS 所用的时刻、每条新版标签、所有私有最短证书以及公开反例组的投影条件。对于 53 项用补检证明最优的任务，独立地排除了 457 个候选替代名单。对 34 份替代表及其更短证书也逐项复核。此实验衡量披露时刻数与可证明比例，未测量实际运行时列车或换乘表现。[独立验证](transit_optimality_check.py)
 
+对上述 53 项再做探索性分析，让每个反例组可以随实况翻转不同条款，共找出并独立复核了 46 个单一条款无法证明的组。它们让其中 16 项重新获得了不交反例组的最优性证明。这里的增量来自多界判定本身，研究对象选自已被精确补检证实的任务。[补充实验与证书](transit-optimality-mixed.json)
+
 ## 复算
 
 以下命令使用 Python 3.13。在本文目录运行，输出目录需尚未存在。公开核验阶段从已导出的时间带、旧报告、新标签和所披露值读取。
@@ -44,6 +46,7 @@ python -I -B transit_optimality_export.py transit-optimality-fixtures.json.gz ex
 python -I -B public_optimality_run.py exported/transit-optimality-packets.json.gz replayed
 python -I -B transit_optimality_finish.py exported/transit-optimality-packets.json.gz replayed/public-optimality-ledger.jsonl.gz exact.json
 python -I -B transit_optimality_check.py transit-optimality-fixtures.json.gz transit-optimality-source.json exported replayed exact.json
+python -I -B transit_optimality_mixed.py exported/transit-optimality-packets.json.gz exact.json mixed.json
 ```
 
 [冻结的公开包](transit-optimality-packets.json.gz)可以直接用于公开阶段。持有 SHA-256 匹配的原始 ZIP 时，可用 `python -I -B transit_optimality_prepare.py bart.zip normalized` 重新抽取样本，并向核验器传入 `--gtfs bart.zip` 核验选中的时刻。原网址是 BART 最新时刻表的永久链接，线上文件会更新。

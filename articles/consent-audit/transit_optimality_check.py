@@ -119,40 +119,42 @@ def known_can_certify(n, x, alternatives, size):
     return False
 
 
+def can_use_readings(n, public_edges, public, allowed, candidate):
+    points = (0, *candidate)
+    constraints = set()
+    for b in allowed.values():
+        pairs = []
+        automatic = False
+        for i in points:
+            for j in points:
+                cut = b[i][j] + 1
+                if -public[j][i] >= cut:
+                    automatic = True
+                if public[i][j] >= cut:
+                    pairs.append((j, i, -cut))
+        if not automatic:
+            constraints.add(tuple(pairs))
+    arrange = sorted(constraints, key=lambda sequence: (len(sequence), sequence))
+
+    def same_record(index, edges):
+        if index == len(arrange):
+            return True
+        for option in arrange[index]:
+            changed = [*edges, option]
+            if potential(n, changed) is not None and same_record(index + 1, changed):
+                return True
+        return False
+
+    return same_record(0, public_edges)
+
+
 def someone_can_certify(n, public_edges, public, allowed, groups, size):
     explored = 0
     for candidate in combinations(range(1, n), size):
         if any(not set(candidate).intersection(row[0]) for row in groups):
             continue
         explored += 1
-        points = (0, *candidate)
-        constraints = set()
-        for b in allowed.values():
-            pairs = []
-            automatic = False
-            for i in points:
-                for j in points:
-                    cut = b[i][j] + 1
-                    if -public[j][i] >= cut:
-                        automatic = True
-                    if public[i][j] >= cut:
-                        pairs.append((j, i, -cut))
-            if not automatic:
-                constraints.add(tuple(pairs))
-        arrange = sorted(constraints, key=lambda sequence: (len(sequence), sequence))
-
-        def same_record(index, edges):
-            if index == len(arrange):
-                return True
-            for option in arrange[index]:
-                changed = [*edges, option]
-                if potential(n, changed) is not None and same_record(
-                    index + 1, changed
-                ):
-                    return True
-            return False
-
-        if same_record(0, public_edges):
+        if can_use_readings(n, public_edges, public, allowed, candidate):
             return True, explored
     return False, explored
 
