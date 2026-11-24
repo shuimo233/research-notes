@@ -12,12 +12,29 @@ from sense_inquiry import SenseInquiry
 from wordnet_paths import NounPaths
 
 
-def query(archive, words, observed, policy):
+QUESTIONS = ("relation", "left_narrower", "right_narrower", "comparable")
+STRICT = {"left_narrower", "right_narrower"}
+
+
+def project(relation, question):
+    if question == "relation":
+        return relation
+    if question == "comparable":
+        return relation in STRICT
+    if question not in STRICT:
+        raise ValueError(f"unknown relation question: {question}")
+    return relation == question
+
+
+def query(archive, words, observed, policy, question="relation"):
     verify(archive, "3c68cd207844f071a5206f7fbed23e5c607ec02f")
     graph = NounPaths(archive)
-    inquiry = SenseInquiry(*(graph.senses(w) for w in words), graph.relation)
+    inquiry = SenseInquiry(*(graph.senses(w) for w in words),
+                           lambda x, y: project(graph.relation(x, y), question))
     action, value = inquiry.advance(observed, policy)
     if action == "answer":
+        if question != "relation":
+            return {"left": words[0], "right": words[1], "question": question, "answer": value}
         return {"left": words[0], "right": words[1], "relation": value}
     senses = set(inquiry.senses[value])
     choices = {}
@@ -35,10 +52,11 @@ if __name__ == "__main__":
     parser.add_argument("right")
     parser.add_argument("--left-sense", type=int)
     parser.add_argument("--right-sense", type=int)
+    parser.add_argument("--question", choices=QUESTIONS, default="relation")
     parser.add_argument("--policy", choices=("table", "more", "fewer", "left", "right"), default="table")
     a = parser.parse_args()
     observed = {side: n for side, n in enumerate((a.left_sense, a.right_sense)) if n is not None}
     try:
-        print(json.dumps(query(a.archive, (a.left, a.right), observed, a.policy), indent=2))
+        print(json.dumps(query(a.archive, (a.left, a.right), observed, a.policy, a.question), indent=2))
     except ValueError as error:
         parser.error(str(error))
