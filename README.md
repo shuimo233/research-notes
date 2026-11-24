@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [证词的内容安全，选择证词的规则也安全吗？](articles/consent-audit/selection-protection.md) | 审计实际选择的推断，构造公开可核验的确定性与随机发布规则 |
 | 2026-11-24 | [只用一份假想时间表，证明没有新确定任何线性统计量](articles/consent-audit/lag-protection.md) | 以公开的有理表验证全体时差保护，复算 35 项最少披露任务 |
 | 2026-11-24 | [怎样验证披露最少，同时保留原先未知的时刻？](articles/consent-audit/unlocked-attestation.md) | 候选压缩与存在性困难，独立核验 35 项档案的保护条件 |
 | 2026-11-24 | [用一条时间差证词，补足公开最优性证明](articles/consent-audit/attested-optimality.md) | 核验 35 个信息缺口，并证明两项与三项原读数之间的补证边界 |
