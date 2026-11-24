@@ -32,7 +32,7 @@ EDGES = (("H", "A"), ("H", "B"), ("H", "C"), ("H", "D"), ("A", "B"), ("C", "D"))
 MODES = ("all", "fixed", "greedy", "edge", "full", "block", "oracle")
 
 
-def prepare(directory, snapshot, manifest):
+def prepare(directory, snapshot, manifest, last_year=2024):
     records = ["station,date,tmax_tenths"]
     sources = []
     for station in IDS:
@@ -43,7 +43,7 @@ def prepare(directory, snapshot, manifest):
                 continue
             assert row[:11] == station and len(row) == 269
             year, month = int(row[11:15]), int(row[15:17])
-            if not 2000 <= year <= 2024:
+            if not 2000 <= year <= last_year:
                 continue
             for day in range(1, calendar.monthrange(year, month)[1] + 1):
                 start = 21 + (day - 1) * 8
@@ -239,11 +239,12 @@ if __name__ == "__main__":
     pr = sub.add_parser("prepare")
     for name in ("raw_directory", "snapshot", "manifest"):
         pr.add_argument(name, type=Path)
+    pr.add_argument("--last-year", type=int, default=2024)
     r = sub.add_parser("run")
     for name in ("snapshot", "output"):
         r.add_argument(name, type=Path)
     a = p.parse_args()
     if a.command == "prepare":
-        prepare(a.raw_directory, a.snapshot, a.manifest)
+        prepare(a.raw_directory, a.snapshot, a.manifest, a.last_year)
     else:
         print(json.dumps(run(a.snapshot, a.output), indent=2))

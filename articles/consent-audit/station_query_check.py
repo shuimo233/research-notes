@@ -17,13 +17,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from station_query import STATIONS, EDGES, MODES
 
 
-def data(snapshot, sources, raw):
+def data(snapshot, sources, raw, last_year=2024):
     contents = gzip.decompress(snapshot.read_bytes())
     manifest = json.loads(sources.read_bytes())
     assert sha256(contents).hexdigest() == manifest["uncompressed_sha256"]
     samples = defaultdict(dict)
     for sid, stamp, value in csv.reader(contents.decode("ascii").splitlines()[1:]):
-        assert stamp not in samples[sid] and "2000-01-01" <= stamp <= "2024-12-31"
+        assert (
+            stamp not in samples[sid] and "2000-01-01" <= stamp <= f"{last_year}-12-31"
+        )
         samples[sid][stamp] = int(value)
     assert {x["station"]: x["rows"] for x in manifest["sources"]} == {
         s: len(values) for s, values in samples.items()
@@ -38,7 +40,10 @@ def data(snapshot, sources, raw):
             for line in blob.splitlines():
                 station, year, month, element, *days = fields.unpack(line)
                 assert station.decode() == sid
-                if b"2000" <= year <= b"2024" and element == b"TMAX":
+                if (
+                    b"2000" <= year <= str(last_year).encode("ascii")
+                    and element == b"TMAX"
+                ):
                     for i, packed in enumerate(days, 1):
                         t = int(packed[:5])
                         if t != -9999 and packed[-2:-1] == b" ":
