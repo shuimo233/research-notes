@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [只知道每个词的义项频率，能把整句的询问预算算准吗？](articles/consent-audit/cover-dependence.md) | 为 99 个真实句子构造精确相关性预算，给出可线性计算与 NP-hard 的结构边界 |
 | 2026-11-24 | [同一个词义只问一次，一句话能少问多少？](articles/consent-audit/shared-sense.md) | 对照逐题缓存、整句询问顺序与最短证书，在两套语料中逐句核验 |
 | 2026-11-24 | [确认“这是一种什么”有时也能少问一次](articles/consent-audit/wsd-clarification.md) | 五套外部语料中核对四种问法，公布未达门槛的复验、四个正例和逐项证书 |
 | 2026-11-24 | [推理器什么时候可以少问一个词义？](articles/consent-audit/semcor-clarification.md) | 用真实同句词义标注核验提前停止，比较六种询问顺序并公开失败的主要假设 |
