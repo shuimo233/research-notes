@@ -26,7 +26,7 @@ from slack_certificate import (
 NODE_LIMIT = 50_000
 
 
-def tasks(row):
+def archive_for(row):
     steps = row["steps"]
     truth = (0, *(t for _, a, b in steps for t in (a, b)))
     n = len(truth)
@@ -70,6 +70,11 @@ def tasks(row):
                 min(hi, cuts[k] - 1) if k < len(cuts) else hi,
             )
         )
+    return truth, bands, archived, after
+
+
+def tasks(row):
+    truth, bands, archived, after = archive_for(row)
     return truth, closure(bands, archived), after
 
 
