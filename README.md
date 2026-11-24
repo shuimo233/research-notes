@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-24 | [三个词先问哪两个，抽签有用吗？](articles/consent-audit/mixed-cover.md) | 99 个自然句中固定方案均已最优，给出三词严格反例、异质边际最优策略和 WordNet 中的适用范围 |
 | 2026-11-24 | [各项最坏成本能否同时发生？](articles/consent-audit/fair-union.md) | 公平二元来源下的二触发线性判定、全正三触发困难性与精确半项缺口 |
 | 2026-11-24 | [一句里先问哪些词，能证明选对了吗？](articles/consent-audit/coupling-witness.md) | 对 99 句的全部 244 个极小覆盖作稳健预算核对，比较见证、合并及无环判据 |
 | 2026-11-24 | [只知道每个词的义项频率，能把整句的询问预算算准吗？](articles/consent-audit/cover-dependence.md) | 为 99 个真实句子构造精确相关性预算，给出可线性计算与 NP-hard 的结构边界 |

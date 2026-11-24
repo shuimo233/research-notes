@@ -1,0 +1,1409 @@
+{
+  "eligible_two_sense_lemmas": 2295,
+  "matching_specific_to_general_triples": 1228,
+  "example": {
+    "words": [
+      "technique",
+      "method",
+      "ability"
+    ],
+    "active_offsets": [
+      5665146,
+      5660268,
+      5616246
+    ],
+    "candidates": [
+      [
+        5643190,
+        5665146
+      ],
+      [
+        549766,
+        5660268
+      ],
+      [
+        5200169,
+        5616246
+      ]
+    ],
+    "tagged_noun_counts": [
+      62,
+      99,
+      28
+    ]
+  },
+  "both_senses_observed": 38,
+  "empirical_marginal_strict": 10,
+  "empirical_marginal_total_gap": "992419577/1845272520",
+  "plus_five_points_strict": 11,
+  "retained_after_shift": 9,
+  "at_least_five_per_sense": 0,
+  "at_least_five_per_sense_strict": 0,
+  "empirical_example": {
+    "words": [
+      "religion",
+      "morality",
+      "attribute"
+    ],
+    "active_offsets": [
+      5946687,
+      4846770,
+      24264
+    ],
+    "active_inactive_counts": [
+      [
+        63,
+        9
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "active_marginals": {
+      "religion": "7/8",
+      "morality": "8/13",
+      "attribute": "1/3"
+    },
+    "pure_cost": "115/39",
+    "mixed_cost": "2753/936",
+    "upper_shifted_pure": "3",
+    "upper_shifted_mixed": "13999/4680"
+  },
+  "empirical_cases": [
+    {
+      "words": [
+        "badge",
+        "emblem",
+        "symbol"
+      ],
+      "active_offsets": [
+        6882561,
+        6880664,
+        5765415
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          18
+        ]
+      ],
+      "active_marginals": {
+        "badge": "3/5",
+        "emblem": "2/5",
+        "symbol": "1/10"
+      },
+      "pure_cost": "5/2",
+      "mixed_cost": "5/2",
+      "upper_shifted_pure": "13/5",
+      "upper_shifted_mixed": "13/5"
+    },
+    {
+      "words": [
+        "banana",
+        "herb",
+        "being"
+      ],
+      "active_offsets": [
+        12352287,
+        12205694,
+        4475
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "active_marginals": {
+        "banana": "1/2",
+        "herb": "1/2",
+        "being": "1/3"
+      },
+      "pure_cost": "17/6",
+      "mixed_cost": "25/9",
+      "upper_shifted_pure": "44/15",
+      "upper_shifted_mixed": "509/180"
+    },
+    {
+      "words": [
+        "catalog",
+        "list",
+        "message"
+      ],
+      "active_offsets": [
+        6487897,
+        6481320,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          2
+        ],
+        [
+          64,
+          1
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "catalog": "1/3",
+        "list": "64/65",
+        "message": "11/31"
+      },
+      "pure_cost": "250/93",
+      "mixed_cost": "250/93",
+      "upper_shifted_pure": "2593/930",
+      "upper_shifted_mixed": "2593/930"
+    },
+    {
+      "words": [
+        "classic",
+        "creator",
+        "being"
+      ],
+      "active_offsets": [
+        9926426,
+        9614315,
+        4475
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "active_marginals": {
+        "classic": "1/3",
+        "creator": "1/4",
+        "being": "1/3"
+      },
+      "pure_cost": "31/12",
+      "mixed_cost": "31/12",
+      "upper_shifted_pure": "161/60",
+      "upper_shifted_mixed": "161/60"
+    },
+    {
+      "words": [
+        "classic",
+        "creator",
+        "individual"
+      ],
+      "active_offsets": [
+        9926426,
+        9614315,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "classic": "1/3",
+        "creator": "1/4",
+        "individual": "51/65"
+      },
+      "pure_cost": "31/12",
+      "mixed_cost": "31/12",
+      "upper_shifted_pure": "161/60",
+      "upper_shifted_mixed": "161/60"
+    },
+    {
+      "words": [
+        "concussion",
+        "accident",
+        "misfortune"
+      ],
+      "active_offsets": [
+        7411490,
+        7301336,
+        7304852
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "active_marginals": {
+        "concussion": "1/2",
+        "accident": "7/12",
+        "misfortune": "4/7"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "727/252",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "1849/630"
+    },
+    {
+      "words": [
+        "context",
+        "environment",
+        "attribute"
+      ],
+      "active_offsets": [
+        14512817,
+        13934596,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          4,
+          14
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "context": "2/9",
+        "environment": "21/22",
+        "attribute": "1/3"
+      },
+      "pure_cost": "23/9",
+      "mixed_cost": "23/9",
+      "upper_shifted_pure": "239/90",
+      "upper_shifted_mixed": "239/90"
+    },
+    {
+      "words": [
+        "defeat",
+        "disappointment",
+        "attribute"
+      ],
+      "active_offsets": [
+        7540866,
+        7540602,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          12
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "defeat": "1/5",
+        "disappointment": "7/8",
+        "attribute": "1/3"
+      },
+      "pure_cost": "38/15",
+      "mixed_cost": "38/15",
+      "upper_shifted_pure": "79/30",
+      "upper_shifted_mixed": "79/30"
+    },
+    {
+      "words": [
+        "feedback",
+        "reply",
+        "message"
+      ],
+      "active_offsets": [
+        6746471,
+        6746005,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "feedback": "1/2",
+        "reply": "21/23",
+        "message": "11/31"
+      },
+      "pure_cost": "177/62",
+      "mixed_cost": "177/62",
+      "upper_shifted_pure": "458/155",
+      "upper_shifted_mixed": "458/155"
+    },
+    {
+      "words": [
+        "fever",
+        "expectancy",
+        "attribute"
+      ],
+      "active_offsets": [
+        7511380,
+        7511080,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          4,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "fever": "1/2",
+        "expectancy": "1/2",
+        "attribute": "1/3"
+      },
+      "pure_cost": "17/6",
+      "mixed_cost": "25/9",
+      "upper_shifted_pure": "44/15",
+      "upper_shifted_mixed": "509/180"
+    },
+    {
+      "words": [
+        "hound",
+        "villain",
+        "individual"
+      ],
+      "active_offsets": [
+        9886220,
+        10753546,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "hound": "1/3",
+        "villain": "2/3",
+        "individual": "51/65"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "571/195",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "2323/780"
+    },
+    {
+      "words": [
+        "hypocrisy",
+        "falsity",
+        "message"
+      ],
+      "active_offsets": [
+        6760076,
+        6756407,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "hypocrisy": "1/2",
+        "falsity": "1/2",
+        "message": "11/31"
+      },
+      "pure_cost": "177/62",
+      "mixed_cost": "259/93",
+      "upper_shifted_pure": "458/155",
+      "upper_shifted_mixed": "5273/1860"
+    },
+    {
+      "words": [
+        "intent",
+        "meaning",
+        "message"
+      ],
+      "active_offsets": [
+        6605897,
+        6601327,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          3
+        ],
+        [
+          48,
+          31
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "intent": "2/5",
+        "meaning": "48/79",
+        "message": "11/31"
+      },
+      "pure_cost": "427/155",
+      "mixed_cost": "427/155",
+      "upper_shifted_pure": "177/62",
+      "upper_shifted_mixed": "416939/146940"
+    },
+    {
+      "words": [
+        "manufacturer",
+        "creator",
+        "being"
+      ],
+      "active_offsets": [
+        10292316,
+        9614315,
+        4475
+      ],
+      "active_inactive_counts": [
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "active_marginals": {
+        "manufacturer": "1/5",
+        "creator": "1/4",
+        "being": "1/3"
+      },
+      "pure_cost": "49/20",
+      "mixed_cost": "49/20",
+      "upper_shifted_pure": "51/20",
+      "upper_shifted_mixed": "51/20"
+    },
+    {
+      "words": [
+        "manufacturer",
+        "creator",
+        "individual"
+      ],
+      "active_offsets": [
+        10292316,
+        9614315,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "manufacturer": "1/5",
+        "creator": "1/4",
+        "individual": "51/65"
+      },
+      "pure_cost": "49/20",
+      "mixed_cost": "49/20",
+      "upper_shifted_pure": "51/20",
+      "upper_shifted_mixed": "51/20"
+    },
+    {
+      "words": [
+        "occurrence",
+        "being",
+        "attribute"
+      ],
+      "active_offsets": [
+        13959069,
+        13954253,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          29
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "occurrence": "3/32",
+        "being": "2/3",
+        "attribute": "1/3"
+      },
+      "pure_cost": "233/96",
+      "mixed_cost": "233/96",
+      "upper_shifted_pure": "1213/480",
+      "upper_shifted_mixed": "1213/480"
+    },
+    {
+      "words": [
+        "occurrence",
+        "existence",
+        "attribute"
+      ],
+      "active_offsets": [
+        13959069,
+        13954253,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          29
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "occurrence": "3/32",
+        "existence": "51/52",
+        "attribute": "1/3"
+      },
+      "pure_cost": "233/96",
+      "mixed_cost": "233/96",
+      "upper_shifted_pure": "1213/480",
+      "upper_shifted_mixed": "1213/480"
+    },
+    {
+      "words": [
+        "panic",
+        "anxiety",
+        "status"
+      ],
+      "active_offsets": [
+        14405931,
+        14374432,
+        13920835
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          7
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "panic": "2/9",
+        "anxiety": "20/29",
+        "status": "1/21"
+      },
+      "pure_cost": "143/63",
+      "mixed_cost": "143/63",
+      "upper_shifted_pure": "1493/630",
+      "upper_shifted_mixed": "1493/630"
+    },
+    {
+      "words": [
+        "personality",
+        "adult",
+        "individual"
+      ],
+      "active_offsets": [
+        10417424,
+        9605289,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          14
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "personality": "1/8",
+        "adult": "1/2",
+        "individual": "51/65"
+      },
+      "pure_cost": "21/8",
+      "mixed_cost": "21/8",
+      "upper_shifted_pure": "109/40",
+      "upper_shifted_mixed": "109/40"
+    },
+    {
+      "words": [
+        "potentiality",
+        "being",
+        "attribute"
+      ],
+      "active_offsets": [
+        14482620,
+        13954253,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          2
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "potentiality": "3/5",
+        "being": "2/3",
+        "attribute": "1/3"
+      },
+      "pure_cost": "44/15",
+      "mixed_cost": "43/15",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "35/12"
+    },
+    {
+      "words": [
+        "potentiality",
+        "existence",
+        "attribute"
+      ],
+      "active_offsets": [
+        14482620,
+        13954253,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          3,
+          2
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "potentiality": "3/5",
+        "existence": "51/52",
+        "attribute": "1/3"
+      },
+      "pure_cost": "44/15",
+      "mixed_cost": "44/15",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "3"
+    },
+    {
+      "words": [
+        "province",
+        "environment",
+        "attribute"
+      ],
+      "active_offsets": [
+        14515633,
+        13934596,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          4
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "province": "1/5",
+        "environment": "21/22",
+        "attribute": "1/3"
+      },
+      "pure_cost": "38/15",
+      "mixed_cost": "38/15",
+      "upper_shifted_pure": "79/30",
+      "upper_shifted_mixed": "79/30"
+    },
+    {
+      "words": [
+        "reactivity",
+        "faculty",
+        "ability"
+      ],
+      "active_offsets": [
+        5653575,
+        5650329,
+        5616246
+      ],
+      "active_inactive_counts": [
+        [
+          9,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          9,
+          19
+        ]
+      ],
+      "active_marginals": {
+        "reactivity": "9/10",
+        "faculty": "4/7",
+        "ability": "9/28"
+      },
+      "pure_cost": "81/28",
+      "mixed_cost": "81/28",
+      "upper_shifted_pure": "419/140",
+      "upper_shifted_mixed": "313/105"
+    },
+    {
+      "words": [
+        "reliance",
+        "certainty",
+        "status"
+      ],
+      "active_offsets": [
+        5697976,
+        5697135,
+        13920835
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "reliance": "2/3",
+        "certainty": "3/4",
+        "status": "1/21"
+      },
+      "pure_cost": "19/7",
+      "mixed_cost": "19/7",
+      "upper_shifted_pure": "197/70",
+      "upper_shifted_mixed": "197/70"
+    },
+    {
+      "words": [
+        "religion",
+        "morality",
+        "attribute"
+      ],
+      "active_offsets": [
+        5946687,
+        4846770,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          63,
+          9
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "religion": "7/8",
+        "morality": "8/13",
+        "attribute": "1/3"
+      },
+      "pure_cost": "115/39",
+      "mixed_cost": "2753/936",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "13999/4680"
+    },
+    {
+      "words": [
+        "schedule",
+        "list",
+        "message"
+      ],
+      "active_offsets": [
+        6495328,
+        6481320,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          6,
+          11
+        ],
+        [
+          64,
+          1
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "schedule": "6/17",
+        "list": "64/65",
+        "message": "11/31"
+      },
+      "pure_cost": "1427/527",
+      "mixed_cost": "1427/527",
+      "upper_shifted_pure": "14797/5270",
+      "upper_shifted_mixed": "14797/5270"
+    },
+    {
+      "words": [
+        "scorn",
+        "dislike",
+        "attribute"
+      ],
+      "active_offsets": [
+        7502980,
+        7501545,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "scorn": "6/7",
+        "dislike": "1/3",
+        "attribute": "1/3"
+      },
+      "pure_cost": "8/3",
+      "mixed_cost": "8/3",
+      "upper_shifted_pure": "83/30",
+      "upper_shifted_mixed": "83/30"
+    },
+    {
+      "words": [
+        "self",
+        "consciousness",
+        "attribute"
+      ],
+      "active_offsets": [
+        5675601,
+        5675130,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          16,
+          7
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "self": "16/23",
+        "consciousness": "20/21",
+        "attribute": "1/3"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "482/161",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "3"
+    },
+    {
+      "words": [
+        "self",
+        "consciousness",
+        "status"
+      ],
+      "active_offsets": [
+        5675601,
+        5675130,
+        13920835
+      ],
+      "active_inactive_counts": [
+        [
+          16,
+          7
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "self": "16/23",
+        "consciousness": "20/21",
+        "status": "1/21"
+      },
+      "pure_cost": "1325/483",
+      "mixed_cost": "1325/483",
+      "upper_shifted_pure": "13733/4830",
+      "upper_shifted_mixed": "13733/4830"
+    },
+    {
+      "words": [
+        "son",
+        "creator",
+        "belief"
+      ],
+      "active_offsets": [
+        9537144,
+        9536363,
+        5941423
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          48
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          6
+        ]
+      ],
+      "active_marginals": {
+        "son": "1/25",
+        "creator": "3/4",
+        "belief": "19/25"
+      },
+      "pure_cost": "279/100",
+      "mixed_cost": "279/100",
+      "upper_shifted_pure": "289/100",
+      "upper_shifted_mixed": "289/100"
+    },
+    {
+      "words": [
+        "son",
+        "relative",
+        "individual"
+      ],
+      "active_offsets": [
+        10624074,
+        10235549,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          48,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "son": "24/25",
+        "relative": "4/5",
+        "individual": "51/65"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "3",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "3"
+    },
+    {
+      "words": [
+        "starvation",
+        "hunger",
+        "status"
+      ],
+      "active_offsets": [
+        14040310,
+        14039534,
+        13920835
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "starvation": "2/3",
+        "hunger": "9/10",
+        "status": "1/21"
+      },
+      "pure_cost": "19/7",
+      "mixed_cost": "19/7",
+      "upper_shifted_pure": "197/70",
+      "upper_shifted_mixed": "197/70"
+    },
+    {
+      "words": [
+        "stoic",
+        "philosopher",
+        "student"
+      ],
+      "active_offsets": [
+        10658676,
+        10423589,
+        10557854
+      ],
+      "active_inactive_counts": [
+        [
+          2,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          14,
+          67
+        ]
+      ],
+      "active_marginals": {
+        "stoic": "2/3",
+        "philosopher": "15/16",
+        "student": "14/81"
+      },
+      "pure_cost": "230/81",
+      "mixed_cost": "230/81",
+      "upper_shifted_pure": "2381/810",
+      "upper_shifted_mixed": "2381/810"
+    },
+    {
+      "words": [
+        "subtlety",
+        "meaning",
+        "message"
+      ],
+      "active_offsets": [
+        6606191,
+        6601327,
+        6598915
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          48,
+          31
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "active_marginals": {
+        "subtlety": "1/2",
+        "meaning": "48/79",
+        "message": "11/31"
+      },
+      "pure_cost": "177/62",
+      "mixed_cost": "41449/14694",
+      "upper_shifted_pure": "458/155",
+      "upper_shifted_mixed": "421837/146940"
+    },
+    {
+      "words": [
+        "teacher",
+        "adult",
+        "individual"
+      ],
+      "active_offsets": [
+        10694258,
+        9605289,
+        7846
+      ],
+      "active_inactive_counts": [
+        [
+          41,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          51,
+          14
+        ]
+      ],
+      "active_marginals": {
+        "teacher": "41/42",
+        "adult": "1/2",
+        "individual": "51/65"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "3",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "3"
+    },
+    {
+      "words": [
+        "tragedy",
+        "misfortune",
+        "occurrence"
+      ],
+      "active_offsets": [
+        7314838,
+        7304852,
+        7283608
+      ],
+      "active_inactive_counts": [
+        [
+          8,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          29,
+          3
+        ]
+      ],
+      "active_marginals": {
+        "tragedy": "8/9",
+        "misfortune": "4/7",
+        "occurrence": "29/32"
+      },
+      "pure_cost": "3",
+      "mixed_cost": "3",
+      "upper_shifted_pure": "3",
+      "upper_shifted_mixed": "3"
+    },
+    {
+      "words": [
+        "triumph",
+        "joy",
+        "attribute"
+      ],
+      "active_offsets": [
+        7528097,
+        7527352,
+        24264
+      ],
+      "active_inactive_counts": [
+        [
+          5,
+          6
+        ],
+        [
+          19,
+          5
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "active_marginals": {
+        "triumph": "5/11",
+        "joy": "19/24",
+        "attribute": "1/3"
+      },
+      "pure_cost": "92/33",
+      "mixed_cost": "92/33",
+      "upper_shifted_pure": "953/330",
+      "upper_shifted_mixed": "953/330"
+    },
+    {
+      "words": [
+        "violet",
+        "herb",
+        "being"
+      ],
+      "active_offsets": [
+        12387839,
+        12205694,
+        4475
+      ],
+      "active_inactive_counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "active_marginals": {
+        "violet": "1/2",
+        "herb": "1/2",
+        "being": "1/3"
+      },
+      "pure_cost": "17/6",
+      "mixed_cost": "25/9",
+      "upper_shifted_pure": "44/15",
+      "upper_shifted_mixed": "509/180"
+    }
+  ]
+}
