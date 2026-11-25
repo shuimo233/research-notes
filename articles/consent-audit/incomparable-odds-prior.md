@@ -24,6 +24,7 @@ $$\frac{\sum_{j\in X_i}p_j}{\sum_{j\in Y_i}q_j}
 
 - 同支持上的比较属于最大似然比的数据处理。van Erven 和 Harremoës 的 Rényi 散度有有限分割及数据处理定理。当分子在分母不支持的位置有质量时，通常的无穷阶散度会成为无穷大。本问题在每次投影后只比较共同消息，方向和支持变化因而重要。Jaeger 用支持超图刻画真实粗化机制的兼容性；Andersson 等研究多次发布面向任意观察子集的保证。[Rényi Divergence and Kullback-Leibler Divergence](https://arxiv.org/abs/1206.2459) · [Ignorability in Statistical and Probabilistic Inference](https://s.aaai.org/Papers/JAIR/Vol24/JAIR-2422.pdf) · [Private Lossless Multiple Release](https://proceedings.mlr.press/v267/andersson25a.html)
 - 若两边只共享“拒绝”，每个窗口仅有一个共同消息，其概率是随机成功集与该窗口不相交的概率。有限随机集的这种概率与完整原子概率之间有经典的 Möbius 反演。只改变一条窗口概率对应一个交替符号向量。偶校验与奇校验分布在真子集上具有相同投影，也属于已有的逐组独立与 Fourier 分析方法。[Rota 的 Möbius 反演](https://webhomes.maths.ed.ac.uk/~v1ranick/papers/rota1.pdf) · [随机集容量的有限反演](https://www.sciencedirect.com/science/article/pii/S0888613X1200093X) · [Testing k-wise and Almost k-wise Independence](https://www.mit.edu/~andoni/papers/kwise.pdf)
+- 二元成功位在一个指定窗口全为零，也是二元向量落入某一**下正交象限**的事件。要求所有窗口的有向比不超过 1，等价于比较两份分布在所有下正交象限上的概率。对于有限离散分布，这种随机序与其检验算法早有研究。Prékopa 也用二项矩与线性规划给过事件并集的尖锐概率界。此处的有向极值问题删去一条象限比较，保留两份公平实际边缘及逐格地板，求该处剩余的最大比率。其他象限相等时的反演公式对应另一组约束。[Orthant orderings of discrete random vectors](https://wisostat.uni-koeln.de/sites/dep_econometrics/pdf_publikationen/1997_DyckerhoffM97_Orthant_orderings.pdf) · [Boole–Bonferroni Inequalities and Linear Programming](https://pubsonline.informs.org/doi/abs/10.1287/opre.36.1.145)
 
 ## 在公平边缘与逐格地板下，遗漏一窗会漏掉多少？
 
