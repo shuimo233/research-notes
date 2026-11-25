@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [保持每题分数不变，CPU 推理该在哪一层并行？](articles/consent-audit/audit-runtime-parallel.md) | 同义并行执行、均衡任务及默认线程设置的实测边界 |
 | 2026-11-25 | [直接优化每批档位次数，能否同时省分桶和尾部时间？](articles/consent-audit/audit-runtime-histogram.md) | 精确宽度规划、工作量上界和两轮配平计时 |
 | 2026-11-25 | [组内分层抽档，能否消除长批次带来的尾部代价？](articles/consent-audit/audit-runtime-strata.md) | 保留整窗拒绝证书的分层调度和两轮匹配计时 |
 | 2026-11-25 | [分组用的档位更少，实际推理会更快吗？](articles/consent-audit/audit-runtime-latency.md) | 逐行宽度 Scan、配对计时及分组增加尾部耗时的负结果 |
