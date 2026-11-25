@@ -1,0 +1,9 @@
+{
+  "raw_selected_pseudoranges": 4522,
+  "verified_roster_optimizations": 309,
+  "verified_roster_combinations": 105650,
+  "verified_closed_collision_replies": 309,
+  "verified_calibration_epochs": 55,
+  "verified_heldout_epochs": 48,
+  "passed_primary_gate": false
+}

@@ -1,0 +1,333 @@
+{
+  "boundary_deg": "61.4483471038605025",
+  "catalog": 103,
+  "guard_excluded": 20,
+  "thinned": 301,
+  "unavailable": 0,
+  "calibration": {
+    "north": 32,
+    "south": 23
+  },
+  "heldout": {
+    "north": 28,
+    "south": 20
+  },
+  "blocks": {
+    "calibration": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "heldout": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19
+    ]
+  },
+  "cutoffs": {
+    "joint": [
+      13037,
+      268
+    ],
+    "fixed": {
+      "4": [
+        98,
+        5
+      ],
+      "5": [
+        49714,
+        1101
+      ],
+      "6": [
+        13037,
+        268
+      ]
+    },
+    "lts": {
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    "ratio6": [
+      378432,
+      301967
+    ]
+  },
+  "by_method": {
+    "minimum_reads": {
+      "south": {
+        "correct": 7,
+        "abstain": 13
+      },
+      "north": {
+        "abstain": 17,
+        "correct": 11
+      }
+    },
+    "variable_lts": {
+      "south": {
+        "correct": 8,
+        "abstain": 12
+      },
+      "north": {
+        "abstain": 17,
+        "correct": 11
+      }
+    },
+    "ratio6": {
+      "south": {
+        "abstain": 20
+      },
+      "north": {
+        "abstain": 28
+      }
+    },
+    "absolute4": {
+      "south": {
+        "abstain": 8,
+        "correct": 12
+      },
+      "north": {
+        "abstain": 12,
+        "correct": 16
+      }
+    },
+    "absolute5": {
+      "south": {
+        "abstain": 18,
+        "correct": 2
+      },
+      "north": {
+        "abstain": 19,
+        "correct": 9
+      }
+    },
+    "absolute6": {
+      "south": {
+        "correct": 7,
+        "abstain": 13
+      },
+      "north": {
+        "abstain": 17,
+        "correct": 11
+      }
+    },
+    "lts4": {
+      "south": {
+        "correct": 20
+      },
+      "north": {
+        "correct": 28
+      }
+    },
+    "lts5": {
+      "south": {
+        "correct": 20
+      },
+      "north": {
+        "correct": 28
+      }
+    },
+    "lts6": {
+      "south": {
+        "correct": 20
+      },
+      "north": {
+        "correct": 28
+      }
+    },
+    "limit4": {
+      "south": {
+        "correct": 18,
+        "abstain": 2
+      },
+      "north": {
+        "correct": 27,
+        "abstain": 1
+      }
+    },
+    "limit5": {
+      "south": {
+        "correct": 18,
+        "abstain": 2
+      },
+      "north": {
+        "correct": 27,
+        "abstain": 1
+      }
+    },
+    "limit6": {
+      "south": {
+        "correct": 16,
+        "abstain": 4
+      },
+      "north": {
+        "correct": 26,
+        "abstain": 2
+      }
+    }
+  },
+  "near_boundary": {
+    "minimum_reads": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 3,
+        "abstain": 1
+      }
+    },
+    "variable_lts": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 3,
+        "abstain": 1
+      }
+    },
+    "ratio6": {
+      "south": {
+        "abstain": 4
+      },
+      "north": {
+        "abstain": 4
+      }
+    },
+    "absolute4": {
+      "south": {
+        "abstain": 4
+      },
+      "north": {
+        "correct": 3,
+        "abstain": 1
+      }
+    },
+    "absolute5": {
+      "south": {
+        "abstain": 4
+      },
+      "north": {
+        "abstain": 3,
+        "correct": 1
+      }
+    },
+    "absolute6": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 3,
+        "abstain": 1
+      }
+    },
+    "lts4": {
+      "south": {
+        "correct": 4
+      },
+      "north": {
+        "correct": 4
+      }
+    },
+    "lts5": {
+      "south": {
+        "correct": 4
+      },
+      "north": {
+        "correct": 4
+      }
+    },
+    "lts6": {
+      "south": {
+        "correct": 4
+      },
+      "north": {
+        "correct": 4
+      }
+    },
+    "limit4": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 4
+      }
+    },
+    "limit5": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 4
+      }
+    },
+    "limit6": {
+      "south": {
+        "correct": 3,
+        "abstain": 1
+      },
+      "north": {
+        "correct": 4
+      }
+    }
+  },
+  "read_count_distribution": {
+    "0": 29,
+    "5": 2,
+    "6": 17
+  },
+  "primary_status": {
+    "no_roster": 29,
+    "correct": 18,
+    "incompatible": 1
+  },
+  "common_correct": {
+    "4": {
+      "count": 18,
+      "primary_reads": 106,
+      "baseline_reads": 72
+    },
+    "5": {
+      "count": 18,
+      "primary_reads": 106,
+      "baseline_reads": 90
+    },
+    "6": {
+      "count": 18,
+      "primary_reads": 106,
+      "baseline_reads": 108
+    }
+  },
+  "cheapest_matching_lts": "4",
+  "gate_inputs": {
+    "each_class_count": true,
+    "each_class_80_correct": false,
+    "zero_wrong": true,
+    "matches_lts6_by_class": false,
+    "matches_variable_lts_by_class": false,
+    "saves_one_per_common_correct_lts6": false,
+    "saves_against_cheapest_matching_lts": false
+  },
+  "gate": false,
+  "design_sha256": "861c821992a88e69a89dafdef6fa60e21896a937123d8470c4de4841926fa6e7"
+}

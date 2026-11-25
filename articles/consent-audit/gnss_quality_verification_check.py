@@ -48,7 +48,7 @@ def intersect(centers, widths, radius, failures, strict=False):
 
 def winner_upper(diffs, weights, expected, pair, bound):
     n = len(weights)
-    pool = list(combinations(range(n), 6))
+    pool = list(combinations(range(n), len(expected)))
     rival = np.array(pool, dtype=np.int64)
     first = [pair, *range(min(8, len(diffs)))]
     start = pool.index(expected)
