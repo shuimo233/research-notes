@@ -25,6 +25,10 @@ def dump(path, record):
     path.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
+def design_digest(path):
+    return sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+
+
 def kth_item(values, numerator, denominator, extra=0):
     rank = (numerator * (len(values) + extra) + denominator - 1) // denominator
     return sorted(values)[rank - 1] if 0 < rank <= len(values) else None
@@ -298,7 +302,7 @@ def contract_report(answers, matrix, all_anchors, frozen, rosters, include_lts):
 
 def replay(design_path, new_path, output):
     raw, recorded = read_frozen(new_path), json.loads(design_path.read_bytes())
-    design_sha = sha256(design_path.read_bytes()).hexdigest()
+    design_sha = design_digest(design_path)
     assert raw["design_sha256"] == design_sha
     result = {
         "design_sha256": design_sha,

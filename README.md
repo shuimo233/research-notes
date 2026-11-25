@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [先选要读的锚点，再检验它们能支撑多大的误差](articles/consent-audit/uwb-portfolio-calibration.md) | 精确跨标签半径、独立留出与同预算稳健对照 |
 | 2026-11-25 | [一项共享校准假设如何在真实测距上被检验](articles/consent-audit/uwb-heldout-calibration.md) | UWB 位置留出、合同失败证据与锚点采购 |
 | 2026-11-25 | [共享校准偏差能省下多少核验证据？](articles/consent-audit/interval-fault-shared-calibration.md) | 区间端点、带价核验、与逐来源放宽的对照 |
 | 2026-11-25 | [不同故障解释下，如何采购足够的核验证据](articles/consent-audit/interval-fault-asymmetric-quota.md) | 世界依赖配额、正计数编译与强基线复核 |
