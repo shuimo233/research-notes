@@ -33,7 +33,7 @@ def read(source):
             yield p
 
 
-def select(packet):
+def select(packet, limit=6):
     parsed = parse(packet["archive"])
     fibre = PublicAudit(*parsed, packet["certificate"]).fibre
     false_all = fibre
@@ -47,7 +47,7 @@ def select(packet):
         if remaining is not None:
             labels.append(atom)
             false_all = remaining
-        if len(labels) == 6:
+        if len(labels) == limit:
             break
     return labels, fibre
 

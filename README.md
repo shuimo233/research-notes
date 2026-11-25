@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [三条回复合看时，还能保住每一对的最优保证吗？](articles/consent-audit/multi-odds.md) | 在 CI 与 BART 上验证观测窗口间的冲突，给出精确边界和多请求增长率 |
 | 2026-11-25 | [联合发布可以有多少次直接跳过求解？](articles/consent-audit/retuned-odds-ci.md) | 在 6 个 CI 项目复验拒绝预算，并精确求解单证词请求 |
 | 2026-11-24 | [两次发布想少透露一些，最少要改多少旧规则？](articles/consent-audit/retuned-odds.md) | 给出联合发布的最小概率改动、拒绝预算障碍和可扩展的乘积紧例 |
 | 2026-11-24 | [两类请求分别安全，合起来还会多透露什么？](articles/consent-audit/joint-odds.md) | 保留两边发布概率，复验联合披露并定位拒绝概率的容量约束 |
