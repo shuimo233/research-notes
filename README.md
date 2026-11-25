@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [两实况的分组，加入第三个实况后还成立吗？](articles/consent-audit/audit-runtime-multiworld.md) | SNLI 三实况复验、五环边界与可验的多实况最优分组 |
 | 2026-11-25 | [同一批里，哪些请求可以共用推理档位？](articles/consent-audit/audit-runtime-partition.md) | 精确冲突图、稳健最优分组和实际模型调用回放 |
 | 2026-11-25 | [推理档位的占比变了，只查最极端的分布够吗？](articles/consent-audit/audit-runtime-drift.md) | 在真实模型门控上验证分布内点超标及可核验的共享比例 |
 | 2026-11-25 | [共用推理配置时，只审二项能定出安全的共享比例吗？](articles/consent-audit/audit-runtime.md) | 用真实 MoNLI 分数复核四项放行比例及确定性约简 |
