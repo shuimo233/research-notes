@@ -115,12 +115,13 @@ def collision(matrix, take, pair, radius):
     }
 
 
-def geometry_cases(cases, catalog, exe, nav):
+def geometry_cases(cases, catalog, exe, nav, *, queries=None):
     points = [w["ecef_m"] for w in catalog]
     center = np.array(points).mean(axis=0).tolist()
-    for start in range(0, len(catalog), 8):
+    queries = catalog if queries is None else queries
+    for start in range(0, len(queries), 8):
         headers = [
-            cases[item["fixture_row"]]["epoch"] for item in catalog[start : start + 8]
+            cases[item["fixture_row"]]["epoch"] for item in queries[start : start + 8]
         ]
         svlists = [tuple(x["sat"] for x in h["items"]) for h in headers]
         tasks = [
