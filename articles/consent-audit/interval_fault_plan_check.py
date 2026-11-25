@@ -394,6 +394,57 @@ def exercise():
     }
 
 
+def ring_gap():
+    from interval_fault_path import compile_path
+    from interval_fault_plan import Probe, interval_plan
+
+    result = {}
+    for h in (*range(2, 10), 16, 32, 64):
+        n = 2 * h
+        reports = [(i, i + 1, 0) for i in range(n - 1)] + [(0, n - 1, 1)]
+        bands = [(0, 1)] * n
+        model = compile_path(bands, reports, reference_edge=n - 1)
+        independent, reason = all_worlds(bands, reports, 1)
+        assert reason is None and len(independent) == n
+        assert model.repair_edges == (n - 1, *range(n - 1))
+        worlds = [independent[e,] for e in model.repair_edges]
+        labels = [x[-1] - x[h - 1] >= 1 for x in worlds]
+        assert labels == [False] * h + [True] * h
+        paired = [(h - j - 1, h + j - 1) for j in range(1, h)]
+        singles = [(i - 1, i) if i else (0, n - 1) for i in range(h)]
+        probes = [
+            Probe(1, tuple(x[v] - x[u] for x in worlds), model.partition(u, v)[2:])
+            for u, v in paired + singles
+        ]
+        for i in range(h):
+            left = i
+            right = n - 1 - i
+            distinguished = [
+                j for j, q in enumerate(probes) if q.answers[left] != q.answers[right]
+            ]
+            assert distinguished == [h - 1 + i]
+        assert (
+            len({tuple(q.answers[i] for q in probes[h - 1 :]) for i in range(h, n)})
+            == 1
+        )
+        assert not any(
+            all(q.answers[i] == q.answers[-1] for q in probes[h - 1 :])
+            for i in range(h)
+        )
+        best = interval_plan(labels, probes)
+        formula = 1 + (h - 1).bit_length()
+        assert best.cost == formula
+        traces = [best.walk(i) for i in range(n)]
+        assert [x[0] for x in traces] == labels and max(x[1] for x in traces) == formula
+        if h < 10:
+            assert exact_costs(labels, [(q.cost, q.answers) for q in probes]) == (
+                formula,
+                h,
+            )
+        result[h] = {"fixed": h, "adaptive": formula, "crossing_states": best.visited}
+    return result
+
+
 if __name__ == "__main__":
     noaa, bart, out = map(Path, sys.argv[1:])
     print(
@@ -402,6 +453,7 @@ if __name__ == "__main__":
                 "main": audit(noaa, bart, out, False),
                 "transfer": audit(noaa, bart, out, True),
                 "synthetic": exercise(),
+                "ring_gap": ring_gap(),
                 "verified": True,
             }
         )

@@ -85,5 +85,62 @@
       ]
     }
   },
+  "ring_gap": {
+    "2": {
+      "fixed": 2,
+      "adaptive": 2,
+      "crossing_states": 4
+    },
+    "3": {
+      "fixed": 3,
+      "adaptive": 3,
+      "crossing_states": 8
+    },
+    "4": {
+      "fixed": 4,
+      "adaptive": 3,
+      "crossing_states": 13
+    },
+    "5": {
+      "fixed": 5,
+      "adaptive": 4,
+      "crossing_states": 19
+    },
+    "6": {
+      "fixed": 6,
+      "adaptive": 4,
+      "crossing_states": 26
+    },
+    "7": {
+      "fixed": 7,
+      "adaptive": 4,
+      "crossing_states": 34
+    },
+    "8": {
+      "fixed": 8,
+      "adaptive": 4,
+      "crossing_states": 43
+    },
+    "9": {
+      "fixed": 9,
+      "adaptive": 5,
+      "crossing_states": 53
+    },
+    "16": {
+      "fixed": 16,
+      "adaptive": 5,
+      "crossing_states": 151
+    },
+    "32": {
+      "fixed": 32,
+      "adaptive": 6,
+      "crossing_states": 559
+    },
+    "64": {
+      "fixed": 64,
+      "adaptive": 7,
+      "crossing_states": 2143
+    }
+  },
   "verified": true
 }
