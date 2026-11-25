@@ -1,0 +1,436 @@
+{
+  "graph": "595bfd653973f8065c9e31cac909b5646f5cf4e0c8964c5c8683445b732f08fe",
+  "environment": {
+    "os": "Windows",
+    "os_release": "11",
+    "python": "3.13.5",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "runtime": "1.25.1",
+    "numpy": "2.2.6",
+    "provider": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 4
+  },
+  "batches": 1152,
+  "measurements": 3456,
+  "bitwise_scores": 82944,
+  "rounds": [
+    {
+      "whole": {
+        "count": 576,
+        "arms": {
+          "independent": {
+            "p95_ns": 51635300,
+            "median_ns": "38016800",
+            "widths": "3431/576",
+            "width_sum": "129097/288",
+            "width_p95": 619,
+            "width_square_p95": 60893
+          },
+          "common": {
+            "p95_ns": 75049600,
+            "median_ns": "35698250",
+            "widths": "221/48",
+            "width_sum": "129097/288",
+            "width_p95": 944,
+            "width_square_p95": 116992
+          },
+          "stratified": {
+            "p95_ns": 49266700,
+            "median_ns": "38224650",
+            "widths": "559/96",
+            "width_sum": "129097/288",
+            "width_p95": 592,
+            "width_square_p95": 56397
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "22246861629/22751103530",
+            "p95_ratio": "750496/516353",
+            "width_ratio": "2652/3431"
+          },
+          "stratified": {
+            "paired_median_ratio": "236607034539/235471884214",
+            "p95_ratio": "492667/516353",
+            "width_ratio": "3354/3431"
+          }
+        }
+      },
+      "new": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 51791300,
+            "median_ns": "38031200",
+            "widths": "427/72",
+            "width_sum": "8063/18",
+            "width_p95": 643,
+            "width_square_p95": 62921
+          },
+          "common": {
+            "p95_ns": 75744200,
+            "median_ns": "35654850",
+            "widths": "1315/288",
+            "width_sum": "8063/18",
+            "width_p95": 960,
+            "width_square_p95": 118784
+          },
+          "stratified": {
+            "p95_ns": 50140400,
+            "median_ns": "38118250",
+            "widths": "833/144",
+            "width_sum": "8063/18",
+            "width_p95": 601,
+            "width_square_p95": 57945
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "1167690938/1194583557",
+            "p95_ratio": "757442/517913",
+            "width_ratio": "1315/1708"
+          },
+          "stratified": {
+            "paired_median_ratio": "106099792149/105614577530",
+            "p95_ratio": "501404/517913",
+            "width_ratio": "119/122"
+          }
+        }
+      },
+      "reused": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 51153800,
+            "median_ns": "37860700",
+            "widths": "1723/288",
+            "width_sum": "7177/16",
+            "width_p95": 608,
+            "width_square_p95": 59776
+          },
+          "common": {
+            "p95_ns": 73434200,
+            "median_ns": "36357200",
+            "widths": "1337/288",
+            "width_sum": "7177/16",
+            "width_p95": 920,
+            "width_square_p95": 115264
+          },
+          "stratified": {
+            "p95_ns": 47644900,
+            "median_ns": "38313050",
+            "widths": "211/36",
+            "width_sum": "7177/16",
+            "width_p95": 579,
+            "width_square_p95": 55650
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "22246861629/22751103530",
+            "p95_ratio": "367171/255769",
+            "width_ratio": "1337/1723"
+          },
+          "stratified": {
+            "paired_median_ratio": "284771489683/283348137688",
+            "p95_ratio": "476449/511538",
+            "width_ratio": "1688/1723"
+          }
+        }
+      },
+      "same_input_half": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 52095500,
+            "median_ns": "37840850",
+            "widths": "431/72",
+            "width_sum": "129097/288",
+            "width_p95": 621,
+            "width_square_p95": 61093
+          },
+          "common": {
+            "p95_ns": 51284300,
+            "median_ns": "37864450",
+            "widths": "431/72",
+            "width_sum": "129097/288",
+            "width_p95": 621,
+            "width_square_p95": 61093
+          },
+          "stratified": {
+            "p95_ns": 51858500,
+            "median_ns": "37720900",
+            "widths": "431/72",
+            "width_sum": "129097/288",
+            "width_p95": 621,
+            "width_square_p95": 61093
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "54246671853/54514009888",
+            "p95_ratio": "512843/520955",
+            "width_ratio": "1"
+          },
+          "stratified": {
+            "paired_median_ratio": "123015897710/122503661979",
+            "p95_ratio": "103717/104191",
+            "width_ratio": "1"
+          }
+        }
+      },
+      "changed_half": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 51000800,
+            "median_ns": "38233550",
+            "widths": "569/96",
+            "width_sum": "129097/288",
+            "width_p95": 618,
+            "width_square_p95": 59776
+          },
+          "common": {
+            "p95_ns": 77693400,
+            "median_ns": "30118700",
+            "widths": "29/9",
+            "width_sum": "129097/288",
+            "width_p95": 1024,
+            "width_square_p95": 131072
+          },
+          "stratified": {
+            "p95_ns": 44446300,
+            "median_ns": "38409000",
+            "widths": "815/144",
+            "width_sum": "129097/288",
+            "width_p95": 533,
+            "width_square_p95": 47245
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "139596941411/177392698200",
+            "p95_ratio": "388467/255004",
+            "width_ratio": "928/1707"
+          },
+          "stratified": {
+            "paired_median_ratio": "83534543409/82448393786",
+            "p95_ratio": "444463/510008",
+            "width_ratio": "1630/1707"
+          }
+        }
+      }
+    },
+    {
+      "whole": {
+        "count": 576,
+        "arms": {
+          "independent": {
+            "p95_ns": 51575000,
+            "median_ns": "37868600",
+            "widths": "193/32",
+            "width_sum": "129097/288",
+            "width_p95": 629,
+            "width_square_p95": 63305
+          },
+          "common": {
+            "p95_ns": 75686800,
+            "median_ns": "35721950",
+            "widths": "2665/576",
+            "width_sum": "129097/288",
+            "width_p95": 992,
+            "width_square_p95": 123904
+          },
+          "stratified": {
+            "p95_ns": 50658800,
+            "median_ns": "38327350",
+            "widths": "281/48",
+            "width_sum": "129097/288",
+            "width_p95": 599,
+            "width_square_p95": 56701
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "262208987709/266409469472",
+            "p95_ratio": "378434/257875",
+            "width_ratio": "2665/3474"
+          },
+          "stratified": {
+            "paired_median_ratio": "9097014499/9076278828",
+            "p95_ratio": "253294/257875",
+            "width_ratio": "562/579"
+          }
+        }
+      },
+      "new": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 51222400,
+            "median_ns": "38187950",
+            "widths": "1723/288",
+            "width_sum": "8063/18",
+            "width_p95": 622,
+            "width_square_p95": 61696
+          },
+          "common": {
+            "p95_ns": 75985400,
+            "median_ns": "35912550",
+            "widths": "439/96",
+            "width_sum": "8063/18",
+            "width_p95": 992,
+            "width_square_p95": 123904
+          },
+          "stratified": {
+            "p95_ns": 50703400,
+            "median_ns": "38249100",
+            "widths": "835/144",
+            "width_sum": "8063/18",
+            "width_p95": 599,
+            "width_square_p95": 56701
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "20292990019/20568729720",
+            "p95_ratio": "379927/256112",
+            "width_ratio": "1317/1723"
+          },
+          "stratified": {
+            "paired_median_ratio": "100158308168/99378372005",
+            "p95_ratio": "253517/256112",
+            "width_ratio": "1670/1723"
+          }
+        }
+      },
+      "reused": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 51575000,
+            "median_ns": "37760850",
+            "widths": "1751/288",
+            "width_sum": "7177/16",
+            "width_p95": 631,
+            "width_square_p95": 64073
+          },
+          "common": {
+            "p95_ns": 73683600,
+            "median_ns": "35693600",
+            "widths": "337/72",
+            "width_sum": "7177/16",
+            "width_p95": 944,
+            "width_square_p95": 116992
+          },
+          "stratified": {
+            "p95_ns": 49565400,
+            "median_ns": "38482950",
+            "widths": "851/144",
+            "width_sum": "7177/16",
+            "width_p95": 595,
+            "width_square_p95": 56680
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "37103370803/37865741155",
+            "p95_ratio": "368418/257875",
+            "width_ratio": "1348/1751"
+          },
+          "stratified": {
+            "paired_median_ratio": "167918115561/167913843656",
+            "p95_ratio": "247827/257875",
+            "width_ratio": "1702/1751"
+          }
+        }
+      },
+      "same_input_half": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 53096300,
+            "median_ns": "38139250",
+            "widths": "217/36",
+            "width_sum": "129097/288",
+            "width_p95": 647,
+            "width_square_p95": 64073
+          },
+          "common": {
+            "p95_ns": 53114600,
+            "median_ns": "37964600",
+            "widths": "217/36",
+            "width_sum": "129097/288",
+            "width_p95": 647,
+            "width_square_p95": 64073
+          },
+          "stratified": {
+            "p95_ns": 53609800,
+            "median_ns": "37828950",
+            "widths": "217/36",
+            "width_sum": "129097/288",
+            "width_p95": 647,
+            "width_square_p95": 64073
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "56566058803/56701208410",
+            "p95_ratio": "531146/530963",
+            "width_ratio": "1"
+          },
+          "stratified": {
+            "paired_median_ratio": "22849175899/22837896849",
+            "p95_ratio": "536098/530963",
+            "width_ratio": "1"
+          }
+        }
+      },
+      "changed_half": {
+        "count": 288,
+        "arms": {
+          "independent": {
+            "p95_ns": 50830700,
+            "median_ns": "37791200",
+            "widths": "869/144",
+            "width_sum": "129097/288",
+            "width_p95": 618,
+            "width_square_p95": 63044
+          },
+          "common": {
+            "p95_ns": 78389000,
+            "median_ns": "29700000",
+            "widths": "929/288",
+            "width_sum": "129097/288",
+            "width_p95": 1024,
+            "width_square_p95": 131072
+          },
+          "stratified": {
+            "p95_ns": 44634800,
+            "median_ns": "38343550",
+            "widths": "409/72",
+            "width_sum": "129097/288",
+            "width_p95": 529,
+            "width_square_p95": 46625
+          }
+        },
+        "comparisons": {
+          "common": {
+            "paired_median_ratio": "323179955751/395684296400",
+            "p95_ratio": "783890/508307",
+            "width_ratio": "929/1738"
+          },
+          "stratified": {
+            "paired_median_ratio": "1384953861/1368722000",
+            "p95_ratio": "23492/26753",
+            "width_ratio": "818/869"
+          }
+        }
+      }
+    }
+  ],
+  "primary_gate": false,
+  "transfer_gate": true
+}
