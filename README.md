@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [六颗卫星能否核验已知路线标签](articles/consent-audit/gnss-route-verification.md) | 跨标签分离半径、六星精确选择与真实伪距对照 |
 | 2026-11-25 | [GNSS 的共享钟差能否接入可核验测量模型](articles/consent-audit/gnss-clock-audit.md) | 实测 GPS L1、独立星历核验与 RTKLIB 对照 |
 | 2026-11-25 | [先选要读的锚点，再检验它们能支撑多大的误差](articles/consent-audit/uwb-portfolio-calibration.md) | 精确跨标签半径、独立留出与同预算稳健对照 |
 | 2026-11-25 | [一项共享校准假设如何在真实测距上被检验](articles/consent-audit/uwb-heldout-calibration.md) | UWB 位置留出、合同失败证据与锚点采购 |

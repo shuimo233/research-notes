@@ -1,0 +1,175 @@
+{
+  "calibration_ratios": {
+    "margin_six": [
+      8501,
+      13763
+    ],
+    "elevation_six": [
+      3390,
+      6551
+    ],
+    "all": [
+      43582,
+      18903
+    ]
+  },
+  "lts_cutoff_x5": 0,
+  "heldout_labels": {
+    "south": 106,
+    "north": 10
+  },
+  "heldout_by_method": {
+    "margin_six": {
+      "south": {
+        "correct": 101,
+        "abstain": 5
+      },
+      "north": {
+        "correct": 4,
+        "abstain": 6
+      }
+    },
+    "elevation_six": {
+      "south": {
+        "correct": 94,
+        "abstain": 12
+      },
+      "north": {
+        "abstain": 7,
+        "correct": 3
+      }
+    },
+    "all": {
+      "south": {
+        "abstain": 106
+      },
+      "north": {
+        "abstain": 10
+      }
+    },
+    "margin_six_limit": {
+      "south": {
+        "correct": 106
+      },
+      "north": {
+        "correct": 6,
+        "abstain": 4
+      }
+    },
+    "elevation_six_limit": {
+      "south": {
+        "correct": 102,
+        "abstain": 4
+      },
+      "north": {
+        "correct": 10
+      }
+    },
+    "all_limit": {
+      "south": {
+        "correct": 53,
+        "abstain": 53
+      },
+      "north": {
+        "correct": 5,
+        "abstain": 5
+      }
+    },
+    "margin_six_rtklib": {
+      "south": {
+        "correct": 98,
+        "abstain": 7,
+        "wrong": 1
+      },
+      "north": {
+        "abstain": 2,
+        "correct": 6,
+        "wrong": 2
+      }
+    },
+    "elevation_six_rtklib": {
+      "south": {
+        "correct": 102,
+        "abstain": 4
+      },
+      "north": {
+        "correct": 10
+      }
+    },
+    "all_rtklib": {
+      "south": {
+        "abstain": 80,
+        "correct": 26
+      },
+      "north": {
+        "abstain": 10
+      }
+    },
+    "lts": {
+      "south": {
+        "correct": 106
+      },
+      "north": {
+        "correct": 10
+      }
+    }
+  },
+  "gate_inputs": {
+    "threshold_below_collision": true,
+    "six_cheaper_at_every_test": true,
+    "north_test_count": true,
+    "eighty_percent_correct_each": false,
+    "zero_wrong": true,
+    "matches_lts_each": false
+  },
+  "gate": false,
+  "design_sha256": "f66fbd10c9d32dde0a75c46b0053f9cdd9ff0d918287d3445def140cd83e9fae",
+  "rollup": {
+    "margin_six": {
+      "reads": [
+        [
+          6,
+          233
+        ]
+      ],
+      "median_heldout_radius_4mm": 85240.0,
+      "calibration_needed_less_than_collision": 116
+    },
+    "elevation_six": {
+      "reads": [
+        [
+          6,
+          233
+        ]
+      ],
+      "median_heldout_radius_4mm": 24813.5,
+      "calibration_needed_less_than_collision": 116
+    },
+    "all": {
+      "reads": [
+        [
+          6,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          11,
+          138
+        ],
+        [
+          12,
+          73
+        ]
+      ],
+      "median_heldout_radius_4mm": 92753.5,
+      "calibration_needed_less_than_collision": 58
+    }
+  }
+}
