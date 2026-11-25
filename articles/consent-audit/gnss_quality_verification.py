@@ -89,8 +89,8 @@ def evaluate(codes, kept_edges):
     return codes[:, kept_edges].max(axis=-1).min(axis=-1)
 
 
-def choose_weighted(codes, n):
-    menu, kept = edge_sets(n, 6, 2)
+def choose_weighted(codes, n, budget=6):
+    menu, kept = edge_sets(n, budget, 2)
     _, all_edges = edge_sets(n, n, 2)
     worst = evaluate(codes, all_edges[0])
     seeds = worst.argsort(kind="stable")[:16]
