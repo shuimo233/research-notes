@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [两个实况的拒绝率不同，只检查区间两端够吗？](articles/consent-audit/audit-asymmetric.md) | 严格内点峰值、分母端点约简与双向区间证书 |
 | 2026-11-25 | [服务率只知道区间，怎样核验最坏赔率？](articles/consent-audit/audit-rates.md) | 精确端点、分组概率证书与单项服务率的平台阈值 |
 | 2026-11-25 | [小窗口完全一样，完整回复还能区分实况吗？](articles/consent-audit/audit-parity.md) | 把已知 OR 区分结果转为公平赔率证书，并核验非均匀服务率 |
 | 2026-11-25 | [小窗口允许偏差时，哪些证据真正决定完整风险？](articles/consent-audit/audit-tolerance.md) | 求带容差审计的精确上界，验证哪些阶数真正决定完整赔率 |
