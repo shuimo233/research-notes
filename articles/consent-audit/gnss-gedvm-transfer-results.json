@@ -1,0 +1,1596 @@
+{
+  "sessions": {
+    "drive01_gp51": {
+      "drive": "drive01",
+      "model": "Pixel 5",
+      "calibration_sessions": [
+        "drive02_gp7p3",
+        "drive03_gp7p4"
+      ],
+      "calibration_labels": {
+        "north": 73,
+        "south": 37
+      },
+      "calibration_ratios": {
+        "weighted": [
+          6901,
+          68231
+        ],
+        "geometry": [
+          110279176,
+          922402305
+        ],
+        "elevation": [
+          104490,
+          828529
+        ],
+        "strength": [
+          754,
+          5347
+        ],
+        "all": [
+          1650851,
+          15826017
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "north": 14,
+        "south": 75
+      },
+      "near_boundary_labels": {
+        "north": 0,
+        "south": 0
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "elevation": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "strength": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "all": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {},
+          "north": {}
+        },
+        "geometry": {
+          "south": {},
+          "north": {}
+        },
+        "elevation": {
+          "south": {},
+          "north": {}
+        },
+        "strength": {
+          "south": {},
+          "north": {}
+        },
+        "all": {
+          "south": {},
+          "north": {}
+        },
+        "weighted_limit": {
+          "south": {},
+          "north": {}
+        },
+        "geometry_limit": {
+          "south": {},
+          "north": {}
+        },
+        "elevation_limit": {
+          "south": {},
+          "north": {}
+        },
+        "strength_limit": {
+          "south": {},
+          "north": {}
+        },
+        "all_limit": {
+          "south": {},
+          "north": {}
+        },
+        "lts": {
+          "south": {},
+          "north": {}
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": true,
+        "each_class_80_correct": true,
+        "no_wrong": true,
+        "strongest_baseline_each_class": true,
+        "strictly_more_than_geometry": false
+      },
+      "gate": false,
+      "logical_reads_saved_over_full": 384,
+      "sha256": {
+        "fixture": "23aa9ddcbc2ef4e2668b1d1c36720cd6e93057d8aaf2225ddbe76419c164d53f",
+        "design": "f20924a73a8f4b30338ad60fe7a8f227f46d2987be7613e54c357458fb1b1d91"
+      }
+    },
+    "drive01_gp7p3": {
+      "drive": "drive01",
+      "model": "Pixel 7 Pro",
+      "calibration_sessions": [
+        "drive02_gp52",
+        "drive03_gp51"
+      ],
+      "calibration_labels": {
+        "north": 75,
+        "south": 37
+      },
+      "calibration_ratios": {
+        "weighted": [
+          52670912,
+          598947833
+        ],
+        "geometry": [
+          35065640,
+          227783583
+        ],
+        "elevation": [
+          196004,
+          1533675
+        ],
+        "strength": [
+          176861,
+          1384226
+        ],
+        "all": [
+          9954910,
+          87234191
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "north": 14,
+        "south": 75
+      },
+      "near_boundary_labels": {
+        "north": 0,
+        "south": 0
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "elevation": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "strength": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "all": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {},
+          "north": {}
+        },
+        "geometry": {
+          "south": {},
+          "north": {}
+        },
+        "elevation": {
+          "south": {},
+          "north": {}
+        },
+        "strength": {
+          "south": {},
+          "north": {}
+        },
+        "all": {
+          "south": {},
+          "north": {}
+        },
+        "weighted_limit": {
+          "south": {},
+          "north": {}
+        },
+        "geometry_limit": {
+          "south": {},
+          "north": {}
+        },
+        "elevation_limit": {
+          "south": {},
+          "north": {}
+        },
+        "strength_limit": {
+          "south": {},
+          "north": {}
+        },
+        "all_limit": {
+          "south": {},
+          "north": {}
+        },
+        "lts": {
+          "south": {},
+          "north": {}
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 75
+          },
+          "north": {
+            "abstain": 14
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 75
+          },
+          "north": {
+            "correct": 14
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": true,
+        "each_class_80_correct": true,
+        "no_wrong": true,
+        "strongest_baseline_each_class": true,
+        "strictly_more_than_geometry": false
+      },
+      "gate": false,
+      "logical_reads_saved_over_full": 265,
+      "sha256": {
+        "fixture": "5473306a21951e3cdffc2d0013407d88a7ea0aab18da31667613e9a79ffabeed",
+        "design": "da16bb3d4cb8cde963fec74bed2739344cbea0115d56e7ecc2e3dadfc67c27d1"
+      }
+    },
+    "drive02_gp52": {
+      "drive": "drive02",
+      "model": "Pixel 5",
+      "calibration_sessions": [
+        "drive01_gp7p3",
+        "drive03_gp7p4"
+      ],
+      "calibration_labels": {
+        "north": 33,
+        "south": 96
+      },
+      "calibration_ratios": {
+        "weighted": [
+          207103,
+          2220329
+        ],
+        "geometry": [
+          1324395,
+          13571656
+        ],
+        "elevation": [
+          7987076,
+          83632591
+        ],
+        "strength": [
+          1324395,
+          13571656
+        ],
+        "all": [
+          236002,
+          2503067
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "north": 54,
+        "south": 16
+      },
+      "near_boundary_labels": {
+        "north": 0,
+        "south": 0
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "geometry": {
+          "south": {
+            "correct": 14,
+            "abstain": 2
+          },
+          "north": {
+            "correct": 48,
+            "abstain": 6
+          }
+        },
+        "elevation": {
+          "south": {
+            "correct": 14,
+            "abstain": 2
+          },
+          "north": {
+            "correct": 49,
+            "abstain": 5
+          }
+        },
+        "strength": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 46,
+            "abstain": 8
+          }
+        },
+        "all": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 50,
+            "abstain": 4
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {},
+          "north": {}
+        },
+        "geometry": {
+          "south": {},
+          "north": {}
+        },
+        "elevation": {
+          "south": {},
+          "north": {}
+        },
+        "strength": {
+          "south": {},
+          "north": {}
+        },
+        "all": {
+          "south": {},
+          "north": {}
+        },
+        "weighted_limit": {
+          "south": {},
+          "north": {}
+        },
+        "geometry_limit": {
+          "south": {},
+          "north": {}
+        },
+        "elevation_limit": {
+          "south": {},
+          "north": {}
+        },
+        "strength_limit": {
+          "south": {},
+          "north": {}
+        },
+        "all_limit": {
+          "south": {},
+          "north": {}
+        },
+        "lts": {
+          "south": {},
+          "north": {}
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": true,
+        "each_class_80_correct": true,
+        "no_wrong": true,
+        "strongest_baseline_each_class": true,
+        "strictly_more_than_geometry": true
+      },
+      "gate": true,
+      "logical_reads_saved_over_full": 291,
+      "sha256": {
+        "fixture": "0368584caddabf13ccedaa45e4a8cb8066de39fc2368fa5275f621605381d493",
+        "design": "4295e839c329cc2a8a160b728740508977d1011e8a92acaf7dcafb5ee1286056"
+      }
+    },
+    "drive02_gp7p3": {
+      "drive": "drive02",
+      "model": "Pixel 7 Pro",
+      "calibration_sessions": [
+        "drive01_gp51",
+        "drive03_gp51"
+      ],
+      "calibration_labels": {
+        "north": 35,
+        "south": 96
+      },
+      "calibration_ratios": {
+        "weighted": [
+          54583880,
+          662044233
+        ],
+        "geometry": [
+          38158080,
+          332519063
+        ],
+        "elevation": [
+          402528,
+          3387725
+        ],
+        "strength": [
+          5335909,
+          49349568
+        ],
+        "all": [
+          14716887,
+          154393420
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "north": 54,
+        "south": 16
+      },
+      "near_boundary_labels": {
+        "north": 0,
+        "south": 0
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 53,
+            "abstain": 1
+          }
+        },
+        "geometry": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 53,
+            "abstain": 1
+          }
+        },
+        "elevation": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 52,
+            "abstain": 2
+          }
+        },
+        "strength": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 47,
+            "abstain": 7
+          }
+        },
+        "all": {
+          "south": {
+            "correct": 15,
+            "abstain": 1
+          },
+          "north": {
+            "correct": 52,
+            "abstain": 2
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {},
+          "north": {}
+        },
+        "geometry": {
+          "south": {},
+          "north": {}
+        },
+        "elevation": {
+          "south": {},
+          "north": {}
+        },
+        "strength": {
+          "south": {},
+          "north": {}
+        },
+        "all": {
+          "south": {},
+          "north": {}
+        },
+        "weighted_limit": {
+          "south": {},
+          "north": {}
+        },
+        "geometry_limit": {
+          "south": {},
+          "north": {}
+        },
+        "elevation_limit": {
+          "south": {},
+          "north": {}
+        },
+        "strength_limit": {
+          "south": {},
+          "north": {}
+        },
+        "all_limit": {
+          "south": {},
+          "north": {}
+        },
+        "lts": {
+          "south": {},
+          "north": {}
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 16
+          },
+          "north": {
+            "abstain": 54
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 16
+          },
+          "north": {
+            "correct": 54
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": false,
+        "each_class_80_correct": true,
+        "no_wrong": true,
+        "strongest_baseline_each_class": false,
+        "strictly_more_than_geometry": false
+      },
+      "gate": false,
+      "logical_reads_saved_over_full": 176,
+      "sha256": {
+        "fixture": "0b2969c69f3ea11986813f4e6a25d4df376495b53bb90d5de84018c40d69811c",
+        "design": "d17fd771a8b1fe119f4d481829ce61a6150e748ac94ec80fd4a4077fc5767fbf"
+      }
+    },
+    "drive03_gp51": {
+      "drive": "drive03",
+      "model": "Pixel 5",
+      "calibration_sessions": [
+        "drive01_gp7p3",
+        "drive02_gp7p3"
+      ],
+      "calibration_labels": {
+        "north": 68,
+        "south": 91
+      },
+      "calibration_ratios": {
+        "weighted": [
+          18916102,
+          540738559
+        ],
+        "geometry": [
+          4552617,
+          105414116
+        ],
+        "elevation": [
+          36215936,
+          606187205
+        ],
+        "strength": [
+          24992,
+          389025
+        ],
+        "all": [
+          4072085,
+          89922232
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "south": 21,
+        "north": 21
+      },
+      "near_boundary_labels": {
+        "south": 1,
+        "north": 1
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "abstain": 18,
+            "correct": 3
+          },
+          "north": {
+            "abstain": 19,
+            "correct": 2
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 18,
+            "correct": 3
+          },
+          "north": {
+            "abstain": 19,
+            "correct": 2
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 15,
+            "correct": 6
+          },
+          "north": {
+            "abstain": 16,
+            "correct": 5
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 11,
+            "correct": 10
+          },
+          "north": {
+            "abstain": 17,
+            "correct": 4
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 19,
+            "correct": 2
+          },
+          "north": {
+            "abstain": 18,
+            "correct": 3
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "elevation": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "strength": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "all": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 21
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 21
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 21
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 21
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 21
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": true,
+        "each_class_80_correct": false,
+        "no_wrong": true,
+        "strongest_baseline_each_class": false,
+        "strictly_more_than_geometry": false
+      },
+      "gate": false,
+      "logical_reads_saved_over_full": 146,
+      "sha256": {
+        "fixture": "fa49a929790cc9b6ae61537e9e2c4cdfb2f8608699e527b2431a90e199f599aa",
+        "design": "bc0c5a316f34ed3e918e2537c84c54e015125e59f2fefdcde3f8e8189744558a"
+      }
+    },
+    "drive03_gp7p4": {
+      "drive": "drive03",
+      "model": "Pixel 7 Pro",
+      "calibration_sessions": [
+        "drive01_gp51",
+        "drive02_gp52"
+      ],
+      "calibration_labels": {
+        "north": 68,
+        "south": 91
+      },
+      "calibration_ratios": {
+        "weighted": [
+          6823872,
+          193717559
+        ],
+        "geometry": [
+          648956,
+          9433415
+        ],
+        "elevation": [
+          49737129,
+          631012100
+        ],
+        "strength": [
+          9268,
+          135115
+        ],
+        "all": [
+          23468420,
+          376108293
+        ]
+      },
+      "lts_cutoff_x5": 0,
+      "heldout_labels": {
+        "south": 21,
+        "north": 19
+      },
+      "near_boundary_labels": {
+        "south": 1,
+        "north": 1
+      },
+      "by_method": {
+        "weighted": {
+          "south": {
+            "abstain": 18,
+            "correct": 3
+          },
+          "north": {
+            "abstain": 18,
+            "correct": 1
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 8,
+            "correct": 13
+          },
+          "north": {
+            "abstain": 12,
+            "correct": 7
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 10,
+            "correct": 11
+          },
+          "north": {
+            "abstain": 10,
+            "correct": 9
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 11,
+            "correct": 10
+          },
+          "north": {
+            "abstain": 14,
+            "correct": 5
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 9,
+            "correct": 12
+          },
+          "north": {
+            "abstain": 14,
+            "correct": 5
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        }
+      },
+      "near_boundary_by_method": {
+        "weighted": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 1
+          },
+          "north": {
+            "abstain": 1
+          }
+        },
+        "weighted_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "geometry_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "elevation_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "strength_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "all_limit": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 1
+          },
+          "north": {
+            "correct": 1
+          }
+        }
+      },
+      "hervanta_transfer": {
+        "weighted": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        },
+        "geometry": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 19
+          }
+        },
+        "elevation": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 19
+          }
+        },
+        "strength": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 19
+          }
+        },
+        "all": {
+          "south": {
+            "abstain": 21
+          },
+          "north": {
+            "abstain": 19
+          }
+        },
+        "lts": {
+          "south": {
+            "correct": 21
+          },
+          "north": {
+            "correct": 19
+          }
+        }
+      },
+      "metric_inputs": {
+        "both_classes_at_least_eight": true,
+        "threshold_strictly_below_collision": true,
+        "at_least_one_fewer_read_everywhere": false,
+        "each_class_80_correct": false,
+        "no_wrong": true,
+        "strongest_baseline_each_class": false,
+        "strictly_more_than_geometry": false
+      },
+      "gate": false,
+      "logical_reads_saved_over_full": 47,
+      "sha256": {
+        "fixture": "c3c688bfe3b594ee649cfdf8c3136d9d428628d47da4867647ddbfbfb531a1df",
+        "design": "b7f044d31009818648454995542330c02ddfc3c96a7a74c7aa82ef4ea4e4b7ef"
+      }
+    }
+  },
+  "gate": false,
+  "calgary_source_commit": "e2966fb40f89f009a4cc6c5282f2decdb1fe7035",
+  "hervanta_source_sha256": "156ed9cfa399082fe2ea9df430e9b9e89b8da6aa1440a14ad8e53454b3fdb5ec"
+}

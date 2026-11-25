@@ -1,0 +1,38 @@
+{
+  "drive01_gp51": {
+    "range_rows": 954,
+    "six_star_options": 33022,
+    "collision_witnesses": 445,
+    "test_points": 89
+  },
+  "drive01_gp7p3": {
+    "range_rows": 804,
+    "six_star_options": 10913,
+    "collision_witnesses": 445,
+    "test_points": 89
+  },
+  "drive02_gp52": {
+    "range_rows": 761,
+    "six_star_options": 21924,
+    "collision_witnesses": 350,
+    "test_points": 70
+  },
+  "drive02_gp7p3": {
+    "range_rows": 602,
+    "six_star_options": 5552,
+    "collision_witnesses": 350,
+    "test_points": 70
+  },
+  "drive03_gp51": {
+    "range_rows": 428,
+    "six_star_options": 6510,
+    "collision_witnesses": 210,
+    "test_points": 42
+  },
+  "drive03_gp7p4": {
+    "range_rows": 297,
+    "six_star_options": 572,
+    "collision_witnesses": 200,
+    "test_points": 40
+  }
+}

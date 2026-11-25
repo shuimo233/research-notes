@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [加权六星在新日期与新手机上能否复现](articles/consent-audit/gnss-gedvm-transfer.md) | 完整双手机日志、跨日期跨型号与校准迁移 |
 | 2026-11-25 | [把逐星读数质量纳入可核验的 GPS 选星](articles/consent-audit/gnss-quality-verification.md) | 异宽误差、精确合同、独立路线与强基线 |
 | 2026-11-25 | [六颗卫星能否核验已知路线标签](articles/consent-audit/gnss-route-verification.md) | 跨标签分离半径、六星精确选择与真实伪距对照 |
 | 2026-11-25 | [GNSS 的共享钟差能否接入可核验测量模型](articles/consent-audit/gnss-clock-audit.md) | 实测 GPS L1、独立星历核验与 RTKLIB 对照 |
