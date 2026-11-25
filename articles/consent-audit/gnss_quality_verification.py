@@ -183,8 +183,8 @@ def s3_scope(fixture):
     }
 
 
-def s3_geometry(fixture, exe, nav):
-    result = s3_scope(fixture)
+def s3_geometry(fixture, exe, nav, scope=None):
+    result = dict(scope) if scope is not None else s3_scope(fixture)
     plans, unavailable = [], []
     for i, (svs, elevation, table) in enumerate(
         geometry_cases(fixture["cases"], result["catalog"], exe, nav)
@@ -204,7 +204,7 @@ def s3_geometry(fixture, exe, nav):
     return result
 
 
-def build(fixture_file, exe, nav, output, old_geometry=None):
+def build(fixture_file, exe, nav, output, old_geometry=None, scope=None):
     inputs = read_json(fixture_file)
     source = sha256(fixture_file.read_bytes()).hexdigest()
     assert (
@@ -220,7 +220,7 @@ def build(fixture_file, exe, nav, output, old_geometry=None):
             guard_excluded=geometry["excluded_within_guard"], temporal_thinning=0
         )
     else:
-        geometry = s3_geometry(inputs, exe, nav)
+        geometry = s3_geometry(inputs, exe, nav, scope)
         scope = {key: value for key, value in geometry.items() if key != "plan"}
         origin = None
     catalog = geometry["catalog"]
