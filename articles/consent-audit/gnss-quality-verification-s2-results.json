@@ -1,0 +1,159 @@
+{
+  "ratios": {
+    "weighted": [
+      174617424,
+      239178403
+    ],
+    "geometry": [
+      103308506,
+      139397637
+    ],
+    "elevation": [
+      1454531,
+      2209572
+    ],
+    "strength": [
+      684939,
+      700672
+    ],
+    "all": [
+      45250587,
+      22040750
+    ]
+  },
+  "calibration_inside": {
+    "weighted": 110,
+    "geometry": 112,
+    "elevation": 117,
+    "strength": 107,
+    "all": 58
+  },
+  "heldout_counts": {
+    "south": 106,
+    "north": 10
+  },
+  "calibration_counts": {
+    "south": 109,
+    "north": 8
+  },
+  "by_method": {
+    "weighted": {
+      "south": {
+        "correct": 101,
+        "abstain": 5
+      },
+      "north": {
+        "correct": 9,
+        "abstain": 1
+      }
+    },
+    "geometry": {
+      "south": {
+        "correct": 94,
+        "abstain": 12
+      },
+      "north": {
+        "abstain": 7,
+        "correct": 3
+      }
+    },
+    "elevation": {
+      "south": {
+        "correct": 84,
+        "abstain": 22
+      },
+      "north": {
+        "abstain": 6,
+        "correct": 4
+      }
+    },
+    "strength": {
+      "south": {
+        "correct": 102,
+        "abstain": 4
+      },
+      "north": {
+        "correct": 9,
+        "abstain": 1
+      }
+    },
+    "all": {
+      "south": {
+        "abstain": 106
+      },
+      "north": {
+        "abstain": 10
+      }
+    },
+    "weighted_limit": {
+      "south": {
+        "correct": 103,
+        "abstain": 3
+      },
+      "north": {
+        "correct": 10
+      }
+    },
+    "geometry_limit": {
+      "south": {
+        "correct": 100,
+        "abstain": 6
+      },
+      "north": {
+        "correct": 4,
+        "abstain": 6
+      }
+    },
+    "elevation_limit": {
+      "south": {
+        "correct": 101,
+        "abstain": 5
+      },
+      "north": {
+        "abstain": 4,
+        "correct": 6
+      }
+    },
+    "strength_limit": {
+      "south": {
+        "correct": 103,
+        "abstain": 3
+      },
+      "north": {
+        "correct": 9,
+        "abstain": 1
+      }
+    },
+    "all_limit": {
+      "south": {
+        "correct": 56,
+        "abstain": 50
+      },
+      "north": {
+        "correct": 7,
+        "abstain": 3
+      }
+    },
+    "lts": {
+      "south": {
+        "correct": 106
+      },
+      "north": {
+        "correct": 10
+      }
+    }
+  },
+  "lts_cutoff_x5": 0,
+  "gate_inputs": {
+    "external_dataset": false,
+    "each_class_count": true,
+    "saves_one_everywhere": true,
+    "below_collision": true,
+    "each_class_80_correct": true,
+    "zero_wrong": true,
+    "beats_or_matches_each_baseline": false,
+    "strictly_beats_geometry_total": true
+  },
+  "gate": false,
+  "design_sha256": "9dce87096cb7550a13106a7d4319da1342785339a17efe0ffd5bffd63af12e63"
+}
