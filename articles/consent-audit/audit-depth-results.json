@@ -1,0 +1,38 @@
+{
+  "results": {
+    "all": {
+      "sampled": 144,
+      "scored": 96,
+      "miss_at_1": 96,
+      "miss_at_2": 96,
+      "miss_at_3": 92,
+      "stress_cases": 93,
+      "distinct_families": 50,
+      "pair_gap": "100/21",
+      "fair_stress_peak": "19/3"
+    },
+    "CI": {
+      "sampled": 72,
+      "scored": 24,
+      "miss_at_1": 24,
+      "miss_at_2": 24,
+      "miss_at_3": 20,
+      "stress_cases": 21,
+      "distinct_families": 10,
+      "pair_gap": "100/21",
+      "fair_stress_peak": "19/3"
+    },
+    "BART": {
+      "sampled": 72,
+      "scored": 72,
+      "miss_at_1": 72,
+      "miss_at_2": 72,
+      "miss_at_3": 72,
+      "stress_cases": 72,
+      "distinct_families": 40,
+      "pair_gap": "100/21",
+      "fair_stress_peak": "19/3"
+    }
+  },
+  "gate": true
+}

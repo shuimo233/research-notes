@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [只审查单项和两项回复，会漏掉多少？](articles/consent-audit/audit-depth.md) | 在 CI 与 BART 留出样本上测量低阶遗漏，给出完整窗口尖锐界 |
 | 2026-11-25 | [同一个请求有多条可发证词时，怎样审计部分可见的回复？](articles/consent-audit/incomparable-odds.md) | 精确缩减多标签观察窗口，核验严格包含与只看全窗的反例 |
 | 2026-11-25 | [很多请求，只有少量证词可能同时为真](articles/consent-audit/sparse-odds.md) | 按实况约简全部观察窗口，复验六请求档案并给出稀疏目录最优界 |
 | 2026-11-25 | [三条回复合看时，还能保住每一对的最优保证吗？](articles/consent-audit/multi-odds.md) | 在 CI 与 BART 上验证观测窗口间的冲突，给出精确边界和多请求增长率 |
