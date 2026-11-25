@@ -1,0 +1,45 @@
+{
+  "source_sha256": {
+    "log_OnePlusNord2_20230811103018.txt": "7e1d885cc828a04bba0a0403f94e30c3fefa7f4c9fdd14d88bf4bdbd7eb795fb",
+    "NMND17420010S_2023-08-11_07-40-20.pos": "dd5a0e19257732b6b28c0b49ba939775d73e190feec933e9b7b78c41f7fa5141",
+    "TAUN00FIN_R_20232230000_01D_MN.rnx": "34cffe922e5fa3544a7748562c02c78ea5b5369b78ece05b8caaaa4b1c478ead"
+  },
+  "raw_counts": {
+    "all_raw": 29159,
+    "gps_l1": 6659,
+    "physical_excluded": 2,
+    "kept_nonzero_time_offsets": 0,
+    "state_excluded": 49
+  },
+  "reference_quality": {
+    "1": 301,
+    "2": 301
+  },
+  "raw_epochs": 566,
+  "alignment_exclusions": {
+    "raw_no_fixed_within_250_ms": 326
+  },
+  "logger_timestamp_matched": 2,
+  "median_measurement_minus_logger_ms": 439.5,
+  "rtklib_source_commit": "180043ee24b6d2b168f98b64be15f69d50046b1a",
+  "aligned_fixed": 240,
+  "median_alignment_ms": 1.0,
+  "native_fixes": 65,
+  "native_failures": {
+    "chi-square error": 175
+  },
+  "native_error_m": {
+    "median": 3.4499172753792258,
+    "p90": 12.226140949773129
+  },
+  "median_reference_horizontal_sd_m": 0.002692582403567252,
+  "predictions": {
+    "no_ephemeris_or_unhealthy": 0,
+    "below_five_degrees": 130
+  },
+  "epochs_with_six_healthy_elevated": 240,
+  "unbounded_clock_one_fault_radius_m": {
+    "median": 23.162154752761126,
+    "p90": 54.47773098573089
+  }
+}
