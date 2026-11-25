@@ -1,0 +1,89 @@
+{
+  "counts": {
+    "california-clean": {
+      "tasks": 2184,
+      "interval_only": 1169,
+      "relative_only": 2184,
+      "joint": 2184,
+      "joint_ambiguous": 0,
+      "guaranteed_queries": 0,
+      "cut_targets": 2184
+    },
+    "california-injected": {
+      "tasks": 2184,
+      "interval_only": 1169,
+      "relative_only": 2098,
+      "joint": 2149,
+      "joint_ambiguous": 35,
+      "guaranteed_queries": 28,
+      "cut_targets": 0
+    },
+    "clean": {
+      "tasks": 4350,
+      "interval_only": 1734,
+      "relative_only": 4350,
+      "joint": 4350,
+      "joint_ambiguous": 0,
+      "guaranteed_queries": 0,
+      "cut_targets": 4350
+    },
+    "injected": {
+      "tasks": 4350,
+      "interval_only": 1734,
+      "relative_only": 4087,
+      "joint": 4226,
+      "joint_ambiguous": 124,
+      "guaranteed_queries": 100,
+      "cut_targets": 0
+    },
+    "new_york-clean": {
+      "tasks": 2166,
+      "interval_only": 565,
+      "relative_only": 2166,
+      "joint": 2166,
+      "joint_ambiguous": 0,
+      "guaranteed_queries": 0,
+      "cut_targets": 2166
+    },
+    "new_york-injected": {
+      "tasks": 2166,
+      "interval_only": 565,
+      "relative_only": 1989,
+      "joint": 2077,
+      "joint_ambiguous": 89,
+      "guaranteed_queries": 72,
+      "cut_targets": 0
+    },
+    "offset-1": {
+      "tasks": 1542,
+      "interval_only": 635,
+      "relative_only": 1542,
+      "joint": 1542,
+      "joint_ambiguous": 0,
+      "guaranteed_queries": 0,
+      "cut_targets": 0
+    },
+    "offset-15": {
+      "tasks": 1458,
+      "interval_only": 560,
+      "relative_only": 1269,
+      "joint": 1391,
+      "joint_ambiguous": 67,
+      "guaranteed_queries": 61,
+      "cut_targets": 0
+    },
+    "offset-5": {
+      "tasks": 1350,
+      "interval_only": 539,
+      "relative_only": 1276,
+      "joint": 1293,
+      "joint_ambiguous": 57,
+      "guaranteed_queries": 39,
+      "cut_targets": 0
+    }
+  },
+  "passes": {
+    "joint": false,
+    "cross_check": true
+  }
+}
