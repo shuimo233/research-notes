@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [能核实的记录有限，何时值得按答案安排下一问？](articles/consent-audit/interval-fault-plan.md) | 有序候选的精确最坏费用、固定最优边界与无法保证的证据 |
 | 2026-11-25 | [两条记录必须改正时，为什么温差最多只有四种可能？](articles/consent-audit/interval-fault-delta.md) | 双错报四值紧界、两源精确补核与独立枚举 |
 | 2026-11-25 | [温差档案允许抄错一条，怎样保证一次补核就能定案？](articles/consent-audit/interval-fault-cut.md) | 单错报切点压缩、非目标补核与 NOAA 故障回放 |
 | 2026-11-25 | [用实测行成本降低审计推理的尾部耗时](articles/consent-audit/audit-runtime-calibration.md) | 默认线程对照、实测成本与精确求解的消融、逐位复核 |

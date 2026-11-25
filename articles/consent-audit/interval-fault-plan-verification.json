@@ -1,0 +1,89 @@
+{
+  "main": {
+    "archives": 2450,
+    "targets": 19408,
+    "one_label_signature_cases": 223,
+    "strict_cases": [],
+    "world_witnesses": 0
+  },
+  "transfer": {
+    "archives": 1225,
+    "targets": 3596,
+    "one_label_signature_cases": 0,
+    "strict_cases": [
+      [
+        "bart/OAKL/2026-08-23/33600",
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      [
+        "bart/DALY/2026-08-22/30000",
+        1,
+        0,
+        3,
+        8,
+        9
+      ]
+    ],
+    "world_witnesses": 20
+  },
+  "synthetic": {
+    "cases": 600,
+    "counts": {
+      "fixed_exceeds_adaptive": 28,
+      "impossible": 247
+    },
+    "chain": {
+      "16": {
+        "structured_states": 1,
+        "unpruned_ambiguous_states": 32767
+      },
+      "32": {
+        "structured_states": 1,
+        "unpruned_ambiguous_states": 2147483647
+      },
+      "64": {
+        "structured_states": 1,
+        "unpruned_ambiguous_states": 9223372036854775807
+      },
+      "128": {
+        "structured_states": 1,
+        "unpruned_ambiguous_states": 170141183460469231731687303715884105727
+      }
+    },
+    "four_cycle": {
+      "adaptive": 2,
+      "fixed": 3,
+      "labels": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "reply_rows": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    }
+  },
+  "verified": true
+}
