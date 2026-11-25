@@ -1,0 +1,46 @@
+{
+  "data": {
+    "archives": 1225,
+    "targets": 7268,
+    "fixed_transcripts": 6719,
+    "adaptive_transcripts": 1743,
+    "optimality_certificates": 242,
+    "impossibility_witnesses": 204
+  },
+  "synthetic": {
+    "weighted": 20,
+    "uniform": [
+      {
+        "blocks": 1,
+        "errors": 0,
+        "value": 1
+      },
+      {
+        "blocks": 1,
+        "errors": 1,
+        "value": 3
+      },
+      {
+        "blocks": 1,
+        "errors": 2,
+        "value": 5
+      },
+      {
+        "blocks": 2,
+        "errors": 0,
+        "value": 2
+      },
+      {
+        "blocks": 2,
+        "errors": 1,
+        "value": 5
+      },
+      {
+        "blocks": 2,
+        "errors": 2,
+        "value": 8
+      }
+    ]
+  },
+  "verified": true
+}

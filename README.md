@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [补核答复也可能错时，怎样把证据合起来定案？](articles/consent-audit/interval-fault-noisy.md) | 跨点对耐错证据、最小费用证书、加权自适应紧界 |
 | 2026-11-25 | [能核实的记录有限，何时值得按答案安排下一问？](articles/consent-audit/interval-fault-plan.md) | 有序候选的精确最坏费用、固定最优边界与无法保证的证据 |
 | 2026-11-25 | [两条记录必须改正时，为什么温差最多只有四种可能？](articles/consent-audit/interval-fault-delta.md) | 双错报四值紧界、两源精确补核与独立枚举 |
 | 2026-11-25 | [温差档案允许抄错一条，怎样保证一次补核就能定案？](articles/consent-audit/interval-fault-cut.md) | 单错报切点压缩、非目标补核与 NOAA 故障回放 |
