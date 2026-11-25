@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [分组用的档位更少，实际推理会更快吗？](articles/consent-audit/audit-runtime-latency.md) | 逐行宽度 Scan、配对计时及分组增加尾部耗时的负结果 |
 | 2026-11-25 | [两实况的分组，加入第三个实况后还成立吗？](articles/consent-audit/audit-runtime-multiworld.md) | SNLI 三实况复验、五环边界与可验的多实况最优分组 |
 | 2026-11-25 | [同一批里，哪些请求可以共用推理档位？](articles/consent-audit/audit-runtime-partition.md) | 精确冲突图、稳健最优分组和实际模型调用回放 |
 | 2026-11-25 | [推理档位的占比变了，只查最极端的分布够吗？](articles/consent-audit/audit-runtime-drift.md) | 在真实模型门控上验证分布内点超标及可核验的共享比例 |

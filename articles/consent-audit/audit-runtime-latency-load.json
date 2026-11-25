@@ -1,0 +1,794 @@
+{
+  "effective_width_counterexample": [
+    "7/4",
+    "3/2"
+  ],
+  "cases": {
+    "0": {
+      "original_partition": {
+        "shared_cap": "297/8388905",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 621,
+            "independent_tail": "838081/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1676459/33555620"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61937,
+            "independent_tail": "209643/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "98673/1973860"
+          },
+          {
+            "power": 1,
+            "p95_limit": 620,
+            "independent_tail": "836653/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1673603/33555620"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61924,
+            "independent_tail": "419361/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "1677741/33555620"
+          },
+          {
+            "power": 1,
+            "p95_limit": 622,
+            "independent_tail": "824899/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "330019/6711124"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61962,
+            "independent_tail": "419371/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "25322273/4194304",
+            "405163793/67111240"
+          ],
+          [
+            "25060129/4194304",
+            "80193779/13422248"
+          ],
+          [
+            "25570881/4194304",
+            "409140927/67111240"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          1,
+          4
+        ],
+        "budget": {
+          "shared_cap": "297/966865",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 621,
+              "independent_tail": "838081/16777216",
+              "group_tail": "157293/2097152",
+              "deployed_tail": "50652250261/1013831434240"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61937,
+              "independent_tail": "209643/4194304",
+              "group_tail": "76701/1048576",
+              "deployed_tail": "50681334003/1013831434240"
+            },
+            {
+              "power": 1,
+              "p95_limit": 620,
+              "independent_tail": "836653/16777216",
+              "group_tail": "157489/2097152",
+              "deployed_tail": "50566013173/1013831434240"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61924,
+              "independent_tail": "419361/8388608",
+              "group_tail": "19181/262144",
+              "deployed_tail": "50690402409/1013831434240"
+            },
+            {
+              "power": 1,
+              "p95_limit": 622,
+              "independent_tail": "824899/16777216",
+              "group_tail": "154285/2097152",
+              "deployed_tail": "24927736181/506915717120"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61962,
+              "independent_tail": "419371/8388608",
+              "group_tail": "76593/1048576",
+              "deployed_tail": "1/20"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "25322273/4194304",
+              "765088998769/126728929280"
+            ],
+            [
+              "25060129/4194304",
+              "757161141617/126728929280"
+            ],
+            [
+              "25570881/4194304",
+              "772599859857/126728929280"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "456986673/4055325736960"
+    },
+    "12": {
+      "original_partition": {
+        "shared_cap": "93/2097245",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 620,
+            "independent_tail": "834405/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "834591/16777960"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61816,
+            "independent_tail": "104819/2097152",
+            "group_tail": "1/4",
+            "deployed_tail": "419369/8388980"
+          },
+          {
+            "power": 1,
+            "p95_limit": 621,
+            "independent_tail": "834991/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "835177/16777960"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61889,
+            "independent_tail": "104839/2097152",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          },
+          {
+            "power": 1,
+            "p95_limit": 621,
+            "independent_tail": "836097/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "836283/16777960"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61786,
+            "independent_tail": "209543/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "419179/8388980"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "24667985/4194304",
+            "2466845/419449"
+          ],
+          [
+            "26043217/4194304",
+            "104175193/16777960"
+          ],
+          [
+            "25715537/4194304",
+            "5143219/838898"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          4,
+          5
+        ],
+        "budget": {
+          "shared_cap": "31/80865",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 620,
+              "independent_tail": "834405/16777216",
+              "group_tail": "157847/2097152",
+              "deployed_tail": "33743719913/678344785920"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61816,
+              "independent_tail": "104819/2097152",
+              "group_tail": "75/1024",
+              "deployed_tail": "4238850323/84793098240"
+            },
+            {
+              "power": 1,
+              "p95_limit": 621,
+              "independent_tail": "834991/16777216",
+              "group_tail": "158205/2097152",
+              "deployed_tail": "33767448667/678344785920"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61889,
+              "independent_tail": "104839/2097152",
+              "group_tail": "76679/1048576",
+              "deployed_tail": "1/20"
+            },
+            {
+              "power": 1,
+              "p95_limit": 621,
+              "independent_tail": "836097/16777216",
+              "group_tail": "155443/2097152",
+              "deployed_tail": "33811807381/678344785920"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61786,
+              "independent_tail": "209543/4194304",
+              "group_tail": "76601/1048576",
+              "deployed_tail": "2824616231/56528732160"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "24667985/4194304",
+              "997353479957/169586196480"
+            ],
+            [
+              "26043217/4194304",
+              "1052970515221/169586196480"
+            ],
+            [
+              "25715537/4194304",
+              "1039721593621/169586196480"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "157071637/1017517178880"
+    },
+    "24": {
+      "original_partition": {
+        "shared_cap": "989/16778205",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 621,
+            "independent_tail": "206247/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "3300941/67112820"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61763,
+            "independent_tail": "419231/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "1118279/22370940"
+          },
+          {
+            "power": 1,
+            "p95_limit": 618,
+            "independent_tail": "104711/2097152",
+            "group_tail": "1/4",
+            "deployed_tail": "1117247/22370940"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61666,
+            "independent_tail": "838663/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          },
+          {
+            "power": 1,
+            "p95_limit": 617,
+            "independent_tail": "417195/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "3338549/67112820"
+          },
+          {
+            "power": 2,
+            "p95_limit": 61568,
+            "independent_tail": "209637/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "3355181/67112820"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "24395713/4194304",
+            "156136717/26845128"
+          ],
+          [
+            "99155515/16777216",
+            "793264889/134225640"
+          ],
+          [
+            "96815611/16777216",
+            "86060189/14913960"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          0,
+          2
+        ],
+        "budget": {
+          "shared_cap": "989/1919845",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 621,
+              "independent_tail": "206247/4194304",
+              "group_tail": "76015/1048576",
+              "deployed_tail": "99014752193/2013103390720"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61763,
+              "independent_tail": "419231/8388608",
+              "group_tail": "76391/1048576",
+              "deployed_tail": "50315520333/1006551695360"
+            },
+            {
+              "power": 1,
+              "p95_limit": 618,
+              "independent_tail": "104711/2097152",
+              "group_tail": "76693/1048576",
+              "deployed_tail": "20107702937/402620678144"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61666,
+              "independent_tail": "838663/16777216",
+              "group_tail": "152829/2097152",
+              "deployed_tail": "1/20"
+            },
+            {
+              "power": 1,
+              "p95_limit": 617,
+              "independent_tail": "417195/8388608",
+              "group_tail": "4701/65536",
+              "deployed_tail": "100141529739/2013103390720"
+            },
+            {
+              "power": 2,
+              "p95_limit": 61568,
+              "independent_tail": "209637/4194304",
+              "group_tail": "38151/524288",
+              "deployed_tail": "1572519789/31454740480"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "24395713/4194304",
+              "1463574079043/251637923840"
+            ],
+            [
+              "99155515/16777216",
+              "1189720364805/201310339072"
+            ],
+            [
+              "96815611/16777216",
+              "1161668089251/201310339072"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "9251063473/48314481377280"
+    },
+    "34": {
+      "original_partition": {
+        "shared_cap": "1369/16778585",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 625,
+            "independent_tail": "207223/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "3316937/67114340"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62224,
+            "independent_tail": "838587/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          },
+          {
+            "power": 1,
+            "p95_limit": 624,
+            "independent_tail": "811633/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3247901/67114340"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62057,
+            "independent_tail": "104613/2097152",
+            "group_tail": "1/4",
+            "deployed_tail": "669797/13422868"
+          },
+          {
+            "power": 1,
+            "p95_limit": 630,
+            "independent_tail": "837509/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "670281/13422868"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62537,
+            "independent_tail": "1635/32768",
+            "group_tail": "1/4",
+            "deployed_tail": "3349849/67114340"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "25880401/4194304",
+            "6625715323/1073829440"
+          ],
+          [
+            "25697105/4194304",
+            "1644700967/268457360"
+          ],
+          [
+            "25799863/4194304",
+            "412821081/67114340"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          1,
+          2
+        ],
+        "budget": {
+          "shared_cap": "1369/1921105",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 625,
+              "independent_tail": "207223/4194304",
+              "group_tail": "9707/131072",
+              "deployed_tail": "49779837173/1007212298240"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62224,
+              "independent_tail": "838587/16777216",
+              "group_tail": "152851/2097152",
+              "deployed_tail": "1/20"
+            },
+            {
+              "power": 1,
+              "p95_limit": 624,
+              "independent_tail": "811633/16777216",
+              "group_tail": "75433/1048576",
+              "deployed_tail": "38994334333/805769838592"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62057,
+              "independent_tail": "104613/2097152",
+              "group_tail": "152425/2097152",
+              "deployed_tail": "201038011993/4028849192960"
+            },
+            {
+              "power": 1,
+              "p95_limit": 630,
+              "independent_tail": "837509/16777216",
+              "group_tail": "77365/1048576",
+              "deployed_tail": "201186347573/4028849192960"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62537,
+              "independent_tail": "1635/32768",
+              "group_tail": "38177/524288",
+              "deployed_tail": "50272558073/1007212298240"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "25880401/4194304",
+              "3107260776751/503606149120"
+            ],
+            [
+              "25697105/4194304",
+              "3085336709231/503606149120"
+            ],
+            [
+              "25799863/4194304",
+              "3097683394249/503606149120"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "1852129683/8057698385920"
+    },
+    "48": {
+      "original_partition": {
+        "shared_cap": "439/16777655",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 624,
+            "independent_tail": "808591/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3234803/67110620"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62066,
+            "independent_tail": "838773/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          },
+          {
+            "power": 1,
+            "p95_limit": 624,
+            "independent_tail": "819523/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3278531/67110620"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62097,
+            "independent_tail": "836901/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3348043/67110620"
+          },
+          {
+            "power": 1,
+            "p95_limit": 623,
+            "independent_tail": "837591/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3350803/67110620"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62096,
+            "independent_tail": "838157/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3353067/67110620"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "26305361/4194304",
+            "3367142839/536884960"
+          ],
+          [
+            "25584465/4194304",
+            "3274863761/536884960"
+          ],
+          [
+            "25064657/4194304",
+            "200520329/33555310"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          1,
+          5
+        ],
+        "budget": {
+          "shared_cap": "439/1959215",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 624,
+              "independent_tail": "808591/16777216",
+              "group_tail": "153751/2097152",
+              "deployed_tail": "99024288633/2054385827840"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62066,
+              "independent_tail": "838773/16777216",
+              "group_tail": "153827/2097152",
+              "deployed_tail": "1/20"
+            },
+            {
+              "power": 1,
+              "p95_limit": 624,
+              "independent_tail": "819523/16777216",
+              "group_tail": "154501/2097152",
+              "deployed_tail": "1254534837/25679822848"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62097,
+              "independent_tail": "836901/16777216",
+              "group_tail": "154019/2097152",
+              "deployed_tail": "12811269593/256798228480"
+            },
+            {
+              "power": 1,
+              "p95_limit": 623,
+              "independent_tail": "837591/16777216",
+              "group_tail": "155981/2097152",
+              "deployed_tail": "51287529809/1027192913920"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62096,
+              "independent_tail": "838157/16777216",
+              "group_tail": "152797/2097152",
+              "deployed_tail": "102643652431/2054385827840"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "26305361/4194304",
+              "100658669589/16049889280"
+            ],
+            [
+              "25584465/4194304",
+              "97899589141/16049889280"
+            ],
+            [
+              "25064657/4194304",
+              "95911114773/16049889280"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "686059103/8217543311360"
+    },
+    "59": {
+      "original_partition": {
+        "shared_cap": "519/16777735",
+        "bounds": [
+          {
+            "power": 1,
+            "p95_limit": 635,
+            "independent_tail": "838757/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "1/20"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62921,
+            "independent_tail": "52383/1048576",
+            "group_tail": "1/4",
+            "deployed_tail": "3353031/67110940"
+          },
+          {
+            "power": 1,
+            "p95_limit": 637,
+            "independent_tail": "207717/4194304",
+            "group_tail": "1/4",
+            "deployed_tail": "3323991/67110940"
+          },
+          {
+            "power": 2,
+            "p95_limit": 63073,
+            "independent_tail": "419205/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "3354159/67110940"
+          },
+          {
+            "power": 1,
+            "p95_limit": 633,
+            "independent_tail": "819121/16777216",
+            "group_tail": "1/4",
+            "deployed_tail": "3277003/67110940"
+          },
+          {
+            "power": 2,
+            "p95_limit": 62720,
+            "independent_tail": "418207/8388608",
+            "group_tail": "1/4",
+            "deployed_tail": "669235/13422188"
+          }
+        ],
+        "per_world_configurations": [
+          [
+            "26458431/4194304",
+            "211671081/33555470"
+          ],
+          [
+            "107348997/16777216",
+            "429403773/67110940"
+          ],
+          [
+            "26494783/4194304",
+            "13043833/2064952"
+          ]
+        ]
+      },
+      "best_single_pair": {
+        "pair": [
+          4,
+          6
+        ],
+        "budget": {
+          "shared_cap": "173/758965",
+          "bounds": [
+            {
+              "power": 1,
+              "p95_limit": 635,
+              "independent_tail": "838757/16777216",
+              "group_tail": "161767/2097152",
+              "deployed_tail": "1/20"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62921,
+              "independent_tail": "52383/1048576",
+              "group_tail": "77749/1048576",
+              "deployed_tail": "39761251913/795832483840"
+            },
+            {
+              "power": 1,
+              "p95_limit": 637,
+              "independent_tail": "207717/4194304",
+              "group_tail": "80721/1048576",
+              "deployed_tail": "39417464199/795832483840"
+            },
+            {
+              "power": 2,
+              "p95_limit": 63073,
+              "independent_tail": "419205/8388608",
+              "group_tail": "38919/524288",
+              "deployed_tail": "39774641019/795832483840"
+            },
+            {
+              "power": 1,
+              "p95_limit": 633,
+              "independent_tail": "819121/16777216",
+              "group_tail": "157959/2097152",
+              "deployed_tail": "19430033659/397916241920"
+            },
+            {
+              "power": 2,
+              "p95_limit": 62720,
+              "independent_tail": "418207/8388608",
+              "group_tail": "4827/65536",
+              "deployed_tail": "39679876879/795832483840"
+            }
+          ],
+          "per_world_configurations": [
+            [
+              "26458431/4194304",
+              "125504852785/19895812096"
+            ],
+            [
+              "107348997/16777216",
+              "2546021968119/397916241920"
+            ],
+            [
+              "26494783/4194304",
+              "628388753909/99479060480"
+            ]
+          ]
+        }
+      },
+      "pair_mean_width_saving": "621299917/7639991844864"
+    }
+  }
+}
