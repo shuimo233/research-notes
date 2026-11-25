@@ -1,0 +1,421 @@
+{
+  "sections": {
+    "diagnostic": {
+      "counts": {
+        "profiles": 1254,
+        "block_better": 99,
+        "old_better": 27,
+        "equal": 1128,
+        "unresolved": 0,
+        "below_independent": 1231,
+        "1_blocks": 1128,
+        "2_blocks": 65,
+        "3_blocks": 38,
+        "4_blocks": 23
+      },
+      "max_proved_saving": "49608083/72161280",
+      "best_case": 1603
+    },
+    "diagnostic/nmonli_test/0": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 3,
+        "old_better": 1,
+        "equal": 21,
+        "unresolved": 0,
+        "below_independent": 24,
+        "1_blocks": 21,
+        "2_blocks": 2,
+        "3_blocks": 1,
+        "4_blocks": 1
+      },
+      "max_proved_saving": "1529339/2488320",
+      "best_case": 27
+    },
+    "diagnostic/nmonli_test/1": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 2,
+        "old_better": 1,
+        "equal": 22,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 22,
+        "2_blocks": 1,
+        "3_blocks": 2,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "1213948589/4187842560",
+      "best_case": 175
+    },
+    "diagnostic/nmonli_test/1/2": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 5,
+        "old_better": 0,
+        "equal": 20,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 20,
+        "2_blocks": 3,
+        "3_blocks": 2,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "124840667/211507200",
+      "best_case": 126
+    },
+    "diagnostic/nmonli_test/1/4": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 6,
+        "old_better": 0,
+        "equal": 19,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 19,
+        "2_blocks": 3,
+        "3_blocks": 3,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "73761149/126904320",
+      "best_case": 96
+    },
+    "diagnostic/nmonli_test/2": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 2,
+        "old_better": 0,
+        "equal": 23,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 23,
+        "2_blocks": 2,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "112106603/171694080",
+      "best_case": 225
+    },
+    "diagnostic/nmonli_test/4": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 3,
+        "old_better": 0,
+        "equal": 22,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 22,
+        "2_blocks": 2,
+        "3_blocks": 1,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "4688995/8211456",
+      "best_case": 276
+    },
+    "diagnostic/pmonli/0": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 12,
+        "old_better": 5,
+        "equal": 167,
+        "unresolved": 0,
+        "below_independent": 180,
+        "1_blocks": 167,
+        "2_blocks": 9,
+        "3_blocks": 4,
+        "4_blocks": 4
+      },
+      "max_proved_saving": "329819/497664",
+      "best_case": 492
+    },
+    "diagnostic/pmonli/1": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 13,
+        "old_better": 4,
+        "equal": 167,
+        "unresolved": 0,
+        "below_independent": 181,
+        "1_blocks": 167,
+        "2_blocks": 8,
+        "3_blocks": 6,
+        "4_blocks": 3
+      },
+      "max_proved_saving": "49608083/72161280",
+      "best_case": 1603
+    },
+    "diagnostic/pmonli/1/2": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 13,
+        "old_better": 2,
+        "equal": 169,
+        "unresolved": 0,
+        "below_independent": 182,
+        "1_blocks": 169,
+        "2_blocks": 7,
+        "3_blocks": 6,
+        "4_blocks": 2
+      },
+      "max_proved_saving": "23233469/37324800",
+      "best_case": 1221
+    },
+    "diagnostic/pmonli/1/4": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 10,
+        "old_better": 5,
+        "equal": 169,
+        "unresolved": 0,
+        "below_independent": 179,
+        "1_blocks": 169,
+        "2_blocks": 6,
+        "3_blocks": 4,
+        "4_blocks": 5
+      },
+      "max_proved_saving": "7793387/12441600",
+      "best_case": 853
+    },
+    "diagnostic/pmonli/2": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 13,
+        "old_better": 5,
+        "equal": 166,
+        "unresolved": 0,
+        "below_independent": 180,
+        "1_blocks": 166,
+        "2_blocks": 10,
+        "3_blocks": 4,
+        "4_blocks": 4
+      },
+      "max_proved_saving": "23233469/37324800",
+      "best_case": 1959
+    },
+    "diagnostic/pmonli/4": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 17,
+        "old_better": 4,
+        "equal": 163,
+        "unresolved": 0,
+        "below_independent": 180,
+        "1_blocks": 163,
+        "2_blocks": 12,
+        "3_blocks": 5,
+        "4_blocks": 4
+      },
+      "max_proved_saving": "329819/497664",
+      "best_case": 2473
+    },
+    "main": {
+      "counts": {
+        "profiles": 1254,
+        "block_better": 54,
+        "old_better": 3,
+        "equal": 1197,
+        "unresolved": 0,
+        "below_independent": 1254,
+        "1_blocks": 1197,
+        "2_blocks": 54,
+        "3_blocks": 3,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "334915/497664",
+      "best_case": 1059
+    },
+    "main/nmonli_test/0": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 4,
+        "old_better": 0,
+        "equal": 21,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 21,
+        "2_blocks": 4,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "13911505/24634368",
+      "best_case": 16
+    },
+    "main/nmonli_test/1": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 1,
+        "old_better": 0,
+        "equal": 24,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 24,
+        "2_blocks": 1,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "24825227/42301440",
+      "best_case": 154
+    },
+    "main/nmonli_test/1/2": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 3,
+        "old_better": 0,
+        "equal": 22,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 22,
+        "2_blocks": 3,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "24825227/42301440",
+      "best_case": 104
+    },
+    "main/nmonli_test/1/4": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 3,
+        "old_better": 0,
+        "equal": 22,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 22,
+        "2_blocks": 3,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "73761149/126904320",
+      "best_case": 54
+    },
+    "main/nmonli_test/2": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 2,
+        "old_better": 0,
+        "equal": 23,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 23,
+        "2_blocks": 2,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "6642187/12192768",
+      "best_case": 216
+    },
+    "main/nmonli_test/4": {
+      "counts": {
+        "profiles": 25,
+        "block_better": 0,
+        "old_better": 0,
+        "equal": 25,
+        "unresolved": 0,
+        "below_independent": 25,
+        "1_blocks": 25,
+        "2_blocks": 0,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "0",
+      "best_case": null
+    },
+    "main/pmonli/0": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 6,
+        "old_better": 0,
+        "equal": 178,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 178,
+        "2_blocks": 6,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "329819/497664",
+      "best_case": 323
+    },
+    "main/pmonli/1": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 5,
+        "old_better": 1,
+        "equal": 178,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 178,
+        "2_blocks": 6,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "7412573/11446272",
+      "best_case": 1427
+    },
+    "main/pmonli/1/2": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 3,
+        "old_better": 1,
+        "equal": 180,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 180,
+        "2_blocks": 4,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "334915/497664",
+      "best_case": 1059
+    },
+    "main/pmonli/1/4": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 6,
+        "old_better": 0,
+        "equal": 178,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 178,
+        "2_blocks": 6,
+        "3_blocks": 0,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "329819/497664",
+      "best_case": 691
+    },
+    "main/pmonli/2": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 6,
+        "old_better": 1,
+        "equal": 177,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 177,
+        "2_blocks": 6,
+        "3_blocks": 1,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "9116293/15676416",
+      "best_case": 1821
+    },
+    "main/pmonli/4": {
+      "counts": {
+        "profiles": 184,
+        "block_better": 15,
+        "old_better": 0,
+        "equal": 169,
+        "unresolved": 0,
+        "below_independent": 184,
+        "1_blocks": 169,
+        "2_blocks": 13,
+        "3_blocks": 2,
+        "4_blocks": 0
+      },
+      "max_proved_saving": "329819/497664",
+      "best_case": 2256
+    }
+  },
+  "gate": true
+}

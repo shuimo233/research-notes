@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [同一批里，哪些请求可以共用推理档位？](articles/consent-audit/audit-runtime-partition.md) | 精确冲突图、稳健最优分组和实际模型调用回放 |
 | 2026-11-25 | [推理档位的占比变了，只查最极端的分布够吗？](articles/consent-audit/audit-runtime-drift.md) | 在真实模型门控上验证分布内点超标及可核验的共享比例 |
 | 2026-11-25 | [共用推理配置时，只审二项能定出安全的共享比例吗？](articles/consent-audit/audit-runtime.md) | 用真实 MoNLI 分数复核四项放行比例及确定性约简 |
 | 2026-11-25 | [两个实况的拒绝率不同，只检查区间两端够吗？](articles/consent-audit/audit-asymmetric.md) | 严格内点峰值、分母端点约简与双向区间证书 |
