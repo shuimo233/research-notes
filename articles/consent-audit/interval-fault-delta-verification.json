@@ -1,0 +1,67 @@
+{
+  "data": {
+    "archives": 1225,
+    "target_checks": 12393,
+    "probe_checks": 366102,
+    "oracle_deletion_sets": 97443
+  },
+  "constructions": {
+    "chain": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "loose_support": [
+      13,
+      101,
+      10001
+    ]
+  },
+  "stress": {
+    "0": 28,
+    "1": 69,
+    "3": 18,
+    "2": 45
+  },
+  "sharp": {
+    "simple_graphs": 388,
+    "two_fault": {
+      "equal": {
+        "cases": 14670,
+        "tight": 8046,
+        "achieves_four": 924,
+        "maximum": 4
+      },
+      "unequal": {
+        "cases": 14670,
+        "tight": 11586,
+        "achieves_four": 4164,
+        "maximum": 4
+      }
+    },
+    "dissociated": {
+      "1": {
+        "cases": 20,
+        "maximum": 2
+      },
+      "2": {
+        "cases": 20,
+        "maximum": 4
+      },
+      "3": {
+        "cases": 20,
+        "maximum": 7
+      },
+      "4": {
+        "cases": 20,
+        "maximum": 12
+      }
+    }
+  },
+  "verified": true
+}
