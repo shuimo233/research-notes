@@ -1,0 +1,448 @@
+{
+  "sections": {
+    "diagnostic": {
+      "counts": {
+        "profiles": 1254,
+        "center_witness_fail": 124,
+        "vertex_witness_fail": 12,
+        "improved_over_separate": 126,
+        "within_precision": 1254,
+        "exact": 1235,
+        "mode_reduction": 126,
+        "no_joint_effect": 1128,
+        "max_splits": 15,
+        "max_effective_modes": 6
+      },
+      "max_gap": "388/392931",
+      "largest_proved_center_loss": "23669/63180",
+      "largest_case": 1600
+    },
+    "diagnostic/nmonli_test/0": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 4,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 4,
+        "within_precision": 25,
+        "exact": 23,
+        "mode_reduction": 4,
+        "no_joint_effect": 21,
+        "max_splits": 0,
+        "max_effective_modes": 5
+      },
+      "max_gap": "2576384/7546823055",
+      "largest_proved_center_loss": "9766/168399",
+      "largest_case": 45
+    },
+    "diagnostic/nmonli_test/1": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 3,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 3,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 3,
+        "no_joint_effect": 22,
+        "max_splits": 7,
+        "max_effective_modes": 3
+      },
+      "max_gap": "38912/114077565",
+      "largest_proved_center_loss": "11077/140454",
+      "largest_case": 195
+    },
+    "diagnostic/nmonli_test/1/2": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 5,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 5,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 5,
+        "no_joint_effect": 20,
+        "max_splits": 0,
+        "max_effective_modes": 5
+      },
+      "max_gap": "18848/75847347",
+      "largest_proved_center_loss": "32731/92340",
+      "largest_case": 139
+    },
+    "diagnostic/nmonli_test/1/4": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 6,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 6,
+        "within_precision": 25,
+        "exact": 25,
+        "mode_reduction": 6,
+        "no_joint_effect": 19,
+        "max_splits": 0,
+        "max_effective_modes": 4
+      },
+      "max_gap": "0",
+      "largest_proved_center_loss": "32731/92340",
+      "largest_case": 89
+    },
+    "diagnostic/nmonli_test/2": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 2,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 2,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 2,
+        "no_joint_effect": 23,
+        "max_splits": 2,
+        "max_effective_modes": 3
+      },
+      "max_gap": "1792/2477871",
+      "largest_proved_center_loss": "2144/168399",
+      "largest_case": 247
+    },
+    "diagnostic/nmonli_test/4": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 3,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 3,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 3,
+        "no_joint_effect": 22,
+        "max_splits": 15,
+        "max_effective_modes": 6
+      },
+      "max_gap": "331024/1632735225",
+      "largest_proved_center_loss": "1939/41310",
+      "largest_case": 277
+    },
+    "diagnostic/pmonli/0": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 17,
+        "vertex_witness_fail": 2,
+        "improved_over_separate": 17,
+        "within_precision": 184,
+        "exact": 183,
+        "mode_reduction": 17,
+        "no_joint_effect": 167,
+        "max_splits": 8,
+        "max_effective_modes": 6
+      },
+      "max_gap": "8812256/11082859425",
+      "largest_proved_center_loss": "12164/40095",
+      "largest_case": 518
+    },
+    "diagnostic/pmonli/1": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 16,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 17,
+        "within_precision": 184,
+        "exact": 182,
+        "mode_reduction": 17,
+        "no_joint_effect": 167,
+        "max_splits": 2,
+        "max_effective_modes": 5
+      },
+      "max_gap": "29/194400",
+      "largest_proved_center_loss": "23669/63180",
+      "largest_case": 1600
+    },
+    "diagnostic/pmonli/1/2": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 15,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 15,
+        "within_precision": 184,
+        "exact": 183,
+        "mode_reduction": 15,
+        "no_joint_effect": 169,
+        "max_splits": 0,
+        "max_effective_modes": 6
+      },
+      "max_gap": "29/194400",
+      "largest_proved_center_loss": "3151/10692",
+      "largest_case": 1228
+    },
+    "diagnostic/pmonli/1/4": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 15,
+        "vertex_witness_fail": 2,
+        "improved_over_separate": 15,
+        "within_precision": 184,
+        "exact": 182,
+        "mode_reduction": 15,
+        "no_joint_effect": 169,
+        "max_splits": 8,
+        "max_effective_modes": 5
+      },
+      "max_gap": "388/392931",
+      "largest_proved_center_loss": "66875/193914",
+      "largest_case": 863
+    },
+    "diagnostic/pmonli/2": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 17,
+        "vertex_witness_fail": 2,
+        "improved_over_separate": 18,
+        "within_precision": 184,
+        "exact": 180,
+        "mode_reduction": 18,
+        "no_joint_effect": 166,
+        "max_splits": 4,
+        "max_effective_modes": 6
+      },
+      "max_gap": "4561108684478/12208889676279447",
+      "largest_proved_center_loss": "66875/193914",
+      "largest_case": 1956
+    },
+    "diagnostic/pmonli/4": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 21,
+        "vertex_witness_fail": 3,
+        "improved_over_separate": 21,
+        "within_precision": 184,
+        "exact": 181,
+        "mode_reduction": 21,
+        "no_joint_effect": 163,
+        "max_splits": 5,
+        "max_effective_modes": 5
+      },
+      "max_gap": "10424/11150055",
+      "largest_proved_center_loss": "32731/92340",
+      "largest_case": 2415
+    },
+    "main": {
+      "counts": {
+        "profiles": 1254,
+        "center_witness_fail": 55,
+        "vertex_witness_fail": 8,
+        "improved_over_separate": 57,
+        "within_precision": 1254,
+        "exact": 1233,
+        "mode_reduction": 57,
+        "no_joint_effect": 1197,
+        "max_splits": 7,
+        "max_effective_modes": 5
+      },
+      "max_gap": "994974976/1004196115629",
+      "largest_proved_center_loss": "3583/10692",
+      "largest_case": 1168
+    },
+    "main/nmonli_test/0": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 4,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 4,
+        "within_precision": 25,
+        "exact": 22,
+        "mode_reduction": 4,
+        "no_joint_effect": 21,
+        "max_splits": 6,
+        "max_effective_modes": 4
+      },
+      "max_gap": "76/86751",
+      "largest_proved_center_loss": "451/3645",
+      "largest_case": 4
+    },
+    "main/nmonli_test/1": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 1,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 1,
+        "within_precision": 25,
+        "exact": 25,
+        "mode_reduction": 1,
+        "no_joint_effect": 24,
+        "max_splits": 0,
+        "max_effective_modes": 3
+      },
+      "max_gap": "0",
+      "largest_proved_center_loss": "3649/82620",
+      "largest_case": 154
+    },
+    "main/nmonli_test/1/2": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 3,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 3,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 3,
+        "no_joint_effect": 22,
+        "max_splits": 5,
+        "max_effective_modes": 4
+      },
+      "max_gap": "10424/11150055",
+      "largest_proved_center_loss": "12889/96957",
+      "largest_case": 116
+    },
+    "main/nmonli_test/1/4": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 3,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 3,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 3,
+        "no_joint_effect": 22,
+        "max_splits": 5,
+        "max_effective_modes": 4
+      },
+      "max_gap": "10424/11150055",
+      "largest_proved_center_loss": "12889/96957",
+      "largest_case": 66
+    },
+    "main/nmonli_test/2": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 2,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 2,
+        "within_precision": 25,
+        "exact": 24,
+        "mode_reduction": 2,
+        "no_joint_effect": 23,
+        "max_splits": 2,
+        "max_effective_modes": 3
+      },
+      "max_gap": "160/1194669",
+      "largest_proved_center_loss": "680/27783",
+      "largest_case": 216
+    },
+    "main/nmonli_test/4": {
+      "counts": {
+        "profiles": 25,
+        "center_witness_fail": 0,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 0,
+        "within_precision": 25,
+        "exact": 25,
+        "mode_reduction": 0,
+        "no_joint_effect": 25,
+        "max_splits": 0,
+        "max_effective_modes": 0
+      },
+      "max_gap": "0",
+      "largest_proved_center_loss": "0",
+      "largest_case": null
+    },
+    "main/pmonli/0": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 6,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 6,
+        "within_precision": 184,
+        "exact": 184,
+        "mode_reduction": 6,
+        "no_joint_effect": 178,
+        "max_splits": 0,
+        "max_effective_modes": 4
+      },
+      "max_gap": "0",
+      "largest_proved_center_loss": "12164/40095",
+      "largest_case": 452
+    },
+    "main/pmonli/1": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 5,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 6,
+        "within_precision": 184,
+        "exact": 183,
+        "mode_reduction": 6,
+        "no_joint_effect": 178,
+        "max_splits": 2,
+        "max_effective_modes": 3
+      },
+      "max_gap": "160/1194669",
+      "largest_proved_center_loss": "9766/168399",
+      "largest_case": 1536
+    },
+    "main/pmonli/1/2": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 4,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 4,
+        "within_precision": 184,
+        "exact": 184,
+        "mode_reduction": 4,
+        "no_joint_effect": 180,
+        "max_splits": 7,
+        "max_effective_modes": 4
+      },
+      "max_gap": "0",
+      "largest_proved_center_loss": "3583/10692",
+      "largest_case": 1168
+    },
+    "main/pmonli/1/4": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 6,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 6,
+        "within_precision": 184,
+        "exact": 183,
+        "mode_reduction": 6,
+        "no_joint_effect": 178,
+        "max_splits": 2,
+        "max_effective_modes": 5
+      },
+      "max_gap": "277/788697",
+      "largest_proved_center_loss": "19346/66825",
+      "largest_case": 820
+    },
+    "main/pmonli/2": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 6,
+        "vertex_witness_fail": 1,
+        "improved_over_separate": 7,
+        "within_precision": 184,
+        "exact": 180,
+        "mode_reduction": 7,
+        "no_joint_effect": 177,
+        "max_splits": 4,
+        "max_effective_modes": 4
+      },
+      "max_gap": "76/86751",
+      "largest_proved_center_loss": "409/3402",
+      "largest_case": 1817
+    },
+    "main/pmonli/4": {
+      "counts": {
+        "profiles": 184,
+        "center_witness_fail": 15,
+        "vertex_witness_fail": 0,
+        "improved_over_separate": 15,
+        "within_precision": 184,
+        "exact": 175,
+        "mode_reduction": 15,
+        "no_joint_effect": 169,
+        "max_splits": 5,
+        "max_effective_modes": 5
+      },
+      "max_gap": "994974976/1004196115629",
+      "largest_proved_center_loss": "8573/26730",
+      "largest_case": 2160
+    }
+  },
+  "precision_passed": 2508,
+  "gate": true
+}
