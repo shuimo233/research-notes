@@ -1,0 +1,78 @@
+{
+  "rounds": [
+    {
+      "comparison": {
+        "weight_at_greedy": {
+          "paired_median_ratio": "154784043911/162818884464",
+          "p95_ratio": "408691/482091",
+          "identical_layouts": 102
+        },
+        "exact_at_calibrated": {
+          "paired_median_ratio": "223271060311/223829547194",
+          "p95_ratio": "402778/408691",
+          "identical_layouts": 231
+        },
+        "exact_at_squared": {
+          "paired_median_ratio": "34557824407/34417251082",
+          "p95_ratio": "491359/482091",
+          "identical_layouts": 288
+        },
+        "combined": {
+          "paired_median_ratio": "33619156835/35217536032",
+          "p95_ratio": "402778/482091",
+          "identical_layouts": 93
+        }
+      },
+      "p95_ns": {
+        "squared_greedy": 48209100,
+        "squared_exact": 49135900,
+        "calibrated_greedy": 40869100,
+        "calibrated_exact": 40277800
+      }
+    },
+    {
+      "comparison": {
+        "weight_at_greedy": {
+          "paired_median_ratio": "35305890619/37683345654",
+          "p95_ratio": "456017/515649",
+          "identical_layouts": 87
+        },
+        "exact_at_calibrated": {
+          "paired_median_ratio": "34077537003/34263197320",
+          "p95_ratio": "441513/456017",
+          "identical_layouts": 240
+        },
+        "exact_at_squared": {
+          "paired_median_ratio": "224280606973/225770102070",
+          "p95_ratio": "174495/171883",
+          "identical_layouts": 288
+        },
+        "combined": {
+          "paired_median_ratio": "174739544943/188359048550",
+          "p95_ratio": "147171/171883",
+          "identical_layouts": 78
+        }
+      },
+      "p95_ns": {
+        "squared_greedy": 51564900,
+        "squared_exact": 52348500,
+        "calibrated_greedy": 45601700,
+        "calibrated_exact": 44151300
+      }
+    }
+  ],
+  "interpolated_widths": {
+    "49": 20,
+    "51": 20,
+    "54": 40,
+    "55": 20
+  },
+  "measurements": 2304,
+  "bitwise_scores": 55296,
+  "passes": {
+    "weight_at_greedy": true,
+    "exact_at_calibrated": false,
+    "exact_at_squared": false,
+    "combined": true
+  }
+}

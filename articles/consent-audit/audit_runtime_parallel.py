@@ -56,7 +56,7 @@ class CpuExecutor:
         with self._admission:
             self.pool.shutdown(wait=True, cancel_futures=True)
 
-    def execute(self, rows, floors, engine):
+    def execute(self, rows, floors, engine, *, planner=None):
         if (
             len(rows) == 0
             or len(rows) != len(floors)
@@ -66,7 +66,20 @@ class CpuExecutor:
         if any(type(w) is not int or not 0 <= w <= 512 for w in floors):
             raise ValueError("expected one integer width floor in [0,512] per request")
         widths = [max(len(row), w) for row, w in zip(rows, floors, strict=True)]
-        jobs = schedule(widths, engine, self.workers)
+        if planner is None:
+            jobs = schedule(widths, engine, self.workers)
+        else:
+            if engine != "balanced":
+                raise ValueError("a custom planner requires the mixed-width executor")
+            jobs = planner(widths, self.workers)
+            if (
+                not 1 <= len(jobs) <= min(self.workers, len(set(widths)))
+                or not all(jobs)
+                or sorted(i for job in jobs for i in job) != list(range(len(rows)))
+            ):
+                raise ValueError(
+                    "the planner must assign every row once within the task budget"
+                )
 
         def call(session, indices):
             return _one_call(
