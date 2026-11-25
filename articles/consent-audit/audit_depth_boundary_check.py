@@ -12,7 +12,7 @@ from audit_depth import avoidance, worst_full_ratio
 from audit_depth_check import certify_upper
 
 
-def direct(width, depth, rate, gamma, target):
+def direct(width, depth, rate, gamma, target, *, caps=None):
     from scipy.optimize import linprog
 
     n = 1 << width
@@ -26,11 +26,12 @@ def direct(width, depth, rate, gamma, target):
         indices = [int(bool(s & (1 << bit))) for s in cells]
         equations += [indices + [0] * n, [0] * n + indices]
         values += [float(rate)] * 2
+    limits = dict.fromkeys(range(1, depth + 1), 1) if caps is None else caps
     orders = []
     for v in range(1, n):
-        if v.bit_count() <= depth:
+        if v.bit_count() in limits:
             keep = [int(not s & v) for s in cells]
-            orders.append([*keep, *(-a for a in keep)])
+            orders.append([*keep, *(-float(limits[v.bit_count()]) * a for a in keep)])
     floor = [
         float(gamma * rate ** s.bit_count() * (1 - rate) ** (width - s.bit_count()))
         for s in cells
@@ -38,8 +39,8 @@ def direct(width, depth, rate, gamma, target):
     objective = [-1, *([0] * (n - 1)), float(target), *([0] * (n - 1))]
     result = linprog(
         objective,
-        A_ub=orders,
-        b_ub=[0] * len(orders),
+        A_ub=orders or None,
+        b_ub=[0] * len(orders) if orders else None,
         A_eq=equations,
         b_eq=values,
         bounds=[(p, 1) for p in floor] * 2,
