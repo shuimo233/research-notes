@@ -1,0 +1,44 @@
+{
+  "replay": {
+    "checked_profiles": 2368,
+    "exact": {
+      "nested_optimal": 236,
+      "nested_transcripts": 21874,
+      "domains_optimal": 236,
+      "domains_transcripts": 20914,
+      "flat_two_optimal": 236,
+      "flat_two_transcripts": 430915,
+      "flat_one_optimal": 236,
+      "flat_one_transcripts": 19534
+    },
+    "old_contract_witness": {
+      "id": "weather/california/2025-01-02",
+      "budget": 2,
+      "worlds": [
+        0,
+        1
+      ],
+      "mismatches": [
+        2,
+        1
+      ],
+      "selected": [
+        4,
+        5,
+        9
+      ],
+      "nested": 21,
+      "flat_two": 30
+    }
+  },
+  "laminar": {
+    "difference_sets": 11320,
+    "equal_transcripts": 2307
+  },
+  "complexity": {
+    "2_domains": 40,
+    "3_domains": 40,
+    "ring_embeddings": 10
+  },
+  "verified": true
+}
