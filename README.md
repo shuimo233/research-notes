@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [多个温差判断，怎样共用一张最省的耐错清单？](articles/consent-audit/interval-fault-joint-source.md) | 多目标共锚、匹配与三比较困难性、最强逐项并列基线 |
 | 2026-11-25 | [同一来源给出三条读数，算几份耐错证据？](articles/consent-audit/interval-fault-source-bundle.md) | 来源级计错、连通区间解法与两比较困难性 |
 | 2026-11-25 | [补核答复也可能错时，怎样把证据合起来定案？](articles/consent-audit/interval-fault-noisy.md) | 跨点对耐错证据、最小费用证书、加权自适应紧界 |
 | 2026-11-25 | [能核实的记录有限，何时值得按答案安排下一问？](articles/consent-audit/interval-fault-plan.md) | 有序候选的精确最坏费用、固定最优边界与无法保证的证据 |

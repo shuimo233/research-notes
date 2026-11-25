@@ -1,0 +1,76 @@
+{
+  "replay": {
+    "anchors": 6543,
+    "replayed_transcripts": 25554,
+    "witnesses": 42,
+    "tie_benchmark": {
+      "all": {
+        "profiles": 79,
+        "joint_cost": 1506,
+        "fixed_tie_union": 1664,
+        "best_tie_union": 1647,
+        "strict_before_ties": 28,
+        "strict_after_ties": 27,
+        "tie_effect_profiles": 4,
+        "distinct_archives": 37
+      },
+      "weather": {
+        "profiles": 42,
+        "joint_cost": 695,
+        "fixed_tie_union": 742,
+        "best_tie_union": 742,
+        "strict_before_ties": 8,
+        "strict_after_ties": 8,
+        "tie_effect_profiles": 0,
+        "distinct_archives": 24
+      },
+      "bart": {
+        "profiles": 37,
+        "joint_cost": 811,
+        "fixed_tie_union": 922,
+        "best_tie_union": 905,
+        "strict_before_ties": 20,
+        "strict_after_ties": 19,
+        "tie_effect_profiles": 4,
+        "distinct_archives": 13
+      }
+    },
+    "example": {
+      "id": "weather/california/2025-01-25",
+      "anchor": 3,
+      "joint": 17,
+      "best_tie": 21,
+      "fixed_tie": 21
+    },
+    "best_tie_utility_gate": true
+  },
+  "matching": {
+    "infeasible": 55,
+    "feasible": 145
+  },
+  "reduction": {
+    "subcubic_graphs": 60,
+    "embedded_source_subsets": 3920
+  },
+  "examples": {
+    "unaligned_adjacent_distances": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "indistinguishable": [
+      0,
+      2
+    ],
+    "aligned_five_ring": {
+      "individual": [
+        12,
+        12
+      ],
+      "best_individual_union": 18,
+      "joint": 15
+    }
+  },
+  "verified": true
+}
