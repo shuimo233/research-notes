@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [三星证书能否跨日期成立？](articles/consent-audit/gnss-prefix-verification.md) | 旧地图前缀核验、跨日期留出和单读数扰动 |
 | 2026-11-25 | [在真实 GPS 走测中，分离证书能否节省伪距读取？](articles/consent-audit/gnss-budget-frontier.md) | S4 预算下界、绝对尺度与变预算留出 |
 | 2026-11-25 | [加权六星在新日期与新手机上能否复现](articles/consent-audit/gnss-gedvm-transfer.md) | 完整双手机日志、跨日期跨型号与校准迁移 |
 | 2026-11-25 | [把逐星读数质量纳入可核验的 GPS 选星](articles/consent-audit/gnss-quality-verification.md) | 异宽误差、精确合同、独立路线与强基线 |
