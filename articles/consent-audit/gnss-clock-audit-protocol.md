@@ -10,4 +10,4 @@
 
 ## 时间标尺补充
 
-首次运行后发现，Mimir 的 utcTimeMillis 比从 GNSS 硬件时间及 FullBiasNanos 恢复的测量时标晚数百毫秒。已保留原对齐的样本数。日期与历元对齐改用 GPS 周和接收机测量时标恢复的 UTC，同样从 GPST 减 18 秒，仍沿用 250 毫秒和逐参考历元去重。日志 UTC 作为独立诊断字段保留。此更正冻结在全量修正对照前，未改变信号过滤、对照算法或性能判据。 [Android 时钟字段](https://developer.android.com/reference/android/location/GnssClock) · [USNO 时间关系](https://maia.usno.navy.mil/information/eo-values)
+首次运行后发现，Mimir 的 utcTimeMillis 比从 GNSS 硬件时间及 FullBiasNanos 恢复的测量时标早数百毫秒。已保留原对齐的样本数。日期与历元对齐改用 GPS 周和接收机测量时标恢复的 UTC，同样从 GPST 减 18 秒，仍沿用 250 毫秒和逐参考历元去重。日志 UTC 作为独立诊断字段保留。此更正冻结在全量修正对照前，未改变信号过滤、对照算法或性能判据。 [Android 时钟字段](https://developer.android.com/reference/android/location/GnssClock) · [USNO 时间关系](https://maia.usno.navy.mil/information/eo-values)
