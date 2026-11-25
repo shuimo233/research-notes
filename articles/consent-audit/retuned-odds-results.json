@@ -1,0 +1,12 @@
+{
+  "scored": 24,
+  "certified_targets": 47,
+  "feasible_targets": 4,
+  "beats_every_independent_at_target": 1,
+  "post_hoc_budget_rejections": 43,
+  "prior_midpoint_failures": 21,
+  "rescued_midpoints": 1,
+  "rescued_within_budget": 1,
+  "rescued_within_budget_beats_independent": 1,
+  "gate": false
+}
