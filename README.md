@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [不同故障解释下，如何采购足够的核验证据](articles/consent-audit/interval-fault-asymmetric-quota.md) | 世界依赖配额、正计数编译与强基线复核 |
 | 2026-11-25 | [同样最多错两份，机构上限为什么能减少核验？](articles/consent-audit/interval-fault-laminar.md) | 嵌套故障配额、带价采购、二域最小割与三域困难性 |
 | 2026-11-25 | [没有共同锚点，哪些证据仍能精确选？](articles/consent-audit/interval-fault-world-tree.md) | 同答树与目标树、无锚匹配、单错和双错回放 |
 | 2026-11-25 | [多个温差判断，怎样共用一张最省的耐错清单？](articles/consent-audit/interval-fault-joint-source.md) | 多目标共锚、匹配与三比较困难性、最强逐项并列基线 |
