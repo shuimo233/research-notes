@@ -1,0 +1,27 @@
+{
+  "sampled": 72,
+  "scored": 41,
+  "modes": 146,
+  "distinct_layouts": 6,
+  "by_repository": {
+    "BurntSushi/ripgrep": 6,
+    "astral-sh/ruff": 9,
+    "nodejs/undici": 7,
+    "pypa/pip": 7,
+    "pytest-dev/pytest": 6,
+    "python/cpython": 6
+  },
+  "all_targets": {
+    "targets": 113,
+    "feasible": 74,
+    "infeasible": 39,
+    "screened": 39
+  },
+  "midpoints": {
+    "targets": 41,
+    "feasible": 38,
+    "infeasible": 3,
+    "screened": 3
+  },
+  "gate": true
+}

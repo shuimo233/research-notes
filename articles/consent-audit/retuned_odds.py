@@ -5,6 +5,37 @@ from fractions import Fraction
 SERVICE = Fraction(1, 2)
 
 
+def binary_pair_policy(modes, floor_fraction=SERVICE):
+    """Return the sharp joint ratio and rows when each side has one real label."""
+    modes = tuple(map(tuple, modes))
+    floor_fraction = Fraction(floor_fraction)
+    pairs = set(modes)
+    if (
+        (0, 0) not in pairs
+        or not pairs <= {(0, 0), (1, 0), (0, 1), (1, 1)}
+        or {m[0] for m in pairs} != {0, 1}
+        or {m[1] for m in pairs} != {0, 1}
+        or not 0 < floor_fraction <= 1
+    ):
+        raise ValueError(
+            "expected two binary views, a joint empty mode, and a positive floor"
+        )
+    rows = {
+        (0, 0): {(-1, -1): Fraction(1)},
+        (1, 0): {(-1, -1): SERVICE, (0, -1): SERVICE},
+        (0, 1): {(-1, -1): SERVICE, (-1, 0): SERVICE},
+    }
+    ratio = Fraction(2)
+    if (1, 1) in pairs:
+        same = SERVICE - floor_fraction / 4
+        if (1, 0) in pairs or (0, 1) in pairs:
+            same = min(same, Fraction(1, 3))
+        mixed = SERVICE - same
+        rows[1, 1] = {(-1, -1): same, (0, 0): same, (0, -1): mixed, (-1, 0): mixed}
+        ratio = 1 / same
+    return ratio, [rows[mode] for mode in modes]
+
+
 def refusal_budget(supports, caps, label_floors, pair_floors, ratio):
     """Find an over-budget refusal row or column without solving a policy."""
     if not any(all(len(axis) == 1 for axis in world) for world in supports):
