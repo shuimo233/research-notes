@@ -1,0 +1,47 @@
+{
+  "results": {
+    "all": {
+      "sampled": 120,
+      "scored": 81,
+      "profiles": 687,
+      "tightened_profiles": 444,
+      "tightened_archives": 81,
+      "widths": {
+        "6": 55,
+        "4": 14,
+        "5": 12
+      },
+      "distinct_families": 67,
+      "reduction": "10016/3141"
+    },
+    "CI": {
+      "sampled": 48,
+      "scored": 11,
+      "profiles": 72,
+      "tightened_profiles": 39,
+      "tightened_archives": 11,
+      "widths": {
+        "6": 1,
+        "4": 9,
+        "5": 1
+      },
+      "distinct_families": 8,
+      "reduction": "10016/3141"
+    },
+    "BART": {
+      "sampled": 72,
+      "scored": 70,
+      "profiles": 615,
+      "tightened_profiles": 405,
+      "tightened_archives": 70,
+      "widths": {
+        "6": 54,
+        "5": 11,
+        "4": 5
+      },
+      "distinct_families": 59,
+      "reduction": "10016/3141"
+    }
+  },
+  "gate": true
+}

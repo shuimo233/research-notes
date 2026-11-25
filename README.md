@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-25 | [小窗口完全一样，完整回复还能区分实况吗？](articles/consent-audit/audit-parity.md) | 把已知 OR 区分结果转为公平赔率证书，并核验非均匀服务率 |
 | 2026-11-25 | [小窗口允许偏差时，哪些证据真正决定完整风险？](articles/consent-audit/audit-tolerance.md) | 求带容差审计的精确上界，验证哪些阶数真正决定完整赔率 |
 | 2026-11-25 | [只审查单项和两项回复，会漏掉多少？](articles/consent-audit/audit-depth.md) | 在 CI 与 BART 留出样本上测量低阶遗漏，给出完整窗口尖锐界 |
 | 2026-11-25 | [同一个请求有多条可发证词时，怎样审计部分可见的回复？](articles/consent-audit/incomparable-odds.md) | 精确缩减多标签观察窗口，核验严格包含与只看全窗的反例 |

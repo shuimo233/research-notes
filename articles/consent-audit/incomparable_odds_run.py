@@ -33,7 +33,7 @@ def read(path, domain):
             yield p
 
 
-def labels_of(packet):
+def labels_of(packet, width=4):
     fibre = PublicAudit(*parse(packet["archive"]), packet["certificate"]).fibre
     labels = []
     for u, v in sorted({tuple(x[:2]) for x in packet["archive"]["targets"]}):
@@ -42,7 +42,7 @@ def labels_of(packet):
             continue
         h = (U - L - 1) // 3
         labels.extend(([v, u, -(U - h - 1)], [u, v, L + h + 1]))
-        if len(labels) == 8:
+        if len(labels) == 2 * width:
             break
     return labels, fibre
 

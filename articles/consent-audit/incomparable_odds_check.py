@@ -26,7 +26,7 @@ def frozen(path, kind):
             yield p
 
 
-def derive(packet):
+def derive(packet, width=4):
     n, _, _, _, base, d, _ = model(packet)
     labels = []
     for i, j in sorted({tuple(r[:2]) for r in packet["archive"]["targets"]}):
@@ -35,7 +35,7 @@ def derive(packet):
             continue
         slack = (high - low - 1) // 3
         labels += [[j, i, 1 + slack - high], [i, j, low + slack + 1]]
-        if len(labels) == 8:
+        if len(labels) == 2 * width:
             break
     return n, base, labels
 
