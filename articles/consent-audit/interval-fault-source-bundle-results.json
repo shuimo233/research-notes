@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "all": {
+      "archives": 1225,
+      "targets": 7268,
+      "known": 7045,
+      "ambiguous": 223,
+      "source_feasible": 199,
+      "anchor_feasible": 161,
+      "mixed_only": 38,
+      "combined_common_cost": 1960,
+      "anchor_common_cost": 2065,
+      "optimistic_feasible": 199,
+      "false_assurances": 152,
+      "source_models_with_exceptions": 43,
+      "noncontiguous_offers": 62,
+      "flow_calls": 257
+    },
+    "bart": {
+      "archives": 500,
+      "targets": 2918,
+      "known": 2819,
+      "ambiguous": 99,
+      "source_feasible": 86,
+      "anchor_feasible": 68,
+      "mixed_only": 18,
+      "optimistic_feasible": 86,
+      "false_assurances": 74,
+      "source_models_with_exceptions": 43,
+      "noncontiguous_offers": 62,
+      "flow_calls": 144,
+      "combined_common_cost": 914,
+      "anchor_common_cost": 967
+    },
+    "weather": {
+      "archives": 725,
+      "targets": 4350,
+      "known": 4226,
+      "ambiguous": 124,
+      "source_feasible": 113,
+      "anchor_feasible": 93,
+      "mixed_only": 20,
+      "combined_common_cost": 1046,
+      "anchor_common_cost": 1098,
+      "optimistic_feasible": 113,
+      "false_assurances": 78,
+      "source_models_with_exceptions": 0,
+      "noncontiguous_offers": 0,
+      "flow_calls": 113
+    }
+  },
+  "gates": {
+    "provenance": true,
+    "mixed_gain": true
+  }
+}

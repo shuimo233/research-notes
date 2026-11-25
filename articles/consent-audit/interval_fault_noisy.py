@@ -55,6 +55,18 @@ def _distances(graph, source=None):
     return distances, before
 
 
+def _augment(graph, source, sink, count):
+    for _ in range(count):
+        distance, before = _distances(graph, source)
+        assert distance[sink] < inf
+        v = sink
+        while v != source:
+            u, edge = before[v]
+            edge.capacity -= 1
+            graph[v][edge.reverse].capacity += 1
+            v = u
+
+
 def _minimum_flow(size, offers, intervals, demand):
     graph = [[] for _ in range(size + 1)]
     for i in range(size):
@@ -63,15 +75,7 @@ def _minimum_flow(size, offers, intervals, demand):
         None if span is None else _arc(graph, *span, 1, offer.cost)
         for offer, span in zip(offers, intervals, strict=True)
     ]
-    for _ in range(demand):
-        distance, before = _distances(graph, 0)
-        assert distance[-1] < inf
-        v = size
-        while v:
-            u, edge = before[v]
-            edge.capacity -= 1
-            graph[v][edge.reverse].capacity += 1
-            v = u
+    _augment(graph, 0, size, demand)
     potentials, _ = _distances(graph)
     assert all(
         edge.cost + potentials[u] - potentials[edge.head] >= 0
@@ -91,6 +95,14 @@ def _reference(labels, offers):
         if group and all(len({q.values[i] for i in group}) == 1 for q in offers):
             return group[0]
     raise ValueError("one label must share a single channel-answer signature")
+
+
+def ambiguous_record(offers, reference, rival):
+    observed = [q.values[reference] for q in offers]
+    different = [i for i, q in enumerate(offers) if q.values[rival] != observed[i]]
+    for i in different[: len(different) // 2]:
+        observed[i] = offers[i].values[rival]
+    return reference, rival, tuple(observed)
 
 
 def cover_plan(labels, offers, errors):
@@ -128,12 +140,6 @@ def cover_plan(labels, offers, errors):
         (rivals[j] for j, count in enumerate(counts) if count < demand), None
     )
     if weakest is not None:
-        observed = [q.values[reference] for q in offers]
-        different = [
-            i for i, q in enumerate(offers) if q.values[weakest] != observed[i]
-        ]
-        for i in different[: len(different) // 2]:
-            observed[i] = offers[i].values[weakest]
         return Cover(
             None,
             (),
@@ -141,7 +147,7 @@ def cover_plan(labels, offers, errors):
             rivals,
             tuple(intervals),
             (),
-            (reference, weakest, tuple(observed)),
+            ambiguous_record(offers, reference, weakest),
         )
     selected, potentials = _minimum_flow(len(rivals), offers, intervals, demand)
     return Cover(
