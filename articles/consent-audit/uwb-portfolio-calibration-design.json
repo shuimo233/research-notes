@@ -1,0 +1,5116 @@
+{
+  "design_input_sha256": "a9e584f31e6bf7d9fc1d0eccb1c00e5234c6c008175d8847836df5696c259c9f",
+  "environments": {
+    "environment0": {
+      "biases_mm": {
+        "A1": 66,
+        "A2": -49,
+        "A3": 136,
+        "A4": -44,
+        "A5": -204,
+        "A6": -222,
+        "A7": -172,
+        "A8": 158
+      },
+      "offset_2mm": [
+        -503,
+        920
+      ],
+      "candidates": 65,
+      "design_points": [
+        "1.55_3.79_1.20",
+        "1.56_4.09_1.20",
+        "1.85_2.02_1.20",
+        "1.96_1.74_1.20",
+        "2.11_1.48_1.20",
+        "2.26_7.00_1.20",
+        "2.36_1.31_1.20",
+        "2.39_7.59_1.20",
+        "5.28_3.47_1.20",
+        "5.34_1.42_1.20",
+        "5.60_1.55_1.20",
+        "5.60_9.05_1.20",
+        "5.78_9.28_1.20",
+        "6.31_9.55_1.20",
+        "7.83_10.04_1.20",
+        "7.87_10.34_1.20",
+        "7.89_10.64_1.20",
+        "7.92_11.24_1.20"
+      ],
+      "subsets": [
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 654,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 606,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 606,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 696,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 654,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 748,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 654,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 654,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1042,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 490,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 344,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 342,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 636,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 784,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 600,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 800,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 766,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 796,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 740,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 758,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 800,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 654,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 742,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 674,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 400,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 392,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 354,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 392,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 554,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 588,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 734,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 584,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 626,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 526,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 668,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 558,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 414,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 576,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 784,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 600,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 786,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 766,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 720,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 616,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 446,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 414,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 636,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 148,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 476,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 218,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 546,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 784,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 786,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 530,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.55_3.49_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1384,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1224,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A6"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1224,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1152,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1124,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1376,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1124,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1186,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1060,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 1320,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1224,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 1276,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 1124,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 168,
+          "demand_q80_4mm": 1152,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1402,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1452,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1400,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1084,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1494,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1712,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1396,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1478,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 858,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 1078,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1372,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1018,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 13,
+          "demand_q80_4mm": 1136,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 1228,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1228,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1152,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 25,
+          "demand_q80_4mm": 1270,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.40_3.19_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1154,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1052,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1120,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1052,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 10,
+          "demand_q80_4mm": 1180,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.89_10.64_1.20",
+            "3.40_9.74_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 10,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.89_10.64_1.20",
+            "3.40_9.74_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1084,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 15,
+          "demand_q80_4mm": 1180,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 15,
+          "demand_q80_4mm": 1084,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 1084,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.83_10.04_1.20",
+            "2.46_7.88_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 14,
+          "demand_q80_4mm": 656,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.21_9.52_1.20",
+            "2.66_8.45_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 766,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 962,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 16,
+          "demand_q80_4mm": 594,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.40_3.19_1.20",
+            "3.16_9.19_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 16,
+          "demand_q80_4mm": 844,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.40_3.19_1.20",
+            "3.16_9.19_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 16,
+          "demand_q80_4mm": 636,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.40_3.19_1.20",
+            "3.16_9.19_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 1014,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1076,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1078,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 992,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "1.56_4.09_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 962,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1078,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1154,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 962,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 3,
+          "demand_q80_4mm": 1136,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.52_2.92_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 10,
+          "demand_q80_4mm": 1228,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.89_10.64_1.20",
+            "3.40_9.74_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1228,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 1146,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 15,
+          "demand_q80_4mm": 1050,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 11,
+          "demand_q80_4mm": 766,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.32_8.52_1.20",
+            "2.18_6.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 858,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 786,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 19,
+          "demand_q80_4mm": 636,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.60_4.38_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 4,
+          "demand_q80_4mm": 852,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.31_9.55_1.20",
+            "2.98_8.95_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A6"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1384,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 329,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 329,
+          "demand_q80_4mm": 1712,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1420,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 329,
+          "demand_q80_4mm": 1478,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1364,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1420,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1426,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 401,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 401,
+          "demand_q80_4mm": 1478,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 401,
+          "demand_q80_4mm": 1568,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 583,
+          "demand_q80_4mm": 1432,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1494,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1712,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1490,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 58,
+          "demand_q80_4mm": 1478,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.78_2.38_1.20",
+            "1.71_4.97_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 408,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 98,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1344,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1376,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1372,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1296,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 408,
+          "demand_q80_4mm": 1568,
+          "design_points_below_collision": 5,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1252,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1490,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1186,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1124,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 254,
+          "demand_q80_4mm": 1294,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 479,
+          "demand_q80_4mm": 1530,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 408,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1294,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1014,
+          "design_points_below_collision": 10,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1152,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1152,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 431,
+          "demand_q80_4mm": 1076,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 408,
+          "demand_q80_4mm": 1228,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1372,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1372,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1372,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 48,
+          "demand_q80_4mm": 1154,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.28_3.47_1.20",
+            "1.78_5.26_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 408,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 5,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 86,
+          "demand_q80_4mm": 1078,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.91_9.54_1.20",
+            "2.80_8.71_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1712,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1490,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 400,
+          "demand_q80_4mm": 1490,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1702,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 583,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1478,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1568,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 583,
+          "demand_q80_4mm": 1462,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1702,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1578,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 415,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 128,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.66_2.65_1.20",
+            "1.65_4.68_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 657,
+          "demand_q80_4mm": 1936,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 640,
+          "demand_q80_4mm": 1568,
+          "design_points_below_collision": 7,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1504,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 479,
+          "demand_q80_4mm": 1530,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 479,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 502,
+          "demand_q80_4mm": 1294,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 640,
+          "demand_q80_4mm": 1294,
+          "design_points_below_collision": 6,
+          "pair": [
+            "5.84_2.08_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 479,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 5,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1702,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A8"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 573,
+          "demand_q80_4mm": 1762,
+          "design_points_below_collision": 1,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 583,
+          "demand_q80_4mm": 1534,
+          "design_points_below_collision": 0,
+          "pair": [
+            "5.34_1.42_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1936,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1702,
+          "design_points_below_collision": 4,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 657,
+          "demand_q80_4mm": 1936,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.79_1.78_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1562,
+          "design_points_below_collision": 3,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 748,
+          "demand_q80_4mm": 1936,
+          "design_points_below_collision": 2,
+          "pair": [
+            "5.60_1.55_1.20",
+            "4.16_1.23_1.20"
+          ]
+        }
+      ],
+      "chosen": {
+        "anchors": [
+          "A2",
+          "A4",
+          "A5",
+          "A6",
+          "A7"
+        ],
+        "collision_4mm": 573,
+        "demand_q80_4mm": 1014,
+        "design_points_below_collision": 10,
+        "pair": [
+          "5.34_1.42_1.20",
+          "4.16_1.23_1.20"
+        ]
+      },
+      "full": {
+        "anchors": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "A8"
+        ],
+        "collision_4mm": 748,
+        "demand_q80_4mm": 1936,
+        "design_points_below_collision": 2,
+        "pair": [
+          "5.60_1.55_1.20",
+          "4.16_1.23_1.20"
+        ]
+      },
+      "chosen_collision": {
+        "positions": [
+          "5.34_1.42_1.20",
+          "4.16_1.23_1.20"
+        ],
+        "bias_4mm": [
+          1496,
+          -1006
+        ],
+        "reply_4mm": [
+          29757,
+          21915,
+          9757,
+          7186,
+          29928
+        ],
+        "fault_indices": [
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ]
+      },
+      "full_collision": {
+        "positions": [
+          "5.60_1.55_1.20",
+          "4.16_1.23_1.20"
+        ],
+        "bias_4mm": [
+          1526,
+          -1006
+        ],
+        "reply_4mm": [
+          44442,
+          29582,
+          25070,
+          21254,
+          9582,
+          7186,
+          29814,
+          40322
+        ],
+        "fault_indices": [
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    },
+    "environment2": {
+      "biases_mm": {
+        "A1": -283,
+        "A2": -46,
+        "A3": -345,
+        "A4": -222,
+        "A5": 791,
+        "A7": 1130,
+        "A8": 1135
+      },
+      "offset_2mm": [
+        -1164,
+        1688
+      ],
+      "candidates": 80,
+      "design_points": [
+        "1.14_7.10_1.32",
+        "1.49_9.78_1.32",
+        "1.55_10.37_1.32",
+        "1.57_10.67_1.32",
+        "11.13_5.46_1.32",
+        "13.73_3.99_1.32",
+        "14.01_3.88_1.32",
+        "14.29_3.79_1.32",
+        "17.27_3.46_1.32",
+        "17.86_3.32_1.32",
+        "19.46_2.51_1.32",
+        "2.47_5.38_1.32",
+        "20.01_2.28_1.32",
+        "20.30_2.20_1.32",
+        "3.06_5.29_1.32",
+        "5.16_5.29_1.32",
+        "5.76_5.26_1.32",
+        "6.36_5.23_1.32",
+        "9.04_5.54_1.32"
+      ],
+      "subsets": [
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 680,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 420,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1146,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2210,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2002,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 420,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 916,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2006,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1912,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 632,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2200,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2198,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2260,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2004,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1836,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 480,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1254,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 906,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1100,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 530,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.33_8.59_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 836,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.33_8.59_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1088,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1660,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1636,
+          "design_points_below_collision": 0,
+          "pair": [
+            "2.18_5.46_1.32",
+            "20.30_2.20_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 480,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 480,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 542,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1112,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1012,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1484,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "15.18_3.64_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 800,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 864,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1616,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.33_8.59_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1760,
+          "design_points_below_collision": 0,
+          "pair": [
+            "1.14_7.10_1.32",
+            "14.88_3.67_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 772,
+          "design_points_below_collision": 3,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1466,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A7"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 2286,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2002,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 1154,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 2286,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 2204,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 225,
+          "demand_q80_4mm": 2444,
+          "design_points_below_collision": 1,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 2432,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2444,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 916,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 2320,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2204,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 2152,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 2406,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 2204,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 132,
+          "demand_q80_4mm": 2450,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 2632,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1340,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 1100,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 1448,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1626,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1926,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 1894,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 225,
+          "demand_q80_4mm": 1154,
+          "design_points_below_collision": 2,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 1698,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 286,
+          "demand_q80_4mm": 1968,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 2196,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1244,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1340,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 18,
+          "demand_q80_4mm": 1616,
+          "design_points_below_collision": 0,
+          "pair": [
+            "6.96_5.24_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 0,
+          "demand_q80_4mm": 1792,
+          "design_points_below_collision": 0,
+          "pair": [
+            "3.66_5.26_1.32",
+            "13.21_4.28_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 5,
+          "demand_q80_4mm": 1968,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 1466,
+          "design_points_below_collision": 7,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A7"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 2320,
+          "design_points_below_collision": 2,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A8"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 2204,
+          "design_points_below_collision": 2,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 225,
+          "demand_q80_4mm": 2536,
+          "design_points_below_collision": 1,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2604,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 2444,
+          "design_points_below_collision": 2,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 2432,
+          "design_points_below_collision": 2,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 418,
+          "demand_q80_4mm": 2450,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2732,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 225,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 1,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2204,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2632,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2860,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 225,
+          "demand_q80_4mm": 1626,
+          "design_points_below_collision": 1,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 1930,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 1968,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 2432,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2432,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 32,
+          "demand_q80_4mm": 1968,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "10.24_5.60_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7"
+          ],
+          "collision_4mm": 2016,
+          "demand_q80_4mm": 2536,
+          "design_points_below_collision": 12,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A8"
+          ],
+          "collision_4mm": 1976,
+          "demand_q80_4mm": 2604,
+          "design_points_below_collision": 10,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 2016,
+          "demand_q80_4mm": 2498,
+          "design_points_below_collision": 10,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2732,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 2016,
+          "demand_q80_4mm": 2860,
+          "design_points_below_collision": 8,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2860,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 410,
+          "demand_q80_4mm": 2450,
+          "design_points_below_collision": 0,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        },
+        {
+          "anchors": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A7",
+            "A8"
+          ],
+          "collision_4mm": 2016,
+          "demand_q80_4mm": 2860,
+          "design_points_below_collision": 7,
+          "pair": [
+            "7.56_5.30_1.32",
+            "9.04_5.54_1.32"
+          ]
+        }
+      ],
+      "chosen": {
+        "anchors": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A7"
+        ],
+        "collision_4mm": 2016,
+        "demand_q80_4mm": 2536,
+        "design_points_below_collision": 12,
+        "pair": [
+          "7.56_5.30_1.32",
+          "9.04_5.54_1.32"
+        ]
+      },
+      "full": {
+        "anchors": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A7",
+          "A8"
+        ],
+        "collision_4mm": 2016,
+        "demand_q80_4mm": 2860,
+        "design_points_below_collision": 7,
+        "pair": [
+          "7.56_5.30_1.32",
+          "9.04_5.54_1.32"
+        ]
+      },
+      "chosen_collision": {
+        "positions": [
+          "7.56_5.30_1.32",
+          "9.04_5.54_1.32"
+        ],
+        "bias_4mm": [
+          -2076,
+          -2328
+        ],
+        "reply_4mm": [
+          16932,
+          37368,
+          5532,
+          11408,
+          18740,
+          34016
+        ],
+        "fault_indices": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      "full_collision": {
+        "positions": [
+          "7.56_5.30_1.32",
+          "9.04_5.54_1.32"
+        ],
+        "bias_4mm": [
+          -2076,
+          -2328
+        ],
+        "reply_4mm": [
+          16932,
+          37368,
+          5532,
+          11408,
+          18740,
+          34016,
+          25976
+        ],
+        "fault_indices": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ]
+      }
+    }
+  }
+}
