@@ -1,0 +1,5093 @@
+{
+  "packages": {
+    "requests": {
+      "members": [
+        {
+          "path": "requests/__version__.py",
+          "old_length": 435,
+          "new_length": 435,
+          "old_sha256": "1557e09606663509e660f5e93a8843539f05e4451bffe5674936807ac4b5f3b8",
+          "new_sha256": "40a0dc78af0afee8eac030dcde862b474a1d381620295390439bc56a9fc6fdc8",
+          "reserve": 435
+        },
+        {
+          "path": "requests/adapters.py",
+          "old_length": 27451,
+          "new_length": 26285,
+          "old_sha256": "28871e72c72a6a6eab78e097465e03c0fe235fc25c97cb1de7b7edd7b291d9c4",
+          "new_sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+          "reserve": 27451
+        },
+        {
+          "path": "requests/compat.py",
+          "old_length": 1817,
+          "new_length": 2142,
+          "old_sha256": "0b9c3f0cf2d2bab5cf81c75653bf1fa2b6b400f99b6245f61bcf50bc7e71ccf0",
+          "new_sha256": "27bb088d1e97a031a9e494d5ccec642b97d2a145546bf3e373b8916610161a62",
+          "reserve": 2142
+        },
+        {
+          "path": "requests/models.py",
+          "old_length": 35418,
+          "new_length": 35510,
+          "old_sha256": "938daba17cc2f2efce6a000f422f54e0c91f3bb8b8af615d6aabccaacb4f7a17",
+          "new_sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+          "reserve": 35510
+        },
+        {
+          "path": "requests/sessions.py",
+          "old_length": 30495,
+          "new_length": 30503,
+          "old_sha256": "ca44c8f145864a5b4e7c7d3b1caa25947ee44c11b0e168620556901a67244f0e",
+          "new_sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+          "reserve": 30503
+        },
+        {
+          "path": "requests/utils.py",
+          "old_length": 33619,
+          "new_length": 33213,
+          "old_sha256": "1e2402e8dabf0dade4b5a32217342487e7429378901c7284b184b990373ef02c",
+          "new_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "reserve": 33619
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 154534,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 259320,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 165170,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 159688,
+              "first": [
+                3,
+                5,
+                4
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 165170,
+              "first": [
+                3,
+                5,
+                4,
+                1,
+                2,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 157111,
+              "first": [
+                3,
+                5,
+                4,
+                2,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 8,
+              "replay_actual_bytes_total": 2051702,
+              "max_actual_bytes": 258508,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 259320,
+                "actual": 258508,
+                "queries": 12,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 259320,
+                "actual": 256176,
+                "queries": 12,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 8,
+              "replay_actual_bytes_total": 1190596,
+              "max_actual_bytes": 163598,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 165170,
+                "actual": 163598,
+                "queries": 7,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 165170,
+                "actual": 163598,
+                "queries": 7,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 181985,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 388980,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 200680,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 189716,
+              "first": [
+                3,
+                5,
+                4
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 200680,
+              "first": [
+                3,
+                5,
+                4,
+                1,
+                2,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 184562,
+              "first": [
+                3,
+                5,
+                4,
+                2,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 8,
+              "replay_actual_bytes_total": 3077553,
+              "max_actual_bytes": 387762,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 388980,
+                "actual": 387762,
+                "queries": 18,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 388980,
+                "actual": 384264,
+                "queries": 18,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 8,
+              "replay_actual_bytes_total": 1355341,
+              "max_actual_bytes": 199108,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 200680,
+                "actual": 199108,
+                "queries": 8,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 200680,
+                "actual": 199108,
+                "queries": 8,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "2.32.3",
+          "file": "requests-2.32.3-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/requests/2.32.3/json",
+          "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+          "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+          "size": 64928
+        },
+        {
+          "version": "2.32.5",
+          "file": "requests-2.32.5-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/requests/2.32.5/json",
+          "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
+          "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
+          "size": 64738
+        }
+      ]
+    },
+    "urllib3": {
+      "members": [
+        {
+          "path": "urllib3/_base_connection.py",
+          "old_length": 5652,
+          "new_length": 5568,
+          "old_sha256": "b47d1994ec562a291af92f4d5be32e22523f3cb1505149929e813ff4c7b2c243",
+          "new_sha256": "4f57301f7461cecac187a073dc03865436e846c13bbde8a3a993d75d04d1d918",
+          "reserve": 5652
+        },
+        {
+          "path": "urllib3/_collections.py",
+          "old_length": 17370,
+          "new_length": 17295,
+          "old_sha256": "686861f7309871ede8fb9156f433d251acba3bd2e31f1f33e93ef00ed761ae46",
+          "new_sha256": "b4cedce89d622ad599615fd01986fcfabecdaf5e76e037a19ec6b451f87afe65",
+          "reserve": 17370
+        },
+        {
+          "path": "urllib3/_request_methods.py",
+          "old_length": 9938,
+          "new_length": 9931,
+          "old_sha256": "2d30f11de9c43f95d7fad55604d904900822cc211191917424af85fb00b1ab02",
+          "new_sha256": "802785f3948efd45385a83f0607228cffb70f9e33f1153a42c5a7c385b02ec30",
+          "reserve": 9938
+        },
+        {
+          "path": "urllib3/_version.py",
+          "old_length": 411,
+          "new_length": 511,
+          "old_sha256": "805ef333c02c74b46a860b5e5deb0d1dbeffb7cba4af6cf39289368359efbe10",
+          "new_sha256": "665494901a3f3ddf7407aa4cd060ceee5daf8ad403dd008adf13d1fcad331490",
+          "reserve": 511
+        },
+        {
+          "path": "urllib3/connection.py",
+          "old_length": 39508,
+          "new_length": 42613,
+          "old_sha256": "400c21395e4639576c16732f5f956fe9f43c7f8ec4cdfad138002b7f145d40e6",
+          "new_sha256": "88fe2981226da6eb17c9895e8f3367fa08a1ff0582c4c53eab2e8e53591a6a97",
+          "reserve": 42613
+        },
+        {
+          "path": "urllib3/connectionpool.py",
+          "old_length": 43393,
+          "new_length": 43371,
+          "old_sha256": "e5f3c81f2a4fc256ca04048cb3a6c44931095441a5b23f45398f7f1865361a93",
+          "new_sha256": "64486e76c6bc048b9b0f63345e8c4106c8f16ec5f0320512707ee843d8be8f56",
+          "reserve": 43393
+        },
+        {
+          "path": "urllib3/contrib/emscripten/connection.py",
+          "old_length": 8755,
+          "new_length": 8771,
+          "old_sha256": "91a05edad5aded8cbdbcd50544157b092c839df8426082c6c63bbd293663f12c",
+          "new_sha256": "8fc0d1fdf944ee1b2816135f8aa1cb89a3da0ac55bcc6e388e06a1c2fb10e760",
+          "reserve": 8771
+        },
+        {
+          "path": "urllib3/contrib/emscripten/fetch.py",
+          "old_length": 14131,
+          "new_length": 23484,
+          "old_sha256": "ca6c09947041bb0e964e92a03c7a5d9a6acd07196cafbe47aa80f8467dbb6179",
+          "new_sha256": "91ca34ea55a843e7dd15f379d7e9f3793cb03d50441e0f3d588b2ddf71f7c5c8",
+          "reserve": 23484
+        },
+        {
+          "path": "urllib3/contrib/emscripten/response.py",
+          "old_length": 10017,
+          "new_length": 9507,
+          "old_sha256": "c046163c708bf89b200ada42a5f9d6198035f837230c6a451aa5825d92f06c76",
+          "new_sha256": "ee854f10d6191eecc4191b46e341e89e91f9b402181ec19c1cf6c9b7667453e6",
+          "reserve": 10017
+        },
+        {
+          "path": "urllib3/contrib/pyopenssl.py",
+          "old_length": 19338,
+          "new_length": 19720,
+          "old_sha256": "f623f88fc25a7c0e21aad5fd02027dcf1aea23e89ca211aba85a8032bca835d0",
+          "new_sha256": "5e9e589b4e558171a11dad02e3096eb6f1f163c4a72924ba58b6f6b79322bb4b",
+          "reserve": 19720
+        },
+        {
+          "path": "urllib3/exceptions.py",
+          "old_length": 9393,
+          "new_length": 9938,
+          "old_sha256": "4436a2b9db51eeba9b54a4caa4b4a064106dc1a22a57b799b5eaef655fe665a8",
+          "new_sha256": "a738ae9877f4570c77cf882f532ee8bbc9e5336c88617d0dde5df39c475e1795",
+          "reserve": 9938
+        },
+        {
+          "path": "urllib3/fields.py",
+          "old_length": 10843,
+          "new_length": 10829,
+          "old_sha256": "f2f8b43de468fe91397213e6240d3b2d9b4c91596ce14ac14b5936c4ce74ea33",
+          "new_sha256": "1427fb5142d291fd7472e4d15164d0112cf1825d564fc7b6682cb791fc998a7b",
+          "reserve": 10843
+        },
+        {
+          "path": "urllib3/filepost.py",
+          "old_length": 2395,
+          "new_length": 2388,
+          "old_sha256": "fbda894f5d5c3468cef5daa7236d3ea04ad9b93bcd68cd7cc5964f0a36526ce1",
+          "new_sha256": "53c78d67e9a928a1e1ae56c7104893c7180ad7a21e8e111aeeecf8db2a80fdd2",
+          "reserve": 2395
+        },
+        {
+          "path": "urllib3/http2/connection.py",
+          "old_length": 12668,
+          "new_length": 12694,
+          "old_sha256": "18d969f418c8dc399f48a7b55b46fd22a44178cf10d77c5dd8c03744e709ddd6",
+          "new_sha256": "e030740e46440b7c889211a3503207075ef0ad808b68bd008396c35b6fe618f2",
+          "reserve": 12694
+        },
+        {
+          "path": "urllib3/poolmanager.py",
+          "old_length": 22913,
+          "new_length": 23866,
+          "old_sha256": "dbf2f6023543828434a819986d7f6ef50ab2535bb9277ef341bb6fffeb9e6500",
+          "new_sha256": "a0ab203f512c008e0e5602bdfbd0f70185d94b91d857cc8a512a20f906c9f13b",
+          "reserve": 23866
+        },
+        {
+          "path": "urllib3/response.py",
+          "old_length": 44801,
+          "new_length": 46480,
+          "old_sha256": "352d2bab0466b705ad0bfe970ea80324dfeea3e8c4981573c7457a282b079708",
+          "new_sha256": "4d54d2bba43553453b8681d8308471c6e878ceba1e328f1be442380ce035dc4a",
+          "reserve": 46480
+        },
+        {
+          "path": "urllib3/util/connection.py",
+          "old_length": 4458,
+          "new_length": 4444,
+          "old_sha256": "d28efdfb935b45fa410f2a1e8463cb982039e38b024a25efc74985f71cb7186d",
+          "new_sha256": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74",
+          "reserve": 4458
+        },
+        {
+          "path": "urllib3/util/request.py",
+          "old_length": 8064,
+          "new_length": 8411,
+          "old_sha256": "52b676837cb7b2d1a91fcae6f92c7cfa896581e8a2288e3de83657442c316fda",
+          "new_sha256": "5ee02c1014f9f030196144f0a4c1f91ebdc0d4e3e830dbcd21822e9db22a6dcf",
+          "reserve": 8411
+        },
+        {
+          "path": "urllib3/util/ssl_.py",
+          "old_length": 19238,
+          "new_length": 19786,
+          "old_sha256": "58df1ae8a3cf72fba46d9d0c5250403a41a297c6d8298f0da0860ec3b41e38b2",
+          "new_sha256": "8f19d0de6b189156a8909556a87367015755b4376276b4c70deca4e74830a9a4",
+          "reserve": 19786
+        },
+        {
+          "path": "urllib3/util/ssl_match_hostname.py",
+          "old_length": 5812,
+          "new_length": 5845,
+          "old_sha256": "81a5aa8b1a18b50fc628ef1f7111858f755778ca2acb1410b944cf8167a22ff3",
+          "new_sha256": "0e2ec353bce892896d6a94ff1744a3db57df631c1a4bf704e5aa4eb70b9e7b20",
+          "reserve": 5845
+        },
+        {
+          "path": "urllib3/util/ssltransport.py",
+          "old_length": 8887,
+          "new_length": 8847,
+          "old_sha256": "c29ac1be19208dd76184cc3011b1f23f8972807a4fe924bee3912e87ba1ee3c9",
+          "new_sha256": "133e0ef2947fbd3f1d6a7fc5bea0584ba7600df05710c7d57ebcdc754a167e2e",
+          "reserve": 8887
+        },
+        {
+          "path": "urllib3/util/url.py",
+          "old_length": 15213,
+          "new_length": 15205,
+          "old_sha256": "c07391869f344405f24e5008913a8b1734ab914ec9df8643c57fad37ae4c0599",
+          "new_sha256": "59187e4cc617a2c9a0a7c9bc953e07e6ca681f0e7252395c3027d4e77024a00b",
+          "reserve": 15213
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 352169,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 700570,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 396765,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 377557,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                21,
+                13,
+                11,
+                8,
+                2,
+                10,
+                20,
+                6
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 396765,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                21,
+                13,
+                11,
+                8,
+                2,
+                10,
+                20,
+                6,
+                17,
+                19,
+                0,
+                16,
+                12,
+                3
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 373531,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                21,
+                13,
+                11,
+                2,
+                10,
+                20,
+                17,
+                19,
+                0,
+                12,
+                3
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 24,
+              "replay_actual_bytes_total": 16743580,
+              "max_actual_bytes": 700028,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 8,
+                "reserved": 700570,
+                "actual": 700028,
+                "queries": 44,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 700570,
+                "actual": 699008,
+                "queries": 44,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 24,
+              "replay_actual_bytes_total": 8751468,
+              "max_actual_bytes": 395984,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 396765,
+                "actual": 395984,
+                "queries": 23,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 396765,
+                "actual": 395984,
+                "queries": 23,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 356295,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 1050855,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 443245,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 415973,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                21,
+                13,
+                11,
+                8,
+                2,
+                10,
+                20,
+                6
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 443245,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                21,
+                13,
+                11,
+                8,
+                2,
+                10,
+                20,
+                6,
+                17,
+                19,
+                0,
+                16,
+                12,
+                3
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 412261,
+              "first": [
+                15,
+                5,
+                4,
+                14,
+                7,
+                18,
+                9,
+                1,
+                13,
+                11,
+                8,
+                2,
+                10,
+                20,
+                6,
+                19,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 24,
+              "replay_actual_bytes_total": 25115370,
+              "max_actual_bytes": 1050042,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 8,
+                "reserved": 1050855,
+                "actual": 1050042,
+                "queries": 66,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1050855,
+                "actual": 1048512,
+                "queries": 66,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 24,
+              "replay_actual_bytes_total": 9131146,
+              "max_actual_bytes": 442464,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 443245,
+                "actual": 442464,
+                "queries": 24,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 443245,
+                "actual": 442464,
+                "queries": 24,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "2.2.3",
+          "file": "urllib3-2.2.3-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/urllib3/2.2.3/json",
+          "url": "https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl",
+          "sha256": "ca899ca043dcb1bafa3e262d73aa25c465bfb49e0bd9dd5d59f1d0acba2f8fac",
+          "size": 126338
+        },
+        {
+          "version": "2.5.0",
+          "file": "urllib3-2.5.0-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/urllib3/2.5.0/json",
+          "url": "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl",
+          "sha256": "e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc",
+          "size": 129795
+        }
+      ]
+    },
+    "click": {
+      "members": [
+        {
+          "path": "click/__init__.py",
+          "old_length": 3138,
+          "new_length": 3188,
+          "old_sha256": "6030db8e6e34e9d4ce03457c6d3b5d1a784def38f98fefdd1517b0645fe92efc",
+          "new_sha256": "8f50c97826e06b8ae26e4bf9bb2bc8033234a05375ddf5bd99ebc32928457a5a",
+          "reserve": 3188
+        },
+        {
+          "path": "click/_compat.py",
+          "old_length": 18744,
+          "new_length": 18730,
+          "old_sha256": "e77d7c6a04296ede24ae82ac6ea0ce6294d25b32ff6026555108934f4e325e67",
+          "new_sha256": "2062a1fc9e5075f2842e2b6745f4c61e779e8d6c680b0fcd5fdb5f31b75c837c",
+          "reserve": 18744
+        },
+        {
+          "path": "click/_termui_impl.py",
+          "old_length": 24069,
+          "new_length": 24783,
+          "old_sha256": "ddd158bf8e38e4dc3eac5bd939304c04f6300756f19e6364f43bba0e6fe80525",
+          "new_sha256": "6b9cfb23d80e15e326bbb19bebf44fc90f063ee54fd4479b962c5c5923d240f9",
+          "reserve": 24783
+        },
+        {
+          "path": "click/core.py",
+          "old_length": 114086,
+          "new_length": 114748,
+          "old_sha256": "8faa045ad1a01a76bc25aac3e96c615e6367c4b9df463c178256c173ef23afb5",
+          "new_sha256": "4359c455d72d670bc83ce96de2f7c7928d136271c2784e3450412e97c5a9cafb",
+          "reserve": 114748
+        },
+        {
+          "path": "click/decorators.py",
+          "old_length": 18719,
+          "new_length": 18925,
+          "old_sha256": "f9995b198815fa823c8ebfe81f8469b8bd4f152fb94267ae100b0b0c0620c6dc",
+          "new_sha256": "eede85f905a8c2d2e1e85ffa97ee18578638c8d4dca85404bbd8b7ef3233ebcb",
+          "reserve": 18925
+        },
+        {
+          "path": "click/exceptions.py",
+          "old_length": 9273,
+          "new_length": 9600,
+          "old_sha256": "7f244e3bee3b1d61438eddaaba9a3b037277d9596933ea2f2677e8c2ef762b7b",
+          "new_sha256": "57bcc34fa7a6a89f22365d241753f99291662cc590d53d4beda34d28ce18474c",
+          "reserve": 9600
+        },
+        {
+          "path": "click/globals.py",
+          "old_length": 1961,
+          "new_length": 1954,
+          "old_sha256": "4cffaa33cf124f373b7f5dbb877e530ffbfddb41607ce0f6130cea034a04f175",
+          "new_sha256": "72e27a05ba34ef79601049a18ebdfde0f78cf901665ccf828bec267ec77b1f98",
+          "reserve": 1961
+        },
+        {
+          "path": "click/parser.py",
+          "old_length": 19067,
+          "new_length": 19067,
+          "old_sha256": "2cac98404f592e3e4a8080d792b7131d045722081fa22bd7d78fd45489f9e980",
+          "new_sha256": "878b2775ca45e4e1eb65037cbc3f0859be4e072bd6ec005b8514e8c68beba92f",
+          "reserve": 19067
+        },
+        {
+          "path": "click/shell_completion.py",
+          "old_length": 18460,
+          "new_length": 18636,
+          "old_sha256": "4f2dd533fb6cd2c4218fabbb7854e22f01cfa1381c5d31840148363a92ea60ac",
+          "new_sha256": "4d1d1d5c419cbd66fd128dda6901171a19ef352dc51781f841cb8b9ef02f628e",
+          "reserve": 18636
+        },
+        {
+          "path": "click/termui.py",
+          "old_length": 28324,
+          "new_length": 28310,
+          "old_sha256": "1fb43c16998f7a5849da8bce85f09186332d0a93728c55ebc8030b64e0eab1d7",
+          "new_sha256": "74bc624bbd143af21805d6bf9c411968f0053950d5991b35b043ccb8b0e8c10a",
+          "reserve": 28324
+        },
+        {
+          "path": "click/testing.py",
+          "old_length": 16084,
+          "new_length": 16282,
+          "old_sha256": "d50778912e5bb9c9f586c34846bc9dd16b5332e0a9900f7782b916c53f0f3ac5",
+          "new_sha256": "dd103c6a709fed367cfb94401798add937be6965c100be552dab109cc882d994",
+          "reserve": 16282
+        },
+        {
+          "path": "click/types.py",
+          "old_length": 36391,
+          "new_length": 36422,
+          "old_sha256": "4d9bf3de12af073b5ff87a5ad9e9ce98fe1ece748f2f38a38e28396ffd173311",
+          "new_sha256": "043e50aaae21fbc91ac0198e2332659aae31cd38407f8c02bda38b652043371d",
+          "reserve": 36422
+        },
+        {
+          "path": "click/utils.py",
+          "old_length": 20298,
+          "new_length": 20330,
+          "old_sha256": "d78efa51db94358e9478f194e26d7cbb35472edd6c28cd8f3f7c96b1085b22d3",
+          "new_sha256": "71ef88acef6294823be8b1a4537e78a4e7476dea4cf147ed7cd1fb49f314ff6f",
+          "reserve": 20330
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 335461,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 662020,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 445758,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 396091,
+              "first": [
+                3,
+                11,
+                9,
+                2,
+                12,
+                7,
+                4,
+                1
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 417915,
+              "first": [
+                3,
+                11,
+                9,
+                2,
+                12,
+                7,
+                4,
+                1,
+                8,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 388404,
+              "first": [
+                3,
+                11,
+                2,
+                12,
+                7,
+                4,
+                1,
+                8,
+                6
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 15,
+              "replay_actual_bytes_total": 9924528,
+              "max_actual_bytes": 661978,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 662020,
+                "actual": 661978,
+                "queries": 26,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 662020,
+                "actual": 661950,
+                "queries": 26,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 15,
+              "replay_actual_bytes_total": 5182938,
+              "max_actual_bytes": 417887,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 417915,
+                "actual": 417887,
+                "queries": 11,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 417915,
+                "actual": 417887,
+                "queries": 11,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 348825,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 993030,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 560506,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 492095,
+              "first": [
+                3,
+                11,
+                9,
+                2,
+                12,
+                7,
+                4
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 503656,
+              "first": [
+                3,
+                11,
+                9,
+                2,
+                12,
+                7,
+                4,
+                5,
+                6
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 484009,
+              "first": [
+                3,
+                11,
+                2,
+                7,
+                4,
+                1,
+                8,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 15,
+              "replay_actual_bytes_total": 14886792,
+              "max_actual_bytes": 992967,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 993030,
+                "actual": 992967,
+                "queries": 39,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 993030,
+                "actual": 992925,
+                "queries": 39,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 15,
+              "replay_actual_bytes_total": 5735316,
+              "max_actual_bytes": 503635,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 503656,
+                "actual": 503635,
+                "queries": 11,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 503656,
+                "actual": 503635,
+                "queries": 11,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "8.1.7",
+          "file": "click-8.1.7-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/click/8.1.7/json",
+          "url": "https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl",
+          "sha256": "ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28",
+          "size": 97941
+        },
+        {
+          "version": "8.1.8",
+          "file": "click-8.1.8-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/click/8.1.8/json",
+          "url": "https://files.pythonhosted.org/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl",
+          "sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+          "size": 98188
+        }
+      ]
+    },
+    "packaging": {
+      "members": [
+        {
+          "path": "packaging/__init__.py",
+          "old_length": 496,
+          "new_length": 494,
+          "old_sha256": "76dc366cd996090f569cca0addb93f7a52f5b2f4a58a45ed2e9661085201f521",
+          "new_sha256": "764e136bfbe67552716070dc7f286f40dc3c5773e0481a2628d5ea83e0f62436",
+          "reserve": 496
+        },
+        {
+          "path": "packaging/_elffile.py",
+          "old_length": 3282,
+          "new_length": 3306,
+          "old_sha256": "fcb7095b860d2b2c18b25e35ebd076ba4291ab0c63c6cb7ff07d0545540a973f",
+          "new_sha256": "71f940400904db9b738589aafda0a2ef641f6d3fed9fcf75b4fcdfa5b7873b01",
+          "reserve": 3306
+        },
+        {
+          "path": "packaging/_manylinux.py",
+          "old_length": 9586,
+          "new_length": 9612,
+          "old_sha256": "5e8e15d0f673f2c6ee5426d39e2d2dd424740077a2affee26f8953995f2c703e",
+          "new_sha256": "be5e4e0a8cf8931f341f9af05ca7975a397d58d2121a6af86604e94cff6553d7",
+          "reserve": 9612
+        },
+        {
+          "path": "packaging/markers.py",
+          "old_length": 10671,
+          "new_length": 10561,
+          "old_sha256": "756292aa7e52a7e8c398e1be5b719f2c72a3c217f522cce76d3ef55650680793",
+          "new_sha256": "73cf5337307b65d198864a2f9ba3d89aa1b21f15e561568b5b9f753c750d283f",
+          "reserve": 10671
+        },
+        {
+          "path": "packaging/metadata.py",
+          "old_length": 32349,
+          "new_length": 34762,
+          "old_sha256": "28836e4a4275daef92ca828d4f2fe91cd1807cc52dc4dbd9e77a80d7300a70a2",
+          "new_sha256": "60989b33b1987b8adef3ed1adce9579864be5c38131283b8b6506ddaadb90678",
+          "reserve": 34762
+        },
+        {
+          "path": "packaging/specifiers.py",
+          "old_length": 39714,
+          "new_length": 40074,
+          "old_sha256": "ae3a5cde1a09bae9d1213e83747ee02d39d0e63e50292b968e84c2e6c747b472",
+          "new_sha256": "186d703cd31c2f47cc24eebcbc5e77c0a31dc277de84371a23eafd3694df8a50",
+          "reserve": 40074
+        },
+        {
+          "path": "packaging/tags.py",
+          "old_length": 18883,
+          "new_length": 21014,
+          "old_sha256": "cbc11b85e3aef564bbb3e31e6da5cc707305fa3cec03f0b52f3e57453892cb8c",
+          "new_sha256": "085aab2730337365cd19ec5eac7fff4fe639230abb59bb185ec88b1112d6c58d",
+          "reserve": 21014
+        },
+        {
+          "path": "packaging/utils.py",
+          "old_length": 5287,
+          "new_length": 5050,
+          "old_sha256": "3407585309e500ea646adfd1b616af5fc6b4ed8b95c6018bfefc2bc7bdc64833",
+          "new_sha256": "d05dc787d385b9182b8538066549792b6d85bf560fdad665d73ff680eea42620",
+          "reserve": 5287
+        },
+        {
+          "path": "packaging/version.py",
+          "old_length": 16198,
+          "new_length": 16676,
+          "old_sha256": "5741f748e8fff307abaefa2badbe900cb46195ca9212b3534e40afbdfb338432",
+          "new_sha256": "a257f2ba4fc33db7e5364278c0159eb57435edcef8c770c1e74d5d7a052fec36",
+          "reserve": 16676
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 144708,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 283796,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 181972,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 163271,
+              "first": [
+                5,
+                4,
+                6,
+                8,
+                3
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 178666,
+              "first": [
+                5,
+                4,
+                6,
+                8,
+                3,
+                2,
+                7,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 161990,
+              "first": [
+                5,
+                4,
+                6,
+                3,
+                2,
+                7,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 11,
+              "replay_actual_bytes_total": 3103912,
+              "max_actual_bytes": 283572,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 7,
+                "reserved": 283796,
+                "actual": 283572,
+                "queries": 18,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 283796,
+                "actual": 283098,
+                "queries": 18,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 11,
+              "replay_actual_bytes_total": 1702048,
+              "max_actual_bytes": 178317,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 178666,
+                "actual": 178317,
+                "queries": 9,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 178666,
+                "actual": 178317,
+                "queries": 9,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 152033,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 425694,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 222046,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 200642,
+              "first": [
+                5,
+                4,
+                6,
+                8
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 218740,
+              "first": [
+                5,
+                4,
+                6,
+                8,
+                3,
+                2,
+                7,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 195466,
+              "first": [
+                5,
+                4,
+                6,
+                3,
+                7,
+                1
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 11,
+              "replay_actual_bytes_total": 4655868,
+              "max_actual_bytes": 425358,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 7,
+                "reserved": 425694,
+                "actual": 425358,
+                "queries": 27,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 425694,
+                "actual": 424647,
+                "queries": 27,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 11,
+              "replay_actual_bytes_total": 1881894,
+              "max_actual_bytes": 218391,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 218740,
+                "actual": 218391,
+                "queries": 10,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 218740,
+                "actual": 218391,
+                "queries": 10,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "24.1",
+          "file": "packaging-24.1-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/packaging/24.1/json",
+          "url": "https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl",
+          "sha256": "5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124",
+          "size": 53985
+        },
+        {
+          "version": "24.2",
+          "file": "packaging-24.2-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/packaging/24.2/json",
+          "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
+          "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+          "size": 65451
+        }
+      ]
+    },
+    "Jinja2": {
+      "members": [
+        {
+          "path": "jinja2/__init__.py",
+          "old_length": 1928,
+          "new_length": 1928,
+          "old_sha256": "c08978e48336d0a1b0fa47ebee3261681c715f9838fa48a1941623c68a57ecfc",
+          "new_sha256": "c717a93bd8bb0c7b2a910ae004476e2ed7e8cf6402b93ebf81b2f85d237585b5",
+          "reserve": 1928
+        },
+        {
+          "path": "jinja2/async_utils.py",
+          "old_length": 2477,
+          "new_length": 2834,
+          "old_sha256": "2572960805e64f1d22641e3e840b05e74be08f1c3f4494e388b3a51864c1b28d",
+          "new_sha256": "bcaf8f76cba8ace3275929c4913de25094489139d880ed93e8c9c6c43807239a",
+          "reserve": 2834
+        },
+        {
+          "path": "jinja2/compiler.py",
+          "old_length": 72271,
+          "new_length": 74131,
+          "old_sha256": "76957e9fafe24143f8b92c255f01946af266c23bd7772c4acc9f80a271633c19",
+          "new_sha256": "f51a42425e57f3c0479652623ec1cf876f791e1d2e029bf0149350baeb542de3",
+          "reserve": 74131
+        },
+        {
+          "path": "jinja2/debug.py",
+          "old_length": 6299,
+          "new_length": 6297,
+          "old_sha256": "896278df645a77124d9da30e3eb8c80c89f3e745048278b7fc72ae1578b6bee4",
+          "new_sha256": "0a71ea0831ddf81546bed8bff19b13a259d7361037102b18fba9ffda9c14f07c",
+          "reserve": 6299
+        },
+        {
+          "path": "jinja2/environment.py",
+          "old_length": 61538,
+          "new_length": 61513,
+          "old_sha256": "c611649b13b4084480efa2a2e6dcf85d6abdcb31aefadd29f77242095055369b",
+          "new_sha256": "f6786b3fb0a1f8d6c65f4d30bf2af8cb2fae84d1ead8e09ceb48201ab9e2fdf9",
+          "reserve": 61538
+        },
+        {
+          "path": "jinja2/ext.py",
+          "old_length": 31877,
+          "new_length": 31875,
+          "old_sha256": "8a0b011fb73a0b46f21da3ad31b13eba0a6de068cb1a047ecb0b24c97b4a82af",
+          "new_sha256": "e4f1797877e1f265c02315c71d1076c576d7a218bca44de71d23b16baeae4bb1",
+          "reserve": 31877
+        },
+        {
+          "path": "jinja2/filters.py",
+          "old_length": 54611,
+          "new_length": 55212,
+          "old_sha256": "6ca7aa8c58e3cfcf1390754b4b2c8c20407be42cc037a6f7022ae0c74a612438",
+          "new_sha256": "3d0fc481df67f634a0b671906321782b98f69d8c21508ba584f9f28a691dafe9",
+          "reserve": 55212
+        },
+        {
+          "path": "jinja2/idtracking.py",
+          "old_length": 10704,
+          "new_length": 10555,
+          "old_sha256": "19f36669d8abe280c02d5c739f70cbf582278490ebebd79b5de036ca07ee0860",
+          "new_sha256": "fa5979948a7bde930bdc4ad46222098fbb5d996c5c1ff2250efdf203f862658a",
+          "reserve": 10704
+        },
+        {
+          "path": "jinja2/lexer.py",
+          "old_length": 29754,
+          "new_length": 29786,
+          "old_sha256": "c675965e13e774716ca2ace97395538e178313d26e2a4f4c528f43664accf0eb",
+          "new_sha256": "2d88988a8e9bafe4dea7d9cf72ea565ec3c4b6396ec37a75994fa534155151f9",
+          "reserve": 29786
+        },
+        {
+          "path": "jinja2/loaders.py",
+          "old_length": 23167,
+          "new_length": 24055,
+          "old_sha256": "aeed062161e8e4a887262eff32823f2ef183a0106f3faaddd21882d5179a4f09",
+          "new_sha256": "c08ae7c63bdc6ea8795705b6f0d4a47e8b620eaf2a342c4839215b1948922c1e",
+          "reserve": 24055
+        },
+        {
+          "path": "jinja2/parser.py",
+          "old_length": 39890,
+          "new_length": 40383,
+          "old_sha256": "0d5d62175151d91b1a8ffe7397cae6c7b8fa063e12f222c7a18b2f2746df122b",
+          "new_sha256": "94b385cb7b0498773921a1074621f5b1056721dda6a14433872789653b5d637d",
+          "reserve": 40383
+        },
+        {
+          "path": "jinja2/runtime.py",
+          "old_length": 33435,
+          "new_length": 34249,
+          "old_sha256": "3ce5d3ded28d289444371d82ca6c14b0e3971f627018f8d6ef4da78c1e7ffdc4",
+          "new_sha256": "80393e1af76b8895ea82c19b1e0adc2933f4629eb33d7ce1ceb2290851f78c05",
+          "reserve": 34249
+        },
+        {
+          "path": "jinja2/sandbox.py",
+          "old_length": 14616,
+          "new_length": 15009,
+          "old_sha256": "4c98c1352f6a449d99801316740811069c832ce1de6b6913fb69a4e0fae3631d",
+          "new_sha256": "330d9a8ad958d88f256bb15885c5f6606f41b5461c2e70f41a1ddddbd7035ab6",
+          "reserve": 15009
+        },
+        {
+          "path": "jinja2/utils.py",
+          "old_length": 23952,
+          "new_length": 24129,
+          "old_sha256": "9d5ec8a562ef4423321d6d62ac100af0220f0273857e46f6ba48200c18db0446",
+          "new_sha256": "ad1a77a3d7bb64a4b87f2ad645b10bc8b729b8655315c9e8a1a39ad6ac7f1489",
+          "reserve": 24129
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 414062,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 824268,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 486265,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 449491,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                11,
+                5,
+                8,
+                13,
+                9
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 486265,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                11,
+                5,
+                8,
+                13,
+                9,
+                12,
+                7,
+                3,
+                1,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 449217,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                5,
+                8,
+                13,
+                9,
+                12,
+                7,
+                3,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 16,
+              "replay_actual_bytes_total": 13171718,
+              "max_actual_bytes": 824210,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 7,
+                "reserved": 824268,
+                "actual": 824210,
+                "queries": 28,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 824268,
+                "actual": 823912,
+                "queries": 28,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 16,
+              "replay_actual_bytes_total": 7066509,
+              "max_actual_bytes": 486087,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 486265,
+                "actual": 486087,
+                "queries": 15,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 486265,
+                "actual": 486087,
+                "queries": 15,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 423470,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 1236402,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 560396,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 523622,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                11,
+                5,
+                8,
+                13,
+                9
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 560396,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                11,
+                5,
+                8,
+                13,
+                9,
+                12,
+                7,
+                3,
+                1,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 511138,
+              "first": [
+                2,
+                4,
+                6,
+                10,
+                5,
+                8,
+                13,
+                9,
+                7,
+                3,
+                1,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 16,
+              "replay_actual_bytes_total": 19757577,
+              "max_actual_bytes": 1236315,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 7,
+                "reserved": 1236402,
+                "actual": 1236315,
+                "queries": 42,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1236402,
+                "actual": 1235868,
+                "queries": 42,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 16,
+              "replay_actual_bytes_total": 7547159,
+              "max_actual_bytes": 560218,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 560396,
+                "actual": 560218,
+                "queries": 16,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 560396,
+                "actual": 560218,
+                "queries": 16,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "3.1.4",
+          "file": "jinja2-3.1.4-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/Jinja2/3.1.4/json",
+          "url": "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl",
+          "sha256": "bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d",
+          "size": 133271
+        },
+        {
+          "version": "3.1.6",
+          "file": "jinja2-3.1.6-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/Jinja2/3.1.6/json",
+          "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+          "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+          "size": 134899
+        }
+      ]
+    },
+    "httpx": {
+      "members": [
+        {
+          "path": "httpx/__version__.py",
+          "old_length": 108,
+          "new_length": 108,
+          "old_sha256": "8e6bd229c4c827db170dd0c1dd7a89fd88182450aa1287c41e09b949e799de19",
+          "new_sha256": "2e853261e3974e2786cee3ffeb850bd30c5db718eebbf41b3af13b34e83e22a5",
+          "reserve": 108
+        },
+        {
+          "path": "httpx/_api.py",
+          "old_length": 13078,
+          "new_length": 11743,
+          "old_sha256": "b78b3b51cec5a102f2c4b1164a48d859897f1a40c26cc53f591c8ea9b673d751",
+          "new_sha256": "aff660b388c8a5c3c92ea2b975b6d26b2aa8fe254c2856b164277ea0e1f12c4b",
+          "reserve": 13078
+        },
+        {
+          "path": "httpx/_client.py",
+          "old_length": 68032,
+          "new_length": 65714,
+          "old_sha256": "c4abf7e3485c2df38f0a78a57b1121da0360e41ac442a212eff3b4641f67c56c",
+          "new_sha256": "c43f941baefe58c91e96d00039e1868fe719d91453026d7db1647194563bff8d",
+          "reserve": 68032
+        },
+        {
+          "path": "httpx/_config.py",
+          "old_length": 12259,
+          "new_length": 8547,
+          "old_sha256": "0496434a9de7460ed71cf86f3f6bf3ecafc0f67e2d79fa904b817e52614bc970",
+          "new_sha256": "a4fa7653ec2271f70ab05f8a6111352d876dddee84446788a1767c1a3a372d67",
+          "reserve": 12259
+        },
+        {
+          "path": "httpx/_content.py",
+          "old_length": 8073,
+          "new_length": 8161,
+          "old_sha256": "d14b15547e89c1c40bb7b4936d9cd2d063e1ff5dd04b12933afdfd41a13bcdc9",
+          "new_sha256": "2c61b3ac94d1dcebcde0c6f519554d2d7917247fbaa0a97002db4ef69e70ff28",
+          "reserve": 8161
+        },
+        {
+          "path": "httpx/_decoders.py",
+          "old_length": 11444,
+          "new_length": 12041,
+          "old_sha256": "99e5065ad9cea0e0c94400061d3b3d55d3217b73699498380f6a8024b8fc77d7",
+          "new_sha256": "a74757f08d0d1077b1b37506a784ac66eb62321b17aeb5a5ebe1a7a956f488a3",
+          "reserve": 12041
+        },
+        {
+          "path": "httpx/_main.py",
+          "old_length": 15635,
+          "new_length": 15626,
+          "old_sha256": "2dc457b46821893bb1ef28f4a465d05f1ecf35faf710713755cc4170263845c1",
+          "new_sha256": "0a0f4631a6e24d3fecc1a0df5202118ad4b0c4b44c4b05033a6ecb7521aa940e",
+          "reserve": 15635
+        },
+        {
+          "path": "httpx/_models.py",
+          "old_length": 42372,
+          "new_length": 44700,
+          "old_sha256": "ca3555466cb45578499e059bc59f0f9e7d89a70afedb6672fc93da91fc91a965",
+          "new_sha256": "e3ffc6bb2bf580bc6e6428708a6f247d036220e709f5a72b785392babbd97e6b",
+          "reserve": 44700
+        },
+        {
+          "path": "httpx/_multipart.py",
+          "old_length": 8885,
+          "new_length": 9843,
+          "old_sha256": "0a44bc707e4d6aed58aef8b30d209185d2b5ddf96d315dbe1a7bccde6b06473c",
+          "new_sha256": "28e1c465997aa28860f663da2b2caedf8e6aab5ac92e0df94d41b7600cd70776",
+          "reserve": 9843
+        },
+        {
+          "path": "httpx/_transports/asgi.py",
+          "old_length": 5234,
+          "new_length": 5501,
+          "old_sha256": "479d7103bbec66f3dbe1fda0f251af602a36be191c065d0b2bf49bc33c50d3f9",
+          "new_sha256": "1d17e20d830fb78c101f6805807660e1cfa2dec6e5a3a6cbe464ea7044fec73f",
+          "reserve": 5501
+        },
+        {
+          "path": "httpx/_transports/default.py",
+          "old_length": 13395,
+          "new_length": 13983,
+          "old_sha256": "331abc67bb9350e498c7981749ac7c81ec5e398174d3444072aa6595b50c7406",
+          "new_sha256": "03379a454c95c0271c4f2c8d25ec437f49f57457f3cf2769748420bf0ecf2e79",
+          "reserve": 13983
+        },
+        {
+          "path": "httpx/_types.py",
+          "old_length": 3451,
+          "new_length": 2965,
+          "old_sha256": "f463503d0bbcb89c1725db6196432a5210c3483a540f32ee17597068366114ad",
+          "new_sha256": "272878d4642aec039ebfc20e58a0c083bcc26ef1c07ee7e65b983f3e24ed12b6",
+          "reserve": 3451
+        },
+        {
+          "path": "httpx/_urlparse.py",
+          "old_length": 17918,
+          "new_length": 18546,
+          "old_sha256": "6a2606ea52f7db7bf0e620bf3a8394b543577351bac11b67f5e05cfc6d8e7077",
+          "new_sha256": "640987e3b38d7e4c6bae3f8f3d88467a21e36fa0232824be00d58837838bfca6",
+          "reserve": 18546
+        },
+        {
+          "path": "httpx/_urls.py",
+          "old_length": 21808,
+          "new_length": 21550,
+          "old_sha256": "2606242b822e0b73ef88b63e0e7c9a9bf9fe3318d3e60fdd2626d4496b6dfca7",
+          "new_sha256": "757f7d551d4348e1e9828f40abb3f360ee0529dc6a2a3c32369f20adff1d1cdd",
+          "reserve": 21808
+        },
+        {
+          "path": "httpx/_utils.py",
+          "old_length": 13858,
+          "new_length": 8285,
+          "old_sha256": "941c9094adfaa665d325aed6c655847c1e3cb5c29bf5fc48f3110ee1aca2d493",
+          "new_sha256": "fd355ea802afc4990a1ddcfb74579be2cd0b66a41781e1645d281f88704aff5a",
+          "reserve": 13858
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 264347,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 522008,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 329036,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 300109,
+              "first": [
+                2,
+                7,
+                13,
+                12,
+                6,
+                10,
+                14,
+                1,
+                3
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 329036,
+              "first": [
+                2,
+                7,
+                13,
+                12,
+                6,
+                10,
+                14,
+                1,
+                3,
+                5,
+                8,
+                4,
+                9,
+                11,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 295038,
+              "first": [
+                2,
+                7,
+                13,
+                6,
+                10,
+                14,
+                1,
+                3,
+                5,
+                4,
+                11
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 17,
+              "replay_actual_bytes_total": 8425116,
+              "max_actual_bytes": 505772,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 14,
+                "reserved": 522008,
+                "actual": 505772,
+                "queries": 30,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 522008,
+                "actual": 494626,
+                "queries": 30,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 17,
+              "replay_actual_bytes_total": 4533822,
+              "max_actual_bytes": 317663,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": 2,
+                "reserved": 329036,
+                "actual": 317663,
+                "queries": 16,
+                "batches": 2,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 329036,
+                "actual": 313027,
+                "queries": 16,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 268447,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 783012,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 397068,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 357963,
+              "first": [
+                2,
+                7,
+                13,
+                12,
+                6,
+                10,
+                14,
+                1,
+                3
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 385456,
+              "first": [
+                2,
+                7,
+                13,
+                12,
+                6,
+                10,
+                14,
+                1,
+                3,
+                5,
+                8,
+                9,
+                0
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 351740,
+              "first": [
+                2,
+                7,
+                13,
+                12,
+                14,
+                1,
+                5,
+                8,
+                4,
+                9,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 17,
+              "replay_actual_bytes_total": 12637674,
+              "max_actual_bytes": 758658,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 14,
+                "reserved": 783012,
+                "actual": 758658,
+                "queries": 45,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 783012,
+                "actual": 741939,
+                "queries": 45,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 17,
+              "replay_actual_bytes_total": 4743826,
+              "max_actual_bytes": 374569,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": 2,
+                "reserved": 385456,
+                "actual": 374569,
+                "queries": 15,
+                "batches": 2,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 385456,
+                "actual": 367615,
+                "queries": 15,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "0.27.2",
+          "file": "httpx-0.27.2-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/httpx/0.27.2/json",
+          "url": "https://files.pythonhosted.org/packages/56/95/9377bcb415797e44274b51d46e3249eba641711cf3348050f76ee7b15ffc/httpx-0.27.2-py3-none-any.whl",
+          "sha256": "7bb2708e112d8fdd7829cd4243970f0c223274051cb35ee80c03301ee29a3df0",
+          "size": 76395
+        },
+        {
+          "version": "0.28.1",
+          "file": "httpx-0.28.1-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/httpx/0.28.1/json",
+          "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+          "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+          "size": 73517
+        }
+      ]
+    },
+    "rich": {
+      "members": [
+        {
+          "path": "rich/_null_file.py",
+          "old_length": 1387,
+          "new_length": 1394,
+          "old_sha256": "b4649793fbfe21999b8f5180cc78adf00de460840c882a55b0215fb02fbf289e",
+          "new_sha256": "00318aa75cadfa4ef414c295ead9ea0aa79c07ead2273a7e590b03ecb3cbfa48",
+          "reserve": 1394
+        },
+        {
+          "path": "rich/_win32_console.py",
+          "old_length": 22784,
+          "new_length": 22719,
+          "old_sha256": "f8db5e6a5b105d0e79f1efb3a49b64c21f31fdda82f928e500603cef674613a5",
+          "new_sha256": "a3640dfc8471d746e218fdc0a759de6aa5fc1411a550a4a658ce8ac3839283e5",
+          "reserve": 22784
+        },
+        {
+          "path": "rich/cells.py",
+          "old_length": 4780,
+          "new_length": 5130,
+          "old_sha256": "68c9862b80635e1804ebf245d59106996dceee62a413c83ce2f5278f812de13a",
+          "new_sha256": "2ab4248f9f8b821082a492d23502320198e775ce1b9c4a8e1268b962e67d5026",
+          "reserve": 5130
+        },
+        {
+          "path": "rich/console.py",
+          "old_length": 100199,
+          "new_length": 100493,
+          "old_sha256": "3f26dbe973165e7494c275efc2d5e0b2035035e6b40f07c491c46daef7d26ede",
+          "new_sha256": "1e2d1610a8aa1b30c91f509a5219c3446cf94e187010194dc50952721855253f",
+          "reserve": 100493
+        },
+        {
+          "path": "rich/default_styles.py",
+          "old_length": 8049,
+          "new_length": 8221,
+          "old_sha256": "5db0ee2a5cec4023fdd047cc6e7aa85ef491c2ebb77c67275cc8a13b27528af5",
+          "new_sha256": "8fd7998129fb6ea9f29b1633629f21fb43864d1cb664e8fe3df63db68aa9d11c",
+          "reserve": 8221
+        },
+        {
+          "path": "rich/diagnose.py",
+          "old_length": 924,
+          "new_length": 950,
+          "old_sha256": "668a43d84a5656d9a62a9b606d74feb0e324009ec31ab312517522694d8667bf",
+          "new_sha256": "e550566b9e81d1a862704833dc5f363b2186efcfafc9879823f12408509bca5c",
+          "reserve": 950
+        },
+        {
+          "path": "rich/padding.py",
+          "old_length": 4958,
+          "new_length": 4896,
+          "old_sha256": "f08d5d40d4102b58828c7b46043127efc911a77a76ec6633979511dea07b7b61",
+          "new_sha256": "87c5e7222bcbacdb65c48def40f2875e1e210308ce26a671d2c94cd33de0d7f3",
+          "reserve": 4958
+        },
+        {
+          "path": "rich/panel.py",
+          "old_length": 11147,
+          "new_length": 11225,
+          "old_sha256": "65a25c83e6ae520fcce3d3a91903672f2eeb19ecf63d33fd67b76a5aad15b4c6",
+          "new_sha256": "4940da6b7cf8314eef223cef6e2d125ee73a06c943cc00f0758d405f84db4dd6",
+          "reserve": 11225
+        },
+        {
+          "path": "rich/progress.py",
+          "old_length": 60107,
+          "new_length": 60333,
+          "old_sha256": "db7977e84c89c078f095c5acf3391dd07881172c939aa9725f43929558a72ca6",
+          "new_sha256": "b4b981187ac07f1210c5f07692ad48a4d5d354536ebe5f5b5ddfd090b41437c4",
+          "reserve": 60333
+        },
+        {
+          "path": "rich/segment.py",
+          "old_length": 24210,
+          "new_length": 24707,
+          "old_sha256": "edd2eb0524b78c146330edc8cc10d0acabea61f442af1f5650387630c6ee8639",
+          "new_sha256": "ee039dc123ebceed1ada0466c410edbb7bb64bc886e6cf65ef0941e7c74a332d",
+          "reserve": 24707
+        },
+        {
+          "path": "rich/spinner.py",
+          "old_length": 4339,
+          "new_length": 4364,
+          "old_sha256": "d799280a61740d0783f3e936f0ba6de97ff3250525cc4860a3fe80eaecb8ee57",
+          "new_sha256": "3d3e6a8173c6dd9a6a463ee7dc4650e8d5b9ea6c7795d66a64253b804332664e",
+          "reserve": 4364
+        },
+        {
+          "path": "rich/style.py",
+          "old_length": 27067,
+          "new_length": 27059,
+          "old_sha256": "692a1435b5607cfd4f02776e02a81b6e5e00310cbaebcaacd92d45130af73aab",
+          "new_sha256": "c698f8b8c05932db8db8da267d489a9a2825de9d6c0ef4c2670ac6d6d71355e8",
+          "reserve": 27067
+        },
+        {
+          "path": "rich/syntax.py",
+          "old_length": 35302,
+          "new_length": 35655,
+          "old_sha256": "85565c48a67644fdc412b818e4c18ad56a561ddd31dd9b4b0aaa1dfc4aa06133",
+          "new_sha256": "358d43448a97064144c6e76ac66e4adc1257142b6d37adc017fdc8640bed2cc8",
+          "reserve": 35655
+        },
+        {
+          "path": "rich/table.py",
+          "old_length": 40041,
+          "new_length": 40025,
+          "old_sha256": "12ddd20749a08094c85c614ebd2857f0bf4c0e97a15c9d867b163a2e6a3465ac",
+          "new_sha256": "e76866a0ba07a5e244a26ce75af5bc09eda6d70eb61ee40348699a1ba7d8caa2",
+          "reserve": 40041
+        },
+        {
+          "path": "rich/text.py",
+          "old_length": 47365,
+          "new_length": 47540,
+          "old_sha256": "d3eedd7bcd16765b4eab9f0a9b3e27c0cc23c786db73ceea7bfa876d95c21f44",
+          "new_sha256": "bfebc2386f204bf0f940384e854d7de3bf3ec842460172958bc89808293b3bf3",
+          "reserve": 47540
+        },
+        {
+          "path": "rich/traceback.py",
+          "old_length": 30027,
+          "new_length": 35098,
+          "old_sha256": "07be90e77b57f6079ffc3485d98d17d542641079511a3b8312552901edcb8083",
+          "new_sha256": "a2b8ad8e5d88810e1f87a7fb6eefd248ac4663e48b2113692346d2d19c76ca22",
+          "reserve": 35098
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 431980,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 859920,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 530453,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 488986,
+              "first": [
+                3,
+                8,
+                14,
+                13,
+                12,
+                15,
+                11,
+                9
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 530453,
+              "first": [
+                3,
+                8,
+                14,
+                13,
+                12,
+                15,
+                11,
+                9,
+                1,
+                7,
+                4,
+                2,
+                6,
+                10,
+                0,
+                5
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 480220,
+              "first": [
+                3,
+                8,
+                14,
+                13,
+                12,
+                15,
+                11,
+                1,
+                6,
+                10,
+                0
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 18,
+              "replay_actual_bytes_total": 15458878,
+              "max_actual_bytes": 859748,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 859920,
+                "actual": 859748,
+                "queries": 32,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 859920,
+                "actual": 859618,
+                "queries": 32,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 18,
+              "replay_actual_bytes_total": 8252618,
+              "max_actual_bytes": 530302,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 530453,
+                "actual": 530302,
+                "queries": 17,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 530453,
+                "actual": 530302,
+                "queries": 17,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 439286,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 1289880,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 630946,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 571920,
+              "first": [
+                3,
+                8,
+                14,
+                13,
+                12,
+                15,
+                11,
+                9
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 630946,
+              "first": [
+                3,
+                8,
+                14,
+                13,
+                12,
+                15,
+                11,
+                9,
+                1,
+                7,
+                4,
+                2,
+                6,
+                10,
+                0,
+                5
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 563960,
+              "first": [
+                3,
+                8,
+                13,
+                12,
+                15,
+                11,
+                9,
+                1,
+                2,
+                6,
+                10,
+                0,
+                5
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 18,
+              "replay_actual_bytes_total": 23188317,
+              "max_actual_bytes": 1289622,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 1,
+                "reserved": 1289880,
+                "actual": 1289622,
+                "queries": 48,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1289880,
+                "actual": 1289427,
+                "queries": 48,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 18,
+              "replay_actual_bytes_total": 8775797,
+              "max_actual_bytes": 630795,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 630946,
+                "actual": 630795,
+                "queries": 18,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 630946,
+                "actual": 630795,
+                "queries": 18,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "13.8.1",
+          "file": "rich-13.8.1-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/rich/13.8.1/json",
+          "url": "https://files.pythonhosted.org/packages/b0/11/dadb85e2bd6b1f1ae56669c3e1f0410797f9605d752d68fb47b77f525b31/rich-13.8.1-py3-none-any.whl",
+          "sha256": "1760a3c0848469b97b558fc61c85233e3dafb69c7a071b4d60c38099d3cd4c06",
+          "size": 241608
+        },
+        {
+          "version": "14.0.0",
+          "file": "rich-14.0.0-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/rich/14.0.0/json",
+          "url": "https://files.pythonhosted.org/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl",
+          "sha256": "1c9491e1951aac09caffd42f448ee3d04e58923ffe14993f6e83068dc395d7e0",
+          "size": 243229
+        }
+      ]
+    },
+    "pytest": {
+      "members": [
+        {
+          "path": "_pytest/_code/__init__.py",
+          "old_length": 521,
+          "new_length": 521,
+          "old_sha256": "e61ed1f8b14834a87ba7c411d4781d8ef486a35cac549cf6f0c43d87b8a91cae",
+          "new_sha256": "04a6e8c286100032a300999359d43c49240b6c106c874f9d663dd31a3b67eb23",
+          "reserve": 521
+        },
+        {
+          "path": "_pytest/_code/code.py",
+          "old_length": 49806,
+          "new_length": 55913,
+          "old_sha256": "9d222d44213a813445b169875b90cf88c121bd561a944f1425b6e2152fc97d91",
+          "new_sha256": "dd65e749e715745d53814ee845057a6f745f7ba5ee5cf356c6c29d6c10dea78d",
+          "reserve": 55913
+        },
+        {
+          "path": "_pytest/_code/source.py",
+          "old_length": 7278,
+          "new_length": 7773,
+          "old_sha256": "db0f4e6453ab469895683fd47544b54f65c2edcd88b361999f4890cbe9597f09",
+          "new_sha256": "b6cb300ffd6b61df05ecff729683b53aa596118330dff9b967c1ebdd29c0ee91",
+          "reserve": 7773
+        },
+        {
+          "path": "_pytest/_io/pprint.py",
+          "old_length": 19633,
+          "new_length": 19622,
+          "old_sha256": "0427bc2bb65cd1dad80b9fc9299041315ae12bce0046598fa64f6f4963d885a1",
+          "new_sha256": "18b04a2fa7669d1afdd869d53243733242aac74f0ea7bb5d2527a1dc07b0a276",
+          "reserve": 19633
+        },
+        {
+          "path": "_pytest/_io/terminalwriter.py",
+          "old_length": 9319,
+          "new_length": 8849,
+          "old_sha256": "750d3bcc9d7ebe5a45a96041bbf734707c53d325dc192bbba3b2f10c2132077b",
+          "new_sha256": "4faed984761221a38fdd1b5073110b927c8c6d59750ce67f6ee0cf1868802446",
+          "reserve": 9319
+        },
+        {
+          "path": "_pytest/_py/error.py",
+          "old_length": 3015,
+          "new_length": 3475,
+          "old_sha256": "4b505195f5d20f6e3c38537302e6793bdc3d5ba7ebd8d527d17f3060518c364d",
+          "new_sha256": "90643b17cfdf67a615061031faef669134014f1d2a231c6754c0b40a088e77bd",
+          "reserve": 3475
+        },
+        {
+          "path": "_pytest/_py/path.py",
+          "old_length": 49211,
+          "new_length": 49220,
+          "old_sha256": "5e5e14b29bebc302983652d90c66e3854ae70fa7ee066171c5c86096d9b019e9",
+          "new_sha256": "3a7c6dce12bc7d38ae0dd3b548416078f78a36d715c7b47613a094d24d3c400a",
+          "reserve": 49220
+        },
+        {
+          "path": "_pytest/_version.py",
+          "old_length": 411,
+          "new_length": 511,
+          "old_sha256": "ffab5c56b9c993c06feb8471366aeb8ffd7e09720b71d665a1ba10c95eb49604",
+          "new_sha256": "f2791bf298b29321b157352415fd671b1c1f662fb44be965a073177b10c91e37",
+          "reserve": 511
+        },
+        {
+          "path": "_pytest/assertion/__init__.py",
+          "old_length": 6791,
+          "new_length": 7120,
+          "old_sha256": "94ad5834d024d55a822be6390b984c24ca89432c504f5d47b831f7c3ce5add97",
+          "new_sha256": "3a39c99b88fa5478306232af5bc77e28579f8c474e48e345178cf5d28f6bede8",
+          "reserve": 7120
+        },
+        {
+          "path": "_pytest/assertion/rewrite.py",
+          "old_length": 47801,
+          "new_length": 48636,
+          "old_sha256": "1d5e80b9f1d5bbb780a752b568760495a25b61601090caffa4c1153b964a4bdc",
+          "new_sha256": "f231048ab925ef8585f309a1022470438ae2c77ffab1de0e98693e65547c316c",
+          "reserve": 48636
+        },
+        {
+          "path": "_pytest/assertion/truncate.py",
+          "old_length": 4459,
+          "new_length": 5437,
+          "old_sha256": "1989798aa0d752e2901e077f9ad856977663c416c355096206192cd53cb4d241",
+          "new_sha256": "5b82328464f47ea754c206532d69f0df8febe1a16bb48e0175a75c81bb3e56b8",
+          "reserve": 5437
+        },
+        {
+          "path": "_pytest/assertion/util.py",
+          "old_length": 20265,
+          "new_length": 20713,
+          "old_sha256": "e958397590ee2176a4f4e2eea6f2b26af2c3ae801382953a8a591c95cd0e9496",
+          "new_sha256": "ddf80fa6b54357bb82682e7ec89ea3bf1ce9d90a97c5eed3c5e925770b8997ed",
+          "reserve": 20713
+        },
+        {
+          "path": "_pytest/cacheprovider.py",
+          "old_length": 22373,
+          "new_length": 22375,
+          "old_sha256": "0454159276b9ead94efaff6a68d2551c8705df4848546acff52b7fbcca78c3df",
+          "new_sha256": "ae00499f39afb1f266423f8ab431b58269b30ae3f353da996dff9c62fbab6030",
+          "reserve": 22375
+        },
+        {
+          "path": "_pytest/capture.py",
+          "old_length": 34680,
+          "new_length": 36826,
+          "old_sha256": "8a2bbf939ff40126c8352e7fa3b671312846696645403fb2ee3b54f8d889b4cb",
+          "new_sha256": "1ce755351d177d5edbb323345fa46d18e1b55976200eb4b26ab447214782bb7d",
+          "reserve": 36826
+        },
+        {
+          "path": "_pytest/compat.py",
+          "old_length": 11467,
+          "new_length": 9814,
+          "old_sha256": "b0f7154303dde3919aaac8086446c24d1d3818a86456621f7ede909ca8f7866a",
+          "new_sha256": "7accacdc4bf79f2e3b3c245cdf9166453cc8dd33b66d60ece75f323955ef6eef",
+          "reserve": 11467
+        },
+        {
+          "path": "_pytest/config/__init__.py",
+          "old_length": 70379,
+          "new_length": 72712,
+          "old_sha256": "6d2bc6b8bcf5b4476450f939d9ca7e1c1e942bae8c3bd1dada188a8c8d263a99",
+          "new_sha256": "9a0857d7dec27c5389986a98aecf61f5ab869e46e72dabb8e54695a4b9641eda",
+          "reserve": 72712
+        },
+        {
+          "path": "_pytest/config/argparsing.py",
+          "old_length": 20562,
+          "new_length": 19064,
+          "old_sha256": "74d8c4bc58760b7e17328884fd1ee5889bf972bc97533d9647656cc5d9d0763a",
+          "new_sha256": "9e65ea70024af8556ee78083cf7188b95f2b6a97c08cd692aa36cf4ca8656522",
+          "reserve": 20562
+        },
+        {
+          "path": "_pytest/config/compat.py",
+          "old_length": 2938,
+          "new_length": 2947,
+          "old_sha256": "fa6f06e3e2cb7b309de0a64ee8942e7c4cfb7110ea5123a32300ad88a5a926f6",
+          "new_sha256": "7630edfd74cfc170c88279e8a6d8b6655aeab70ccee6115688c86053976020ce",
+          "reserve": 2947
+        },
+        {
+          "path": "_pytest/config/findpaths.py",
+          "old_length": 8062,
+          "new_length": 8404,
+          "old_sha256": "878ceae406cb6991a991e11c0f65e0fab2629a1f48e69134e36a90393653ecd3",
+          "new_sha256": "e3bbb530cc5d160d60f88b177e2d8f6baed6db507c639af0d8ba0c42650a61be",
+          "reserve": 8404
+        },
+        {
+          "path": "_pytest/debugging.py",
+          "old_length": 13260,
+          "new_length": 13947,
+          "old_sha256": "c919a639ec6c683785932dfb22b0f67bdb2fcfc09679b07b2f67d2532e0bbee1",
+          "new_sha256": "26457b39bef0439dd3146910d136bdea300c606b9b81d5e212cdfd4fb14fcc74",
+          "reserve": 13947
+        },
+        {
+          "path": "_pytest/doctest.py",
+          "old_length": 26255,
+          "new_length": 26259,
+          "old_sha256": "ed6269ac91988fbffd2f2afe2f8f7027bab96700d58f5141840f7f097ec974b7",
+          "new_sha256": "4cb4a02707763cfe7dbd2e16baed6153571a5fea33b170fd466aa3fac6f55df9",
+          "reserve": 26259
+        },
+        {
+          "path": "_pytest/faulthandler.py",
+          "old_length": 3674,
+          "new_length": 3683,
+          "old_sha256": "753d07f8c2e2eb64977a22a32d02741153eec644e534ec695ad371039b8124fb",
+          "new_sha256": "6e4854441dbef9131221c5a19b689fcdae3e1a5cc850fff9125bbb4fb7be2c3b",
+          "reserve": 3683
+        },
+        {
+          "path": "_pytest/fixtures.py",
+          "old_length": 73550,
+          "new_length": 77729,
+          "old_sha256": "239b77a56da51da54f6cdd6b010f6c757d1add0ae9a16fd4e553fe5717a3c668",
+          "new_sha256": "53294ef0360702913417d5cb2cc7fcc52510ada81574aa0e0f7a911dddbfe5f0",
+          "reserve": 77729
+        },
+        {
+          "path": "_pytest/freeze_support.py",
+          "old_length": 1291,
+          "new_length": 1300,
+          "old_sha256": "d447f3bb13ddda857d22b6b6e8ae49e2bf69a456639c68bec4acec0577bc0788",
+          "new_sha256": "5fde08c62a6a79b780fc7833261f1d6e3a869ebb44405b8c202e612bb486597c",
+          "reserve": 1300
+        },
+        {
+          "path": "_pytest/helpconfig.py",
+          "old_length": 8895,
+          "new_length": 9386,
+          "old_sha256": "89b9d93712b34e82e6c7ed99ad92823fdb7a8c9be9008966a9d7fd6b4ae13a82",
+          "new_sha256": "2e53c2b4dfd8c8c55c7e19f60cab2d040f8dd8810c7ccc8fcd607edd156ed9c1",
+          "reserve": 9386
+        },
+        {
+          "path": "_pytest/hookspec.py",
+          "old_length": 42825,
+          "new_length": 42849,
+          "old_sha256": "1bec0a766577a5e72979e888026ce03d432bdb6933f82b2a4a958433eba26a68",
+          "new_sha256": "ca5ce6d785970ed31a20bd5134bac4715892fcc8528eab2158276df93ef11e72",
+          "reserve": 42849
+        },
+        {
+          "path": "_pytest/junitxml.py",
+          "old_length": 25574,
+          "new_length": 25441,
+          "old_sha256": "167630ab4c004780a2c738fe6bdaa1cae954484a4cca35fd00b6e3cdafd67bbe",
+          "new_sha256": "51ea93fb20122b8aa5f2c412b9cf946b6daf719cde470f6ca2c50430bed4135d",
+          "reserve": 25574
+        },
+        {
+          "path": "_pytest/legacypath.py",
+          "old_length": 16777,
+          "new_length": 16588,
+          "old_sha256": "7b0ceb7400fd45895e8e5456cef8e44ddebbb58b74a87e66ad57275d616ebb11",
+          "new_sha256": "fe5eaff1a90d31f4dce53023bdb73a33efedd79ee9f5013afb5d7c58cd0346df",
+          "reserve": 16777
+        },
+        {
+          "path": "_pytest/logging.py",
+          "old_length": 35124,
+          "new_length": 35234,
+          "old_sha256": "41f694531f93d0588a0490416f76c3965b7c3bc79313b3298a0abbc2f0dea517",
+          "new_sha256": "4d9ebb2503ffdd896dd29d750f627af0bfe8b3d825b2e82032f79cd07963b5bf",
+          "reserve": 35234
+        },
+        {
+          "path": "_pytest/main.py",
+          "old_length": 37416,
+          "new_length": 37689,
+          "old_sha256": "3a8c1ecf7e9490ec095e44d1ab8ad5b89451af5f08b419f3fd80e3800985095f",
+          "new_sha256": "1cfc8743fd192849d2309353de3eb8b42dcd83801e1d11b1169dbc75198333d7",
+          "reserve": 37689
+        },
+        {
+          "path": "_pytest/mark/__init__.py",
+          "old_length": 9307,
+          "new_length": 9885,
+          "old_sha256": "6c7391c8202c1a7189abb4e99bb036b0d417df58f05354e0b9f33d0d872b4df4",
+          "new_sha256": "9c10b7314f9f297389f3f4042d39796323ad15cdfa79fff9f656ca5c3298ea2b",
+          "reserve": 9885
+        },
+        {
+          "path": "_pytest/mark/expression.py",
+          "old_length": 10152,
+          "new_length": 10154,
+          "old_sha256": "1fa2e65f43169717b4b819ae5c8a50127b6b2edcaa221109bf4ed8bc0efd7834",
+          "new_sha256": "479294ca4b54891406267817a2cbe4b206e430b581998a842e149157fe9e5f1d",
+          "reserve": 10154
+        },
+        {
+          "path": "_pytest/mark/structures.py",
+          "old_length": 21039,
+          "new_length": 22972,
+          "old_sha256": "ea1888477778cf1cb7e588b0f7ad6bf6c62b365f93e564bcff46ae4a6a5d881d",
+          "new_sha256": "e3d48717cd5125017f48833f33d277eed0d3a8d04042f7fba6cd7d45f5544632",
+          "reserve": 22972
+        },
+        {
+          "path": "_pytest/monkeypatch.py",
+          "old_length": 14598,
+          "new_length": 14625,
+          "old_sha256": "48a82d795273d69baa610dde97afa3bb966c34006aa68314b910ba9e7ded1697",
+          "new_sha256": "9df03b926213009d706e3cbe451d22079d97c623da42982caa720419abadd5c5",
+          "reserve": 14625
+        },
+        {
+          "path": "_pytest/nodes.py",
+          "old_length": 26483,
+          "new_length": 26533,
+          "old_sha256": "1eaca9968c3df616fe673d0a2b32f42b7710d2b0a00d72bae6f069e9abdedeef",
+          "new_sha256": "5646501513534cd741a31a92fea2af1aadd3c2e24d7b70318aa83d9656792ba2",
+          "reserve": 26533
+        },
+        {
+          "path": "_pytest/outcomes.py",
+          "old_length": 10532,
+          "new_length": 10502,
+          "old_sha256": "49e5b5e2b44a9c64adecafcdc58ec71a779da096b0147c108b66a701862e824f",
+          "new_sha256": "0cf472a92cec467fb4c9c32f6f52cbee41282f56f134f739464e210bdc689abc",
+          "reserve": 10532
+        },
+        {
+          "path": "_pytest/pastebin.py",
+          "old_length": 3978,
+          "new_length": 4155,
+          "old_sha256": "25ad73dd9e9c5cd125a1ba70cbdec58b24790c37b166b0c407abee7e636f138a",
+          "new_sha256": "a7ddb326d48dcfdfb10c4173a90df37a662081745a0e7c43e97e08ca2b5ebdb0",
+          "reserve": 4155
+        },
+        {
+          "path": "_pytest/pathlib.py",
+          "old_length": 33947,
+          "new_length": 37622,
+          "old_sha256": "ec059594528963b6ad494e34084ca7824fecae52f10be8af06d343ab53145dae",
+          "new_sha256": "8127808359baaa711775862b32bfbe0a7e5c16a2e8c9923d60ddd45f031b66fa",
+          "reserve": 37622
+        },
+        {
+          "path": "_pytest/pytester.py",
+          "old_length": 61552,
+          "new_length": 61675,
+          "old_sha256": "f83fd234b7e9fc041130fec63a8e8db1795e92d898a1defda71058fb645d513d",
+          "new_sha256": "71a5cb0792405afa8c960e095719dfddd66a1f3372dcd97c4bbe80ebf95bcb54",
+          "reserve": 61675
+        },
+        {
+          "path": "_pytest/pytester_assertions.py",
+          "old_length": 2244,
+          "new_length": 2253,
+          "old_sha256": "1081de6f596537d4d545f049a909f0be329e1be2a9cd444dabc9ad6caeef7320",
+          "new_sha256": "c57fc76c53c1f91cff34d0edb53637f5fb7bff064bbcf81040155ebd209e5660",
+          "reserve": 2253
+        },
+        {
+          "path": "_pytest/python.py",
+          "old_length": 64851,
+          "new_length": 66402,
+          "old_sha256": "9a425e93886aa7b18c23293ab8f356725236758960efcb538f299d7195624c93",
+          "new_sha256": "7b3393d93b9900df66956b05659ddab2bebcb929eb1212e9201332cb980b3d95",
+          "reserve": 66402
+        },
+        {
+          "path": "_pytest/python_api.py",
+          "old_length": 39627,
+          "new_length": 30826,
+          "old_sha256": "b42b864eb958964fb0c419afbe6ac6e6176a5a1a8c2785e288ec970ed051a757",
+          "new_sha256": "6e8cf4095ac8320602af5ae9f3a85fab40eab16d376118a8ad047da1a6b3802a",
+          "reserve": 39627
+        },
+        {
+          "path": "_pytest/recwarn.py",
+          "old_length": 13278,
+          "new_length": 13245,
+          "old_sha256": "1af83c3871c53f2496ee1a35c6851134e2d8776c83d8b05e3a24270c9f402ef9",
+          "new_sha256": "94d46cf8aade4cd06be47a1922a5a3e26e9544eeffd457fe81c061998860fe52",
+          "reserve": 13278
+        },
+        {
+          "path": "_pytest/reports.py",
+          "old_length": 21331,
+          "new_length": 21406,
+          "old_sha256": "e4e33f3b2407212d3d3d6e93ffc90024d4baec6bdca6f3fe94a7276b62dc499d",
+          "new_sha256": "ca2213f977ab6e01e8bbc0fb7527282fd62fa41af206575b262b574977d63910",
+          "reserve": 21406
+        },
+        {
+          "path": "_pytest/runner.py",
+          "old_length": 19436,
+          "new_length": 19543,
+          "old_sha256": "2c358a7e1888cd63645eaaf5c707b1fa5d7286c5a4756089928e1b60cf9eb50f",
+          "new_sha256": "10f2433cca73efa0f9772c6cc190119a6e85d67f5ac61f181549c14e4e6438cf",
+          "reserve": 19543
+        },
+        {
+          "path": "_pytest/scope.py",
+          "old_length": 2798,
+          "new_length": 2738,
+          "old_sha256": "332cea5d4b963f5f8181b6c207327220b892fe389c64ed8b3543148efeef861d",
+          "new_sha256": "a41ee3b228acb61d7a3c115a715d58c5ddcf8f7600c767669529866c6e26c3a0",
+          "reserve": 2798
+        },
+        {
+          "path": "_pytest/setuponly.py",
+          "old_length": 3306,
+          "new_length": 3167,
+          "old_sha256": "1cd63d12b9fec1ec7d896487c4953a383034cb36081fae500a480d67f0666ee0",
+          "new_sha256": "06c46b0b81110d5af8dbed86fcbd00c61354e175706ccb32e52d253af2abf300",
+          "reserve": 3306
+        },
+        {
+          "path": "_pytest/skipping.py",
+          "old_length": 10217,
+          "new_length": 10623,
+          "old_sha256": "5db64a0cf7a4f5ec7c6915c4a04cb98afd3f7b56f4b148b43d9ad6a8b05aa5e9",
+          "new_sha256": "93ccee856c3c5a5a251a905efdabf9d507da3e99e63986143ddf99ea1ba80160",
+          "reserve": 10623
+        },
+        {
+          "path": "_pytest/stepwise.py",
+          "old_length": 4596,
+          "new_length": 7689,
+          "old_sha256": "958166ea4834d349ff58418e110021a348fa75108a26f80acf561ad99cfed197",
+          "new_sha256": "903f350eb9e19dc94a06631f6aec1099b78c6d852fbb0d3bc395a73649887444",
+          "reserve": 7689
+        },
+        {
+          "path": "_pytest/terminal.py",
+          "old_length": 57393,
+          "new_length": 60168,
+          "old_sha256": "fb14f5ef1489b3d6eef74c2a44173759c91a5933533ce99591994ed57d7a5b2a",
+          "new_sha256": "5b3d21d645f6d804c59193177b9f799880b18a3a403139c3d85baec9e04292c5",
+          "reserve": 60168
+        },
+        {
+          "path": "_pytest/threadexception.py",
+          "old_length": 3005,
+          "new_length": 4953,
+          "old_sha256": "1872d8c0260ae88d775efe9b2123b672bbcf8fd6790032a0567503ee6d4e6b5e",
+          "new_sha256": "85371ca73654aeb4240d1395140a87817c00538f3571ae0cab8080e1807b9b2e",
+          "reserve": 4953
+        },
+        {
+          "path": "_pytest/timing.py",
+          "old_length": 413,
+          "new_length": 3065,
+          "old_sha256": "511c1ad8910d5d890837ff4b160126278ae273b496f0ee9af30a12fd337a8d72",
+          "new_sha256": "d3c7253f93c900be15cf34ea970f3f7f847d98bfcc9f336acfb262e7a2083ef0",
+          "reserve": 3065
+        },
+        {
+          "path": "_pytest/tmpdir.py",
+          "old_length": 11679,
+          "new_length": 11263,
+          "old_sha256": "576b80a7aa6c16c55b7ccb9f388cca4781093a38354d0668cb882b881d1639a8",
+          "new_sha256": "236918c090160c1f6b935e162ff44ab273a700221d5f40ac15892be75e4503ee",
+          "reserve": 11679
+        },
+        {
+          "path": "_pytest/unittest.py",
+          "old_length": 15614,
+          "new_length": 15592,
+          "old_sha256": "c1ec3bc36ab94aa81d3e9a45cefd1ebf0ad32d698c0b028542f494c845f60b44",
+          "new_sha256": "af40653a01943e21e7e2cbb78c961e1f0b9c97175a1b1caded51cd92a7174820",
+          "reserve": 15614
+        },
+        {
+          "path": "_pytest/unraisableexception.py",
+          "old_length": 3252,
+          "new_length": 4930,
+          "old_sha256": "f8bea59fc9919eaa8f06c9336abb9ae3db2de22a17a0a825959de832646e08a5",
+          "new_sha256": "14cd3fbcb6a54479ca08ec3b2f9f4ab023e9a9727b03795f2b7c4d5e9e90dbcd",
+          "reserve": 4930
+        },
+        {
+          "path": "_pytest/warning_types.py",
+          "old_length": 4388,
+          "new_length": 4015,
+          "old_sha256": "9b6fd8df3c9d5193733e9bbcf27f303cd5aa6b17da01330a128ff30205ccab26",
+          "new_sha256": "1a053131d06aab11c4969b23d69bb0efcdaf8adf96942bd681a39588fa371dfd",
+          "reserve": 4388
+        },
+        {
+          "path": "_pytest/warnings.py",
+          "old_length": 5211,
+          "new_length": 5237,
+          "old_sha256": "131c9774cf59b08517e28e460ade377d1f985a12074ae51b57a19b2845577a20",
+          "new_sha256": "6134f838964a4e033bc6a937e3cf8d1d930758298c927c70c3a6c3c226d1050b",
+          "reserve": 5237
+        },
+        {
+          "path": "pytest/__init__.py",
+          "old_length": 5169,
+          "new_length": 5278,
+          "old_sha256": "8e6ea1d1910225d0d7957d22e45db498ddf2a55fbe4fba2c9ad307cf3cd8f2e8",
+          "new_sha256": "6be0e55cef694e64953e7d6b164c2a831721fd147bf66565268cacc3f5094faf",
+          "reserve": 5278
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 1194892,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 2388762,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 1272110,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 1234778,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                27,
+                53,
+                33,
+                19,
+                42,
+                52,
+                14,
+                47,
+                35,
+                31,
+                30,
+                24,
+                4,
+                18,
+                2,
+                48,
+                8,
+                10,
+                57,
+                56,
+                50
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 1272110,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                27,
+                53,
+                33,
+                19,
+                42,
+                52,
+                14,
+                47,
+                35,
+                31,
+                30,
+                24,
+                4,
+                18,
+                2,
+                48,
+                8,
+                10,
+                57,
+                56,
+                50,
+                54,
+                55,
+                36,
+                21,
+                5,
+                46,
+                51,
+                17,
+                45,
+                39,
+                23,
+                0,
+                7
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 1233246,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                27,
+                53,
+                33,
+                19,
+                42,
+                52,
+                14,
+                47,
+                31,
+                24,
+                4,
+                18,
+                48,
+                8,
+                57,
+                50,
+                54,
+                55,
+                36,
+                21,
+                5,
+                46,
+                51,
+                17,
+                45,
+                39,
+                23,
+                0,
+                7
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 60,
+              "replay_actual_bytes_total": 141611270,
+              "max_actual_bytes": 2378708,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 41,
+                "reserved": 2388762,
+                "actual": 2378708,
+                "queries": 116,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 2388762,
+                "actual": 2361106,
+                "queries": 116,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 60,
+              "replay_actual_bytes_total": 72036372,
+              "max_actual_bytes": 1258282,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 1272110,
+                "actual": 1258282,
+                "queries": 59,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1272110,
+                "actual": 1258282,
+                "queries": 59,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 1196555,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 3583143,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 1349839,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 1299981,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                27,
+                53,
+                33,
+                19,
+                42,
+                52,
+                14,
+                47,
+                35,
+                31,
+                30,
+                24,
+                4,
+                18,
+                2,
+                48,
+                8,
+                10
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 1349839,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                27,
+                53,
+                33,
+                19,
+                42,
+                52,
+                14,
+                47,
+                35,
+                31,
+                30,
+                24,
+                4,
+                18,
+                2,
+                48,
+                8,
+                10,
+                57,
+                56,
+                50,
+                54,
+                55,
+                36,
+                21,
+                5,
+                46,
+                51,
+                17,
+                45,
+                39,
+                23,
+                0,
+                7
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 1298020,
+              "first": [
+                22,
+                15,
+                40,
+                38,
+                49,
+                1,
+                6,
+                9,
+                25,
+                41,
+                29,
+                37,
+                13,
+                28,
+                34,
+                20,
+                26,
+                32,
+                12,
+                43,
+                11,
+                16,
+                3,
+                44,
+                53,
+                19,
+                42,
+                52,
+                14,
+                47,
+                31,
+                24,
+                4,
+                18,
+                2,
+                48,
+                8,
+                10,
+                57,
+                56,
+                50,
+                54,
+                55,
+                36,
+                21,
+                5,
+                46,
+                51,
+                17,
+                45,
+                39,
+                23,
+                0,
+                7
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 60,
+              "replay_actual_bytes_total": 212416905,
+              "max_actual_bytes": 3568062,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 41,
+                "reserved": 3583143,
+                "actual": 3568062,
+                "queries": 174,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 3583143,
+                "actual": 3541659,
+                "queries": 174,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 60,
+              "replay_actual_bytes_total": 73267109,
+              "max_actual_bytes": 1336011,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 1349839,
+                "actual": 1336011,
+                "queries": 60,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1349839,
+                "actual": 1336011,
+                "queries": 60,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "8.3.3",
+          "file": "pytest-8.3.3-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/pytest/8.3.3/json",
+          "url": "https://files.pythonhosted.org/packages/6b/77/7440a06a8ead44c7757a64362dd22df5760f9b12dc5f11b6188cd2fc27a0/pytest-8.3.3-py3-none-any.whl",
+          "sha256": "a6853c7375b2663155079443d2e45de913a911a11d669df02a50814944db57b2",
+          "size": 342341
+        },
+        {
+          "version": "8.4.0",
+          "file": "pytest-8.4.0-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/pytest/8.4.0/json",
+          "url": "https://files.pythonhosted.org/packages/2f/de/afa024cbe022b1b318a3d224125aa24939e99b4ff6f22e0ba639a2eaee47/pytest-8.4.0-py3-none-any.whl",
+          "sha256": "f40f825768ad76c0977cbacdf1fd37c6f7a468e460ea6a0636078f8972d4517e",
+          "size": 363797
+        }
+      ]
+    },
+    "pydantic": {
+      "members": [
+        {
+          "path": "pydantic/__init__.py",
+          "old_length": 14484,
+          "new_length": 15395,
+          "old_sha256": "1c2f6cfb23c1af710f2f3737925fda93614f314cf7991bc01d0faeb0830a75b9",
+          "new_sha256": "0f7ffed1a44fa00179107e13e093d53982cd11cf8379a09c0ede94cc88cffc3d",
+          "reserve": 15395
+        },
+        {
+          "path": "pydantic/_internal/_config.py",
+          "old_length": 12444,
+          "new_length": 14253,
+          "old_sha256": "fb94f66e10f724d1d7de831db7412cb2d82cafc74bcbfcdb48600d03fee5e901",
+          "new_sha256": "595d3b869f317f4434c8ff48c0cbee18b426bb7e00665e6c06cd8968e80293d2",
+          "reserve": 14253
+        },
+        {
+          "path": "pydantic/_internal/_core_metadata.py",
+          "old_length": 3665,
+          "new_length": 5162,
+          "old_sha256": "a959f75e9b888afe7b2f68ef4b3aab8e6dc0a83b3d73d110871eedb09facfb3a",
+          "new_sha256": "63f836b778bbba5b8afb05c266fcc97d114c3d4336dda0582df69ee05cc13f2d",
+          "reserve": 5162
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "old_length": 24387,
+          "new_length": 6746,
+          "old_sha256": "3c6f813b46de8fa90e8be1d9f0c9ab724d2d1b93f3046225bc9ce59ef516085b",
+          "new_sha256": "ffe66e5e1a62ff4243a59cf3f23bc6afcda4812dcf12b8ad591db67e35a9c38f",
+          "reserve": 24387
+        },
+        {
+          "path": "pydantic/_internal/_dataclasses.py",
+          "old_length": 8774,
+          "new_length": 8990,
+          "old_sha256": "b655a5718e06a7cb8c3abbd296b5c05b925258f86619a93b98447711239afa91",
+          "new_sha256": "180f8d3b572061b71ed14c193feb1f3dee40ba31e386f81329b3c2ca0f4618ff",
+          "reserve": 8990
+        },
+        {
+          "path": "pydantic/_internal/_decorators.py",
+          "old_length": 32511,
+          "new_length": 32638,
+          "old_sha256": "203a361ae87266dd43b048ee8b747d34031ae77397f35f6d1fec98885fec2688",
+          "new_sha256": "352ed2290bed0e09ec01ddfb9a3aadc0f875f6d779ec527af4bb1c78ee52cb02",
+          "reserve": 32638
+        },
+        {
+          "path": "pydantic/_internal/_decorators_v1.py",
+          "old_length": 6203,
+          "new_length": 6185,
+          "old_sha256": "23b3f1f2050c26877cd3fcc1325364455ab4329d99ea69354f50386ffd1adcfb",
+          "new_sha256": "b5f75f76940a6384765c23b0a876d97a840cbabe95362811adf86e757047c77f",
+          "reserve": 6203
+        },
+        {
+          "path": "pydantic/_internal/_discriminated_union.py",
+          "old_length": 26435,
+          "new_length": 25478,
+          "old_sha256": "5c3ce57ca73b2c0909244ad058067812e3ff1bf0905c949514ab70b874491268",
+          "new_sha256": "68c9744914b24321df5b8fa49673131cdbf0491a2a1371f73d157fd39bd1b138",
+          "reserve": 26435
+        },
+        {
+          "path": "pydantic/_internal/_docs_extraction.py",
+          "old_length": 3791,
+          "new_length": 3831,
+          "old_sha256": "6c85a1c3b9c5285b7ea83fadc6d29101be55a869400f41fd6331045c4dcf1e3e",
+          "new_sha256": "a7e49316f2c7533c6b8fa6db9696800185a6ab820dc55080748ba90e0418488c",
+          "reserve": 3831
+        },
+        {
+          "path": "pydantic/_internal/_fields.py",
+          "old_length": 14053,
+          "new_length": 23205,
+          "old_sha256": "0664debedc6e6c5866f607d1ae7f4c82dba82c6942b748d672c27d07f7b6ab6e",
+          "new_sha256": "b4599a5f8ed0db3f100823c9e0af0cacf7e0283cedc7d7259edccfc41bf438aa",
+          "reserve": 23205
+        },
+        {
+          "path": "pydantic/_internal/_generate_schema.py",
+          "old_length": 115069,
+          "new_length": 133821,
+          "old_sha256": "e8a577907b745fde47eb25cc4bf4bbcf0cadee279e353eb9165ed312163e07ac",
+          "new_sha256": "2d626c9af35d58387543163859e96c152c35fe749c3f011f25da703191f95789",
+          "reserve": 133821
+        },
+        {
+          "path": "pydantic/_internal/_generics.py",
+          "old_length": 22226,
+          "new_length": 23849,
+          "old_sha256": "280e9a3732f01e523af5de59b905bcdbf714691ac07fa8b84aed3e3e81ae7569",
+          "new_sha256": "0f5ff4c60aa72fa4c941efdf172692936520fc5fa44ff8d105f2e31c52c222a4",
+          "reserve": 23849
+        },
+        {
+          "path": "pydantic/_internal/_git.py",
+          "old_length": 784,
+          "new_length": 809,
+          "old_sha256": "94de909599bc44d4ae36c51d1c70b51796b8553a1ef2fbb9b6553101f6898061",
+          "new_sha256": "2303e1dc33df6b65eadeb06e07d371f25b91d80d62ebd41d7937d659722e0958",
+          "reserve": 809
+        },
+        {
+          "path": "pydantic/_internal/_import_utils.py",
+          "old_length": 448,
+          "new_length": 402,
+          "old_sha256": "78b7bd01ad463100784c3f6c2b3e36cb22414e24c08c17c2bae6bfad8153ad0a",
+          "new_sha256": "4d18710f93ae63a094a2c8a805d05c254b34a26ec820e36265d60057bcd0f233",
+          "reserve": 448
+        },
+        {
+          "path": "pydantic/_internal/_known_annotated_metadata.py",
+          "old_length": 16389,
+          "new_length": 16213,
+          "old_sha256": "3ce8d359d73d9291f32bde53c13bb9260b37bfc5df9311ad08d2953ed28d265d",
+          "new_sha256": "95800f89485f4a07e963aa87f7124f25310ca28c2fdbb4267323a0433cacf745",
+          "reserve": 16389
+        },
+        {
+          "path": "pydantic/_internal/_mock_val_ser.py",
+          "old_length": 7315,
+          "new_length": 8885,
+          "old_sha256": "83f449861a1d24e5a722bc7061118d180d6fdb57a1e54ae57d33feefea2698cc",
+          "new_sha256": "c2645115206fa9f70b6c8e353ec165881e2ed80677989a597a21116c3df1293a",
+          "reserve": 8885
+        },
+        {
+          "path": "pydantic/_internal/_model_construction.py",
+          "old_length": 33137,
+          "new_length": 35228,
+          "old_sha256": "f62cb26e47631628d64d122f03ae5bd42241e962bd4ea5ec1bd15ab8c1710606",
+          "new_sha256": "d906b96381200688e486c547bb43a3a69854225598b955cc835282da8a5cd34b",
+          "reserve": 35228
+        },
+        {
+          "path": "pydantic/_internal/_repr.py",
+          "old_length": 4564,
+          "new_length": 5081,
+          "old_sha256": "fcfc2c586cb97b11663c786365fbd3102f33216257d33f87614da16d2022d4d4",
+          "new_sha256": "b7b18dc9a514f31beac250c7c551362320de68d66b2bba74d688d03cfd1423fa",
+          "reserve": 5081
+        },
+        {
+          "path": "pydantic/_internal/_schema_generation_shared.py",
+          "old_length": 4853,
+          "new_length": 4842,
+          "old_sha256": "481e6432a77da735bd578338aa3c88ed1f7d307cd4d6b7d05643563fe2ac88b3",
+          "new_sha256": "17fadb41bae4a289a0c6cb24747a4fd23509ed309f7b40400c0124aba089e273",
+          "reserve": 4853
+        },
+        {
+          "path": "pydantic/_internal/_serializers.py",
+          "old_length": 1356,
+          "new_length": 1474,
+          "old_sha256": "b34a5e1494da1d37dd9abe15fa5ea7dc387ee7b647794a3ca0972adcd3a324d2",
+          "new_sha256": "a90dd16a4e09e9ba9b9e318246388063833ca682e8d2ce6a1f8eac5d949042e0",
+          "reserve": 1474
+        },
+        {
+          "path": "pydantic/_internal/_signature.py",
+          "old_length": 6268,
+          "new_length": 6779,
+          "old_sha256": "143971c744d4b5127248cf71b65aec4a0c2bbbcd1d899bb9fcfa7ec3c837db0b",
+          "new_sha256": "f049633c97b8a529daa6e8ab1b90e4040803d618201f1100cb314f1fef47d331",
+          "reserve": 6779
+        },
+        {
+          "path": "pydantic/_internal/_typing_extra.py",
+          "old_length": 22219,
+          "new_length": 28216,
+          "old_sha256": "b7f4cd4221f67e4c2d479464bd9d62500d05928a7505660e03fc1cd962f894a4",
+          "new_sha256": "3cedeed89997dc92a54c5cb4130f798b28c08181e026caaab247afe33a280762",
+          "reserve": 28216
+        },
+        {
+          "path": "pydantic/_internal/_utils.py",
+          "old_length": 12723,
+          "new_length": 15344,
+          "old_sha256": "ea1340332ea3da571138c7ebfe20c6f07b95969698a3b76c9595b241bd677e15",
+          "new_sha256": "89198248ed2ea058402ff0a11da61208aaecc294ab4476283bf6104857c22715",
+          "reserve": 15344
+        },
+        {
+          "path": "pydantic/_internal/_validate_call.py",
+          "old_length": 3783,
+          "new_length": 5321,
+          "old_sha256": "66f545a425b2e59c0c5c92b8863385ff9bfbdc5a73ed95eb439ba04dbdeec465",
+          "new_sha256": "3df7559d2ce15ceac436d683a03c373c558f5580f95bf80d60f7bca77520e8b8",
+          "reserve": 5321
+        },
+        {
+          "path": "pydantic/_internal/_validators.py",
+          "old_length": 12089,
+          "new_length": 20610,
+          "old_sha256": "33fa86223e7f74d90724a7b7ff3c1e53d15ebc7b2139b067e172a4e2d9acf625",
+          "new_sha256": "4c9711f5bc5c3d78f39ed37a42089bf1cc8f4641594311d6df64a828611ca749",
+          "reserve": 20610
+        },
+        {
+          "path": "pydantic/_migration.py",
+          "old_length": 11913,
+          "new_length": 11907,
+          "old_sha256": "8fa4db4692687e3017f25afe9369d59d070147d443d81f7523b525730fd9cc4a",
+          "new_sha256": "ffa54209558d601edf0e96cfd8ca96e1b5d7aa8d7b0b9fc9f74eeef7334941b3",
+          "reserve": 11913
+        },
+        {
+          "path": "pydantic/aliases.py",
+          "old_length": 4819,
+          "new_length": 4937,
+          "old_sha256": "9324975f48488653b521fcfa4301fb2da1b188118ff78dc30b934d68deeac04a",
+          "new_sha256": "be1087ca84969d7f8427ec166f9aa3e31c91b2c8065a74d07f3429e06499f6e8",
+          "reserve": 4937
+        },
+        {
+          "path": "pydantic/annotated_handlers.py",
+          "old_length": 4353,
+          "new_length": 4407,
+          "old_sha256": "c82784f244272f16425b34fc7faf3d86fc2aa9ea44056fdbc835295512709eb3",
+          "new_sha256": "59fc854aac28108157061ed3ef73f270a9682350e25f8e465a2d3e24eb024786",
+          "reserve": 4407
+        },
+        {
+          "path": "pydantic/color.py",
+          "old_length": 21494,
+          "new_length": 21481,
+          "old_sha256": "e06aed3ef14204a74cfb53692d514e0bb2a42de8f265dd418842df08abd3db2c",
+          "new_sha256": "033a867d540717ddbf65cb4372e7b40cce324e9d8fead7a49304483535ab2c8a",
+          "reserve": 21494
+        },
+        {
+          "path": "pydantic/config.py",
+          "old_length": 35602,
+          "new_length": 42048,
+          "old_sha256": "a6349978ffc9015bc6c2ca13798b513ccdc4e7beaab99137b7b8b2f0cfd9e8f3",
+          "new_sha256": "ae8cff15b7c53e8569255a41d46edd27c037b3082142374dfa8ceb0716cb4a13",
+          "reserve": 42048
+        },
+        {
+          "path": "pydantic/dataclasses.py",
+          "old_length": 14678,
+          "new_length": 16644,
+          "old_sha256": "e3de9dfa796eced58591e92d7b5bb0c5916f42bde44e3c80b622a8f2dec0d137",
+          "new_sha256": "2b67bbe9bfc28f5cafc1cc1f25547b9d09cba0f75eb558a0e721d5306bb39291",
+          "reserve": 16644
+        },
+        {
+          "path": "pydantic/deprecated/class_validators.py",
+          "old_length": 10245,
+          "new_length": 10245,
+          "old_sha256": "200455e2fd0db8709955573f22d7da54d24e93555fba5ee2bfc6dac23f68e14c",
+          "new_sha256": "af07cfd7ae718adcb7e9fa32d4d34283825ff52ba5e38b092d6f80e6cb1e6a12",
+          "reserve": 10245
+        },
+        {
+          "path": "pydantic/deprecated/config.py",
+          "old_length": 2663,
+          "new_length": 2663,
+          "old_sha256": "78a8671bef9942d27803b280df1785efa135e7ee2955abb70794fc0f7f69b45b",
+          "new_sha256": "93f96c564e7ba5ac4b24e701b9e1f4edcbb53a012059d541c66ea57da0b70825",
+          "reserve": 2663
+        },
+        {
+          "path": "pydantic/deprecated/copy_internals.py",
+          "old_length": 7595,
+          "new_length": 7616,
+          "old_sha256": "4a8523d4c7af5edddf9e5a2a360e708af4941d20cf9ee4a3fd8c9dce410cceed",
+          "new_sha256": "2aed0b1cb114d167282089cd1e5b3b3e3b81be92c54d0e14bacefb8d0dd88b4f",
+          "reserve": 7616
+        },
+        {
+          "path": "pydantic/deprecated/decorator.py",
+          "old_length": 10776,
+          "new_length": 10845,
+          "old_sha256": "3f65756c2c24f30349de0fecda9d8048579f5cf2ca9fc6ec515c3e63c5b072f9",
+          "new_sha256": "4c19ba6c9ef026c36287ff16ab92330dcc0fdf69bdfef7f1b3de9d7ac2ee934d",
+          "reserve": 10845
+        },
+        {
+          "path": "pydantic/deprecated/json.py",
+          "old_length": 4669,
+          "new_length": 4657,
+          "old_sha256": "3c8cdcfb3019c4bfbb3b6816eed63df3a5c04af82c803f89d43e699a177e24b3",
+          "new_sha256": "1e55821b7e5146bc72cee4d2e8b4d089907046198365699ea901fcacb5bac00f",
+          "reserve": 4669
+        },
+        {
+          "path": "pydantic/deprecated/tools.py",
+          "old_length": 3336,
+          "new_length": 3330,
+          "old_sha256": "5d4a085bd5b8b20394590e97cdff99fcdba4502d65ff2530cf6fe7d1f1373042",
+          "new_sha256": "36b9bda054595a9f3e8e57ef3e02482c4b32c29e18cd90f9d972063c32f11dc2",
+          "reserve": 3336
+        },
+        {
+          "path": "pydantic/errors.py",
+          "old_length": 4863,
+          "new_length": 6002,
+          "old_sha256": "8401cd2b2c53508395b17052f8ff70e2872c741bbe04c5caed3c299a1642c437",
+          "new_sha256": "edcb41342b6de7b919171ef52ecd87f3a22e7d0011bf8c0f29ff0385db159f9c",
+          "reserve": 6002
+        },
+        {
+          "path": "pydantic/experimental/pipeline.py",
+          "old_length": 23979,
+          "new_length": 23910,
+          "old_sha256": "3e38939e668de57c0b524f8d9737ebd82d91fb1acccfb373f97542f248851b25",
+          "new_sha256": "ce76cc06f8abdf1bcf036d178fc328728d6824c3dfd55615ac843c29036d0e53",
+          "reserve": 23979
+        },
+        {
+          "path": "pydantic/fields.py",
+          "old_length": 52295,
+          "new_length": 64416,
+          "old_sha256": "0f1841f0ecb5fb47f2cf665138fa1acd393c7d23101969e448009cad76d4e2d0",
+          "new_sha256": "f4acb59d329a3214e168d91512424e1474071aad8508a4b003afb3c1407e296a",
+          "reserve": 64416
+        },
+        {
+          "path": "pydantic/functional_serializers.py",
+          "old_length": 16336,
+          "new_length": 17102,
+          "old_sha256": "facf8945d2eb949a74ded7d1abbb41630fe8dd506cd7551b7c567bcfebd91010",
+          "new_sha256": "de6f35ba71f7958a2f74c8b4d28672c251e19f5283cfd5f608ede24ed0726ba0",
+          "reserve": 17102
+        },
+        {
+          "path": "pydantic/functional_validators.py",
+          "old_length": 28785,
+          "new_length": 29560,
+          "old_sha256": "c4b65f89006c8af2f58d2e92423859db2316fb0bcab34d2d8bdf7705b3daa368",
+          "new_sha256": "fb263aba3ffdfc6008e1aaaa7d9973c86773b34ea1bb3cbaccd583ed3269dffd",
+          "reserve": 29560
+        },
+        {
+          "path": "pydantic/json_schema.py",
+          "old_length": 108690,
+          "new_length": 115430,
+          "old_sha256": "6463c691c977f18241ca0d1c924370f99801fa695be95ba25c34016e16c38d8e",
+          "new_sha256": "2a1b12fcc58fa31d0f62a9259e125c6ffdee88256b10e832846e7771466fe900",
+          "reserve": 115430
+        },
+        {
+          "path": "pydantic/main.py",
+          "old_length": 71978,
+          "new_length": 81012,
+          "old_sha256": "a150eb94fa79e9c39a9b8e24d482a49e54d4e9b771386080bdb16da756577a0b",
+          "new_sha256": "bfaedae3e9c5a280be189d681e04bffd59b7f7d620a7f347fb55b31d7c2314cd",
+          "reserve": 81012
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "old_length": 60146,
+          "new_length": 59265,
+          "old_sha256": "61f00db7b6e43814c1da658c6cfbc7c45ec1a7e970e9001e1d6a1a7e83c5491b",
+          "new_sha256": "b5afa506655df0fe12ee9c76aa65a6faacaa4a405da9f05e388ccc8a553489f6",
+          "reserve": 60146
+        },
+        {
+          "path": "pydantic/networks.py",
+          "old_length": 23497,
+          "new_length": 41446,
+          "old_sha256": "a5090ebf9586ea59f0f2e02326b8413acc9fc4799a6278e1b8f6c105d26adec6",
+          "new_sha256": "fd8a529c147690c7e8597efab1dab7e1c7c21fe316af9a2bd2f7b4b68c3b396a",
+          "reserve": 41446
+        },
+        {
+          "path": "pydantic/plugin/__init__.py",
+          "old_length": 6116,
+          "new_length": 6965,
+          "old_sha256": "ed515b98ae5bd3f791a5fc1f8be5eca6a3600af226751e8a48667079d4d7bcb7",
+          "new_sha256": "e5c5cc9aee712f82d566158f1355c3f28cc767ea840b6face2c78b7bcb5b37f6",
+          "reserve": 6965
+        },
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "old_length": 2140,
+          "new_length": 2167,
+          "old_sha256": "ae62db2304e10e6551d49c05562fd7beb2c7edbd40e6d78c103f8ede9afa1a4e",
+          "new_sha256": "9c8dd210aaf49a5081e79ea4bdbc815e3610c3d6ffb3c513284f50ea21125fab",
+          "reserve": 2167
+        },
+        {
+          "path": "pydantic/plugin/_schema_validator.py",
+          "old_length": 5240,
+          "new_length": 5267,
+          "old_sha256": "54568d42954d4ae236ca6443913c0119a30a78a9b24a4d536d6fb7ad07a8cf19",
+          "new_sha256": "41b9aab06df730199fb4d4369cd8ae376d8b85badec5403b8a90d5bf7274d815",
+          "reserve": 5267
+        },
+        {
+          "path": "pydantic/root_model.py",
+          "old_length": 6194,
+          "new_length": 6279,
+          "old_sha256": "36df87a5fb719df15adaae865131fa0c55d0c287a42773983e5f5813eea755bb",
+          "new_sha256": "4825e1a510a06607ea13d0065494c2ee4300a2329f7cbecf5788b4a9cc0e326d",
+          "reserve": 6279
+        },
+        {
+          "path": "pydantic/type_adapter.py",
+          "old_length": 24784,
+          "new_length": 31171,
+          "old_sha256": "c0a7e4ad21a263ee51c1505132867ff24c3159a676132a6b657152415fe48c67",
+          "new_sha256": "637344d18845c31c28aab614f5c696ca62d6a7502fab8b1151d6f9b34d51a099",
+          "reserve": 31171
+        },
+        {
+          "path": "pydantic/types.py",
+          "old_length": 97593,
+          "new_length": 104781,
+          "old_sha256": "e0459282715672b8931b67ca030fa675b71e9660c5086bba0a0112d548f67094",
+          "new_sha256": "9964ef407fd6b7f09c7107041d88dc516a72a23d54d3858e9eb32c318a1dffae",
+          "reserve": 104781
+        },
+        {
+          "path": "pydantic/v1/main.py",
+          "old_length": 44541,
+          "new_length": 44824,
+          "old_sha256": "038f1db382893784a0237e182e03c6aa2e8adcb84eecec19dd0132e861118947",
+          "new_sha256": "cee36974de50d15d301b65144cab741d4cb75c9e0e02f3d26437625d8f85233b",
+          "reserve": 44824
+        },
+        {
+          "path": "pydantic/v1/typing.py",
+          "old_length": 19387,
+          "new_length": 19720,
+          "old_sha256": "1a34e139b6aa1cc84b6840b3614ac39345fe4478e8ef1eafb2fe19e2a51857c2",
+          "new_sha256": "1cdb6e2af807e041c879bdb2b6477b552c86ea6c4ff512aa12a12a97ed5a6f5e",
+          "reserve": 19720
+        },
+        {
+          "path": "pydantic/v1/utils.py",
+          "old_length": 25941,
+          "new_length": 25989,
+          "old_sha256": "7ef8d708d79a5358c1fbf9a2d12524e1fccde0ea6f5fe48a4eee3224c3d12254",
+          "new_sha256": "339151c9f3546f50369a4f6568680255d7c71dbdc0b5082b8cee6a7f205fe310",
+          "reserve": 25989
+        },
+        {
+          "path": "pydantic/v1/validators.py",
+          "old_length": 21996,
+          "new_length": 22187,
+          "old_sha256": "0f1731dfacd54230547d876340bb3f134aa962a4de35bac5f0f41371ab1882b2",
+          "new_sha256": "9725249f5316847c65097e597c48058ff0801e88e888f71a41e31d10cf57be25",
+          "reserve": 22187
+        },
+        {
+          "path": "pydantic/v1/version.py",
+          "old_length": 1039,
+          "new_length": 1039,
+          "old_sha256": "7653cbb70688bc65047d66a2cc4b5a20f406b760fe23398d50481849c0aa83c7",
+          "new_sha256": "1d79d75bed5b316e6a2a196be5180e10fa21ad90c20d2bb2cbcfa08bc182819a",
+          "reserve": 1039
+        },
+        {
+          "path": "pydantic/validate_call_decorator.py",
+          "old_length": 2127,
+          "new_length": 4389,
+          "old_sha256": "762af452b13de48385f7953a55848ee4d4493f1ec8858e456ca4da5390a8018d",
+          "new_sha256": "f23a8b9605d38d6123e1d5c3834c08dc41902a46f42670ac2ff2525236d4e528",
+          "reserve": 4389
+        },
+        {
+          "path": "pydantic/version.py",
+          "old_length": 2442,
+          "new_length": 2710,
+          "old_sha256": "698e84955974b1bb773ef87bce36ff4fa7bd53d3adc05df151a04ec59101b2c7",
+          "new_sha256": "243862b183ca3a2636370072ccd57f86b97e7159fd21303f8212f089207ed9ff",
+          "reserve": 2710
+        },
+        {
+          "path": "pydantic/warnings.py",
+          "old_length": 3029,
+          "new_length": 3772,
+          "old_sha256": "ba931459a47a5a3bc8cffdf17e4df96356e686f47258de73c1d7af6f3e2d8d1e",
+          "new_sha256": "82a0d3436157ef018b6495775dba104a2457287927b2cde97c83972f40435d39",
+          "reserve": 3772
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 1329224,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 2657552,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 1462597,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 1396262,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                3,
+                38,
+                11,
+                9,
+                55,
+                28,
+                24,
+                53,
+                40,
+                30,
+                14,
+                0,
+                22,
+                1,
+                25,
+                34,
+                31,
+                4,
+                15,
+                33,
+                46,
+                20,
+                49,
+                6,
+                37
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 1462597,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                3,
+                38,
+                11,
+                9,
+                55,
+                28,
+                24,
+                53,
+                40,
+                30,
+                14,
+                0,
+                22,
+                1,
+                25,
+                34,
+                31,
+                4,
+                15,
+                33,
+                46,
+                20,
+                49,
+                6,
+                37,
+                23,
+                48,
+                2,
+                17,
+                26,
+                18,
+                35,
+                27,
+                57,
+                8,
+                59,
+                36,
+                58,
+                32,
+                47,
+                19,
+                56,
+                12,
+                13
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 1395687,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                3,
+                38,
+                11,
+                55,
+                28,
+                24,
+                53,
+                40,
+                30,
+                14,
+                0,
+                1,
+                34,
+                4,
+                15,
+                33,
+                46,
+                20,
+                49,
+                37,
+                23,
+                48,
+                2,
+                17,
+                26,
+                18,
+                35,
+                27,
+                57,
+                8,
+                59,
+                36,
+                58,
+                32,
+                47,
+                19,
+                56,
+                12,
+                13
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 62,
+              "replay_actual_bytes_total": 162081182,
+              "max_actual_bytes": 2653162,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 3,
+                "reserved": 2657552,
+                "actual": 2653162,
+                "queries": 120,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 2657552,
+                "actual": 2617880,
+                "queries": 120,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 62,
+              "replay_actual_bytes_total": 82369663,
+              "max_actual_bytes": 1442761,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 1462597,
+                "actual": 1442761,
+                "queries": 61,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1462597,
+                "actual": 1442761,
+                "queries": 61,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 1329946,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 3986328,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 1596418,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 1511599,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                3,
+                38,
+                11,
+                9,
+                55,
+                28,
+                24,
+                53,
+                40,
+                30,
+                14,
+                0,
+                22,
+                1,
+                25,
+                34,
+                31,
+                4,
+                15,
+                33,
+                46,
+                20
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 1596418,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                3,
+                38,
+                11,
+                9,
+                55,
+                28,
+                24,
+                53,
+                40,
+                30,
+                14,
+                0,
+                22,
+                1,
+                25,
+                34,
+                31,
+                4,
+                15,
+                33,
+                46,
+                20,
+                49,
+                6,
+                37,
+                23,
+                48,
+                2,
+                17,
+                26,
+                18,
+                35,
+                27,
+                57,
+                8,
+                59,
+                36,
+                58,
+                32,
+                47,
+                19,
+                56,
+                12,
+                13
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 1507204,
+              "first": [
+                10,
+                42,
+                51,
+                43,
+                39,
+                44,
+                52,
+                29,
+                45,
+                16,
+                5,
+                50,
+                41,
+                21,
+                7,
+                54,
+                38,
+                9,
+                55,
+                28,
+                24,
+                53,
+                40,
+                14,
+                0,
+                1,
+                25,
+                34,
+                31,
+                15,
+                33,
+                46,
+                20,
+                49,
+                6,
+                37,
+                23,
+                48,
+                2,
+                17,
+                26,
+                18,
+                35,
+                27,
+                57,
+                8,
+                59,
+                36,
+                58,
+                32,
+                47,
+                19,
+                56,
+                12,
+                13
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 62,
+              "replay_actual_bytes_total": 243121773,
+              "max_actual_bytes": 3979743,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 3,
+                "reserved": 3986328,
+                "actual": 3979743,
+                "queries": 180,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 3986328,
+                "actual": 3926820,
+                "queries": 180,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 62,
+              "replay_actual_bytes_total": 83698735,
+              "max_actual_bytes": 1576582,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 1596418,
+                "actual": 1576582,
+                "queries": 62,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 1596418,
+                "actual": 1576582,
+                "queries": 62,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "2.9.2",
+          "file": "pydantic-2.9.2-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/pydantic/2.9.2/json",
+          "url": "https://files.pythonhosted.org/packages/df/e4/ba44652d562cbf0bf320e0f3810206149c8a4e99cdbf66da82e97ab53a15/pydantic-2.9.2-py3-none-any.whl",
+          "sha256": "f048cec7b26778210e28a0459867920654d48e5e62db0958433636cde4254f12",
+          "size": 434928
+        },
+        {
+          "version": "2.11.7",
+          "file": "pydantic-2.11.7-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/pydantic/2.11.7/json",
+          "url": "https://files.pythonhosted.org/packages/6a/c0/ec2b1c8712ca690e5d61979dee872603e92b8a32f94cc1b72d53beab008a/pydantic-2.11.7-py3-none-any.whl",
+          "sha256": "dde5df002701f6de26248661f6835bbe296a47bf73990135c7d07ce741b9623b",
+          "size": 444782
+        }
+      ]
+    },
+    "attrs": {
+      "members": [
+        {
+          "path": "attr/__init__.py",
+          "old_length": 2087,
+          "new_length": 2057,
+          "old_sha256": "97c13087929913b0826348b58837d20a7162513224055a2ab178d7f446672150",
+          "new_sha256": "7ce608bedd5e192a90adee2e092dec256299d26c00b82f140faa9b6b9392f7f5",
+          "reserve": 2087
+        },
+        {
+          "path": "attr/_cmp.py",
+          "old_length": 4123,
+          "new_length": 4117,
+          "old_sha256": "dee987881b60b0462dbcd3fff17ad0c1309d1686485f80c4babefa37ed9add7f",
+          "new_sha256": "dcd9f54e3c659546225ff9c9a159c4917a0393484cd4360a8f90c4ec665ee22d",
+          "reserve": 4123
+        },
+        {
+          "path": "attr/_compat.py",
+          "old_length": 2958,
+          "new_length": 2704,
+          "old_sha256": "9f6524ddcfb2c2fd0f9057c696fa91ed2cc35e9e0d3a15a6355fd92ba61f5a83",
+          "new_sha256": "e219576d685d0e34020cae85285d448276773ce88782da69e78a84d27c5a1878",
+          "reserve": 2958
+        },
+        {
+          "path": "attr/_config.py",
+          "old_length": 843,
+          "new_length": 843,
+          "old_sha256": "cfcd55b7e19e4ffdad6b1b355d97e61f1f535a54b18cf6fa7991f52d31ac4b9e",
+          "new_sha256": "746ab7c51e9f819105e9406dfcbd13f9e507201e22e37911987d0fdbcb09570f",
+          "reserve": 843
+        },
+        {
+          "path": "attr/_funcs.py",
+          "old_length": 17386,
+          "new_length": 15854,
+          "old_sha256": "4860e6365103d53337b603bd029da67d17d5236e1710072b350b3ba367815c74",
+          "new_sha256": "e7eb54289b69de1e44979e4470397a1965c5a7af1f4fc0fc53bb8244deb8f7b2",
+          "reserve": 17386
+        },
+        {
+          "path": "attr/_make.py",
+          "old_length": 91479,
+          "new_length": 96664,
+          "old_sha256": "06310d273e5e268a232556c2a2ea568d72cb11927b5480fcf658ac2db4149664",
+          "new_sha256": "94150f3e6c6203505e1f307a3a51e808487efad56f335a335cef1e5ce6ba8387",
+          "reserve": 96664
+        },
+        {
+          "path": "attr/_next_gen.py",
+          "old_length": 24630,
+          "new_length": 24395,
+          "old_sha256": "76119bf7a5458389170644bd65dcf5036bb1549f7dabf453d61c3790b03dfae2",
+          "new_sha256": "ec54646ed97f374d7b4ae0617ff570de6c36736a46661b4218ecda760cfbb69e",
+          "reserve": 24630
+        },
+        {
+          "path": "attr/converters.py",
+          "old_length": 3506,
+          "new_length": 3861,
+          "old_sha256": "bcd6b9f29662f55eaec41ce5e2dd50ac76d07e44f8891140a1dc977bb95c820d",
+          "new_sha256": "1a50de3b33de4c581e0412db8fd1b9ec4cf994093af2e85200b45827f7b17bce",
+          "reserve": 3861
+        },
+        {
+          "path": "attr/setters.py",
+          "old_length": 1619,
+          "new_length": 1617,
+          "old_sha256": "7da3107a2068fe76d76273da435a6af0f5de03b66bfae36c56c3cc88a0a6c617",
+          "new_sha256": "e7e75c4fadc640adf938d1334a07d70a46c1ee93e4691faabf5e669b83d54b34",
+          "reserve": 1619
+        },
+        {
+          "path": "attr/validators.py",
+          "old_length": 20045,
+          "new_length": 20046,
+          "old_sha256": "f7ce5e4cfe911f2a27eb56046ae309832372d6b10e8495a2497309811c4fb6b4",
+          "new_sha256": "59a0751cb0071ea4475acaeffcaf47fac27b1128a5dc7dc29afd9df13b55671e",
+          "reserve": 20046
+        },
+        {
+          "path": "attrs/__init__.py",
+          "old_length": 1071,
+          "new_length": 1107,
+          "old_sha256": "e451e8f84305397fa0e226a548ae1fc0e8eea07ccb212243642c283a5d364f2f",
+          "new_sha256": "a9e4096783b4f327334a7f38d2ff5b60e699c9113cd56b158be402ad8de4ac25",
+          "reserve": 1107
+        }
+      ],
+      "by_error_allowance": {
+        "1": {
+          "sequential": 193328,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 350648,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 271988,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 229354,
+              "first": [
+                5,
+                6
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 240962,
+              "first": [
+                5,
+                6,
+                9,
+                2
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 223663,
+              "first": [
+                5,
+                9,
+                1,
+                2,
+                0,
+                10
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 13,
+              "replay_actual_bytes_total": 4497854,
+              "max_actual_bytes": 349594,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 4,
+                "reserved": 350648,
+                "actual": 349594,
+                "queries": 22,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 350648,
+                "actual": 346530,
+                "queries": 22,
+                "batches": 1,
+                "flips": 1
+              }
+            },
+            "guaranteed": {
+              "cases": 13,
+              "replay_actual_bytes_total": 2574250,
+              "max_actual_bytes": 240473,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 240962,
+                "actual": 240473,
+                "queries": 5,
+                "batches": 2,
+                "flips": 1
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 240962,
+                "actual": 240473,
+                "queries": 5,
+                "batches": 2,
+                "flips": 1
+              }
+            }
+          }
+        },
+        "2": {
+          "sequential": 289992,
+          "policies": {
+            "fixed": {
+              "worst_bytes": 525972,
+              "first": []
+            },
+            "equal_count": {
+              "worst_bytes": 368652,
+              "first": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            },
+            "best_prefix": {
+              "worst_bytes": 314622,
+              "first": [
+                5,
+                6
+              ]
+            },
+            "guaranteed": {
+              "worst_bytes": 368652,
+              "first": [
+                5,
+                6,
+                9,
+                4,
+                1,
+                7,
+                2,
+                0,
+                8,
+                10,
+                3
+              ]
+            },
+            "optimal": {
+              "worst_bytes": 304372,
+              "first": [
+                5,
+                1,
+                7,
+                2,
+                0,
+                10
+              ]
+            }
+          },
+          "replays": {
+            "fixed": {
+              "cases": 13,
+              "replay_actual_bytes_total": 6746781,
+              "max_actual_bytes": 524391,
+              "max_batches": 1,
+              "worst_reserved_witness": {
+                "changed": 4,
+                "reserved": 525972,
+                "actual": 524391,
+                "queries": 33,
+                "batches": 1,
+                "flips": 0
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 525972,
+                "actual": 519795,
+                "queries": 33,
+                "batches": 1,
+                "flips": 2
+              }
+            },
+            "guaranteed": {
+              "cases": 13,
+              "replay_actual_bytes_total": 2781749,
+              "max_actual_bytes": 366593,
+              "max_batches": 2,
+              "worst_reserved_witness": {
+                "changed": null,
+                "reserved": 368652,
+                "actual": 366593,
+                "queries": 13,
+                "batches": 2,
+                "flips": 2
+              },
+              "boundary_flip_witness": {
+                "changed": null,
+                "reserved": 368652,
+                "actual": 366593,
+                "queries": 13,
+                "batches": 2,
+                "flips": 2
+              }
+            }
+          }
+        }
+      },
+      "data_status": "ok",
+      "sources": [
+        {
+          "version": "24.2.0",
+          "file": "attrs-24.2.0-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/attrs/24.2.0/json",
+          "url": "https://files.pythonhosted.org/packages/6a/21/5b6702a7f963e95456c0de2d495f67bf5fd62840ac655dc451586d23d39a/attrs-24.2.0-py3-none-any.whl",
+          "sha256": "81921eb96de3191c8258c199618104dd27ac608d9366f5e35d011eae1867ede2",
+          "size": 63001
+        },
+        {
+          "version": "25.3.0",
+          "file": "attrs-25.3.0-py3-none-any.whl",
+          "metadata": "https://pypi.org/pypi/attrs/25.3.0/json",
+          "url": "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl",
+          "sha256": "427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3",
+          "size": 63815
+        }
+      ]
+    }
+  },
+  "f1_totals": {
+    "passed": 10,
+    "fixed": 9508864,
+    "equal_count": 5542114,
+    "best_prefix": 5195587,
+    "guaranteed": 5479939,
+    "optimal": 5158107,
+    "sequential": 4814705
+  },
+  "passed_primary_gate": true
+}
