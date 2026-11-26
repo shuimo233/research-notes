@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-26 | [旧解释影响多项证据时，两批复查怎么安排？](articles/conflict-rechecks/weighted-overlap.md) | 重叠差异的精确两批、触发复查等价及八组真实版本历史 |
 | 2026-11-26 | [三批允许跳过项目时，紧成本比是 8/7](articles/conflict-rechecks/weighted-three.md) | 一次错读、不限顺序三批的紧界和可执行构造 |
 | 2026-11-26 | [多等一轮反馈，能省多少复查字节？](articles/conflict-rechecks/weighted-rounds.md) | 降序三批紧界、可调用规划器和十组 npm 留出 |
 | 2026-11-25 | [复查费用不同时，只允许一次反馈要多付多少？](articles/conflict-rechecks/weighted-batches.md) | 异价复查紧成本界、精确求解与 10 组公开发布包回放 |

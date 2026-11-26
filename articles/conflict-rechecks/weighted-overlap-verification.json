@@ -1,0 +1,27 @@
+{
+  "theory": {
+    "small_catalogs_across_allowances": 258,
+    "reply_histories": 6607,
+    "two_error_trigger_counterexample": {
+      "masks": [
+        1,
+        6,
+        2,
+        4
+      ],
+      "prices": [
+        3,
+        11,
+        10,
+        5
+      ],
+      "unrestricted": 31,
+      "trigger_only": 33
+    }
+  },
+  "ledger": {
+    "members": 369,
+    "universal_optimal_arms": 16,
+    "replayed": 624
+  }
+}
