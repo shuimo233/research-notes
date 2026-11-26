@@ -64,6 +64,42 @@ def ordered_plan(costs, errors, rounds):
     return RoundPlan(blocks, order[boundaries[-1] :], low)
 
 
+def three_round_guarantee(costs):
+    """Construct a three-batch, one-error plan within 8/7 of the sequential optimum."""
+    costs = _validate(costs, 1)
+    order = _order(costs)
+    if not order:
+        return RoundPlan((), (), 0)
+    prefix = tuple(accumulate((costs[i] for i in order), initial=0))
+    total = prefix[-1]
+    cap = (8 * sequential_bound(costs, 1) - 1) // 7
+    end = bisect_right(prefix, cap - costs[order[0]]) - 1
+    first = order[:end]
+    first_cost = prefix[end] + costs[order[0]]
+    if end == len(order):
+        return RoundPlan((first,), (), first_cost)
+    largest = costs[order[end]]
+    rest = order[end + 1 :]
+    # Aim to leave half the highest remaining price for the fixed tail.
+    # Keep the comparison in doubled integer units.
+    if 2 * (total - prefix[end + 1]) < largest:
+        tail = rest
+    else:
+        deferred = []
+        remaining = largest
+        for i in rest:
+            if 2 * costs[i] <= remaining:
+                deferred.append(i)
+                remaining -= 2 * costs[i]
+        tail = tuple(deferred)
+    omitted = set(tail)
+    second = tuple(i for i in order[end:] if i not in omitted)
+    tail_cost = sum(costs[i] for i in tail)
+    worst = max(first_cost, total - tail_cost + largest, total + tail_cost)
+    assert worst <= cap
+    return RoundPlan((first, second), tail, worst)
+
+
 def execute_rounds(plan, size, errors, read_batch):
     """Execute a plan on a batch adapter returning ordered 0/1 disagreements."""
     if type(size) is not int or size < 0 or type(errors) is not int or errors < 0:

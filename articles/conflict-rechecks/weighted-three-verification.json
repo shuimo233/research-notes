@@ -1,0 +1,68 @@
+{
+  "brute_partitions": 461,
+  "independent_transcript_optima": 55,
+  "small_and_random_reply_histories": 10144,
+  "tight_family_cases": 7,
+  "npm_post_hoc": {
+    "lodash": {
+      "new_bound_plan": 1204153,
+      "ordered3": 1088196,
+      "exact2": 1088196,
+      "executed_histories": 4
+    },
+    "express": {
+      "new_bound_plan": 57458,
+      "ordered3": 57458,
+      "exact2": 57458,
+      "executed_histories": 4
+    },
+    "semver": {
+      "new_bound_plan": 47184,
+      "ordered3": 44934,
+      "exact2": 46595,
+      "executed_histories": 16
+    },
+    "axios": {
+      "new_bound_plan": 706782,
+      "ordered3": 656475,
+      "exact2": 698923,
+      "executed_histories": 4
+    },
+    "chalk": {
+      "new_bound_plan": 8337,
+      "ordered3": 7730,
+      "exact2": 7730,
+      "executed_histories": 7
+    },
+    "js-yaml": {
+      "new_bound_plan": 384271,
+      "ordered3": 348711,
+      "exact2": 376428,
+      "executed_histories": 13
+    },
+    "zod": {
+      "new_bound_plan": 671309,
+      "ordered3": 620332,
+      "exact2": 636591,
+      "executed_histories": 4
+    },
+    "yargs": {
+      "new_bound_plan": 134861,
+      "ordered3": 124366,
+      "exact2": 124366,
+      "executed_histories": 7
+    },
+    "commander": {
+      "new_bound_plan": 187192,
+      "ordered3": 167442,
+      "exact2": 167442,
+      "executed_histories": 10
+    },
+    "webpack": {
+      "new_bound_plan": 3158415,
+      "ordered3": 2868313,
+      "exact2": 3011610,
+      "executed_histories": 4
+    }
+  }
+}

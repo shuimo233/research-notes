@@ -8,6 +8,7 @@
 
 | 日期 | 文章 | 主题 |
 | --- | --- | --- |
+| 2026-11-26 | [三批允许跳过项目时，紧成本比是 8/7](articles/conflict-rechecks/weighted-three.md) | 一次错读、不限顺序三批的紧界和可执行构造 |
 | 2026-11-26 | [多等一轮反馈，能省多少复查字节？](articles/conflict-rechecks/weighted-rounds.md) | 降序三批紧界、可调用规划器和十组 npm 留出 |
 | 2026-11-25 | [复查费用不同时，只允许一次反馈要多付多少？](articles/conflict-rechecks/weighted-batches.md) | 异价复查紧成本界、精确求解与 10 组公开发布包回放 |
 | 2026-11-25 | [三星证书能否跨日期成立？](articles/consent-audit/gnss-prefix-verification.md) | 旧地图前缀核验、跨日期留出和单读数扰动 |
