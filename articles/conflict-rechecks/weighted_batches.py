@@ -142,14 +142,8 @@ def execute(plan, size, errors, read_batch):
     observed = []
 
     def read(indices):
-        if not indices:
-            return
-        answers = tuple(read_batch(indices))
-        if len(answers) != len(indices) or any(
-            type(x) not in (bool, int) or x not in (0, 1) for x in answers
-        ):
-            raise ValueError("adapter returned invalid binary observations")
-        observed.append(tuple(zip(indices, answers, strict=True)))
+        if indices:
+            observed.append(_read_observations(indices, read_batch))
 
     read(first)
     first_hits = tuple(i for layer in observed for i, bit in layer if bit)
@@ -159,6 +153,19 @@ def execute(plan, size, errors, read_batch):
     elif len(first_hits) == 1:
         read(first_hits * errors)
 
+    return _verdict(size, errors, observed)
+
+
+def _read_observations(indices, read_batch):
+    answers = tuple(read_batch(indices))
+    if len(answers) != len(indices) or any(
+        type(x) not in (bool, int) or x not in (0, 1) for x in answers
+    ):
+        raise ValueError("adapter returned invalid binary observations")
+    return tuple(zip(indices, answers, strict=True))
+
+
+def _verdict(size, errors, observed):
     seen_zero = {i for layer in observed for i, bit in layer if not bit}
     ones = [i for layer in observed for i, bit in layer if bit]
     extension = len(ones) <= errors
