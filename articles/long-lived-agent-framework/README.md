@@ -8,7 +8,7 @@
 
 我们在 AngelBot 中探索了一个较小的组合：**完整档案、有界工作视图、带来源的偏好记录，以及同一个 Main 的按需回查**。权限和副作用状态由宿主独立维护，不交给摘要或模型记忆决定。它不训练模型，不增加一组管理记忆的 Agent，也不要求额外的向量服务。
 
-本文整理架构、五组实验和取舍。当前证据支持把这套组合作为继续建设个人助手的最小内核；尚不足以证明自然多日、跨模型和任意任务都长期可靠。机器可读的汇总见 [evidence.json](evidence.json)。
+本文整理架构、五组实验和取舍。当前证据支持把这套组合作为继续建设个人助手的最小内核；尚不足以证明自然多日、跨模型和任意任务都长期可靠。机器可读的汇总见 [evidence.json](https://github.com/shuimo233/research-notes/blob/71350f3c44d3ecef2c89b57e5f2fa87a77241586/articles/long-lived-agent-framework/evidence.json)。
 
 ## 1. 我们实际想解决什么
 
@@ -141,7 +141,7 @@ AngelBot 的目标是一个本地优先的 Windows 个人助手。用户只需�
 
 ## 5. 五组关键观察
 
-以下是内部合成工程诊断，不是 LongMemEval 等官方基准成绩，也不合并成一个“长期可靠率”。精确汇总与限制集中保存在 [evidence.json](evidence.json)。
+以下是内部合成工程诊断，不是 LongMemEval 等官方基准成绩，也不合并成一个“长期可靠率”。精确汇总与限制集中保存在 [evidence.json](https://github.com/shuimo233/research-notes/blob/71350f3c44d3ecef2c89b57e5f2fa87a77241586/articles/long-lived-agent-framework/evidence.json)。
 
 ### E1：轻量工作视图可以减少回放，但恢复语义必须说清楚
 

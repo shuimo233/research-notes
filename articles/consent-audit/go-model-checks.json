@@ -1,8 +1,0 @@
-{
-  "small_batches": 144,
-  "enumerated_assignments": 9180,
-  "batches_with_strict_reversals": 36,
-  "endpoint_tables": 6,
-  "independent_extrema_pairs": 4,
-  "full_batch_witnesses": 4
-}

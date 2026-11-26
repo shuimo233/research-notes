@@ -1,7 +1,0 @@
-{
-  "verified_sentence_models": 99,
-  "rational_primal_dual_certificates": 198,
-  "joint_categories_checked": 333,
-  "labeled_simple_graphs_checked": 1099,
-  "signed_path_cycle_and_degenerate_checks": 379
-}

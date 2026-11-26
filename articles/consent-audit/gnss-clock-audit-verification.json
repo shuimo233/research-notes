@@ -1,7 +1,0 @@
-{
-  "aligned_fixed_checked": 240,
-  "pseudoranges_checked": 2815,
-  "independent_broadcast_satellites_checked": 137,
-  "max_ecef_difference_m": 0.00036474458738687933,
-  "max_clock_difference_ns": 4.940438249473322e-07
-}

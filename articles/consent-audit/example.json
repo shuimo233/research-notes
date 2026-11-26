@@ -1,9 +1,0 @@
-{
-  "max_offer": 10,
-  "errors": 1,
-  "history": [{"consent": false, "low": 6, "high": 6, "request": true, "effect": false}],
-  "menu": [
-    {"name": "low", "low": 6, "high": 6, "cost": 1, "capacity": 2},
-    {"name": "high", "low": 10, "high": 10, "cost": 5, "capacity": 2}
-  ]
-}
