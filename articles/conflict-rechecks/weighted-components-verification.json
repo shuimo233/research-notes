@@ -1,0 +1,14 @@
+{
+  "theory": {
+    "model_allowance_sets": 162,
+    "full_raw_tree_comparisons": 486,
+    "executed_histories": 4514
+  },
+  "ledger": {
+    "component_sets": 32,
+    "measured_probes": 247,
+    "independent_price_nodes": 7572,
+    "cases": 1962,
+    "multiple_components": 1614
+  }
+}
